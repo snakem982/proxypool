@@ -9,13 +9,13 @@ Mihomo/Clash.Meta/Clash node aggregation.
 
 ## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
 ### nodelist.txt
-https://github.com/snakem982/proxypool/blob/main/nodelist.txt
+https://github.com/snakem982/proxypool/blob/main/source/nodelist.txt
 ### proxies.txt
-https://github.com/snakem982/proxypool/blob/main/proxies.txt
+https://github.com/snakem982/proxypool/blob/main/source/proxies.txt
 ### webfuzz.yaml
-https://github.com/snakem982/proxypool/blob/main/webfuzz.yaml
+https://github.com/snakem982/proxypool/blob/main/source/webfuzz.yaml
 ### telegram channel hub
-https://github.com/snakem982/proxypool/blob/main/tgchannel.json
+https://github.com/snakem982/proxypool/blob/main/source/tgchannel.json
 
 ## <br><font color="red">温馨提示<br/>Friendly Reminder</font>
 <font color="red">节点链接来自公开在互联网上的信息，不保证财产信息安全和稳定性。不建议长期使用！！！<br/>
