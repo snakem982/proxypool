@@ -11,9 +11,9 @@ import (
 	"github.com/metacubex/mihomo/common/utils"
 	"github.com/metacubex/mihomo/config"
 	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
 	"github.com/snakem982/proxypool/tools"
 	"gopkg.in/yaml.v3"
+	"log"
 	"net"
 	"os"
 	"path/filepath"
@@ -78,7 +78,7 @@ func Crawl() bool {
 		rawCfg, err := config.UnmarshalRawConfig(defaultBuf)
 		if err == nil && len(rawCfg.Proxy) > 0 {
 			proxies = rawCfg.Proxy
-			log.Infoln("load default config proxies success %d", len(rawCfg.Proxy))
+			log.Printf("load default config proxies success %d\n", len(rawCfg.Proxy))
 		}
 	}
 
@@ -245,7 +245,7 @@ func map2proxies(maps map[string]map[string]any) (proxies []C.Proxy) {
 		pool.SubmitWithTimeout(func(done chan struct{}) {
 			defer func() {
 				if e := recover(); e != nil {
-					log.Errorln("===map2proxies===%s", e)
+					log.Printf("===map2proxies===%s\n", e)
 				}
 				done <- struct{}{}
 			}()
@@ -276,7 +276,7 @@ func urlTest(proxies []C.Proxy) []string {
 		pool.SubmitWithTimeout(func(done chan struct{}) {
 			defer func() {
 				if e := recover(); e != nil {
-					log.Errorln("===urlTest===%s", e)
+					log.Printf("===urlTest===%s\n", e)
 				}
 				done <- struct{}{}
 			}()

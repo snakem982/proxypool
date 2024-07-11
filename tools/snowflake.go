@@ -1,7 +1,6 @@
 package tools
 
 import (
-	"github.com/metacubex/mihomo/log"
 	"sync"
 	"time"
 )
@@ -59,8 +58,7 @@ func (s *snowflake) nextVal() int64 {
 	t := now - epoch
 	if t > timestampMax {
 		s.Unlock()
-		log.Fatalln("epoch must be between 0 and %d", timestampMax-1)
-		return 0
+		return epoch
 	}
 	s.timestamp = now
 	r := (t)<<timestampShift | (s.datacenterid << datacenteridShift) | (s.workerid << workeridShift) | (s.sequence)

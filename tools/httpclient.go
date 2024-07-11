@@ -4,9 +4,9 @@ import (
 	"crypto/tls"
 	"fmt"
 	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
 	"golang.org/x/net/context"
 	"io"
+	"log"
 	"net"
 	"net/http"
 	"net/url"
@@ -47,7 +47,7 @@ func HttpGetByProxy(requestUrl, httpProxyUrl string) ([]byte, error) {
 	// 创建一个GET请求
 	req, err := http.NewRequest(http.MethodGet, requestUrl, nil)
 	if err != nil {
-		log.Warnln("HttpGetByProxy http.NewRequest %s %v", requestUrl, err)
+		log.Printf("HttpGetByProxy http.NewRequest %s %v\n", requestUrl, err)
 		return nil, err
 	}
 	req.Header.Set("Accept-Encoding", "utf-8")
@@ -57,7 +57,7 @@ func HttpGetByProxy(requestUrl, httpProxyUrl string) ([]byte, error) {
 	// 发送请求并获取响应
 	resp, err := client.Do(req)
 	if err != nil {
-		log.Warnln("HttpGetByProxy client.Do %s %v", requestUrl, err)
+		log.Printf("HttpGetByProxy client.Do %s %v\n", requestUrl, err)
 		return nil, err
 	}
 	defer func(Body io.ReadCloser) {
@@ -69,12 +69,12 @@ func HttpGetByProxy(requestUrl, httpProxyUrl string) ([]byte, error) {
 	// 读取响应数据
 	data, err := io.ReadAll(resp.Body)
 	if err != nil {
-		log.Warnln("HttpGetByProxy io.ReadAll %s %v", requestUrl, err)
+		log.Printf("HttpGetByProxy io.ReadAll %s %v\n", requestUrl, err)
 		return nil, err
 	}
 
 	if resp.StatusCode != http.StatusOK {
-		log.Warnln("HttpGetByProxy StatusCode %s %d", requestUrl, resp.StatusCode)
+		log.Printf("HttpGetByProxy StatusCode %s %d\n", requestUrl, resp.StatusCode)
 		return nil, fmt.Errorf("StatusCode %d", resp.StatusCode)
 	}
 
@@ -83,7 +83,7 @@ func HttpGetByProxy(requestUrl, httpProxyUrl string) ([]byte, error) {
 
 // HttpGet 使用HTTP GET方法请求指定的URL，并返回响应的数据和可能的错误。
 func HttpGet(requestUrl string) ([]byte, error) {
-	timeOut := 20 * time.Second
+	timeOut := 15 * time.Second
 	return HttpGetWithTimeout(requestUrl, timeOut, true)
 }
 
@@ -102,7 +102,7 @@ func HttpGetWithTimeout(requestUrl string, outTime time.Duration, needDail bool)
 
 	req, err := http.NewRequest(http.MethodGet, requestUrl, nil) // 创建一个新的GET请求
 	if err != nil {
-		log.Warnln("HttpGetWithTimeout http.NewRequest %s %v", requestUrl, err)
+		log.Printf("HttpGetWithTimeout http.NewRequest %s %v\n", requestUrl, err)
 		return nil, err
 	}
 	req.Header.Set("Accept-Encoding", "utf-8") // 设置响应内容编码为utf-8
@@ -111,7 +111,7 @@ func HttpGetWithTimeout(requestUrl string, outTime time.Duration, needDail bool)
 
 	resp, err := client.Do(req) // 发送请求并获取响应
 	if err != nil {
-		log.Warnln("HttpGetWithTimeout client.Do %s %v", requestUrl, err)
+		log.Printf("HttpGetWithTimeout client.Do %s %v\n", requestUrl, err)
 		return nil, err
 	}
 	defer func(Body io.ReadCloser) {
@@ -122,12 +122,12 @@ func HttpGetWithTimeout(requestUrl string, outTime time.Duration, needDail bool)
 	}(resp.Body)
 	data, err := io.ReadAll(resp.Body) // 读取响应体的数据
 	if err != nil {
-		log.Warnln("HttpGetWithTimeout io.ReadAll %s %v", requestUrl, err)
+		log.Printf("HttpGetWithTimeout io.ReadAll %s %v\n", requestUrl, err)
 		return nil, err
 	}
 
 	if resp.StatusCode != http.StatusOK {
-		log.Warnln("HttpGetWithTimeout StatusCode %s %d", requestUrl, resp.StatusCode)
+		log.Printf("HttpGetWithTimeout StatusCode %s %d\n", requestUrl, resp.StatusCode)
 		return nil, fmt.Errorf("StatusCode %d", resp.StatusCode)
 	}
 

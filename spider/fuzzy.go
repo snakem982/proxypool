@@ -3,7 +3,7 @@ package spider
 import (
 	"github.com/metacubex/mihomo/common/convert"
 	"github.com/metacubex/mihomo/config"
-	"github.com/metacubex/mihomo/log"
+	"log"
 	"regexp"
 	"strings"
 	"sync"
@@ -26,7 +26,7 @@ func (c *Fuzzy) Get() []map[string]any {
 func (c *Fuzzy) Get2ChanWG(pc chan []map[string]any, wg *sync.WaitGroup) {
 	defer wg.Done()
 	nodes := c.Get()
-	log.Infoln("STATISTIC: Fuzzy count=%d url=%s", len(nodes), c.Url)
+	log.Printf("STATISTIC: Fuzzy count=%d url=%s\n", len(nodes), c.Url)
 	if len(nodes) > 0 {
 		pc <- nodes
 	}
@@ -78,7 +78,7 @@ func ComputeFuzzy(content []byte) []map[string]any {
 			defer func() {
 				// 每个协程内部使用recover捕获可能在调用逻辑中发生的panic
 				if e := recover(); e != nil {
-					log.Errorln("====抓取错误====%s", e)
+					log.Printf("====抓取错误====%s\n", e)
 				}
 				done <- struct{}{}
 			}()

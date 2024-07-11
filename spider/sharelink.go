@@ -2,7 +2,7 @@ package spider
 
 import (
 	"github.com/metacubex/mihomo/common/convert"
-	"github.com/metacubex/mihomo/log"
+	"log"
 	"regexp"
 	"strings"
 	"sync"
@@ -39,7 +39,7 @@ func (c *ShareLink) Get() []map[string]any {
 func (c *ShareLink) Get2ChanWG(pc chan []map[string]any, wg *sync.WaitGroup) {
 	defer wg.Done()
 	nodes := c.Get()
-	log.Infoln("STATISTIC: ShareLink count=%d url=%s", len(nodes), c.Url)
+	log.Printf("STATISTIC: ShareLink count=%d url=%s\n", len(nodes), c.Url)
 	if len(nodes) > 0 {
 		pc <- nodes
 	}

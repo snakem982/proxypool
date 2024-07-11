@@ -2,7 +2,7 @@ package spider
 
 import (
 	"github.com/metacubex/mihomo/common/convert"
-	"github.com/metacubex/mihomo/log"
+	"log"
 	"sync"
 )
 
@@ -31,7 +31,7 @@ func (c *V2ray) Get() []map[string]any {
 func (c *V2ray) Get2ChanWG(pc chan []map[string]any, wg *sync.WaitGroup) {
 	defer wg.Done()
 	nodes := c.Get()
-	log.Infoln("STATISTIC: V2ray count=%d url=%s", len(nodes), c.Url)
+	log.Printf("STATISTIC: V2ray count=%d url=%s\n", len(nodes), c.Url)
 	if len(nodes) > 0 {
 		pc <- nodes
 	}
