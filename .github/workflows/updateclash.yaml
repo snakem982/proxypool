@@ -1,0 +1,32 @@
+name: update clash-meta.yaml
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 23 * * *'
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Git Config
+        run: |
+          git config --global user.email snakem982@gmail.com
+          git config --global user.name snakem982
+
+      - name: Update Clash
+        run: |
+          wget -O source/clash-meta.yaml ${{ secrets.CLASH_API }}
+
+      - name: Git Push
+        run: |
+          git add .
+          git commit -m "update clash-meta.yaml"
+          git push origin master
+          
