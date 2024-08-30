@@ -8,6 +8,8 @@ Mihomo/Clash.Meta/Clash 节点池.
 Mihomo/Clash.Meta/Clash node aggregation.
 
 ## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
+### clash.meta/mihomo sub
+https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
 ### nodelist.txt
 https://github.com/snakem982/proxypool/blob/main/source/nodelist.txt
 ### proxies.txt
