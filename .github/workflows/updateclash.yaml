@@ -20,6 +20,7 @@ jobs:
       - name: Update Clash
         run: |
           wget -O source/clash-meta.yaml ${{ secrets.CLASH_API }}
+          sed -i "s/${{ secrets.CLASH_REPLACE }}/_proxypool_/g" source/clash-meta.yaml
 
       - name: Commit files
         run: |
