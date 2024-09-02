@@ -25,7 +25,7 @@ jobs:
       - name: Update Clash
         run: |
           wget -O source/clash-meta.yaml ${{ secrets.CLASH_API }}
-          rand=$(date +%s%N | md5sum |cut -c 1-5)
+          rand=_$(date +%s%N | md5sum |cut -c 1-5)_
           sed -i "s/${{ secrets.CLASH_REPLACE }}/$rand/g" source/clash-meta.yaml
 
       - name: Commit files
