@@ -2,6 +2,11 @@ name: update clash-meta.yaml
 
 on:
   push:
+    paths-ignore:
+      - "README.md"
+      - "script/**"
+      - "source/**"
+      - ".gitignore"
     branches:
       - main
   schedule:
@@ -20,7 +25,8 @@ jobs:
       - name: Update Clash
         run: |
           wget -O source/clash-meta.yaml ${{ secrets.CLASH_API }}
-          sed -i "s/${{ secrets.CLASH_REPLACE }}/_proxypool_/g" source/clash-meta.yaml
+          rand=$(date +%s%N | md5sum |cut -c 1-5)
+          sed -i "s/${{ secrets.CLASH_REPLACE }}/$rand/g" source/clash-meta.yaml
 
       - name: Commit files
         run: |
