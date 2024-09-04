@@ -183,7 +183,7 @@ function isUpdated()
 rm -rf result.log
 i=1
 
-data=$(cat nodelist.txt)
+data=$(cat ../source/nodelist.txt)
 for url in $data; do
   if [[ $url == https://raw.githubusercontent.com* ]]; then
     i=$[$i+1]
