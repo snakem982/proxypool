@@ -10,8 +10,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 23 * * *'
-    - cron: '0 11 * * *'
+    - cron: '0 0 * * *'
+    - cron: '0 12 * * *'
 
 jobs:
   Build:
@@ -26,6 +26,7 @@ jobs:
       - name: Update Clash
         run: |
           wget -O source/clash-meta.yaml ${{ secrets.CLASH_API }}
+          wget -O source/v2ray.txt ${{ secrets.V2RAY_API }}
           rand=_$(date +%s%N | md5sum |cut -c 1-5)_
           sed -i "s/${{ secrets.CLASH_REPLACE }}/$rand/g" source/clash-meta.yaml
 
