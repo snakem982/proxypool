@@ -41,6 +41,7 @@ https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yam
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-1.yaml
 ### v2ray 订阅地址
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray.txt
+https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt
 ### nodelist.txt
 https://github.com/snakem982/proxypool/blob/main/source/nodelist.txt
 ### proxies.txt
