@@ -10,8 +10,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'
-    - cron: '0 12 * * *'
+    - cron: '0 23 * * *'
+    - cron: '0 11 * * *'
 
 jobs:
   Build:
@@ -35,6 +35,13 @@ jobs:
           curl -L ${{ secrets.CLASH_API_1 }} > source/clash-meta-1.yaml
           rand=www.$(date +%s%N | md5sum |cut -c 3-7).com
           sed -i "s/${{ secrets.CLASH_REPLACE_1 }}/$rand/g" source/clash-meta-1.yaml
+
+      - name: Update Clash 2
+        run: |
+          rand=$(curl ${{ secrets.CLASH_API_2 }} | grep -Eo "Clash: +.*" | sed 's/Clash: //')
+          curl $rand > source/clash-meta-2.yaml
+          rand=$(curl ${{ secrets.CLASH_API_2 }} | grep -Eo "V2Ray: +.*" | sed 's/V2Ray: //')
+          curl $rand > source/v2ray-2.txt
 
       - name: Commit files
         run: |
