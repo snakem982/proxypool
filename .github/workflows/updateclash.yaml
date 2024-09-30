@@ -25,8 +25,8 @@ jobs:
 
       - name: Update Clash 0
         run: |
-          wget -O source/v2ray.txt ${{ secrets.V2RAY_API }}
-          wget -O source/clash-meta.yaml ${{ secrets.CLASH_API }}
+          curl -L ${{ secrets.V2RAY_API }} > source/v2ray.txt
+          curl -L ${{ secrets.CLASH_API }} > source/clash-meta.yaml
           rand=_$(date +%s%N | md5sum |cut -c 2-6)_
           sed -i "s/${{ secrets.CLASH_REPLACE }}/$rand/g" source/clash-meta.yaml
 
