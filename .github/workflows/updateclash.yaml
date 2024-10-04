@@ -38,10 +38,8 @@ jobs:
 
       - name: Update Clash 2
         run: |
-          rand=$(curl ${{ secrets.CLASH_API_2 }} | grep -Eo "Clash: +.*" | sed 's/Clash: //')
-          curl $rand > source/clash-meta-2.yaml
-          rand=$(curl ${{ secrets.CLASH_API_2 }} | grep -Eo "V2Ray: +.*" | sed 's/V2Ray: //')
-          curl $rand > source/v2ray-2.txt
+          curl ${{ secrets.CLASH_API_2 }} > source/clash-meta-2.yaml
+          curl ${{ secrets.V2RAY_API_2 }} > source/v2ray-2.txt
 
       - name: Commit files
         run: |
