@@ -49,7 +49,7 @@ jobs:
           git commit -a -m "Updated $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M %Z')" --allow-empty
 
       - name: Git Push
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
