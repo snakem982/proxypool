@@ -1,727 +1,672 @@
 port: 7890
-allow-lan: false
 mode: rule
 external-controller: 127.0.0.1:9090
-dns:
-  enabled: true
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  nameserver:
-  - https://doh.pub/dns-query
-  - https://223.5.5.5/dns-query
-  - https://doh.360.cn/dns-query
-  - https://dns.alidns.com/dns-query
-  - 119.29.29.29
-  fallback:
-  - 8.8.8.8
-  - 8.8.4.4
-  - tls://1.0.0.1:853
-  - tls://dns.google:853
 proxies:
-  - {name: CN_52019_0001, server: 183.240.196.236, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: CN_52019_0002, server: 183.240.196.236, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: CN_52019_0003, server: 106.75.178.154, port: 8969, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: CN_52019_0004, server: 114.94.49.3, port: 4343, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: CN_52019_0005, server: 106.75.178.154, port: 8969, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: CN_52019_0006, server: c2ys.qiyunlink.xyz, port: 35612, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_52019_0007, server: hzhz1.sssyun.xyz, port: 39505, type: ss, cipher: chacha20-ietf-poly1305, password: c569d52a-7beb-4a4c-841c-53c098c35881}
-  - {name: CN_52019_0008, server: hzhz1.sssyun.xyz, port: 39204, type: ss, cipher: chacha20-ietf-poly1305, password: c569d52a-7beb-4a4c-841c-53c098c35881}
-  - {name: CN_52019_0009, server: tw4.mhw7e2.online, port: 20024, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d, alterId: -1}
-  - {name: CN_52019_0010, server: sg5.mhw7e2.online, port: 20024, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d, udp: true}
-  - {name: CN_52019_0011, server: sg1.mhw7e2.online, port: 20024, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d, udp: true}
-  - {name: CN_52019_0012, server: hk1.mhw7e2.online, port: 20024, type: ss, udp: true, password: 70747514-fb14-4f31-8390-e1f0453eff6d, cipher: chacha20-ietf-poly1305}
-  - {name: CN_52019_0013, server: hk1.mhw7e2.online, port: 20024, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d}
-  - {name: CN_52019_0014, server: hzhz2.sssyun.xyz, port: 40014, type: ss, cipher: chacha20-ietf-poly1305, password: c569d52a-7beb-4a4c-841c-53c098c35881}
-  - {name: CN_52019_0015, server: c2ys.qiyunlink.xyz, port: 47217, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_52019_0016, server: jp2.mhw7e2.online, port: 20027, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d}
-  - {name: CN_52019_0017, server: sg5.mhw7e2.online, port: 20028, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d}
-  - {name: CN_52019_0018, server: o1sl.qiyunlink.top, port: 36158, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_52019_0019, server: tw5.mhw7e2.online, port: 20028, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d}
-  - {name: CN_52019_0020, server: c2ys.qiyunlink.xyz, port: 47342, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_52019_0021, server: hzhz2.sssyun.xyz, port: 40013, type: ss, cipher: chacha20-ietf-poly1305, password: c569d52a-7beb-4a4c-841c-53c098c35881}
-  - {name: CN_52019_0022, server: sg5.mhw7e2.online, port: 20027, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d}
-  - {name: HK_52019_0023, server: 46.3.104.147, port: 53506, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0024, server: 43.155.71.120, port: 444, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0025, server: 46.3.104.147, port: 53506, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0026, server: 61.92.139.201, port: 10311, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0027, server: 43.155.71.120, port: 444, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0028, server: 46.3.104.36, port: 16357, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0029, server: 46.3.104.36, port: 16357, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0030, server: 47.76.78.66, port: 60000, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0031, server: 206.237.20.40, port: 22876, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0032, server: 103.41.65.161, port: 587, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0033, server: 61.92.139.201, port: 10311, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0034, server: 38.207.172.131, port: 52758, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0035, server: 8.212.41.98, port: 8080, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0036, server: 149.104.24.14, port: 2053, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0037, server: 183.178.22.246, port: 11417, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0038, server: 38.207.161.206, port: 15864, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0039, server: 46.3.109.250, port: 28700, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0040, server: 83.147.61.203, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0041, server: 154.218.15.250, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0042, server: 154.218.15.40, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0043, server: 154.211.8.12, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0044, server: 154.211.8.220, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0045, server: 154.211.8.152, port: 2053, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0046, server: 38.207.161.214, port: 38060, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0047, server: 154.211.8.227, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0048, server: 112.119.49.206, port: 23555, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: HK_52019_0049, server: 154.44.27.144, port: 14871, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: HK_52019_0050, server: 154.16.183.199, port: 25106, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0051, server: 18.176.215.63, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (TG @WangCai2)ca5bef9:175503}}
-  - {name: JP_52019_0052, server: 8.209.220.155, port: 587, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0053, server: 13.208.164.28, port: 10002, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0054, server: 52.193.22.156, port: 50996, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0055, server: 206.190.233.219, port: 1777, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0056, server: 212.50.254.116, port: 54709, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0057, server: 34.97.183.32, port: 8083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0058, server: 180.3.190.67, port: 12117, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0059, server: 43.153.175.137, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0060, server: 43.133.169.125, port: 20443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0061, server: 43.153.175.137, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0062, server: 150.246.245.126, port: 12203, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0063, server: 180.1.76.147, port: 30501, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0064, server: 141.147.185.127, port: 587, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0065, server: 103.116.7.103, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0066, server: 168.138.201.26, port: 10000, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0067, server: 103.116.7.220, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0068, server: 147.78.246.201, port: 56656, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0069, server: 103.116.7.248, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0070, server: 103.116.7.152, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0071, server: 103.116.7.100, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0072, server: 103.116.7.235, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0073, server: 147.78.246.201, port: 56656, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0074, server: 103.116.7.67, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0075, server: 168.138.51.162, port: 587, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0076, server: 140.83.82.88, port: 1443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0077, server: 140.83.83.65, port: 9872, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0078, server: 141.147.155.5, port: 54443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0079, server: 38.54.89.108, port: 21443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0080, server: 147.79.20.147, port: 37308, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: JP_52019_0081, server: 147.79.20.147, port: 37308, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0082, server: 14.43.88.199, port: 10001, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0083, server: 218.38.36.6, port: 10101, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0084, server: 58.122.187.141, port: 10554, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0085, server: 14.6.169.26, port: 10397, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0086, server: 1.236.233.194, port: 50003, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0087, server: 211.237.82.127, port: 30008, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0088, server: 119.195.104.2, port: 30006, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0089, server: shouer2112.12123.org, port: 30003, type: vmess, uuid: 0e8a4ec6-66c1-45c0-a51a-cd51a35f2a11, alterId: 0, cipher: auto, udp: true, tls: true, servername: shouer2112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: KR_52019_0090, server: shouer2112.12123.org, port: 30003, type: vmess, uuid: 4ae987a9-f9e6-49f0-95ad-e8f375678d62, alterId: 0, cipher: auto, udp: true, tls: true, servername: shouer2112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: KR_52019_0091, server: shouer2112.12123.org, port: 30003, type: vmess, uuid: 9c2daf3a-cb17-4fb2-8703-90dca44b709e, alterId: 0, cipher: auto, udp: true, tls: true, servername: shouer2112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: KR_52019_0092, server: 222.235.135.123, port: 10238, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0093, server: 183.100.60.128, port: 22105, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0094, server: 61.74.251.88, port: 50003, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0095, server: 112.168.173.214, port: 50003, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0096, server: 115.40.28.225, port: 10911, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0097, server: 112.185.168.195, port: 14896, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0098, server: 59.20.66.115, port: 26470, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0099, server: 121.178.121.161, port: 12481, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0100, server: 121.174.89.83, port: 27017, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0101, server: 110.15.107.178, port: 10001, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0102, server: 211.213.244.66, port: 12174, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0103, server: 114.199.10.185, port: 21317, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0104, server: 175.194.187.210, port: 50002, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0105, server: 220.79.29.86, port: 11371, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0106, server: 220.81.117.120, port: 10218, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0107, server: 125.135.43.66, port: 50003, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0108, server: 121.147.113.29, port: 50003, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0109, server: 59.26.65.12, port: 50003, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0110, server: 118.41.25.147, port: 30012, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0111, server: 119.17.78.218, port: 10035, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0112, server: 211.207.106.155, port: 12345, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0113, server: 112.166.35.248, port: 10002, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0114, server: 210.87.202.178, port: 55555, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0115, server: 112.185.168.195, port: 18039, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0116, server: 211.195.102.16, port: 20894, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0117, server: 61.85.205.67, port: 25002, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0118, server: shouer2112.12123.org, port: 30003, type: vmess, uuid: 85b733a3-7b70-481e-a7d2-23508408ea61, alterId: 0, cipher: auto, udp: true, tls: true, servername: shouer2112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: KR_52019_0119, server: 1.252.14.205, port: 33890, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0120, server: 220.84.186.17, port: 30019, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0121, server: 114.199.158.41, port: 14095, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0122, server: 175.203.94.60, port: 50001, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0123, server: 58.65.93.66, port: 13666, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0124, server: 125.136.51.42, port: 28017, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0125, server: 125.134.169.165, port: 12101, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0126, server: 121.132.58.142, port: 10081, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0127, server: 175.195.48.68, port: 10116, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0128, server: 121.55.128.244, port: 30013, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0129, server: 220.71.116.165, port: 12388, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0130, server: 118.40.112.188, port: 10081, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0131, server: 59.13.75.15, port: 31337, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0132, server: 220.118.166.200, port: 10080, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0133, server: 121.162.208.57, port: 50001, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0134, server: 14.45.213.201, port: 50001, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0135, server: 211.226.15.137, port: 50004, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0136, server: 119.198.34.151, port: 50001, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0137, server: 218.148.35.119, port: 21303, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: KR_52019_0138, server: 125.136.10.202, port: 29842, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0139, server: 5.182.84.244, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0140, server: 176.124.223.40, port: 2053, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0141, server: 5.182.84.52, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0142, server: 46.254.93.134, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0143, server: 5.182.84.22, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0144, server: 46.254.93.211, port: 2053, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0145, server: 77.232.140.114, port: 2053, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0146, server: 46.254.93.175, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0147, server: 176.124.223.92, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0148, server: 213.241.198.56, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0149, server: 185.176.24.140, port: 2087, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: RU_52019_0150, server: 5.182.85.189, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0151, server: 46.254.92.142, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0152, server: 46.254.93.251, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: RU_52019_0153, server: 193.9.49.114, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: RU_52019_0154, server: 193.9.49.114, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_52019_0155, server: 185.59.218.144, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: SG_52019_0156, server: 89.213.51.66, port: 33347, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0157, server: 89.213.51.66, port: 33347, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0158, server: 137.220.150.176, port: 587, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0159, server: 92.243.74.115, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0160, server: 8.223.39.101, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0161, server: 8.223.39.101, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0162, server: 27.50.49.156, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0163, server: 206.238.237.47, port: 2053, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0164, server: 206.238.236.90, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0165, server: 206.238.236.216, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0166, server: 27.50.49.104, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0167, server: 27.50.48.115, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0168, server: 27.50.49.136, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0169, server: 27.50.48.126, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: SG_52019_0170, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: 0e8a4ec6-66c1-45c0-a51a-cd51a35f2a11, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0171, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: f7f6f87c-422a-41a6-afd6-ce3641059d3e, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0172, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: 5568f900-29ff-4d17-a6ca-dc21dca4cf05, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0173, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: f0306a2f-dfdb-4758-b3bc-ec99b1e6004c, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0174, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: 2f82f563-0ca2-4cd9-897d-12b7242b7e25, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0175, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: ff4fbe7d-7381-411a-9c5f-4d17c35ff0c7, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0176, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: 5197c6dd-e796-4031-985e-7b354aff0956, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0177, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: 6a427709-57ff-4b7e-891c-db58138c4945, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0178, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: 3e882c35-684a-4963-ab63-6353fb3de6e4, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: SG_52019_0179, server: xjpx6.12123.org, port: 30003, type: vmess, uuid: 3e84f2bf-5ab9-475e-9cb2-faf99ad878b1, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpx6.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
-  - {name: US_52019_0180, server: 154.17.228.123, port: 19063, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0181, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 607fa241-271b-4eba-b543-e918976a50d8, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0182, server: 38.60.89.147, port: 34237, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0183, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 57491970-c0b7-4f85-b576-86cc861eb64e, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0184, server: 23.166.168.99, port: 51056, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0185, server: 104.19.60.107, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0186, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: b08fcc59-603d-4313-9e26-eb3615ad8f7d, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0187, server: 104.19.42.244, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0188, server: 160.79.105.99, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0189, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 5c7119d5-20ca-4b6a-83d8-8ec09ad18f82, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0190, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 34fe15fb-6e1d-4e7c-b7ad-9455be10e9a8, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0191, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 7cc87747-bb3b-4be8-9006-d3428ec7615a, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0192, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 62c5e657-87e4-46dc-b26f-d6646d80b9c0, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0193, server: 108.165.152.169, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0194, server: 161.145.150.14, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0195, server: 167.68.42.113, port: 2053, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0196, server: 135.84.76.152, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0197, server: 108.165.152.59, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0198, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 5563acac-ae34-4175-a646-7284a1490b4b, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0199, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 322c8011-1460-4e72-9b36-c06ab7f2a510, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0200, server: 108.165.152.0, port: 8443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0201, server: 199.34.228.187, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0202, server: 192.200.160.109, port: 8443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0203, server: 156.225.72.199, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0204, server: 199.34.228.66, port: 2053, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0205, server: 108.165.152.175, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0206, server: 192.0.54.7, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0207, server: 108.165.152.219, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0208, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 0372a6ae-eef4-4915-8271-1ddd6a61582d, alterId: 0, cipher: auto, udp: true, tls: true, servername: d285gakij18iij.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d285gakij18iij.cloudfront.net}}}
-  - {name: US_52019_0209, server: 108.165.152.36, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0210, server: 108.165.152.18, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0211, server: 160.79.105.160, port: 8443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0212, server: 167.68.4.10, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0213, server: 199.34.228.143, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0214, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 54f7ac86-3f15-4fea-900f-eae6fd2f9ff3, alterId: 0, cipher: auto, udp: true, tls: true, servername: d285gakij18iij.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d285gakij18iij.cloudfront.net}}}
-  - {name: US_52019_0215, server: 108.165.152.82, port: 8443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0216, server: 108.165.152.1, port: 2087, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0217, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: d7d6ffcd-b915-4de2-ace9-d0cce38ae26c, alterId: 0, cipher: auto, udp: true, tls: true, servername: d285gakij18iij.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d285gakij18iij.cloudfront.net}}}
-  - {name: US_52019_0218, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 63c0cb32-4d18-4a7c-ab5e-624b2c8d36f5, alterId: 0, cipher: auto, udp: true, tls: true, servername: d285gakij18iij.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d285gakij18iij.cloudfront.net}}}
-  - {name: US_52019_0219, server: 108.165.152.76, port: 2096, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0220, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: e7a8c09e-7884-4c91-9e4e-4e57cbb75255, alterId: 0, cipher: auto, udp: true, tls: true, servername: dxpmrsgr3291i.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: dxpmrsgr3291i.cloudfront.net}}}
-  - {name: US_52019_0221, server: 104.19.42.244, port: 443, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0222, server: 185.148.105.225, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: US_52019_0223, server: 216.116.134.43, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: US_52019_0224, server: 104.19.60.107, port: 2083, type: vless, uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b, udp: true, tls: true, skip-cert-verify: false, servername: freenodes.repe.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: freenodes.repe.gay}}}
-  - {name: US_52019_0225, server: 185.148.105.225, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, packet-encoding: "", ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
-  - {name: US_52019_0226, server: 45.59.184.16, port: 38908, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: US_52019_0227, server: 167.68.11.106, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: US_52019_0228, server: 167.68.11.106, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_52019_0229, server: 185.148.106.134, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_52019_0230, server: 45.159.218.7, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /twitterfreecodestg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_52019_0231, server: 155.46.213.9, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: US_52019_0232, server: 45.159.218.162, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: AU_1dcf7_0001, server: 103.169.142.121, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2securityfp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: AU_1dcf7_0002, server: 103.169.142.121, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: AU_1dcf7_0003, server: 103.169.142.121, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2securityfp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: AU_1dcf7_0004, server: 103.169.142.121, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: AU_1dcf7_0005, server: 103.169.142.38, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: AU_1dcf7_0006, server: 103.169.142.38, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: CN_1dcf7_0007, server: c2ys.qiyunlink.xyz, port: 35612, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_1dcf7_0008, server: o1sl.qiyunlink.top, port: 35678, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_1dcf7_0009, server: o1sl.qiyunlink.top, port: 36158, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_1dcf7_0010, server: c2ys.qiyunlink.xyz, port: 47217, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_1dcf7_0011, server: t2666.113001.xyz, port: 32009, type: ss, cipher: aes-128-gcm, password: 541200f4-3c26-4ee0-b5e0-d86253b1ef54}
+  - {name: CN_1dcf7_0012, server: c2ys.qiyunlink.xyz, port: 47526, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_1dcf7_0013, server: c2ys.qiyunlink.xyz, port: 46391, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: GB_1dcf7_0014, server: 91.193.58.119, port: 2053, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
+  - {name: GB_1dcf7_0015, server: 217.163.76.75, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: GB_1dcf7_0016, server: 94.247.142.245, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_1dcf7_0017, server: 94.247.142.245, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_1dcf7_0018, server: 94.247.142.245, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_1dcf7_0019, server: 94.247.142.245, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_1dcf7_0020, server: 91.193.58.119, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_1dcf7_0021, server: 94.247.142.245, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_1dcf7_0022, server: 94.247.142.241, port: 443, type: vless, uuid: 775213ac-3976-439a-8977-3277c0e4735d, udp: true, tls: true, skip-cert-verify: false, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: /Twitterfreecodes, headers: {Host: fq521.6789.cloudns.be}}}
+  - {name: GB_1dcf7_0023, server: hk1.youxuan.wiki, port: 8080, type: vless, uuid: 0613cd76-e1f5-4c26-88e7-33c20365937d, udp: true, flow: xtls-rprx-vision, tls: true, client-fingerprint: ios, skip-cert-verify: false, servername: zabbix.mikunet.work, reality-opts: {public-key: 3x7QUG16ssq3wplofSrfo1fWKX1De5SxWn0kxAjtZWI, short-id: c49c6263}, packet-encoding: xudp, network: tcp}
+  - {name: GB_1dcf7_0024, server: hk1.youxuan.wiki, port: 8080, type: vless, uuid: 2c3c19ae-0b3c-4599-8235-ea2b8a33ae88, udp: true, flow: xtls-rprx-vision, tls: true, client-fingerprint: ios, skip-cert-verify: false, servername: zabbix.mikunet.work, reality-opts: {public-key: 3x7QUG16ssq3wplofSrfo1fWKX1De5SxWn0kxAjtZWI, short-id: c49c6263}, packet-encoding: xudp, network: tcp}
+  - {name: HK_1dcf7_0025, server: 112.119.49.206, port: 23555, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: JP_1dcf7_0026, server: 18.176.215.63, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (TG @WangCai2)ca5bef9:175503}}
+  - {name: JP_1dcf7_0027, server: jp2.helloco.xyz, port: 60001, type: vless, uuid: a2438565-aef3-4377-8442-be1b53d088b2, udp: true, flow: xtls-rprx-vision, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: python.org, reality-opts: {public-key: TTPcfOT851FXonrhOiySGnu7yNcbRB_8PlH496i8wFY, short-id: ec81680f}, network: tcp}
+  - {name: KR_1dcf7_0028, server: 140.238.18.228, port: 443, type: vless, uuid: 2353e75d-7cec-4e7f-9eae-e996117cac04, udp: true, flow: xtls-rprx-vision, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: updates.cdn-apple.com, reality-opts: {public-key: t_MDb0CgA1ZwyIj7NpJ2hvp85C9sH8Nsnd8etE8NKw4}, packet-encoding: xudp, network: tcp}
+  - {name: KR_1dcf7_0029, server: 220.126.127.139, port: 10116, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_1dcf7_0030, server: 183.98.53.177, port: 10911, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_1dcf7_0031, server: 14.48.49.133, port: 10000, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_1dcf7_0032, server: 132.145.87.175, port: 62001, type: vless, uuid: 8fb2797b-882a-48ae-adec-3d77686f0564, udp: true, flow: xtls-rprx-vision, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: swdist.apple.com, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, network: tcp}
+  - {name: KR_1dcf7_0033, server: 115.88.75.154, port: 30032, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: random, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: "/TG@ZDYZ2?ed=2560", headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: KR_1dcf7_0034, server: 119.203.125.236, port: 30001, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_1dcf7_0035, server: 118.33.22.133, port: 16053, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_1dcf7_0036, server: 59.29.116.20, port: 11965, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: RU_1dcf7_0037, server: 185.176.24.140, port: 2087, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_1dcf7_0038, server: 188.42.145.178, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0039, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0040, server: 188.42.145.178, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0041, server: 185.176.24.113, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0042, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0043, server: 188.42.145.178, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0044, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_1dcf7_0045, server: 185.59.218.158, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0046, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chromefp=chromefp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_1dcf7_0047, server: 193.9.49.114, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0048, server: 185.176.24.113, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: RU_1dcf7_0049, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chromefp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_1dcf7_0050, server: 185.59.218.144, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0051, server: 193.9.49.114, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: RU_1dcf7_0052, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0053, server: 185.176.24.15, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_1dcf7_0054, server: 188.42.145.140, port: 443, type: vless, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome", headers: {Host: g1.youyuan.us.kg}}}
+  - {name: RU_1dcf7_0055, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_1dcf7_0056, server: 185.176.24.15, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: RU_1dcf7_0057, server: 188.42.145.140, port: 443, type: vless, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome", headers: {Host: g1.youyuan.us.kg}}}
+  - {name: RU_1dcf7_0058, server: 188.42.145.178, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: RU_1dcf7_0059, server: 188.42.145.226, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0060, server: 185.148.107.62, port: 443, type: vless, network: ws, tls: true, udp: true, servername: juzibaipiao.5112233.xyz, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f}
+  - {name: US_1dcf7_0061, server: 185.148.107.62, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_1dcf7_0062, server: 154.17.19.136, port: 62001, type: vless, uuid: 3d2e0186-7782-4429-d631-21413f81ac3a, udp: true, flow: xtls-rprx-vision, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: swdist.apple.com, reality-opts: {public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY}, network: tcp}
+  - {name: US_1dcf7_0063, server: 147.135.112.118, port: 62001, type: vless, uuid: 3e2e8b99-7709-476d-a893-4b6d580ba01b, udp: true, flow: xtls-rprx-vision, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: swdist.apple.com, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, network: tcp}
+  - {name: US_1dcf7_0064, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 91624a42-c536-4422-b3dc-572794e98475, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0065, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 70387357-82fa-4a2f-a9ad-3edb1e0071da, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0066, server: 185.148.105.225, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_1dcf7_0067, server: 185.148.105.225, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, packet-encoding: "", ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: US_1dcf7_0068, server: 216.116.134.43, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_1dcf7_0069, server: 216.205.52.109, port: 2083, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_1dcf7_0070, server: 45.159.218.162, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, packet-encoding: "", ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: US_1dcf7_0071, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 54f7ac86-3f15-4fea-900f-eae6fd2f9ff3, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0072, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: e49232e3-415e-45c5-a52a-e0b36cacbdc8, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0073, server: 45.59.184.16, port: 38908, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: US_1dcf7_0074, server: 167.68.11.95, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0075, server: 167.68.11.253, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0076, server: 167.68.11.95, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chromefp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0077, server: 66.81.247.16, port: 443, type: vless, uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87, udp: true, tls: true, skip-cert-verify: false, servername: toujiediansigema.5112233.xyz, network: ws, ws-opts: {path: /tg@juzibaipiao偷节点死吗, headers: {Host: toujiediansigema.5112233.xyz}}}
+  - {name: US_1dcf7_0078, server: 167.68.11.253, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0079, server: 167.68.11.253, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0080, server: 167.68.11.106, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0081, server: 167.68.11.106, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_1dcf7_0082, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: da0c4eb4-0cb4-4fee-833e-ce67576b8828, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0083, server: 66.81.247.16, port: 443, type: vless, network: ws, tls: true, udp: true, servername: toujiediansigema.5112233.xyz, ws-opts: {path: /tg@juzibaipiao偷节点死吗, headers: {Host: toujiediansigema.5112233.xyz}}, uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87}
+  - {name: US_1dcf7_0084, server: 155.46.213.9, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0085, server: 167.68.11.253, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: US_1dcf7_0086, server: 185.148.106.134, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0087, server: 167.68.11.191, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0088, server: 167.68.11.106, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0089, server: shsz.12123.org, port: 30000, type: vmess, uuid: 6957b648-f61a-4734-933d-f9a7021c7bb2, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0090, server: 205.233.181.242, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: US_1dcf7_0091, server: 45.159.218.7, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /twitterfreecodestg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0092, server: shsz.12123.org, port: 30000, type: vmess, uuid: 3e882c35-684a-4963-ab63-6353fb3de6e4, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0093, server: 155.46.213.9, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: US_1dcf7_0094, server: 167.68.11.106, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: US_1dcf7_0095, server: shsz.12123.org, port: 30000, type: vmess, uuid: 44ac1888-eb15-4575-8460-0aec7f2e488b, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0096, server: 14.102.228.210, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_1dcf7_0097, server: shsz.12123.org, port: 30000, type: vmess, uuid: 14d4c832-603e-4edd-b570-ea4086415e67, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0098, server: shsz.12123.org, port: 30000, type: vmess, uuid: 6a427709-57ff-4b7e-891c-db58138c4945, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0099, server: shsz.12123.org, port: 30000, type: vmess, uuid: 2b513321-c6cd-42f4-9d36-83cdb195972d, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0100, server: 45.159.219.23, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_1dcf7_0101, server: shsz.12123.org, port: 30000, type: vmess, uuid: eb30c0ac-835d-4d2f-814e-162b7ba19dc8, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0102, server: shsz.12123.org, port: 30000, type: vmess, uuid: 3eedf3ac-e7b4-4f35-8e30-2b636ea8ca57, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0103, server: shsz.12123.org, port: 30000, type: vmess, uuid: 3d5c0cc3-c6f5-4931-a190-52893efa9744, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0104, server: 159.112.235.14, port: 8443, type: vless, client-fingerprint: chrome, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_1dcf7_0105, server: shsz.12123.org, port: 30000, type: vmess, uuid: 5568f900-29ff-4d17-a6ca-dc21dca4cf05, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0106, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 34fe15fb-6e1d-4e7c-b7ad-9455be10e9a8, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0107, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 9daafd9d-38a7-4fff-9b8a-890bf048f295, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0108, server: shs2.12123.org, port: 30005, type: vmess, uuid: 85b733a3-7b70-481e-a7d2-23508408ea61, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0109, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: e7a8c09e-7884-4c91-9e4e-4e57cbb75255, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0110, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 8760cf53-ce42-4c28-8c3e-10d6ff41ea70, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0111, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 5c7119d5-20ca-4b6a-83d8-8ec09ad18f82, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0112, server: shsz.12123.org, port: 30000, type: vmess, uuid: aec6a14f-b7d5-4cfc-abbb-af9735c9973c, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0113, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 1e6384bd-3abd-4647-a308-e1dbb0ed3a18, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0114, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: dbdb6b65-5515-47e5-bb31-3adadb4c8371, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0115, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 59678b1b-6f41-4e3c-b0d6-5a7c819f366c, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0116, server: shsz.12123.org, port: 30000, type: vmess, uuid: 3e84f2bf-5ab9-475e-9cb2-faf99ad878b1, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0117, server: shsz.12123.org, port: 30000, type: vmess, uuid: 1bec428b-4aad-42dc-a5e1-7ce0dd640b16, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0118, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: c1480a66-ba3b-402f-b7d1-b2a7c4e1b01a, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0119, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 6a47535b-63dd-4db8-8eab-571089b3bf14, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0120, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: b08fcc59-603d-4313-9e26-eb3615ad8f7d, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0121, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: f71a0a18-0a05-4fe0-9725-6c92b1149356, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0122, server: shs2.12123.org, port: 30005, type: vmess, uuid: 3eedf3ac-e7b4-4f35-8e30-2b636ea8ca57, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0123, server: shsz.12123.org, port: 30000, type: vmess, uuid: 45388e4b-aaaf-4fd8-86ea-752e798d1fb6, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0124, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 4f814755-d5b6-470f-abd6-963a145cdff3, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0125, server: shsz.12123.org, port: 30000, type: vmess, uuid: ae201dce-a32e-4bbc-967e-317ef402fdca, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0126, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 0ab37b00-addc-4358-9a8d-f0fcc8264e1f, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0127, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 53c2cfda-1b5c-4999-89d1-f45dcda82538, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0128, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 74e4d295-70b6-485b-b41a-81c41b9b1bbc, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0129, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 70387357-82fa-4a2f-a9ad-3edb1e0071da, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0130, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 7cc87747-bb3b-4be8-9006-d3428ec7615a, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0131, server: shsz.12123.org, port: 30000, type: vmess, uuid: a7507b35-bf8b-4f71-8b3e-b24811f0b1d6, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0132, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: de1672f8-9d8d-4694-94fa-d29d376bb8ed, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0133, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 7cc87747-bb3b-4be8-9006-d3428ec7615a, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0134, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 322c8011-1460-4e72-9b36-c06ab7f2a510, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0135, server: shsz.12123.org, port: 30000, type: vmess, uuid: 3ca92307-4f10-44fc-9d36-6981a96ba2b8, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0136, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: f71a0a18-0a05-4fe0-9725-6c92b1149356, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0137, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 9f27992d-c243-4d7a-987e-a272179ce539, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0138, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 6378ebbd-dd1e-4658-8a01-db36fccbc81c, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0139, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: af8f416e-d277-49e3-8b6c-905b7596e31f, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0140, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 8760cf53-ce42-4c28-8c3e-10d6ff41ea70, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0141, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 7c9b97ac-9253-419b-9c3e-41439fcea4dd, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0142, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 607fa241-271b-4eba-b543-e918976a50d8, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0143, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: d7d6ffcd-b915-4de2-ace9-d0cce38ae26c, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0144, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 328c1541-3f5b-4c32-9752-dec3d842214a, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0145, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 7fd99431-1b8a-4ca2-82de-3493e1566f01, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0146, server: shs2.12123.org, port: 30005, type: vmess, uuid: 5568f900-29ff-4d17-a6ca-dc21dca4cf05, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0147, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 322c8011-1460-4e72-9b36-c06ab7f2a510, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0148, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 0112665c-8eea-44f0-adba-53250d54aa2d, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0149, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 96b18091-2dcd-4115-a411-c25ee98b521f, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0150, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 7d261ae0-c11d-4962-bde6-52b53ac0cd74, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0151, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 22cf033e-c870-4fb4-9fea-ab2bedd1d1cc, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0152, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: d968f7c5-2bc1-4e44-9bd5-83b5e55dff3f, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0153, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 357d11a1-9a7b-4aee-97ac-258d2d891b09, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0154, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 377faa40-ce33-4211-b06d-3d4e04596fb0, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0155, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 62c5e657-87e4-46dc-b26f-d6646d80b9c0, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0156, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 70387357-82fa-4a2f-a9ad-3edb1e0071da, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0157, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 5563acac-ae34-4175-a646-7284a1490b4b, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0158, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: af8f416e-d277-49e3-8b6c-905b7596e31f, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0159, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 4992461a-bef9-4e36-b450-646e4d2c0ef9, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0160, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 377faa40-ce33-4211-b06d-3d4e04596fb0, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0161, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: b718a774-be2f-4014-b973-a48477613cdd, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0162, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 54f7ac86-3f15-4fea-900f-eae6fd2f9ff3, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0163, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: a61b44d4-e905-4f1e-9623-ee6a5db3e44d, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0164, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: b718a774-be2f-4014-b973-a48477613cdd, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0165, server: shsz.12123.org, port: 30000, type: vmess, uuid: f0306a2f-dfdb-4758-b3bc-ec99b1e6004c, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0166, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 63c0cb32-4d18-4a7c-ab5e-624b2c8d36f5, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0167, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: da0c4eb4-0cb4-4fee-833e-ce67576b8828, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0168, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: a7abfc8d-3781-4bc4-9ba1-9d408ff24bd3, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0169, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: a12e0830-0e10-47d2-8d20-a7b25a2f58a4, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0170, server: shs2.12123.org, port: 30005, type: vmess, uuid: 4a428ebd-3bd8-4d66-ac2f-f4e7f8981806, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0171, server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 0112665c-8eea-44f0-adba-53250d54aa2d, alterId: 0, cipher: auto, udp: true, tls: true, servername: d21rddomp7gdx6.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d21rddomp7gdx6.cloudfront.net}}}
+  - {name: US_1dcf7_0172, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: ba74d613-cee4-4941-8438-fbc987fe1ba0, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0173, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 5563acac-ae34-4175-a646-7284a1490b4b, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0174, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 4f814755-d5b6-470f-abd6-963a145cdff3, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0175, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 1e6384bd-3abd-4647-a308-e1dbb0ed3a18, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0176, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 4e564c28-041c-481b-a4a1-b31b32faa48f, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0177, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 5c7119d5-20ca-4b6a-83d8-8ec09ad18f82, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0178, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 57491970-c0b7-4f85-b576-86cc861eb64e, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0179, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: c1480a66-ba3b-402f-b7d1-b2a7c4e1b01a, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0180, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: d7d6ffcd-b915-4de2-ace9-d0cce38ae26c, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0181, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: b08fcc59-603d-4313-9e26-eb3615ad8f7d, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0182, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 7c9b97ac-9253-419b-9c3e-41439fcea4dd, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0183, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 59678b1b-6f41-4e3c-b0d6-5a7c819f366c, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0184, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 7cc87747-bb3b-4be8-9006-d3428ec7615a, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0185, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: e7a8c09e-7884-4c91-9e4e-4e57cbb75255, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0186, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: af8f416e-d277-49e3-8b6c-905b7596e31f, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0187, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 96b18091-2dcd-4115-a411-c25ee98b521f, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0188, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: e7a8c09e-7884-4c91-9e4e-4e57cbb75255, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0189, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 59678b1b-6f41-4e3c-b0d6-5a7c819f366c, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0190, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 9daafd9d-38a7-4fff-9b8a-890bf048f295, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0191, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 357d11a1-9a7b-4aee-97ac-258d2d891b09, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0192, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 91624a42-c536-4422-b3dc-572794e98475, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0193, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 34fe15fb-6e1d-4e7c-b7ad-9455be10e9a8, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0194, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: e49232e3-415e-45c5-a52a-e0b36cacbdc8, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0195, server: hkcft01.xqc.best, port: 443, type: vmess, uuid: 0372a6ae-eef4-4915-8271-1ddd6a61582d, alterId: 0, cipher: auto, udp: true, tls: true, servername: daqchd3a0qfpy.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: daqchd3a0qfpy.cloudfront.net}}}
+  - {name: US_1dcf7_0196, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 74e4d295-70b6-485b-b41a-81c41b9b1bbc, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0197, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 18a4d335-d146-4642-aaa4-06fd889867ed, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0198, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 7fd99431-1b8a-4ca2-82de-3493e1566f01, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0199, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 1e6384bd-3abd-4647-a308-e1dbb0ed3a18, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0200, server: jpcft01.xqc.best, port: 443, type: vmess, uuid: 322c8011-1460-4e72-9b36-c06ab7f2a510, alterId: 0, cipher: auto, udp: true, tls: true, servername: d263c0bqn07wlj.cloudfront.net, skip-cert-verify: true, network: ws, ws-opts: {path: /stream, headers: {Host: d263c0bqn07wlj.cloudfront.net}}}
+  - {name: US_1dcf7_0201, server: shsz.12123.org, port: 30000, type: vmess, uuid: 29fe2125-1c88-486a-93b4-c47f0df400eb, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0202, server: shsz.12123.org, port: 30000, type: vmess, uuid: 050b0ed7-563f-4ff7-9b41-23713fbf824c, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0203, server: shsz.12123.org, port: 30000, type: vmess, uuid: 4f0b1926-a06a-4cb4-9b6e-451215212775, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0204, server: shs2.12123.org, port: 30005, type: vmess, uuid: 050b0ed7-563f-4ff7-9b41-23713fbf824c, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0205, server: shsz.12123.org, port: 30000, type: vmess, uuid: 86256542-64cd-42dd-8501-250a084f2142, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0206, server: shsz.12123.org, port: 30000, type: vmess, uuid: f1817051-323c-4cfd-8c91-18f1464d085d, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0207, server: shs2.12123.org, port: 30005, type: vmess, uuid: df5393c2-9895-43c4-81a7-0b55a59a7f5e, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0208, server: shsz.12123.org, port: 30000, type: vmess, uuid: 520be08d-4193-4a4e-b8f3-273de0a65641, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0209, server: shs2.12123.org, port: 30005, type: vmess, uuid: 4f0b1926-a06a-4cb4-9b6e-451215212775, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0210, server: shs2.12123.org, port: 30005, type: vmess, uuid: 86256542-64cd-42dd-8501-250a084f2142, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0211, server: shsz.12123.org, port: 30000, type: vmess, uuid: e36e98bb-393a-4dc0-b2e8-80118e3b79dd, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0212, server: shs2.12123.org, port: 30005, type: vmess, uuid: 520be08d-4193-4a4e-b8f3-273de0a65641, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0213, server: usav3.ftko8vzt9w.cyou, port: 2083, type: vmess, uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c, alterId: 0, cipher: auto, udp: true, tls: true, servername: usav3.ftko8vzt9w.cyou, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: usav3.ftko8vzt9w.cyou}}}
+  - {name: US_1dcf7_0214, server: shsz.12123.org, port: 30000, type: vmess, uuid: df5393c2-9895-43c4-81a7-0b55a59a7f5e, alterId: 0, cipher: auto, udp: true, tls: true, servername: shsz.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0215, server: shs2.12123.org, port: 30005, type: vmess, uuid: f1817051-323c-4cfd-8c91-18f1464d085d, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0216, server: shs2.12123.org, port: 30005, type: vmess, uuid: 29fe2125-1c88-486a-93b4-c47f0df400eb, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0217, server: shs2.12123.org, port: 30005, type: vmess, uuid: e36e98bb-393a-4dc0-b2e8-80118e3b79dd, alterId: 0, cipher: auto, udp: true, tls: true, servername: shs2.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: US_1dcf7_0218, server: hlv3.ftko8vzt9w.cyou, port: 2083, type: vmess, uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c, alterId: 0, cipher: auto, udp: true, tls: true, servername: hlv3.ftko8vzt9w.cyou, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hlv3.ftko8vzt9w.cyou}}}
+  - {name: US_1dcf7_0219, server: xjpv3.ftko8vzt9w.cyou, port: 2087, type: vmess, uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c, alterId: 0, cipher: auto, udp: true, tls: true, servername: xjpv3.ftko8vzt9w.cyou, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xjpv3.ftko8vzt9w.cyou}}}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - CN_52019_0001
-  - CN_52019_0002
-  - CN_52019_0003
-  - CN_52019_0004
-  - CN_52019_0005
-  - CN_52019_0006
-  - CN_52019_0007
-  - CN_52019_0008
-  - CN_52019_0009
-  - CN_52019_0010
-  - CN_52019_0011
-  - CN_52019_0012
-  - CN_52019_0013
-  - CN_52019_0014
-  - CN_52019_0015
-  - CN_52019_0016
-  - CN_52019_0017
-  - CN_52019_0018
-  - CN_52019_0019
-  - CN_52019_0020
-  - CN_52019_0021
-  - CN_52019_0022
-  - HK_52019_0023
-  - HK_52019_0024
-  - HK_52019_0025
-  - HK_52019_0026
-  - HK_52019_0027
-  - HK_52019_0028
-  - HK_52019_0029
-  - HK_52019_0030
-  - HK_52019_0031
-  - HK_52019_0032
-  - HK_52019_0033
-  - HK_52019_0034
-  - HK_52019_0035
-  - HK_52019_0036
-  - HK_52019_0037
-  - HK_52019_0038
-  - HK_52019_0039
-  - HK_52019_0040
-  - HK_52019_0041
-  - HK_52019_0042
-  - HK_52019_0043
-  - HK_52019_0044
-  - HK_52019_0045
-  - HK_52019_0046
-  - HK_52019_0047
-  - HK_52019_0048
-  - HK_52019_0049
-  - HK_52019_0050
-  - JP_52019_0051
-  - JP_52019_0052
-  - JP_52019_0053
-  - JP_52019_0054
-  - JP_52019_0055
-  - JP_52019_0056
-  - JP_52019_0057
-  - JP_52019_0058
-  - JP_52019_0059
-  - JP_52019_0060
-  - JP_52019_0061
-  - JP_52019_0062
-  - JP_52019_0063
-  - JP_52019_0064
-  - JP_52019_0065
-  - JP_52019_0066
-  - JP_52019_0067
-  - JP_52019_0068
-  - JP_52019_0069
-  - JP_52019_0070
-  - JP_52019_0071
-  - JP_52019_0072
-  - JP_52019_0073
-  - JP_52019_0074
-  - JP_52019_0075
-  - JP_52019_0076
-  - JP_52019_0077
-  - JP_52019_0078
-  - JP_52019_0079
-  - JP_52019_0080
-  - JP_52019_0081
-  - KR_52019_0082
-  - KR_52019_0083
-  - KR_52019_0084
-  - KR_52019_0085
-  - KR_52019_0086
-  - KR_52019_0087
-  - KR_52019_0088
-  - KR_52019_0089
-  - KR_52019_0090
-  - KR_52019_0091
-  - KR_52019_0092
-  - KR_52019_0093
-  - KR_52019_0094
-  - KR_52019_0095
-  - KR_52019_0096
-  - KR_52019_0097
-  - KR_52019_0098
-  - KR_52019_0099
-  - KR_52019_0100
-  - KR_52019_0101
-  - KR_52019_0102
-  - KR_52019_0103
-  - KR_52019_0104
-  - KR_52019_0105
-  - KR_52019_0106
-  - KR_52019_0107
-  - KR_52019_0108
-  - KR_52019_0109
-  - KR_52019_0110
-  - KR_52019_0111
-  - KR_52019_0112
-  - KR_52019_0113
-  - KR_52019_0114
-  - KR_52019_0115
-  - KR_52019_0116
-  - KR_52019_0117
-  - KR_52019_0118
-  - KR_52019_0119
-  - KR_52019_0120
-  - KR_52019_0121
-  - KR_52019_0122
-  - KR_52019_0123
-  - KR_52019_0124
-  - KR_52019_0125
-  - KR_52019_0126
-  - KR_52019_0127
-  - KR_52019_0128
-  - KR_52019_0129
-  - KR_52019_0130
-  - KR_52019_0131
-  - KR_52019_0132
-  - KR_52019_0133
-  - KR_52019_0134
-  - KR_52019_0135
-  - KR_52019_0136
-  - KR_52019_0137
-  - KR_52019_0138
-  - RU_52019_0139
-  - RU_52019_0140
-  - RU_52019_0141
-  - RU_52019_0142
-  - RU_52019_0143
-  - RU_52019_0144
-  - RU_52019_0145
-  - RU_52019_0146
-  - RU_52019_0147
-  - RU_52019_0148
-  - RU_52019_0149
-  - RU_52019_0150
-  - RU_52019_0151
-  - RU_52019_0152
-  - RU_52019_0153
-  - RU_52019_0154
-  - RU_52019_0155
-  - SG_52019_0156
-  - SG_52019_0157
-  - SG_52019_0158
-  - SG_52019_0159
-  - SG_52019_0160
-  - SG_52019_0161
-  - SG_52019_0162
-  - SG_52019_0163
-  - SG_52019_0164
-  - SG_52019_0165
-  - SG_52019_0166
-  - SG_52019_0167
-  - SG_52019_0168
-  - SG_52019_0169
-  - SG_52019_0170
-  - SG_52019_0171
-  - SG_52019_0172
-  - SG_52019_0173
-  - SG_52019_0174
-  - SG_52019_0175
-  - SG_52019_0176
-  - SG_52019_0177
-  - SG_52019_0178
-  - SG_52019_0179
-  - US_52019_0180
-  - US_52019_0181
-  - US_52019_0182
-  - US_52019_0183
-  - US_52019_0184
-  - US_52019_0185
-  - US_52019_0186
-  - US_52019_0187
-  - US_52019_0188
-  - US_52019_0189
-  - US_52019_0190
-  - US_52019_0191
-  - US_52019_0192
-  - US_52019_0193
-  - US_52019_0194
-  - US_52019_0195
-  - US_52019_0196
-  - US_52019_0197
-  - US_52019_0198
-  - US_52019_0199
-  - US_52019_0200
-  - US_52019_0201
-  - US_52019_0202
-  - US_52019_0203
-  - US_52019_0204
-  - US_52019_0205
-  - US_52019_0206
-  - US_52019_0207
-  - US_52019_0208
-  - US_52019_0209
-  - US_52019_0210
-  - US_52019_0211
-  - US_52019_0212
-  - US_52019_0213
-  - US_52019_0214
-  - US_52019_0215
-  - US_52019_0216
-  - US_52019_0217
-  - US_52019_0218
-  - US_52019_0219
-  - US_52019_0220
-  - US_52019_0221
-  - US_52019_0222
-  - US_52019_0223
-  - US_52019_0224
-  - US_52019_0225
-  - US_52019_0226
-  - US_52019_0227
-  - US_52019_0228
-  - US_52019_0229
-  - US_52019_0230
-  - US_52019_0231
-  - US_52019_0232
+  - AU_1dcf7_0001
+  - AU_1dcf7_0002
+  - AU_1dcf7_0003
+  - AU_1dcf7_0004
+  - AU_1dcf7_0005
+  - AU_1dcf7_0006
+  - CN_1dcf7_0007
+  - CN_1dcf7_0008
+  - CN_1dcf7_0009
+  - CN_1dcf7_0010
+  - CN_1dcf7_0011
+  - CN_1dcf7_0012
+  - CN_1dcf7_0013
+  - GB_1dcf7_0014
+  - GB_1dcf7_0015
+  - GB_1dcf7_0016
+  - GB_1dcf7_0017
+  - GB_1dcf7_0018
+  - GB_1dcf7_0019
+  - GB_1dcf7_0020
+  - GB_1dcf7_0021
+  - GB_1dcf7_0022
+  - GB_1dcf7_0023
+  - GB_1dcf7_0024
+  - HK_1dcf7_0025
+  - JP_1dcf7_0026
+  - JP_1dcf7_0027
+  - KR_1dcf7_0028
+  - KR_1dcf7_0029
+  - KR_1dcf7_0030
+  - KR_1dcf7_0031
+  - KR_1dcf7_0032
+  - KR_1dcf7_0033
+  - KR_1dcf7_0034
+  - KR_1dcf7_0035
+  - KR_1dcf7_0036
+  - RU_1dcf7_0037
+  - RU_1dcf7_0038
+  - RU_1dcf7_0039
+  - RU_1dcf7_0040
+  - RU_1dcf7_0041
+  - RU_1dcf7_0042
+  - RU_1dcf7_0043
+  - RU_1dcf7_0044
+  - RU_1dcf7_0045
+  - RU_1dcf7_0046
+  - RU_1dcf7_0047
+  - RU_1dcf7_0048
+  - RU_1dcf7_0049
+  - RU_1dcf7_0050
+  - RU_1dcf7_0051
+  - RU_1dcf7_0052
+  - RU_1dcf7_0053
+  - RU_1dcf7_0054
+  - RU_1dcf7_0055
+  - RU_1dcf7_0056
+  - RU_1dcf7_0057
+  - RU_1dcf7_0058
+  - RU_1dcf7_0059
+  - US_1dcf7_0060
+  - US_1dcf7_0061
+  - US_1dcf7_0062
+  - US_1dcf7_0063
+  - US_1dcf7_0064
+  - US_1dcf7_0065
+  - US_1dcf7_0066
+  - US_1dcf7_0067
+  - US_1dcf7_0068
+  - US_1dcf7_0069
+  - US_1dcf7_0070
+  - US_1dcf7_0071
+  - US_1dcf7_0072
+  - US_1dcf7_0073
+  - US_1dcf7_0074
+  - US_1dcf7_0075
+  - US_1dcf7_0076
+  - US_1dcf7_0077
+  - US_1dcf7_0078
+  - US_1dcf7_0079
+  - US_1dcf7_0080
+  - US_1dcf7_0081
+  - US_1dcf7_0082
+  - US_1dcf7_0083
+  - US_1dcf7_0084
+  - US_1dcf7_0085
+  - US_1dcf7_0086
+  - US_1dcf7_0087
+  - US_1dcf7_0088
+  - US_1dcf7_0089
+  - US_1dcf7_0090
+  - US_1dcf7_0091
+  - US_1dcf7_0092
+  - US_1dcf7_0093
+  - US_1dcf7_0094
+  - US_1dcf7_0095
+  - US_1dcf7_0096
+  - US_1dcf7_0097
+  - US_1dcf7_0098
+  - US_1dcf7_0099
+  - US_1dcf7_0100
+  - US_1dcf7_0101
+  - US_1dcf7_0102
+  - US_1dcf7_0103
+  - US_1dcf7_0104
+  - US_1dcf7_0105
+  - US_1dcf7_0106
+  - US_1dcf7_0107
+  - US_1dcf7_0108
+  - US_1dcf7_0109
+  - US_1dcf7_0110
+  - US_1dcf7_0111
+  - US_1dcf7_0112
+  - US_1dcf7_0113
+  - US_1dcf7_0114
+  - US_1dcf7_0115
+  - US_1dcf7_0116
+  - US_1dcf7_0117
+  - US_1dcf7_0118
+  - US_1dcf7_0119
+  - US_1dcf7_0120
+  - US_1dcf7_0121
+  - US_1dcf7_0122
+  - US_1dcf7_0123
+  - US_1dcf7_0124
+  - US_1dcf7_0125
+  - US_1dcf7_0126
+  - US_1dcf7_0127
+  - US_1dcf7_0128
+  - US_1dcf7_0129
+  - US_1dcf7_0130
+  - US_1dcf7_0131
+  - US_1dcf7_0132
+  - US_1dcf7_0133
+  - US_1dcf7_0134
+  - US_1dcf7_0135
+  - US_1dcf7_0136
+  - US_1dcf7_0137
+  - US_1dcf7_0138
+  - US_1dcf7_0139
+  - US_1dcf7_0140
+  - US_1dcf7_0141
+  - US_1dcf7_0142
+  - US_1dcf7_0143
+  - US_1dcf7_0144
+  - US_1dcf7_0145
+  - US_1dcf7_0146
+  - US_1dcf7_0147
+  - US_1dcf7_0148
+  - US_1dcf7_0149
+  - US_1dcf7_0150
+  - US_1dcf7_0151
+  - US_1dcf7_0152
+  - US_1dcf7_0153
+  - US_1dcf7_0154
+  - US_1dcf7_0155
+  - US_1dcf7_0156
+  - US_1dcf7_0157
+  - US_1dcf7_0158
+  - US_1dcf7_0159
+  - US_1dcf7_0160
+  - US_1dcf7_0161
+  - US_1dcf7_0162
+  - US_1dcf7_0163
+  - US_1dcf7_0164
+  - US_1dcf7_0165
+  - US_1dcf7_0166
+  - US_1dcf7_0167
+  - US_1dcf7_0168
+  - US_1dcf7_0169
+  - US_1dcf7_0170
+  - US_1dcf7_0171
+  - US_1dcf7_0172
+  - US_1dcf7_0173
+  - US_1dcf7_0174
+  - US_1dcf7_0175
+  - US_1dcf7_0176
+  - US_1dcf7_0177
+  - US_1dcf7_0178
+  - US_1dcf7_0179
+  - US_1dcf7_0180
+  - US_1dcf7_0181
+  - US_1dcf7_0182
+  - US_1dcf7_0183
+  - US_1dcf7_0184
+  - US_1dcf7_0185
+  - US_1dcf7_0186
+  - US_1dcf7_0187
+  - US_1dcf7_0188
+  - US_1dcf7_0189
+  - US_1dcf7_0190
+  - US_1dcf7_0191
+  - US_1dcf7_0192
+  - US_1dcf7_0193
+  - US_1dcf7_0194
+  - US_1dcf7_0195
+  - US_1dcf7_0196
+  - US_1dcf7_0197
+  - US_1dcf7_0198
+  - US_1dcf7_0199
+  - US_1dcf7_0200
+  - US_1dcf7_0201
+  - US_1dcf7_0202
+  - US_1dcf7_0203
+  - US_1dcf7_0204
+  - US_1dcf7_0205
+  - US_1dcf7_0206
+  - US_1dcf7_0207
+  - US_1dcf7_0208
+  - US_1dcf7_0209
+  - US_1dcf7_0210
+  - US_1dcf7_0211
+  - US_1dcf7_0212
+  - US_1dcf7_0213
+  - US_1dcf7_0214
+  - US_1dcf7_0215
+  - US_1dcf7_0216
+  - US_1dcf7_0217
+  - US_1dcf7_0218
+  - US_1dcf7_0219
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - CN_52019_0001
-  - CN_52019_0002
-  - CN_52019_0003
-  - CN_52019_0004
-  - CN_52019_0005
-  - CN_52019_0006
-  - CN_52019_0007
-  - CN_52019_0008
-  - CN_52019_0009
-  - CN_52019_0010
-  - CN_52019_0011
-  - CN_52019_0012
-  - CN_52019_0013
-  - CN_52019_0014
-  - CN_52019_0015
-  - CN_52019_0016
-  - CN_52019_0017
-  - CN_52019_0018
-  - CN_52019_0019
-  - CN_52019_0020
-  - CN_52019_0021
-  - CN_52019_0022
-  - HK_52019_0023
-  - HK_52019_0024
-  - HK_52019_0025
-  - HK_52019_0026
-  - HK_52019_0027
-  - HK_52019_0028
-  - HK_52019_0029
-  - HK_52019_0030
-  - HK_52019_0031
-  - HK_52019_0032
-  - HK_52019_0033
-  - HK_52019_0034
-  - HK_52019_0035
-  - HK_52019_0036
-  - HK_52019_0037
-  - HK_52019_0038
-  - HK_52019_0039
-  - HK_52019_0040
-  - HK_52019_0041
-  - HK_52019_0042
-  - HK_52019_0043
-  - HK_52019_0044
-  - HK_52019_0045
-  - HK_52019_0046
-  - HK_52019_0047
-  - HK_52019_0048
-  - HK_52019_0049
-  - HK_52019_0050
-  - JP_52019_0051
-  - JP_52019_0052
-  - JP_52019_0053
-  - JP_52019_0054
-  - JP_52019_0055
-  - JP_52019_0056
-  - JP_52019_0057
-  - JP_52019_0058
-  - JP_52019_0059
-  - JP_52019_0060
-  - JP_52019_0061
-  - JP_52019_0062
-  - JP_52019_0063
-  - JP_52019_0064
-  - JP_52019_0065
-  - JP_52019_0066
-  - JP_52019_0067
-  - JP_52019_0068
-  - JP_52019_0069
-  - JP_52019_0070
-  - JP_52019_0071
-  - JP_52019_0072
-  - JP_52019_0073
-  - JP_52019_0074
-  - JP_52019_0075
-  - JP_52019_0076
-  - JP_52019_0077
-  - JP_52019_0078
-  - JP_52019_0079
-  - JP_52019_0080
-  - JP_52019_0081
-  - KR_52019_0082
-  - KR_52019_0083
-  - KR_52019_0084
-  - KR_52019_0085
-  - KR_52019_0086
-  - KR_52019_0087
-  - KR_52019_0088
-  - KR_52019_0089
-  - KR_52019_0090
-  - KR_52019_0091
-  - KR_52019_0092
-  - KR_52019_0093
-  - KR_52019_0094
-  - KR_52019_0095
-  - KR_52019_0096
-  - KR_52019_0097
-  - KR_52019_0098
-  - KR_52019_0099
-  - KR_52019_0100
-  - KR_52019_0101
-  - KR_52019_0102
-  - KR_52019_0103
-  - KR_52019_0104
-  - KR_52019_0105
-  - KR_52019_0106
-  - KR_52019_0107
-  - KR_52019_0108
-  - KR_52019_0109
-  - KR_52019_0110
-  - KR_52019_0111
-  - KR_52019_0112
-  - KR_52019_0113
-  - KR_52019_0114
-  - KR_52019_0115
-  - KR_52019_0116
-  - KR_52019_0117
-  - KR_52019_0118
-  - KR_52019_0119
-  - KR_52019_0120
-  - KR_52019_0121
-  - KR_52019_0122
-  - KR_52019_0123
-  - KR_52019_0124
-  - KR_52019_0125
-  - KR_52019_0126
-  - KR_52019_0127
-  - KR_52019_0128
-  - KR_52019_0129
-  - KR_52019_0130
-  - KR_52019_0131
-  - KR_52019_0132
-  - KR_52019_0133
-  - KR_52019_0134
-  - KR_52019_0135
-  - KR_52019_0136
-  - KR_52019_0137
-  - KR_52019_0138
-  - RU_52019_0139
-  - RU_52019_0140
-  - RU_52019_0141
-  - RU_52019_0142
-  - RU_52019_0143
-  - RU_52019_0144
-  - RU_52019_0145
-  - RU_52019_0146
-  - RU_52019_0147
-  - RU_52019_0148
-  - RU_52019_0149
-  - RU_52019_0150
-  - RU_52019_0151
-  - RU_52019_0152
-  - RU_52019_0153
-  - RU_52019_0154
-  - RU_52019_0155
-  - SG_52019_0156
-  - SG_52019_0157
-  - SG_52019_0158
-  - SG_52019_0159
-  - SG_52019_0160
-  - SG_52019_0161
-  - SG_52019_0162
-  - SG_52019_0163
-  - SG_52019_0164
-  - SG_52019_0165
-  - SG_52019_0166
-  - SG_52019_0167
-  - SG_52019_0168
-  - SG_52019_0169
-  - SG_52019_0170
-  - SG_52019_0171
-  - SG_52019_0172
-  - SG_52019_0173
-  - SG_52019_0174
-  - SG_52019_0175
-  - SG_52019_0176
-  - SG_52019_0177
-  - SG_52019_0178
-  - SG_52019_0179
-  - US_52019_0180
-  - US_52019_0181
-  - US_52019_0182
-  - US_52019_0183
-  - US_52019_0184
-  - US_52019_0185
-  - US_52019_0186
-  - US_52019_0187
-  - US_52019_0188
-  - US_52019_0189
-  - US_52019_0190
-  - US_52019_0191
-  - US_52019_0192
-  - US_52019_0193
-  - US_52019_0194
-  - US_52019_0195
-  - US_52019_0196
-  - US_52019_0197
-  - US_52019_0198
-  - US_52019_0199
-  - US_52019_0200
-  - US_52019_0201
-  - US_52019_0202
-  - US_52019_0203
-  - US_52019_0204
-  - US_52019_0205
-  - US_52019_0206
-  - US_52019_0207
-  - US_52019_0208
-  - US_52019_0209
-  - US_52019_0210
-  - US_52019_0211
-  - US_52019_0212
-  - US_52019_0213
-  - US_52019_0214
-  - US_52019_0215
-  - US_52019_0216
-  - US_52019_0217
-  - US_52019_0218
-  - US_52019_0219
-  - US_52019_0220
-  - US_52019_0221
-  - US_52019_0222
-  - US_52019_0223
-  - US_52019_0224
-  - US_52019_0225
-  - US_52019_0226
-  - US_52019_0227
-  - US_52019_0228
-  - US_52019_0229
-  - US_52019_0230
-  - US_52019_0231
-  - US_52019_0232
+  - AU_1dcf7_0001
+  - AU_1dcf7_0002
+  - AU_1dcf7_0003
+  - AU_1dcf7_0004
+  - AU_1dcf7_0005
+  - AU_1dcf7_0006
+  - CN_1dcf7_0007
+  - CN_1dcf7_0008
+  - CN_1dcf7_0009
+  - CN_1dcf7_0010
+  - CN_1dcf7_0011
+  - CN_1dcf7_0012
+  - CN_1dcf7_0013
+  - GB_1dcf7_0014
+  - GB_1dcf7_0015
+  - GB_1dcf7_0016
+  - GB_1dcf7_0017
+  - GB_1dcf7_0018
+  - GB_1dcf7_0019
+  - GB_1dcf7_0020
+  - GB_1dcf7_0021
+  - GB_1dcf7_0022
+  - GB_1dcf7_0023
+  - GB_1dcf7_0024
+  - HK_1dcf7_0025
+  - JP_1dcf7_0026
+  - JP_1dcf7_0027
+  - KR_1dcf7_0028
+  - KR_1dcf7_0029
+  - KR_1dcf7_0030
+  - KR_1dcf7_0031
+  - KR_1dcf7_0032
+  - KR_1dcf7_0033
+  - KR_1dcf7_0034
+  - KR_1dcf7_0035
+  - KR_1dcf7_0036
+  - RU_1dcf7_0037
+  - RU_1dcf7_0038
+  - RU_1dcf7_0039
+  - RU_1dcf7_0040
+  - RU_1dcf7_0041
+  - RU_1dcf7_0042
+  - RU_1dcf7_0043
+  - RU_1dcf7_0044
+  - RU_1dcf7_0045
+  - RU_1dcf7_0046
+  - RU_1dcf7_0047
+  - RU_1dcf7_0048
+  - RU_1dcf7_0049
+  - RU_1dcf7_0050
+  - RU_1dcf7_0051
+  - RU_1dcf7_0052
+  - RU_1dcf7_0053
+  - RU_1dcf7_0054
+  - RU_1dcf7_0055
+  - RU_1dcf7_0056
+  - RU_1dcf7_0057
+  - RU_1dcf7_0058
+  - RU_1dcf7_0059
+  - US_1dcf7_0060
+  - US_1dcf7_0061
+  - US_1dcf7_0062
+  - US_1dcf7_0063
+  - US_1dcf7_0064
+  - US_1dcf7_0065
+  - US_1dcf7_0066
+  - US_1dcf7_0067
+  - US_1dcf7_0068
+  - US_1dcf7_0069
+  - US_1dcf7_0070
+  - US_1dcf7_0071
+  - US_1dcf7_0072
+  - US_1dcf7_0073
+  - US_1dcf7_0074
+  - US_1dcf7_0075
+  - US_1dcf7_0076
+  - US_1dcf7_0077
+  - US_1dcf7_0078
+  - US_1dcf7_0079
+  - US_1dcf7_0080
+  - US_1dcf7_0081
+  - US_1dcf7_0082
+  - US_1dcf7_0083
+  - US_1dcf7_0084
+  - US_1dcf7_0085
+  - US_1dcf7_0086
+  - US_1dcf7_0087
+  - US_1dcf7_0088
+  - US_1dcf7_0089
+  - US_1dcf7_0090
+  - US_1dcf7_0091
+  - US_1dcf7_0092
+  - US_1dcf7_0093
+  - US_1dcf7_0094
+  - US_1dcf7_0095
+  - US_1dcf7_0096
+  - US_1dcf7_0097
+  - US_1dcf7_0098
+  - US_1dcf7_0099
+  - US_1dcf7_0100
+  - US_1dcf7_0101
+  - US_1dcf7_0102
+  - US_1dcf7_0103
+  - US_1dcf7_0104
+  - US_1dcf7_0105
+  - US_1dcf7_0106
+  - US_1dcf7_0107
+  - US_1dcf7_0108
+  - US_1dcf7_0109
+  - US_1dcf7_0110
+  - US_1dcf7_0111
+  - US_1dcf7_0112
+  - US_1dcf7_0113
+  - US_1dcf7_0114
+  - US_1dcf7_0115
+  - US_1dcf7_0116
+  - US_1dcf7_0117
+  - US_1dcf7_0118
+  - US_1dcf7_0119
+  - US_1dcf7_0120
+  - US_1dcf7_0121
+  - US_1dcf7_0122
+  - US_1dcf7_0123
+  - US_1dcf7_0124
+  - US_1dcf7_0125
+  - US_1dcf7_0126
+  - US_1dcf7_0127
+  - US_1dcf7_0128
+  - US_1dcf7_0129
+  - US_1dcf7_0130
+  - US_1dcf7_0131
+  - US_1dcf7_0132
+  - US_1dcf7_0133
+  - US_1dcf7_0134
+  - US_1dcf7_0135
+  - US_1dcf7_0136
+  - US_1dcf7_0137
+  - US_1dcf7_0138
+  - US_1dcf7_0139
+  - US_1dcf7_0140
+  - US_1dcf7_0141
+  - US_1dcf7_0142
+  - US_1dcf7_0143
+  - US_1dcf7_0144
+  - US_1dcf7_0145
+  - US_1dcf7_0146
+  - US_1dcf7_0147
+  - US_1dcf7_0148
+  - US_1dcf7_0149
+  - US_1dcf7_0150
+  - US_1dcf7_0151
+  - US_1dcf7_0152
+  - US_1dcf7_0153
+  - US_1dcf7_0154
+  - US_1dcf7_0155
+  - US_1dcf7_0156
+  - US_1dcf7_0157
+  - US_1dcf7_0158
+  - US_1dcf7_0159
+  - US_1dcf7_0160
+  - US_1dcf7_0161
+  - US_1dcf7_0162
+  - US_1dcf7_0163
+  - US_1dcf7_0164
+  - US_1dcf7_0165
+  - US_1dcf7_0166
+  - US_1dcf7_0167
+  - US_1dcf7_0168
+  - US_1dcf7_0169
+  - US_1dcf7_0170
+  - US_1dcf7_0171
+  - US_1dcf7_0172
+  - US_1dcf7_0173
+  - US_1dcf7_0174
+  - US_1dcf7_0175
+  - US_1dcf7_0176
+  - US_1dcf7_0177
+  - US_1dcf7_0178
+  - US_1dcf7_0179
+  - US_1dcf7_0180
+  - US_1dcf7_0181
+  - US_1dcf7_0182
+  - US_1dcf7_0183
+  - US_1dcf7_0184
+  - US_1dcf7_0185
+  - US_1dcf7_0186
+  - US_1dcf7_0187
+  - US_1dcf7_0188
+  - US_1dcf7_0189
+  - US_1dcf7_0190
+  - US_1dcf7_0191
+  - US_1dcf7_0192
+  - US_1dcf7_0193
+  - US_1dcf7_0194
+  - US_1dcf7_0195
+  - US_1dcf7_0196
+  - US_1dcf7_0197
+  - US_1dcf7_0198
+  - US_1dcf7_0199
+  - US_1dcf7_0200
+  - US_1dcf7_0201
+  - US_1dcf7_0202
+  - US_1dcf7_0203
+  - US_1dcf7_0204
+  - US_1dcf7_0205
+  - US_1dcf7_0206
+  - US_1dcf7_0207
+  - US_1dcf7_0208
+  - US_1dcf7_0209
+  - US_1dcf7_0210
+  - US_1dcf7_0211
+  - US_1dcf7_0212
+  - US_1dcf7_0213
+  - US_1dcf7_0214
+  - US_1dcf7_0215
+  - US_1dcf7_0216
+  - US_1dcf7_0217
+  - US_1dcf7_0218
+  - US_1dcf7_0219
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
@@ -1215,9 +1160,5 @@ rules:
 - IP-CIDR,100.64.0.0/10,DIRECT
 - IP-CIDR,224.0.0.0/4,DIRECT
 - IP-CIDR6,fe80::/10,DIRECT
-- IP-CIDR,2002::/16,DIRECT
-- IP-CIDR,2001:db8::/32,DIRECT
-- IP-CIDR,2001::/32,DIRECT
-- IP-CIDR,2001:20::/28,DIRECT
 - GEOIP,CN,DIRECT
 - MATCH,⭕ proxinode
