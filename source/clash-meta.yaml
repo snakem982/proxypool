@@ -1,967 +1,624 @@
 port: 7890
-allow-lan: false
 mode: rule
 external-controller: 127.0.0.1:9090
-dns:
-  enabled: true
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  nameserver:
-  - https://doh.pub/dns-query
-  - https://223.5.5.5/dns-query
-  - https://doh.360.cn/dns-query
-  - https://dns.alidns.com/dns-query
-  - 119.29.29.29
-  fallback:
-  - 8.8.8.8
-  - 8.8.4.4
-  - tls://1.0.0.1:853
-  - tls://dns.google:853
 proxies:
-  - {name: AT_73ae7_0001, server: 212.183.88.222, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: AT_73ae7_0002, server: 212.183.88.112, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.oraclg.fxxk.dedyn.io", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: AT_73ae7_0003, server: 212.183.88.134, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.oraclg.fxxk.dedyn.io", headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: AT_73ae7_0004, server: 212.183.88.222, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: AT_73ae7_0005, server: 212.183.88.176, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.oraclg.fxxk.dedyn.io", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: AT_73ae7_0006, server: 212.183.88.186, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: AT_73ae7_0007, server: 212.183.88.186, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: AT_73ae7_0008, server: 212.183.88.83, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: AT_73ae7_0009, server: 212.183.88.242, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: AT_73ae7_0010, server: 212.183.88.242, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: AT_73ae7_0011, server: 212.183.88.242, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: AT_73ae7_0012, server: 212.183.88.242, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: AU_73ae7_0013, server: 103.169.142.121, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: AU_73ae7_0014, server: 103.169.142.121, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2securityfp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: AU_73ae7_0015, server: 103.169.142.121, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2securityfp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: AU_73ae7_0016, server: 103.169.142.121, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: AU_73ae7_0017, server: 103.169.142.38, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: AU_73ae7_0018, server: 103.169.142.38, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: CN_73ae7_0019, server: 110.41.32.204, port: 7890, type: http, client-fingerprint: chrome, skip-cert-verify: true, tls: false, udp: true}
-  - {name: CN_73ae7_0020, server: c2ys.qiyunlink.xyz, port: 47342, type: vmess, network: tcp, tls: false, udp: true, version: 2, servername: "", skip-cert-verify: true, cipher: auto, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0}
-  - {name: CN_73ae7_0021, server: 433c.ens3.buzz, port: 55555, type: ss, alterId: -1, cipher: aes-256-gcm, password: 370a08f3-5953-4b54-a598-31f0a832bdea}
-  - {name: CN_73ae7_0022, server: cn1.cdn.xfltd-cdn.top, port: 12011, type: trojan, password: af46f520-a6a1-4207-b3c4-062493fb71d1, skip-cert-verify: true, sni: cdn.alibaba.com, udp: true}
-  - {name: CN_73ae7_0023, server: c2ys.qiyunlink.xyz, port: 47526, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_73ae7_0024, server: o1sl.qiyunlink.top, port: 35678, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_73ae7_0025, server: c2ys.qiyunlink.xyz, port: 47526, type: vmess, alterId: 0, cipher: auto, network: tcp, skip-cert-verify: true, tls: false, udp: true, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0}
-  - {name: CN_73ae7_0026, server: o1sl.qiyunlink.top, port: 35678, type: vmess, alterId: 0, cipher: auto, network: tcp, skip-cert-verify: true, tls: false, udp: true, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0}
-  - {name: CN_73ae7_0027, server: 47.123.4.164, port: 7890, type: http, alterId: -1, client-fingerprint: chrome, skip-cert-verify: true, tls: false, udp: true}
-  - {name: CN_73ae7_0028, server: pj.shakalaka.xyz, port: 11789, type: ss, alterId: -1, cipher: aes-128-gcm, password: a3c29dd3-d366-4fc2-9efa-ec0c81519b75}
-  - {name: CN_73ae7_0029, server: c2ys.qiyunlink.xyz, port: 46391, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_73ae7_0030, server: c2ys.qiyunlink.xyz, port: 47217, type: vmess, network: tcp, tls: false, udp: true, version: 2, servername: "", skip-cert-verify: true, cipher: auto, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0}
-  - {name: CN_73ae7_0031, server: o1sl.qiyunlink.top, port: 36158, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_73ae7_0032, server: o1sl.qiyunlink.top, port: 36158, type: vmess, alterId: 0, cipher: auto, network: tcp, skip-cert-verify: true, tls: false, udp: true, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0}
-  - {name: CN_73ae7_0033, server: 182.92.216.171, port: 7890, type: http, client-fingerprint: chrome, skip-cert-verify: true, tls: false, udp: true, alterId: -1}
-  - {name: CN_73ae7_0034, server: 183.236.48.166, port: 33288, type: vmess, alterId: 64, cipher: auto, skip-cert-verify: true, tls: false, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-  - {name: CN_73ae7_0035, server: c2ys.qiyunlink.xyz, port: 47217, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CN_73ae7_0036, server: 120.232.153.40, port: 43526, type: vmess, alterId: 64, cipher: auto, skip-cert-verify: true, tls: false, udp: true, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875}
-  - {name: DE_73ae7_0037, server: 45.80.111.38, port: 2096, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, skip-cert-verify: false, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
-  - {name: DE_73ae7_0038, server: 45.80.111.38, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: DE_73ae7_0039, server: 140.99.233.156, port: 2087, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: DE_73ae7_0040, server: 91.107.164.204, port: 443, type: vmess, alpn: [http/1.1], alterId: 0, cipher: auto, client-fingerprint: chrome, network: ws, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, tls: true, udp: true, uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51, ws-opts: {early-data-header-name: Sec-WebSocket-Protocol, headers: {Host: mehrjavan.ir}, max_early_data: 2560, path: /m28jcoZZUhkqg6pk11}}
-  - {name: DE_73ae7_0041, server: 45.80.111.213, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: DE_73ae7_0042, server: 188.244.122.58, port: 443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
-  - {name: DE_73ae7_0043, server: 57.129.24.125, port: 443, type: vmess, alpn: [http/1.1], alterId: 0, cipher: auto, client-fingerprint: chrome, network: ws, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, tls: true, udp: true, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, ws-opts: {headers: {Host: aveiror.com}, path: /linkvws}}
-  - {name: FR_73ae7_0044, server: 158.178.192.221, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?ed=2048", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: FR_73ae7_0045, server: 158.178.192.221, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: FR_73ae7_0046, server: 158.178.192.221, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: FR_73ae7_0047, server: 185.16.110.80, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: FR_73ae7_0048, server: 185.16.110.80, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: FR_73ae7_0049, server: 185.16.110.1, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: FR_73ae7_0050, server: 162.19.228.119, port: 80, type: vless, uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51, tls: false, servername: google.com, network: ws, ws-opts: {path: /http}}
-  - {name: GB_73ae7_0051, server: 91.193.58.119, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: GB_73ae7_0052, server: 94.247.142.245, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
-  - {name: GB_73ae7_0053, server: 94.247.142.245, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: GB_73ae7_0054, server: 94.247.142.245, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: GB_73ae7_0055, server: 94.247.142.245, port: 443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, skip-cert-verify: false, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
-  - {name: GB_73ae7_0056, server: 217.163.76.84, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.oraclg.fxxk.dedyn.io", headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: GB_73ae7_0057, server: 94.247.142.241, port: 443, type: vless, network: ws, uuid: 775213ac-3976-439a-8977-3277c0e4735d, servername: fq521.6789.cloudns.be, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: fq521.6789.cloudns.be}, path: /twitterfreecodessecurity}}
-  - {name: GB_73ae7_0058, server: 194.36.55.198, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed"}}
-  - {name: GB_73ae7_0059, server: 91.193.58.119, port: 2053, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
-  - {name: GB_73ae7_0060, server: 217.163.76.75, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: GB_73ae7_0061, server: 217.163.76.75, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: GB_73ae7_0062, server: 217.163.76.102, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: GB_73ae7_0063, server: 94.247.142.241, port: 443, type: vless, uuid: 775213ac-3976-439a-8977-3277c0e4735d, udp: true, tls: true, skip-cert-verify: false, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: /Twitterfreecodes, headers: {Host: fq521.6789.cloudns.be}}}
-  - {name: GB_73ae7_0064, server: 217.163.76.217, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: GB_73ae7_0065, server: 94.247.142.245, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: GB_73ae7_0066, server: 217.163.76.217, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: GB_73ae7_0067, server: 94.247.142.245, port: 2096, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, skip-cert-verify: false, tls: true, udp: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed"}}
-  - {name: GB_73ae7_0068, server: 94.247.142.245, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: GB_73ae7_0069, server: 217.163.76.102, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: GB_73ae7_0070, server: 94.247.142.245, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: GB_73ae7_0071, server: 217.163.76.217, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: GB_73ae7_0072, server: 34.147.130.63, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: GB_73ae7_0073, server: 34.147.130.63, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0074, server: 59.3.3.161, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, udp: true, ws-opts: {path: "/?ed=2048"}}
-  - {name: KR_73ae7_0075, server: 118.33.22.133, port: 16053, type: vless, udp: true, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, network: ws, tls: true, servername: global2.ccdd.site, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0076, server: 59.3.3.161, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, udp: false, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: "/?ed=2048"}}
-  - {name: KR_73ae7_0077, server: 59.3.3.161, port: 443, type: trojan, client-fingerprint: chrome, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: "/?ed=2048"}}
-  - {name: KR_73ae7_0078, server: 220.126.127.139, port: 10116, type: vless, udp: true, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, network: ws, tls: true, servername: global2.ccdd.site, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0079, server: 118.33.22.133, port: 16053, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0080, server: 59.3.3.161, port: 443, type: trojan, client-fingerprint: chrome, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: /}}
-  - {name: KR_73ae7_0081, server: 59.3.3.161, port: 443, type: trojan, password: CMLiu, sni: aliorg.filegear-sg.me, network: ws, ws-opts: {path: /, headers: {Host: aliorg.filegear-sg.me}}, skip-cert-verify: true}
-  - {name: KR_73ae7_0082, server: 183.98.53.177, port: 10911, type: vless, udp: true, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, network: ws, tls: true, servername: global2.ccdd.site, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0083, server: 211.228.180.147, port: 12273, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0084, server: 59.3.3.161, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: /}, alterId: -1}
-  - {name: KR_73ae7_0085, server: 59.3.3.161, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, udp: true, ws-opts: {path: /}}
-  - {name: KR_73ae7_0086, server: jkrf1.969799.xyz, port: 443, type: trojan, client-fingerprint: chrome, password: 1dfba761-c1e0-422e-98b6-062da56afb53, skip-cert-verify: true, udp: true}
-  - {name: KR_73ae7_0087, server: jkrf1.969799.xyz, port: 443, type: trojan, password: 1dfba761-c1e0-422e-98b6-062da56afb53, skip-cert-verify: true, udp: true}
-  - {name: KR_73ae7_0088, server: jkrf1.969799.xyz, port: 443, type: trojan, client-fingerprint: chrome, password: 1dfba761-c1e0-422e-98b6-062da56afb53, skip-cert-verify: true, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, udp: true}
-  - {name: KR_73ae7_0089, server: 59.29.116.20, port: 11965, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0090, server: 61.81.181.169, port: 14985, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0091, server: 59.3.3.161, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: KR_73ae7_0092, server: 59.3.3.161, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: KR_73ae7_0093, server: 61.81.181.169, port: 14985, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0094, server: 119.203.125.236, port: 30001, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0095, server: 211.228.180.147, port: 12273, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0096, server: 61.81.181.169, port: 14985, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0097, server: 61.81.181.169, port: 14985, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0098, server: 220.126.127.139, port: 10116, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0099, server: 61.81.181.169, port: 14985, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0100, server: 183.98.53.177, port: 10911, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0101, server: 61.81.181.169, port: 14985, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0102, server: 61.81.181.169, port: 14985, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0103, server: 59.29.116.20, port: 11965, type: vless, udp: true, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, network: ws, tls: true, servername: global2.ccdd.site, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
-  - {name: KR_73ae7_0104, server: 61.81.181.169, port: 14985, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0105, server: 152.67.212.141, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0106, server: 152.67.212.141, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: KR_73ae7_0107, server: 14.54.222.65, port: 30001, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0108, server: 152.67.212.141, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0109, server: 116.47.10.236, port: 21302, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0110, server: 116.47.10.236, port: 21302, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: KR_73ae7_0111, server: 152.67.212.141, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: RU_73ae7_0112, server: 31.129.49.103, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: RU_73ae7_0113, server: 188.42.145.159, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: RU_73ae7_0114, server: 188.42.145.159, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: RU_73ae7_0115, server: 45.67.215.42, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: RU_73ae7_0116, server: 185.176.24.140, port: 2087, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: RU_73ae7_0117, server: 185.176.24.113, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: RU_73ae7_0118, server: 45.142.120.4, port: 2096, type: trojan, password: bpb-trojan, sni: 403B3611-99bC-43b7-88D7-26ed5d0825A9-3.PageS.DEV, network: ws, ws-opts: {path: "/troUbg9Q3QgD0TJRfy?ed=2560", headers: {Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev}}, skip-cert-verify: true, udp: false}
-  - {name: RU_73ae7_0119, server: 193.9.49.114, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: RU_73ae7_0120, server: 185.109.21.19, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0121, server: 188.42.145.159, port: 443, type: vless, udp: true, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d, network: ws, tls: true, servername: VIrgiNiavPn-nL.pagEs.dEv, ws-opts: {path: /security, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}}
-  - {name: RU_73ae7_0122, server: 45.67.215.144, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: RU_73ae7_0123, server: 185.59.218.139, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0124, server: 45.67.215.99, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.oraclg.fxxk.dedyn.io", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: RU_73ae7_0125, server: 45.67.215.144, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: RU_73ae7_0126, server: 45.67.215.172, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: RU_73ae7_0127, server: 45.67.215.161, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: RU_73ae7_0128, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: RU_73ae7_0129, server: 45.67.215.161, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: RU_73ae7_0130, server: 45.67.215.154, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: RU_73ae7_0131, server: 185.176.24.186, port: 443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
-  - {name: RU_73ae7_0132, server: 188.42.145.90, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed"}}
-  - {name: RU_73ae7_0133, server: 188.42.145.178, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0134, server: 193.9.49.80, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp=chromefp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0135, server: 188.42.145.178, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0136, server: 188.42.145.140, port: 443, type: vless, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome", headers: {Host: g1.youyuan.us.kg}}}
-  - {name: RU_73ae7_0137, server: 45.67.215.42, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: RU_73ae7_0138, server: 188.42.145.140, port: 443, type: vless, network: ws, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, servername: g1.youyuan.us.kg, tls: true, client-fingerprint: chrome, packet-encoding: "", ws-opts: {headers: {Host: g1.youyuan.us.kg}, path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome"}}
-  - {name: RU_73ae7_0139, server: 45.67.215.167, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: RU_73ae7_0140, server: 185.176.24.113, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0141, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0142, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0143, server: 45.67.215.19, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: RU_73ae7_0144, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0145, server: 185.59.218.144, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0146, server: 188.42.145.178, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: RU_73ae7_0147, server: 188.42.145.178, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0148, server: 185.176.24.15, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: RU_73ae7_0149, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: RU_73ae7_0150, server: 185.59.218.158, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0151, server: 185.176.24.15, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0152, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chromefp=chromefp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: RU_73ae7_0153, server: 193.9.49.114, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: RU_73ae7_0154, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chromefp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: RU_73ae7_0155, server: 185.148.107.62, port: 443, type: vless, network: ws, tls: true, udp: true, servername: juzibaipiao.5112233.xyz, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f}
-  - {name: RU_73ae7_0156, server: 188.42.145.140, port: 443, type: vless, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome", headers: {Host: g1.youyuan.us.kg}}}
-  - {name: RU_73ae7_0157, server: 185.148.107.62, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: SG_73ae7_0158, server: 206.238.236.129, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0159, server: 206.238.236.116, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0160, server: 206.238.236.120, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0161, server: 206.238.236.120, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0162, server: 206.238.236.184, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0163, server: 206.238.237.99, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0164, server: 206.238.236.83, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0165, server: 206.238.237.98, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0166, server: 206.238.237.192, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0167, server: 206.238.236.143, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0168, server: 206.238.237.98, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0169, server: 206.238.236.184, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: SG_73ae7_0170, server: 206.238.236.184, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=lg.kpcloud.eu.org", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: SG_73ae7_0171, server: 206.238.237.88, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.sg.fxxk.dedyn.io", headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: SG_73ae7_0172, server: 206.238.236.130, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.kpcloud.eu.org", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: SG_73ae7_0173, server: 206.238.236.184, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: SG_73ae7_0174, server: 206.238.236.184, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.kpcloud.eu.org", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0175, server: 185.148.105.225, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, packet-encoding: "", ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
-  - {name: US_73ae7_0176, server: 216.116.134.43, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
-  - {name: US_73ae7_0177, server: 198.62.62.78, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0178, server: 45.159.219.23, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_73ae7_0179, server: 69.84.182.178, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0180, server: 198.62.62.1, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0181, server: 199.181.197.143, port: 443, type: trojan, password: bpb-trojan, sni: 403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trAun92tJzhYilmLtq?ed=2560", headers: {Host: 403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV}}, udp: true}
-  - {name: US_73ae7_0182, server: 198.62.62.27, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0183, server: 198.62.62.91, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0184, server: 14.102.229.66, port: 2087, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
-  - {name: US_73ae7_0185, server: 170.39.66.155, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0186, server: 69.84.182.32, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0187, server: 69.84.182.192, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0188, server: 69.84.182.70, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0189, server: 198.62.62.127, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0190, server: 198.62.62.245, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0191, server: 198.62.62.165, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0192, server: 167.68.11.106, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_73ae7_0193, server: 198.62.62.52, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0194, server: 69.84.182.88, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0195, server: 69.84.182.97, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0196, server: 63.141.128.100, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0197, server: 69.84.182.30, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0198, server: 69.84.182.187, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0199, server: 160.79.105.233, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0200, server: 69.84.182.141, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0201, server: 69.84.182.127, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0202, server: 69.84.182.127, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0203, server: 69.84.182.52, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0204, server: 192.0.63.40, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0205, server: 198.62.62.44, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0206, server: 69.84.182.15, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0207, server: 198.62.62.91, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0208, server: 198.62.62.22, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0209, server: 198.62.62.28, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0210, server: 69.84.182.29, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0211, server: 69.84.182.251, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0212, server: 198.62.62.220, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0213, server: 69.84.182.200, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0214, server: 69.84.182.115, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0215, server: 69.84.182.101, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.us.fxxk.dedyn.io", headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0216, server: 69.84.182.86, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0217, server: 69.84.182.232, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0218, server: 192.0.54.33, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0219, server: 69.84.182.165, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0220, server: 160.79.105.233, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0221, server: 198.62.62.252, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0222, server: 198.62.62.166, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0223, server: 198.62.62.9, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0224, server: 198.62.62.48, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0225, server: 198.62.62.227, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0226, server: 69.84.182.163, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0227, server: 69.84.182.178, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0228, server: 198.62.62.183, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0229, server: 198.62.62.156, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0230, server: 216.24.57.24, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0231, server: 198.62.62.211, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0232, server: 198.62.62.174, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0233, server: 69.84.182.33, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0234, server: 198.62.62.128, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0235, server: 69.84.182.138, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0236, server: 198.62.62.12, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0237, server: 198.62.62.102, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0238, server: 198.62.62.39, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0239, server: 69.84.182.58, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0240, server: 43.153.103.203, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0241, server: 38.91.100.228, port: 443, type: vmess, alpn: [http/1.1], alterId: 0, cipher: auto, client-fingerprint: chrome, network: ws, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, tls: true, udp: true, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, ws-opts: {headers: {Host: sareikela.com}, path: /linkvws}}
-  - {name: US_73ae7_0242, server: 69.84.182.116, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylks.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylks.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0243, server: 69.84.182.163, port: 443, type: vless, network: ws, tls: true, udp: true, servername: lg.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lg.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0244, server: 69.84.182.247, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0245, server: 216.221.213.220, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0246, server: 192.0.63.188, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0247, server: 198.62.62.140, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0248, server: 198.62.62.176, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.us.fxxk.dedyn.io", headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0249, server: 69.84.182.44, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0250, server: 69.84.182.78, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0251, server: 69.84.182.84, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0252, server: 192.0.63.188, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0253, server: 69.84.182.186, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0254, server: 198.62.62.241, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0255, server: 198.62.62.14, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0256, server: 198.62.62.111, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0257, server: 198.62.62.185, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0258, server: 69.84.182.75, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0259, server: 69.84.182.186, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0260, server: 173.249.197.84, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0261, server: 198.62.62.217, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0262, server: 198.62.62.223, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0263, server: 160.79.105.217, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.kpcloud.eu.org", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0264, server: 69.84.182.200, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0265, server: 69.84.182.234, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.us.fxxk.dedyn.io", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0266, server: 198.62.62.9, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0267, server: 160.79.105.153, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0268, server: 160.79.104.1, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0269, server: 69.84.182.38, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0270, server: 69.84.182.172, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0271, server: 69.84.182.88, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0272, server: 69.84.182.145, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0273, server: 198.62.62.92, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0274, server: 69.84.182.145, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0275, server: 160.79.105.4, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.kpcloud.eu.org", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0276, server: 198.62.62.84, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0277, server: 198.62.62.241, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0278, server: 198.62.62.131, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0279, server: 198.62.62.113, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0280, server: 198.62.62.84, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0281, server: 198.62.62.227, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0282, server: 198.62.62.92, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0283, server: 198.62.62.220, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0284, server: 167.68.11.253, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_73ae7_0285, server: 167.68.11.253, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_73ae7_0286, server: 167.68.11.191, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_73ae7_0287, server: 198.62.62.59, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/?proxyip=proxyip.us.fxxk.dedyn.io", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0288, server: 167.68.11.95, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_73ae7_0289, server: 69.84.182.26, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0290, server: 155.46.213.9, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: US_73ae7_0291, server: 167.68.11.253, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: US_73ae7_0292, server: 160.79.105.14, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0293, server: 160.79.105.14, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: US_73ae7_0294, server: 66.81.247.16, port: 443, type: vless, network: ws, tls: true, udp: true, servername: toujiediansigema.5112233.xyz, ws-opts: {path: /tg@juzibaipiao偷节点死吗, headers: {Host: toujiediansigema.5112233.xyz}}, uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87}
-  - {name: US_73ae7_0295, server: 167.68.11.106, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
-  - {name: US_73ae7_0296, server: 167.68.11.106, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
-  - {name: US_73ae7_0297, server: 160.79.105.4, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_73ae7_0298, server: 34.123.83.237, port: 443, type: vless, network: ws, tls: true, udp: true, servername: dg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: dg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0299, server: 160.123.255.98, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0300, server: 160.123.255.93, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: ZA_73ae7_0301, server: 160.123.255.98, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0302, server: 160.123.255.98, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0303, server: 160.123.255.159, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0304, server: 160.123.255.98, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0305, server: 160.123.255.93, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: ZA_73ae7_0306, server: 160.123.255.232, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.ylks01.eu.org", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0307, server: 160.123.255.159, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /freecodes, headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0308, server: 160.123.255.251, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: ZA_73ae7_0309, server: 160.123.255.207, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: /blue, headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: ZA_73ae7_0310, server: 160.123.255.134, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cg.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=dg.ylks.xyz", headers: {Host: cg.ylks.xyz}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: ZA_73ae7_0311, server: 160.123.255.134, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/freecodeshttps://vless.fxxk.dedyn.io/sub?host=lg.kpcloud.eu.org", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
-  - {name: ZA_73ae7_0312, server: 160.123.255.134, port: 443, type: vless, network: ws, tls: true, udp: true, servername: ag.ylks.xyz, skip-cert-verify: true, ws-opts: {path: "/bluehttps://vless.fxxk.dedyn.io/sub?host=lg.kpcloud.eu.org", headers: {Host: ag.ylks.xyz}}, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869}
+  - {name: CN_6499b_0001, server: i.needss.top, port: 24771, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0002, server: gy.666666222.shop, port: 34338, type: ss, cipher: chacha20-ietf-poly1305, password: 9a3e584f-cd02-4f0c-b1e8-8c83d1cf4708}
+  - {name: CN_6499b_0003, server: gy.666666222.shop, port: 34338, type: ss, cipher: chacha20-ietf-poly1305, password: f6591bbc-39a1-42d4-9adb-edda05b41f29}
+  - {name: CN_6499b_0004, server: gy.666666222.shop, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: f6591bbc-39a1-42d4-9adb-edda05b41f29}
+  - {name: CN_6499b_0005, server: gy.666666222.shop, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: b333b43b-159b-448c-bc4c-e0f39ad8dcfd}
+  - {name: CN_6499b_0006, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: 9aa31e80-18b0-4e2a-ac43-c96c2c063364}
+  - {name: CN_6499b_0007, server: gy.666666222.shop, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: 8b8c9f6f-b836-4b56-9531-cae0391bc3dd}
+  - {name: CN_6499b_0008, server: gy.666666222.shop, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: 9a3e584f-cd02-4f0c-b1e8-8c83d1cf4708}
+  - {name: CN_6499b_0009, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: bf948295-7fb0-4464-bdab-1002e6065da2}
+  - {name: CN_6499b_0010, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: b411d3a2-8449-46bd-95dd-bcb91ffdfb83}
+  - {name: CN_6499b_0011, server: gy.666666222.shop, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: 460d98de-593c-4188-aa47-b665f665e653}
+  - {name: CN_6499b_0012, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: f50c8f08-a30e-4ce1-8970-be68e9cf5c77}
+  - {name: CN_6499b_0013, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: 1ac08ce5-7ed7-4e61-ae0e-3fd4febd3282}
+  - {name: CN_6499b_0014, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: ceff5aaf-04bd-4ae6-b5ad-92cce0f9f32f}
+  - {name: CN_6499b_0015, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: b2bfc14c-f7b9-45b9-8f7f-33bb372f78f6}
+  - {name: CN_6499b_0016, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: b2bbffed-1fd6-410d-beb8-ee2a12e99e24}
+  - {name: CN_6499b_0017, server: tw.zh779527.com, port: 57005, type: ss, cipher: chacha20-ietf-poly1305, password: 6326322a-8e28-46d8-8b6d-b736de54f172}
+  - {name: CN_6499b_0018, server: i.needss.top, port: 20016, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0019, server: o1sl.qiyunlink.top, port: 47849, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0020, server: i.needss.top, port: 20017, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0021, server: 95b1cd85a0968ff2.cdn.jiashule.com, port: 40251, type: ssr, alterId: -1, cipher: rc4-md5, client-fingerprint: chrome, obfs: plain, obfs-param: cd5ed74592.6602b8463464108506.microsoft.com, password: ENZ52K, protocol: auth_aes128_md5, protocol-param: 74592:o4fbeopsgcf, udp: true}
+  - {name: CN_6499b_0022, server: 28b09af269781f9b.cdn.jiashule.com, port: 40239, type: ssr, alterId: -1, cipher: rc4-md5, client-fingerprint: chrome, obfs: plain, obfs-param: 8195986416.6602b8463464108506.microsoft.com, password: ENZ52K, protocol: auth_aes128_md5, protocol-param: 86416:SlZFuy, udp: true}
+  - {name: CN_6499b_0023, server: i.needss.top, port: 20014, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0024, server: i.needss.top, port: 20019, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0025, server: i.needss.top, port: 44412, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0026, server: i.needss.top, port: 20021, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0027, server: dahuwh.sfrae.net, port: 12897, type: ss, cipher: aes-256-gcm, password: fade2b35-7872-442e-a54e-6ccf9b970476}
+  - {name: CN_6499b_0028, server: i.needss.top, port: 33320, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0029, server: kr.zh779527.com, port: 57007, type: ss, cipher: chacha20-ietf-poly1305, password: f50c8f08-a30e-4ce1-8970-be68e9cf5c77}
+  - {name: CN_6499b_0030, server: i.needss.top, port: 15442, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0031, server: kr.zh779527.com, port: 57007, type: ss, cipher: chacha20-ietf-poly1305, password: 9aa31e80-18b0-4e2a-ac43-c96c2c063364}
+  - {name: CN_6499b_0032, server: kr.zh779527.com, port: 57007, type: ss, cipher: chacha20-ietf-poly1305, password: ceff5aaf-04bd-4ae6-b5ad-92cce0f9f32f}
+  - {name: CN_6499b_0033, server: c2ys.qiyunlink.xyz, port: 47526, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0034, server: kr.zh779527.com, port: 57007, type: ss, cipher: chacha20-ietf-poly1305, password: 1ac08ce5-7ed7-4e61-ae0e-3fd4febd3282}
+  - {name: CN_6499b_0035, server: kr.zh779527.com, port: 57007, type: ss, cipher: chacha20-ietf-poly1305, password: b2bbffed-1fd6-410d-beb8-ee2a12e99e24}
+  - {name: CN_6499b_0036, server: kr.zh779527.com, port: 57007, type: ss, cipher: chacha20-ietf-poly1305, password: b2bfc14c-f7b9-45b9-8f7f-33bb372f78f6}
+  - {name: CN_6499b_0037, server: c2ys.qiyunlink.xyz, port: 35612, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0038, server: o1sl.qiyunlink.top, port: 35678, type: vmess, alterId: 0, cipher: auto, network: tcp, skip-cert-verify: true, tls: false, udp: true, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0}
+  - {name: CN_6499b_0039, server: kr.zh779527.com, port: 57007, type: ss, cipher: chacha20-ietf-poly1305, password: bf948295-7fb0-4464-bdab-1002e6065da2}
+  - {name: CN_6499b_0040, server: c2ys.qiyunlink.xyz, port: 47756, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0041, server: o1sl.qiyunlink.top, port: 35678, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0042, server: o1sl.qiyunlink.top, port: 46728, type: vmess, uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0043, server: 28b09af269781f9b.cdn.jiashule.com, port: 40236, type: ssr, alterId: -1, cipher: rc4-md5, client-fingerprint: chrome, obfs: plain, obfs-param: 8195986416.6602b8463464108506.microsoft.com, password: ENZ52K, protocol: auth_aes128_md5, protocol-param: 86416:SlZFuy, udp: true}
+  - {name: CN_6499b_0044, server: 95b1cd85a0968ff2.cdn.jiashule.com, port: 41227, type: ssr, cipher: rc4-md5, obfs: plain, obfs-param: cd5ed74592.6602b8463464108506.microsoft.com, password: ENZ52K, protocol: auth_aes128_md5, protocol-param: 74592:o4fbeopsgcf}
+  - {name: CN_6499b_0045, server: curcoyn.sfrae.net, port: 44243, type: ss, cipher: aes-256-gcm, password: fade2b35-7872-442e-a54e-6ccf9b970476}
+  - {name: CN_6499b_0046, server: in06.my1188.org, port: 64016, type: vmess, alterId: 0, cipher: auto, network: tcp, servername: us01.wechat-cdn-us01.one, skip-cert-verify: true, uuid: fe0346d9-a972-3d8a-bac7-310604fa108f, ws-opts: {path: /}}
+  - {name: CN_6499b_0047, server: hz.sfrae.net, port: 44201, type: ss, cipher: aes-256-gcm, password: fade2b35-7872-442e-a54e-6ccf9b970476}
+  - {name: CN_6499b_0048, server: kr.zh779527.com, port: 57007, type: ss, cipher: chacha20-ietf-poly1305, password: 6326322a-8e28-46d8-8b6d-b736de54f172}
+  - {name: CN_6499b_0049, server: hz.sfrae.net, port: 44204, type: ss, cipher: aes-256-gcm, password: fade2b35-7872-442e-a54e-6ccf9b970476}
+  - {name: CN_6499b_0050, server: i.needss.top, port: 21111, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0051, server: 183.236.48.166, port: 33288, type: vmess, alterId: 64, cipher: auto, skip-cert-verify: true, tls: false, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+  - {name: CN_6499b_0052, server: shanghai.sfrae.net, port: 13255, type: ss, cipher: aes-256-gcm, password: fade2b35-7872-442e-a54e-6ccf9b970476}
+  - {name: CN_6499b_0053, server: i.needss.top, port: 20011, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0054, server: i.needss.top, port: 31001, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0055, server: i.needss.top, port: 30024, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0056, server: gy.666666222.shop, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: 9a3e584f-cd02-4f0c-b1e8-8c83d1cf4708}
+  - {name: CN_6499b_0057, server: gy.666666222.shop, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: 8b8c9f6f-b836-4b56-9531-cae0391bc3dd}
+  - {name: CN_6499b_0058, server: gy.666666222.shop, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: b333b43b-159b-448c-bc4c-e0f39ad8dcfd}
+  - {name: CN_6499b_0059, server: gy.666666222.shop, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: 9a3e584f-cd02-4f0c-b1e8-8c83d1cf4708}
+  - {name: CN_6499b_0060, server: gy.666666222.shop, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: 460d98de-593c-4188-aa47-b665f665e653}
+  - {name: CN_6499b_0061, server: gy.666666222.shop, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: f6591bbc-39a1-42d4-9adb-edda05b41f29}
+  - {name: CN_6499b_0062, server: gy.666666222.shop, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: b333b43b-159b-448c-bc4c-e0f39ad8dcfd}
+  - {name: CN_6499b_0063, server: gy.666666222.shop, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: f6591bbc-39a1-42d4-9adb-edda05b41f29}
+  - {name: CN_6499b_0064, server: gy.666666222.shop, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: 8b8c9f6f-b836-4b56-9531-cae0391bc3dd}
+  - {name: CN_6499b_0065, server: gy.666666222.shop, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: 460d98de-593c-4188-aa47-b665f665e653}
+  - {name: CN_6499b_0066, server: aly.needss.top, port: 20012, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0067, server: i.needss.top, port: 44410, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0068, server: aly.needss.top, port: 54774, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0069, server: aly.needss.top, port: 54782, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0070, server: aly.needss.top, port: 52108, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_6499b_0071, server: hz.sfrae.net, port: 44211, type: ss, cipher: aes-256-gcm, password: fade2b35-7872-442e-a54e-6ccf9b970476}
+  - {name: CN_6499b_0072, server: i.needss.top, port: 54770, type: vmess, uuid: 6ebbdbee-527d-4b3d-accf-28288ae27504, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: DE_6499b_0073, server: 188.244.122.109, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /Twitterfreecodestg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: DE_6499b_0074, server: 45.80.111.38, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: DE_6499b_0075, server: 45.80.111.38, port: 2096, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, skip-cert-verify: false, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: DE_6499b_0076, server: 140.99.233.156, port: 2087, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: DE_6499b_0077, server: 45.80.111.213, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: DE_6499b_0078, server: 188.244.122.58, port: 443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
+  - {name: GB_6499b_0079, server: 91.193.58.119, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_6499b_0080, server: 94.247.142.245, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_6499b_0081, server: 94.247.142.245, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: GB_6499b_0082, server: 94.247.142.245, port: 443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, skip-cert-verify: false, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: GB_6499b_0083, server: 217.163.76.75, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: GB_6499b_0084, server: 94.247.142.241, port: 443, type: vless, uuid: 775213ac-3976-439a-8977-3277c0e4735d, udp: true, tls: true, skip-cert-verify: false, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: /Twitterfreecodes, headers: {Host: fq521.6789.cloudns.be}}}
+  - {name: GB_6499b_0085, server: 91.193.58.119, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_6499b_0086, server: 194.36.55.198, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed"}}
+  - {name: GB_6499b_0087, server: 91.193.58.119, port: 2053, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
+  - {name: GB_6499b_0088, server: 94.247.142.245, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_6499b_0089, server: 217.163.76.75, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: GB_6499b_0090, server: 94.247.142.241, port: 443, type: vless, network: ws, uuid: 775213ac-3976-439a-8977-3277c0e4735d, servername: fq521.6789.cloudns.be, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: fq521.6789.cloudns.be}, path: /twitterfreecodessecurity}}
+  - {name: GB_6499b_0091, server: 94.247.142.245, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_6499b_0092, server: 94.247.142.245, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_6499b_0093, server: 94.247.142.245, port: 2096, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, skip-cert-verify: false, tls: true, udp: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed"}}
+  - {name: HK_6499b_0094, server: 4320b8f895e9615dce9230ae5b3b25b7.v1.cac.node-is.green, port: 48640, type: trojan, password: 7bd8bd80-0be5-4299-8a2c-8fafd4c247df, sni: hk12.speedtest.net, skip-cert-verify: true, udp: false}
+  - {name: HK_6499b_0095, server: f0664c044a80cd6079f58a6f1b375108.v1.cac.node-is.green, port: 45245, type: trojan, password: 7bd8bd80-0be5-4299-8a2c-8fafd4c247df, sni: tw1.speedtest.net, skip-cert-verify: true, udp: false}
+  - {name: KR_6499b_0096, server: 211.196.226.172, port: 32202, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_6499b_0097, server: 118.33.22.133, port: 16053, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_6499b_0098, server: 121.182.55.77, port: 30063, type: vless, udp: true, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, network: ws, tls: true, servername: global2.ccdd.site, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_6499b_0099, server: 119.203.125.236, port: 30001, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_6499b_0100, server: 183.98.53.177, port: 10911, type: vless, udp: true, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, network: ws, tls: true, servername: global2.ccdd.site, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_6499b_0101, server: 119.203.125.236, port: 30001, type: vless, udp: true, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, network: ws, tls: true, servername: global2.ccdd.site, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: KR_6499b_0102, server: cc112.12123.org, port: 30004, type: vmess, uuid: 3e882c35-684a-4963-ab63-6353fb3de6e4, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0103, server: cc112.12123.org, port: 30004, type: vmess, uuid: 70069d8d-74b5-4f1f-8147-2a54f6d90fd7, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0104, server: cc112.12123.org, port: 30004, type: vmess, uuid: 6fe4a8a3-9e6c-4a3e-8768-fd6a6708f460, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0105, server: cc112.12123.org, port: 30004, type: vmess, uuid: 6fe5e74e-762a-435e-8485-609369a7cb8a, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0106, server: cc112.12123.org, port: 30004, type: vmess, uuid: 5197c6dd-e796-4031-985e-7b354aff0956, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0107, server: cc112.12123.org, port: 30004, type: vmess, uuid: d9d94c56-f6e0-4c9b-b79d-9346dab840ad, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0108, server: cc112.12123.org, port: 30004, type: vmess, uuid: 029987e2-fbad-410a-a4ba-03f3f88e4579, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0109, server: cc112.12123.org, port: 30004, type: vmess, uuid: ae201dce-a32e-4bbc-967e-317ef402fdca, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0110, server: cc112.12123.org, port: 30004, type: vmess, uuid: 9c2daf3a-cb17-4fb2-8703-90dca44b709e, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0111, server: cc112.12123.org, port: 30004, type: vmess, uuid: 778687de-4068-4ae3-bda2-298e1da0fee6, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0112, server: cc112.12123.org, port: 30004, type: vmess, uuid: 4ec4ac49-b0d4-4f9e-8161-c1c9389a3589, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0113, server: cc112.12123.org, port: 30004, type: vmess, uuid: 5a834cda-e7a2-42f0-b3de-6a59281943bf, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0114, server: cc112.12123.org, port: 30004, type: vmess, uuid: 0e8a4ec6-66c1-45c0-a51a-cd51a35f2a11, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0115, server: cc112.12123.org, port: 30004, type: vmess, uuid: 3e84f2bf-5ab9-475e-9cb2-faf99ad878b1, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: KR_6499b_0116, server: cc112.12123.org, port: 30004, type: vmess, uuid: 3ca92307-4f10-44fc-9d36-6981a96ba2b8, alterId: 0, cipher: auto, udp: true, tls: true, servername: cc112.12123.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc112.12123.org}}}
+  - {name: RU_6499b_0117, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0118, server: 188.42.145.178, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0119, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0120, server: 188.42.145.178, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0121, server: 185.176.24.140, port: 2087, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_6499b_0122, server: 188.42.145.178, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0123, server: 185.176.24.113, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: RU_6499b_0124, server: 185.59.218.144, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0125, server: 185.176.24.113, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0126, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_6499b_0127, server: 185.59.218.158, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0128, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chromefp=chromefp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_6499b_0129, server: 193.9.49.114, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0130, server: 188.42.145.159, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_6499b_0131, server: 185.176.24.15, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: RU_6499b_0132, server: 188.42.145.159, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_6499b_0133, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chromefp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_6499b_0134, server: 188.42.145.140, port: 443, type: vless, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome", headers: {Host: g1.youyuan.us.kg}}}
+  - {name: RU_6499b_0135, server: 185.176.24.15, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0136, server: 193.9.49.114, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: RU_6499b_0137, server: 185.176.24.113, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0138, server: 188.42.145.140, port: 443, type: vless, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome", headers: {Host: g1.youyuan.us.kg}}}
+  - {name: RU_6499b_0139, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_6499b_0140, server: 188.42.145.226, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0141, server: 188.42.145.178, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: RU_6499b_0142, server: 45.142.120.4, port: 2096, type: trojan, password: bpb-trojan, sni: 403B3611-99bC-43b7-88D7-26ed5d0825A9-3.PageS.DEV, network: ws, ws-opts: {path: "/troUbg9Q3QgD0TJRfy?ed=2560", headers: {Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev}}, skip-cert-verify: true, udp: false}
+  - {name: RU_6499b_0143, server: 188.42.145.159, port: 443, type: vless, udp: true, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d, network: ws, tls: true, servername: VIrgiNiavPn-nL.pagEs.dEv, ws-opts: {path: /security, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}}
+  - {name: RU_6499b_0144, server: 185.109.21.19, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0145, server: 185.176.24.186, port: 443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
+  - {name: RU_6499b_0146, server: 185.59.218.139, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0147, server: 193.9.49.80, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp=chromefp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_6499b_0148, server: 188.42.145.90, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed"}}
+  - {name: RU_6499b_0149, server: 188.42.145.140, port: 443, type: vless, network: ws, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, servername: g1.youyuan.us.kg, tls: true, client-fingerprint: chrome, packet-encoding: "", ws-opts: {headers: {Host: g1.youyuan.us.kg}, path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome"}}
+  - {name: US_6499b_0150, server: 185.148.107.62, port: 443, type: vless, network: ws, tls: true, udp: true, servername: juzibaipiao.5112233.xyz, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f}
+  - {name: US_6499b_0151, server: 185.148.107.62, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0152, server: 103.136.185.27, port: 5524, type: trojan, password: 654bcb09-da51-381b-aa1e-2edf0abef336, sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM, skip-cert-verify: true, udp: true}
+  - {name: US_6499b_0153, server: 103.136.185.28, port: 3507, type: trojan, password: 654bcb09-da51-381b-aa1e-2edf0abef336, sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM, skip-cert-verify: true, udp: true}
+  - {name: US_6499b_0154, server: 216.116.134.43, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0155, server: 45.159.218.162, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, packet-encoding: "", ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: US_6499b_0156, server: 185.148.105.225, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0157, server: 45.159.218.162, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0158, server: 216.205.52.109, port: 2083, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0159, server: 185.148.105.225, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, packet-encoding: "", ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: US_6499b_0160, server: 45.159.219.23, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0161, server: 167.68.11.253, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0162, server: 167.68.11.95, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chromefp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0163, server: 167.68.11.253, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0164, server: 66.81.247.16, port: 443, type: vless, uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87, udp: true, tls: true, skip-cert-verify: false, servername: toujiediansigema.5112233.xyz, network: ws, ws-opts: {path: /tg@juzibaipiao偷节点死吗, headers: {Host: toujiediansigema.5112233.xyz}}}
+  - {name: US_6499b_0165, server: 159.112.235.14, port: 8443, type: vless, client-fingerprint: chrome, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0166, server: 167.68.11.95, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0167, server: 167.68.11.253, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0168, server: 167.68.11.106, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0169, server: 205.233.181.242, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: US_6499b_0170, server: 43.153.80.208, port: 443, type: trojan, alterId: -1, network: ws, password: CMLiu, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: /}, skip-cert-verify: true}
+  - {name: US_6499b_0171, server: 216.116.134.43, port: 2053, type: vless, udp: true, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, network: ws, tls: true, servername: juzibaipiao.5112233.xyz, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0172, server: 66.81.247.16, port: 443, type: vless, network: ws, tls: true, udp: true, servername: toujiediansigema.5112233.xyz, ws-opts: {path: /tg@juzibaipiao偷节点死吗, headers: {Host: toujiediansigema.5112233.xyz}}, uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87}
+  - {name: US_6499b_0173, server: 216.205.52.109, port: 2083, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: US_6499b_0174, server: 185.148.106.134, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0175, server: 155.46.213.9, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0176, server: 167.68.11.106, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0177, server: 155.46.213.9, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: US_6499b_0178, server: 45.159.218.7, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /twitterfreecodestg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0179, server: 167.68.11.106, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0180, server: 170.114.45.25, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0181, server: 167.68.11.191, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0182, server: 45.59.184.16, port: 38908, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, udp: true, tls: true, skip-cert-verify: false, servername: global2.ccdd.site, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}}
+  - {name: US_6499b_0183, server: 167.68.11.106, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: US_6499b_0184, server: 130.250.137.196, port: 2053, type: vless, udp: true, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, network: ws, tls: true, servername: juzibaipiao.5112233.xyz, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0185, server: 167.68.11.253, port: 443, type: vless, network: ws, tls: true, udp: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp, headers: {Host: cfed.tgzdyz2.top}}, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5}
+  - {name: US_6499b_0186, server: 43.153.103.203, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: "/?ed=2048"}}
+  - {name: US_6499b_0187, server: 14.102.229.66, port: 2087, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: randomized, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: /security=tls, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0188, server: 155.46.213.32, port: 443, type: vless, udp: true, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0189, server: 43.153.80.208, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, udp: true, ws-opts: {path: "/?ed=2048"}}
+  - {name: US_6499b_0190, server: 185.148.106.134, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_6499b_0191, server: 38.75.137.21, port: 443, type: vmess, alpn: [http/1.1], alterId: 0, cipher: auto, client-fingerprint: chrome, network: ws, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, tls: true, udp: true, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, ws-opts: {headers: {Host: harriscity.com}, path: /linkvws}}
+  - {name: US_6499b_0192, server: 14.102.229.66, port: 2087, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: /}}
+  - {name: US_6499b_0193, server: 159.112.235.18, port: 443, type: trojan, alterId: -1, client-fingerprint: randomized, network: ws, password: bpb-trojan, skip-cert-verify: true, sni: 403B3611-99Bc-43b7-88D7-26ED5d0825A9-3.pAges.DEV, ws-opts: {headers: {Host: 403B3611-99Bc-43b7-88D7-26ED5d0825A9-3.pAges.DEV}, path: "/trxmIMD7V6laxACV9c?ed=2560"}}
+  - {name: US_6499b_0195, server: 43.153.80.208, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: "/?ed=2048"}, udp: true}
+  - {name: US_6499b_0196, server: 43.153.80.208, port: 443, type: trojan, client-fingerprint: chrome, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: /}}
+  - {name: US_6499b_0197, server: 43.153.80.208, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: /%2F}}
+  - {name: US_6499b_0198, server: 199.181.197.143, port: 443, type: trojan, password: bpb-trojan, sni: 403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trAun92tJzhYilmLtq?ed=2560", headers: {Host: 403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV}}, udp: true}
+  - {name: US_6499b_0199, server: 43.153.80.208, port: 443, type: trojan, client-fingerprint: chrome, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: "/?ed=2048"}}
+  - {name: US_6499b_0200, server: 14.102.228.210, port: 2096, type: vless, udp: true, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, network: ws, tls: true, servername: juzibaipiao.5112233.xyz, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_6499b_0201, server: 38.91.106.227, port: 443, type: vmess, alpn: [http/1.1], alterId: 0, cipher: auto, client-fingerprint: chrome, network: ws, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, tls: true, udp: true, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, ws-opts: {headers: {Host: megaan.homes}, path: /linkvws}}
+  - {name: US_6499b_0202, server: 43.153.80.208, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: /%2F%3Fed%3D2048}}
+  - {name: US_6499b_0203, server: 43.153.80.208, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, udp: true, ws-opts: {path: /}, alterId: 0}
+  - {name: US_6499b_0204, server: 38.91.106.227, port: 443, type: vmess, alpn: [http/1.1], alterId: 0, cipher: auto, client-fingerprint: chrome, network: ws, servername: janett.click, skip-cert-verify: true, tls: true, udp: true, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, ws-opts: {headers: {Host: janett.click}, path: /linkvws}}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - AT_73ae7_0001
-  - AT_73ae7_0002
-  - AT_73ae7_0003
-  - AT_73ae7_0004
-  - AT_73ae7_0005
-  - AT_73ae7_0006
-  - AT_73ae7_0007
-  - AT_73ae7_0008
-  - AT_73ae7_0009
-  - AT_73ae7_0010
-  - AT_73ae7_0011
-  - AT_73ae7_0012
-  - AU_73ae7_0013
-  - AU_73ae7_0014
-  - AU_73ae7_0015
-  - AU_73ae7_0016
-  - AU_73ae7_0017
-  - AU_73ae7_0018
-  - CN_73ae7_0019
-  - CN_73ae7_0020
-  - CN_73ae7_0021
-  - CN_73ae7_0022
-  - CN_73ae7_0023
-  - CN_73ae7_0024
-  - CN_73ae7_0025
-  - CN_73ae7_0026
-  - CN_73ae7_0027
-  - CN_73ae7_0028
-  - CN_73ae7_0029
-  - CN_73ae7_0030
-  - CN_73ae7_0031
-  - CN_73ae7_0032
-  - CN_73ae7_0033
-  - CN_73ae7_0034
-  - CN_73ae7_0035
-  - CN_73ae7_0036
-  - DE_73ae7_0037
-  - DE_73ae7_0038
-  - DE_73ae7_0039
-  - DE_73ae7_0040
-  - DE_73ae7_0041
-  - DE_73ae7_0042
-  - DE_73ae7_0043
-  - FR_73ae7_0044
-  - FR_73ae7_0045
-  - FR_73ae7_0046
-  - FR_73ae7_0047
-  - FR_73ae7_0048
-  - FR_73ae7_0049
-  - FR_73ae7_0050
-  - GB_73ae7_0051
-  - GB_73ae7_0052
-  - GB_73ae7_0053
-  - GB_73ae7_0054
-  - GB_73ae7_0055
-  - GB_73ae7_0056
-  - GB_73ae7_0057
-  - GB_73ae7_0058
-  - GB_73ae7_0059
-  - GB_73ae7_0060
-  - GB_73ae7_0061
-  - GB_73ae7_0062
-  - GB_73ae7_0063
-  - GB_73ae7_0064
-  - GB_73ae7_0065
-  - GB_73ae7_0066
-  - GB_73ae7_0067
-  - GB_73ae7_0068
-  - GB_73ae7_0069
-  - GB_73ae7_0070
-  - GB_73ae7_0071
-  - GB_73ae7_0072
-  - GB_73ae7_0073
-  - KR_73ae7_0074
-  - KR_73ae7_0075
-  - KR_73ae7_0076
-  - KR_73ae7_0077
-  - KR_73ae7_0078
-  - KR_73ae7_0079
-  - KR_73ae7_0080
-  - KR_73ae7_0081
-  - KR_73ae7_0082
-  - KR_73ae7_0083
-  - KR_73ae7_0084
-  - KR_73ae7_0085
-  - KR_73ae7_0086
-  - KR_73ae7_0087
-  - KR_73ae7_0088
-  - KR_73ae7_0089
-  - KR_73ae7_0090
-  - KR_73ae7_0091
-  - KR_73ae7_0092
-  - KR_73ae7_0093
-  - KR_73ae7_0094
-  - KR_73ae7_0095
-  - KR_73ae7_0096
-  - KR_73ae7_0097
-  - KR_73ae7_0098
-  - KR_73ae7_0099
-  - KR_73ae7_0100
-  - KR_73ae7_0101
-  - KR_73ae7_0102
-  - KR_73ae7_0103
-  - KR_73ae7_0104
-  - KR_73ae7_0105
-  - KR_73ae7_0106
-  - KR_73ae7_0107
-  - KR_73ae7_0108
-  - KR_73ae7_0109
-  - KR_73ae7_0110
-  - KR_73ae7_0111
-  - RU_73ae7_0112
-  - RU_73ae7_0113
-  - RU_73ae7_0114
-  - RU_73ae7_0115
-  - RU_73ae7_0116
-  - RU_73ae7_0117
-  - RU_73ae7_0118
-  - RU_73ae7_0119
-  - RU_73ae7_0120
-  - RU_73ae7_0121
-  - RU_73ae7_0122
-  - RU_73ae7_0123
-  - RU_73ae7_0124
-  - RU_73ae7_0125
-  - RU_73ae7_0126
-  - RU_73ae7_0127
-  - RU_73ae7_0128
-  - RU_73ae7_0129
-  - RU_73ae7_0130
-  - RU_73ae7_0131
-  - RU_73ae7_0132
-  - RU_73ae7_0133
-  - RU_73ae7_0134
-  - RU_73ae7_0135
-  - RU_73ae7_0136
-  - RU_73ae7_0137
-  - RU_73ae7_0138
-  - RU_73ae7_0139
-  - RU_73ae7_0140
-  - RU_73ae7_0141
-  - RU_73ae7_0142
-  - RU_73ae7_0143
-  - RU_73ae7_0144
-  - RU_73ae7_0145
-  - RU_73ae7_0146
-  - RU_73ae7_0147
-  - RU_73ae7_0148
-  - RU_73ae7_0149
-  - RU_73ae7_0150
-  - RU_73ae7_0151
-  - RU_73ae7_0152
-  - RU_73ae7_0153
-  - RU_73ae7_0154
-  - RU_73ae7_0155
-  - RU_73ae7_0156
-  - RU_73ae7_0157
-  - SG_73ae7_0158
-  - SG_73ae7_0159
-  - SG_73ae7_0160
-  - SG_73ae7_0161
-  - SG_73ae7_0162
-  - SG_73ae7_0163
-  - SG_73ae7_0164
-  - SG_73ae7_0165
-  - SG_73ae7_0166
-  - SG_73ae7_0167
-  - SG_73ae7_0168
-  - SG_73ae7_0169
-  - SG_73ae7_0170
-  - SG_73ae7_0171
-  - SG_73ae7_0172
-  - SG_73ae7_0173
-  - SG_73ae7_0174
-  - US_73ae7_0175
-  - US_73ae7_0176
-  - US_73ae7_0177
-  - US_73ae7_0178
-  - US_73ae7_0179
-  - US_73ae7_0180
-  - US_73ae7_0181
-  - US_73ae7_0182
-  - US_73ae7_0183
-  - US_73ae7_0184
-  - US_73ae7_0185
-  - US_73ae7_0186
-  - US_73ae7_0187
-  - US_73ae7_0188
-  - US_73ae7_0189
-  - US_73ae7_0190
-  - US_73ae7_0191
-  - US_73ae7_0192
-  - US_73ae7_0193
-  - US_73ae7_0194
-  - US_73ae7_0195
-  - US_73ae7_0196
-  - US_73ae7_0197
-  - US_73ae7_0198
-  - US_73ae7_0199
-  - US_73ae7_0200
-  - US_73ae7_0201
-  - US_73ae7_0202
-  - US_73ae7_0203
-  - US_73ae7_0204
-  - US_73ae7_0205
-  - US_73ae7_0206
-  - US_73ae7_0207
-  - US_73ae7_0208
-  - US_73ae7_0209
-  - US_73ae7_0210
-  - US_73ae7_0211
-  - US_73ae7_0212
-  - US_73ae7_0213
-  - US_73ae7_0214
-  - US_73ae7_0215
-  - US_73ae7_0216
-  - US_73ae7_0217
-  - US_73ae7_0218
-  - US_73ae7_0219
-  - US_73ae7_0220
-  - US_73ae7_0221
-  - US_73ae7_0222
-  - US_73ae7_0223
-  - US_73ae7_0224
-  - US_73ae7_0225
-  - US_73ae7_0226
-  - US_73ae7_0227
-  - US_73ae7_0228
-  - US_73ae7_0229
-  - US_73ae7_0230
-  - US_73ae7_0231
-  - US_73ae7_0232
-  - US_73ae7_0233
-  - US_73ae7_0234
-  - US_73ae7_0235
-  - US_73ae7_0236
-  - US_73ae7_0237
-  - US_73ae7_0238
-  - US_73ae7_0239
-  - US_73ae7_0240
-  - US_73ae7_0241
-  - US_73ae7_0242
-  - US_73ae7_0243
-  - US_73ae7_0244
-  - US_73ae7_0245
-  - US_73ae7_0246
-  - US_73ae7_0247
-  - US_73ae7_0248
-  - US_73ae7_0249
-  - US_73ae7_0250
-  - US_73ae7_0251
-  - US_73ae7_0252
-  - US_73ae7_0253
-  - US_73ae7_0254
-  - US_73ae7_0255
-  - US_73ae7_0256
-  - US_73ae7_0257
-  - US_73ae7_0258
-  - US_73ae7_0259
-  - US_73ae7_0260
-  - US_73ae7_0261
-  - US_73ae7_0262
-  - US_73ae7_0263
-  - US_73ae7_0264
-  - US_73ae7_0265
-  - US_73ae7_0266
-  - US_73ae7_0267
-  - US_73ae7_0268
-  - US_73ae7_0269
-  - US_73ae7_0270
-  - US_73ae7_0271
-  - US_73ae7_0272
-  - US_73ae7_0273
-  - US_73ae7_0274
-  - US_73ae7_0275
-  - US_73ae7_0276
-  - US_73ae7_0277
-  - US_73ae7_0278
-  - US_73ae7_0279
-  - US_73ae7_0280
-  - US_73ae7_0281
-  - US_73ae7_0282
-  - US_73ae7_0283
-  - US_73ae7_0284
-  - US_73ae7_0285
-  - US_73ae7_0286
-  - US_73ae7_0287
-  - US_73ae7_0288
-  - US_73ae7_0289
-  - US_73ae7_0290
-  - US_73ae7_0291
-  - US_73ae7_0292
-  - US_73ae7_0293
-  - US_73ae7_0294
-  - US_73ae7_0295
-  - US_73ae7_0296
-  - US_73ae7_0297
-  - US_73ae7_0298
-  - ZA_73ae7_0299
-  - ZA_73ae7_0300
-  - ZA_73ae7_0301
-  - ZA_73ae7_0302
-  - ZA_73ae7_0303
-  - ZA_73ae7_0304
-  - ZA_73ae7_0305
-  - ZA_73ae7_0306
-  - ZA_73ae7_0307
-  - ZA_73ae7_0308
-  - ZA_73ae7_0309
-  - ZA_73ae7_0310
-  - ZA_73ae7_0311
-  - ZA_73ae7_0312
+  - CN_6499b_0001
+  - CN_6499b_0002
+  - CN_6499b_0003
+  - CN_6499b_0004
+  - CN_6499b_0005
+  - CN_6499b_0006
+  - CN_6499b_0007
+  - CN_6499b_0008
+  - CN_6499b_0009
+  - CN_6499b_0010
+  - CN_6499b_0011
+  - CN_6499b_0012
+  - CN_6499b_0013
+  - CN_6499b_0014
+  - CN_6499b_0015
+  - CN_6499b_0016
+  - CN_6499b_0017
+  - CN_6499b_0018
+  - CN_6499b_0019
+  - CN_6499b_0020
+  - CN_6499b_0021
+  - CN_6499b_0022
+  - CN_6499b_0023
+  - CN_6499b_0024
+  - CN_6499b_0025
+  - CN_6499b_0026
+  - CN_6499b_0027
+  - CN_6499b_0028
+  - CN_6499b_0029
+  - CN_6499b_0030
+  - CN_6499b_0031
+  - CN_6499b_0032
+  - CN_6499b_0033
+  - CN_6499b_0034
+  - CN_6499b_0035
+  - CN_6499b_0036
+  - CN_6499b_0037
+  - CN_6499b_0038
+  - CN_6499b_0039
+  - CN_6499b_0040
+  - CN_6499b_0041
+  - CN_6499b_0042
+  - CN_6499b_0043
+  - CN_6499b_0044
+  - CN_6499b_0045
+  - CN_6499b_0046
+  - CN_6499b_0047
+  - CN_6499b_0048
+  - CN_6499b_0049
+  - CN_6499b_0050
+  - CN_6499b_0051
+  - CN_6499b_0052
+  - CN_6499b_0053
+  - CN_6499b_0054
+  - CN_6499b_0055
+  - CN_6499b_0056
+  - CN_6499b_0057
+  - CN_6499b_0058
+  - CN_6499b_0059
+  - CN_6499b_0060
+  - CN_6499b_0061
+  - CN_6499b_0062
+  - CN_6499b_0063
+  - CN_6499b_0064
+  - CN_6499b_0065
+  - CN_6499b_0066
+  - CN_6499b_0067
+  - CN_6499b_0068
+  - CN_6499b_0069
+  - CN_6499b_0070
+  - CN_6499b_0071
+  - CN_6499b_0072
+  - DE_6499b_0073
+  - DE_6499b_0074
+  - DE_6499b_0075
+  - DE_6499b_0076
+  - DE_6499b_0077
+  - DE_6499b_0078
+  - GB_6499b_0079
+  - GB_6499b_0080
+  - GB_6499b_0081
+  - GB_6499b_0082
+  - GB_6499b_0083
+  - GB_6499b_0084
+  - GB_6499b_0085
+  - GB_6499b_0086
+  - GB_6499b_0087
+  - GB_6499b_0088
+  - GB_6499b_0089
+  - GB_6499b_0090
+  - GB_6499b_0091
+  - GB_6499b_0092
+  - GB_6499b_0093
+  - HK_6499b_0094
+  - HK_6499b_0095
+  - KR_6499b_0096
+  - KR_6499b_0097
+  - KR_6499b_0098
+  - KR_6499b_0099
+  - KR_6499b_0100
+  - KR_6499b_0101
+  - KR_6499b_0102
+  - KR_6499b_0103
+  - KR_6499b_0104
+  - KR_6499b_0105
+  - KR_6499b_0106
+  - KR_6499b_0107
+  - KR_6499b_0108
+  - KR_6499b_0109
+  - KR_6499b_0110
+  - KR_6499b_0111
+  - KR_6499b_0112
+  - KR_6499b_0113
+  - KR_6499b_0114
+  - KR_6499b_0115
+  - KR_6499b_0116
+  - RU_6499b_0117
+  - RU_6499b_0118
+  - RU_6499b_0119
+  - RU_6499b_0120
+  - RU_6499b_0121
+  - RU_6499b_0122
+  - RU_6499b_0123
+  - RU_6499b_0124
+  - RU_6499b_0125
+  - RU_6499b_0126
+  - RU_6499b_0127
+  - RU_6499b_0128
+  - RU_6499b_0129
+  - RU_6499b_0130
+  - RU_6499b_0131
+  - RU_6499b_0132
+  - RU_6499b_0133
+  - RU_6499b_0134
+  - RU_6499b_0135
+  - RU_6499b_0136
+  - RU_6499b_0137
+  - RU_6499b_0138
+  - RU_6499b_0139
+  - RU_6499b_0140
+  - RU_6499b_0141
+  - RU_6499b_0142
+  - RU_6499b_0143
+  - RU_6499b_0144
+  - RU_6499b_0145
+  - RU_6499b_0146
+  - RU_6499b_0147
+  - RU_6499b_0148
+  - RU_6499b_0149
+  - US_6499b_0150
+  - US_6499b_0151
+  - US_6499b_0152
+  - US_6499b_0153
+  - US_6499b_0154
+  - US_6499b_0155
+  - US_6499b_0156
+  - US_6499b_0157
+  - US_6499b_0158
+  - US_6499b_0159
+  - US_6499b_0160
+  - US_6499b_0161
+  - US_6499b_0162
+  - US_6499b_0163
+  - US_6499b_0164
+  - US_6499b_0165
+  - US_6499b_0166
+  - US_6499b_0167
+  - US_6499b_0168
+  - US_6499b_0169
+  - US_6499b_0170
+  - US_6499b_0171
+  - US_6499b_0172
+  - US_6499b_0173
+  - US_6499b_0174
+  - US_6499b_0175
+  - US_6499b_0176
+  - US_6499b_0177
+  - US_6499b_0178
+  - US_6499b_0179
+  - US_6499b_0180
+  - US_6499b_0181
+  - US_6499b_0182
+  - US_6499b_0183
+  - US_6499b_0184
+  - US_6499b_0185
+  - US_6499b_0186
+  - US_6499b_0187
+  - US_6499b_0188
+  - US_6499b_0189
+  - US_6499b_0190
+  - US_6499b_0191
+  - US_6499b_0192
+  - US_6499b_0193
+  - US_6499b_0195
+  - US_6499b_0196
+  - US_6499b_0197
+  - US_6499b_0198
+  - US_6499b_0199
+  - US_6499b_0200
+  - US_6499b_0201
+  - US_6499b_0202
+  - US_6499b_0203
+  - US_6499b_0204
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - AT_73ae7_0001
-  - AT_73ae7_0002
-  - AT_73ae7_0003
-  - AT_73ae7_0004
-  - AT_73ae7_0005
-  - AT_73ae7_0006
-  - AT_73ae7_0007
-  - AT_73ae7_0008
-  - AT_73ae7_0009
-  - AT_73ae7_0010
-  - AT_73ae7_0011
-  - AT_73ae7_0012
-  - AU_73ae7_0013
-  - AU_73ae7_0014
-  - AU_73ae7_0015
-  - AU_73ae7_0016
-  - AU_73ae7_0017
-  - AU_73ae7_0018
-  - CN_73ae7_0019
-  - CN_73ae7_0020
-  - CN_73ae7_0021
-  - CN_73ae7_0022
-  - CN_73ae7_0023
-  - CN_73ae7_0024
-  - CN_73ae7_0025
-  - CN_73ae7_0026
-  - CN_73ae7_0027
-  - CN_73ae7_0028
-  - CN_73ae7_0029
-  - CN_73ae7_0030
-  - CN_73ae7_0031
-  - CN_73ae7_0032
-  - CN_73ae7_0033
-  - CN_73ae7_0034
-  - CN_73ae7_0035
-  - CN_73ae7_0036
-  - DE_73ae7_0037
-  - DE_73ae7_0038
-  - DE_73ae7_0039
-  - DE_73ae7_0040
-  - DE_73ae7_0041
-  - DE_73ae7_0042
-  - DE_73ae7_0043
-  - FR_73ae7_0044
-  - FR_73ae7_0045
-  - FR_73ae7_0046
-  - FR_73ae7_0047
-  - FR_73ae7_0048
-  - FR_73ae7_0049
-  - FR_73ae7_0050
-  - GB_73ae7_0051
-  - GB_73ae7_0052
-  - GB_73ae7_0053
-  - GB_73ae7_0054
-  - GB_73ae7_0055
-  - GB_73ae7_0056
-  - GB_73ae7_0057
-  - GB_73ae7_0058
-  - GB_73ae7_0059
-  - GB_73ae7_0060
-  - GB_73ae7_0061
-  - GB_73ae7_0062
-  - GB_73ae7_0063
-  - GB_73ae7_0064
-  - GB_73ae7_0065
-  - GB_73ae7_0066
-  - GB_73ae7_0067
-  - GB_73ae7_0068
-  - GB_73ae7_0069
-  - GB_73ae7_0070
-  - GB_73ae7_0071
-  - GB_73ae7_0072
-  - GB_73ae7_0073
-  - KR_73ae7_0074
-  - KR_73ae7_0075
-  - KR_73ae7_0076
-  - KR_73ae7_0077
-  - KR_73ae7_0078
-  - KR_73ae7_0079
-  - KR_73ae7_0080
-  - KR_73ae7_0081
-  - KR_73ae7_0082
-  - KR_73ae7_0083
-  - KR_73ae7_0084
-  - KR_73ae7_0085
-  - KR_73ae7_0086
-  - KR_73ae7_0087
-  - KR_73ae7_0088
-  - KR_73ae7_0089
-  - KR_73ae7_0090
-  - KR_73ae7_0091
-  - KR_73ae7_0092
-  - KR_73ae7_0093
-  - KR_73ae7_0094
-  - KR_73ae7_0095
-  - KR_73ae7_0096
-  - KR_73ae7_0097
-  - KR_73ae7_0098
-  - KR_73ae7_0099
-  - KR_73ae7_0100
-  - KR_73ae7_0101
-  - KR_73ae7_0102
-  - KR_73ae7_0103
-  - KR_73ae7_0104
-  - KR_73ae7_0105
-  - KR_73ae7_0106
-  - KR_73ae7_0107
-  - KR_73ae7_0108
-  - KR_73ae7_0109
-  - KR_73ae7_0110
-  - KR_73ae7_0111
-  - RU_73ae7_0112
-  - RU_73ae7_0113
-  - RU_73ae7_0114
-  - RU_73ae7_0115
-  - RU_73ae7_0116
-  - RU_73ae7_0117
-  - RU_73ae7_0118
-  - RU_73ae7_0119
-  - RU_73ae7_0120
-  - RU_73ae7_0121
-  - RU_73ae7_0122
-  - RU_73ae7_0123
-  - RU_73ae7_0124
-  - RU_73ae7_0125
-  - RU_73ae7_0126
-  - RU_73ae7_0127
-  - RU_73ae7_0128
-  - RU_73ae7_0129
-  - RU_73ae7_0130
-  - RU_73ae7_0131
-  - RU_73ae7_0132
-  - RU_73ae7_0133
-  - RU_73ae7_0134
-  - RU_73ae7_0135
-  - RU_73ae7_0136
-  - RU_73ae7_0137
-  - RU_73ae7_0138
-  - RU_73ae7_0139
-  - RU_73ae7_0140
-  - RU_73ae7_0141
-  - RU_73ae7_0142
-  - RU_73ae7_0143
-  - RU_73ae7_0144
-  - RU_73ae7_0145
-  - RU_73ae7_0146
-  - RU_73ae7_0147
-  - RU_73ae7_0148
-  - RU_73ae7_0149
-  - RU_73ae7_0150
-  - RU_73ae7_0151
-  - RU_73ae7_0152
-  - RU_73ae7_0153
-  - RU_73ae7_0154
-  - RU_73ae7_0155
-  - RU_73ae7_0156
-  - RU_73ae7_0157
-  - SG_73ae7_0158
-  - SG_73ae7_0159
-  - SG_73ae7_0160
-  - SG_73ae7_0161
-  - SG_73ae7_0162
-  - SG_73ae7_0163
-  - SG_73ae7_0164
-  - SG_73ae7_0165
-  - SG_73ae7_0166
-  - SG_73ae7_0167
-  - SG_73ae7_0168
-  - SG_73ae7_0169
-  - SG_73ae7_0170
-  - SG_73ae7_0171
-  - SG_73ae7_0172
-  - SG_73ae7_0173
-  - SG_73ae7_0174
-  - US_73ae7_0175
-  - US_73ae7_0176
-  - US_73ae7_0177
-  - US_73ae7_0178
-  - US_73ae7_0179
-  - US_73ae7_0180
-  - US_73ae7_0181
-  - US_73ae7_0182
-  - US_73ae7_0183
-  - US_73ae7_0184
-  - US_73ae7_0185
-  - US_73ae7_0186
-  - US_73ae7_0187
-  - US_73ae7_0188
-  - US_73ae7_0189
-  - US_73ae7_0190
-  - US_73ae7_0191
-  - US_73ae7_0192
-  - US_73ae7_0193
-  - US_73ae7_0194
-  - US_73ae7_0195
-  - US_73ae7_0196
-  - US_73ae7_0197
-  - US_73ae7_0198
-  - US_73ae7_0199
-  - US_73ae7_0200
-  - US_73ae7_0201
-  - US_73ae7_0202
-  - US_73ae7_0203
-  - US_73ae7_0204
-  - US_73ae7_0205
-  - US_73ae7_0206
-  - US_73ae7_0207
-  - US_73ae7_0208
-  - US_73ae7_0209
-  - US_73ae7_0210
-  - US_73ae7_0211
-  - US_73ae7_0212
-  - US_73ae7_0213
-  - US_73ae7_0214
-  - US_73ae7_0215
-  - US_73ae7_0216
-  - US_73ae7_0217
-  - US_73ae7_0218
-  - US_73ae7_0219
-  - US_73ae7_0220
-  - US_73ae7_0221
-  - US_73ae7_0222
-  - US_73ae7_0223
-  - US_73ae7_0224
-  - US_73ae7_0225
-  - US_73ae7_0226
-  - US_73ae7_0227
-  - US_73ae7_0228
-  - US_73ae7_0229
-  - US_73ae7_0230
-  - US_73ae7_0231
-  - US_73ae7_0232
-  - US_73ae7_0233
-  - US_73ae7_0234
-  - US_73ae7_0235
-  - US_73ae7_0236
-  - US_73ae7_0237
-  - US_73ae7_0238
-  - US_73ae7_0239
-  - US_73ae7_0240
-  - US_73ae7_0241
-  - US_73ae7_0242
-  - US_73ae7_0243
-  - US_73ae7_0244
-  - US_73ae7_0245
-  - US_73ae7_0246
-  - US_73ae7_0247
-  - US_73ae7_0248
-  - US_73ae7_0249
-  - US_73ae7_0250
-  - US_73ae7_0251
-  - US_73ae7_0252
-  - US_73ae7_0253
-  - US_73ae7_0254
-  - US_73ae7_0255
-  - US_73ae7_0256
-  - US_73ae7_0257
-  - US_73ae7_0258
-  - US_73ae7_0259
-  - US_73ae7_0260
-  - US_73ae7_0261
-  - US_73ae7_0262
-  - US_73ae7_0263
-  - US_73ae7_0264
-  - US_73ae7_0265
-  - US_73ae7_0266
-  - US_73ae7_0267
-  - US_73ae7_0268
-  - US_73ae7_0269
-  - US_73ae7_0270
-  - US_73ae7_0271
-  - US_73ae7_0272
-  - US_73ae7_0273
-  - US_73ae7_0274
-  - US_73ae7_0275
-  - US_73ae7_0276
-  - US_73ae7_0277
-  - US_73ae7_0278
-  - US_73ae7_0279
-  - US_73ae7_0280
-  - US_73ae7_0281
-  - US_73ae7_0282
-  - US_73ae7_0283
-  - US_73ae7_0284
-  - US_73ae7_0285
-  - US_73ae7_0286
-  - US_73ae7_0287
-  - US_73ae7_0288
-  - US_73ae7_0289
-  - US_73ae7_0290
-  - US_73ae7_0291
-  - US_73ae7_0292
-  - US_73ae7_0293
-  - US_73ae7_0294
-  - US_73ae7_0295
-  - US_73ae7_0296
-  - US_73ae7_0297
-  - US_73ae7_0298
-  - ZA_73ae7_0299
-  - ZA_73ae7_0300
-  - ZA_73ae7_0301
-  - ZA_73ae7_0302
-  - ZA_73ae7_0303
-  - ZA_73ae7_0304
-  - ZA_73ae7_0305
-  - ZA_73ae7_0306
-  - ZA_73ae7_0307
-  - ZA_73ae7_0308
-  - ZA_73ae7_0309
-  - ZA_73ae7_0310
-  - ZA_73ae7_0311
-  - ZA_73ae7_0312
+  - CN_6499b_0001
+  - CN_6499b_0002
+  - CN_6499b_0003
+  - CN_6499b_0004
+  - CN_6499b_0005
+  - CN_6499b_0006
+  - CN_6499b_0007
+  - CN_6499b_0008
+  - CN_6499b_0009
+  - CN_6499b_0010
+  - CN_6499b_0011
+  - CN_6499b_0012
+  - CN_6499b_0013
+  - CN_6499b_0014
+  - CN_6499b_0015
+  - CN_6499b_0016
+  - CN_6499b_0017
+  - CN_6499b_0018
+  - CN_6499b_0019
+  - CN_6499b_0020
+  - CN_6499b_0021
+  - CN_6499b_0022
+  - CN_6499b_0023
+  - CN_6499b_0024
+  - CN_6499b_0025
+  - CN_6499b_0026
+  - CN_6499b_0027
+  - CN_6499b_0028
+  - CN_6499b_0029
+  - CN_6499b_0030
+  - CN_6499b_0031
+  - CN_6499b_0032
+  - CN_6499b_0033
+  - CN_6499b_0034
+  - CN_6499b_0035
+  - CN_6499b_0036
+  - CN_6499b_0037
+  - CN_6499b_0038
+  - CN_6499b_0039
+  - CN_6499b_0040
+  - CN_6499b_0041
+  - CN_6499b_0042
+  - CN_6499b_0043
+  - CN_6499b_0044
+  - CN_6499b_0045
+  - CN_6499b_0046
+  - CN_6499b_0047
+  - CN_6499b_0048
+  - CN_6499b_0049
+  - CN_6499b_0050
+  - CN_6499b_0051
+  - CN_6499b_0052
+  - CN_6499b_0053
+  - CN_6499b_0054
+  - CN_6499b_0055
+  - CN_6499b_0056
+  - CN_6499b_0057
+  - CN_6499b_0058
+  - CN_6499b_0059
+  - CN_6499b_0060
+  - CN_6499b_0061
+  - CN_6499b_0062
+  - CN_6499b_0063
+  - CN_6499b_0064
+  - CN_6499b_0065
+  - CN_6499b_0066
+  - CN_6499b_0067
+  - CN_6499b_0068
+  - CN_6499b_0069
+  - CN_6499b_0070
+  - CN_6499b_0071
+  - CN_6499b_0072
+  - DE_6499b_0073
+  - DE_6499b_0074
+  - DE_6499b_0075
+  - DE_6499b_0076
+  - DE_6499b_0077
+  - DE_6499b_0078
+  - GB_6499b_0079
+  - GB_6499b_0080
+  - GB_6499b_0081
+  - GB_6499b_0082
+  - GB_6499b_0083
+  - GB_6499b_0084
+  - GB_6499b_0085
+  - GB_6499b_0086
+  - GB_6499b_0087
+  - GB_6499b_0088
+  - GB_6499b_0089
+  - GB_6499b_0090
+  - GB_6499b_0091
+  - GB_6499b_0092
+  - GB_6499b_0093
+  - HK_6499b_0094
+  - HK_6499b_0095
+  - KR_6499b_0096
+  - KR_6499b_0097
+  - KR_6499b_0098
+  - KR_6499b_0099
+  - KR_6499b_0100
+  - KR_6499b_0101
+  - KR_6499b_0102
+  - KR_6499b_0103
+  - KR_6499b_0104
+  - KR_6499b_0105
+  - KR_6499b_0106
+  - KR_6499b_0107
+  - KR_6499b_0108
+  - KR_6499b_0109
+  - KR_6499b_0110
+  - KR_6499b_0111
+  - KR_6499b_0112
+  - KR_6499b_0113
+  - KR_6499b_0114
+  - KR_6499b_0115
+  - KR_6499b_0116
+  - RU_6499b_0117
+  - RU_6499b_0118
+  - RU_6499b_0119
+  - RU_6499b_0120
+  - RU_6499b_0121
+  - RU_6499b_0122
+  - RU_6499b_0123
+  - RU_6499b_0124
+  - RU_6499b_0125
+  - RU_6499b_0126
+  - RU_6499b_0127
+  - RU_6499b_0128
+  - RU_6499b_0129
+  - RU_6499b_0130
+  - RU_6499b_0131
+  - RU_6499b_0132
+  - RU_6499b_0133
+  - RU_6499b_0134
+  - RU_6499b_0135
+  - RU_6499b_0136
+  - RU_6499b_0137
+  - RU_6499b_0138
+  - RU_6499b_0139
+  - RU_6499b_0140
+  - RU_6499b_0141
+  - RU_6499b_0142
+  - RU_6499b_0143
+  - RU_6499b_0144
+  - RU_6499b_0145
+  - RU_6499b_0146
+  - RU_6499b_0147
+  - RU_6499b_0148
+  - RU_6499b_0149
+  - US_6499b_0150
+  - US_6499b_0151
+  - US_6499b_0152
+  - US_6499b_0153
+  - US_6499b_0154
+  - US_6499b_0155
+  - US_6499b_0156
+  - US_6499b_0157
+  - US_6499b_0158
+  - US_6499b_0159
+  - US_6499b_0160
+  - US_6499b_0161
+  - US_6499b_0162
+  - US_6499b_0163
+  - US_6499b_0164
+  - US_6499b_0165
+  - US_6499b_0166
+  - US_6499b_0167
+  - US_6499b_0168
+  - US_6499b_0169
+  - US_6499b_0170
+  - US_6499b_0171
+  - US_6499b_0172
+  - US_6499b_0173
+  - US_6499b_0174
+  - US_6499b_0175
+  - US_6499b_0176
+  - US_6499b_0177
+  - US_6499b_0178
+  - US_6499b_0179
+  - US_6499b_0180
+  - US_6499b_0181
+  - US_6499b_0182
+  - US_6499b_0183
+  - US_6499b_0184
+  - US_6499b_0185
+  - US_6499b_0186
+  - US_6499b_0187
+  - US_6499b_0188
+  - US_6499b_0189
+  - US_6499b_0190
+  - US_6499b_0191
+  - US_6499b_0192
+  - US_6499b_0193
+  - US_6499b_0195
+  - US_6499b_0196
+  - US_6499b_0197
+  - US_6499b_0198
+  - US_6499b_0199
+  - US_6499b_0200
+  - US_6499b_0201
+  - US_6499b_0202
+  - US_6499b_0203
+  - US_6499b_0204
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
@@ -1455,9 +1112,5 @@ rules:
 - IP-CIDR,100.64.0.0/10,DIRECT
 - IP-CIDR,224.0.0.0/4,DIRECT
 - IP-CIDR6,fe80::/10,DIRECT
-- IP-CIDR,2002::/16,DIRECT
-- IP-CIDR,2001:db8::/32,DIRECT
-- IP-CIDR,2001::/32,DIRECT
-- IP-CIDR,2001:20::/28,DIRECT
 - GEOIP,CN,DIRECT
 - MATCH,⭕ proxinode
