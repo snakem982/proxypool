@@ -32,7 +32,7 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 2  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 18.65美元/2年 | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 | 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/3年 | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
-此外，**特别款** 每三年订购一次，订购成功后给客服发工单，将免费延长服务一年！
+此外，**特别款** 每三年订购一次，将免费延长服务一年！
 
 **普通款**（可以用支付宝）
 
