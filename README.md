@@ -24,7 +24,7 @@ Long-term use is not recommended! ! !</font><br/>
 If you want a continuous, stable, safe, and high-speed node, please build it yourself.
 The following is a self-built node cost-effective cloud server recommendation:<br/>
 
-**特别款**
+**特别款**（每三年订购一次，将免费延长服务一年！）
 
 | 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |     价格     |                                查看详情                                 |
 |:--:|:----:|:-----:|:-----:|:----:|:-----:|:----------:|:-------------------------------------------------------------------:|
@@ -32,7 +32,7 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 2  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 18.65美元/2年 | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 | 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/3年 | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
-此外，**特别款** 每三年订购一次，将免费延长服务一年！
+
 
 **普通款**（可以用支付宝）
 
@@ -45,7 +45,7 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 5  | 4000G | 1Gbps |   1   |  1 G  | 25 GB | $12.98 | [链接](https://my.racknerd.com/aff.php?aff=8613&pid=735 "点击查看") |
 | 6  | 4000G | 1Gbps |   1   | 1.5 G | 25 GB | $16.88 | [链接](https://my.racknerd.com/aff.php?aff=8613&pid=839 "点击查看") |
 
-下面是 **香港** 高速云服务器推荐，需要注册登录
+**香港服务器** （需要注册登录后查看）
 
 | 序号 | 流量/月 |   网速    | CPU核数 | 运行内存 |  硬盘   | 人民币/年 |                 查看详情                  |
 |:--:|:----:|:-------:|:-----:|:----:|:-----:|:-----:|:-------------------------------------:|
