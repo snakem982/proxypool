@@ -32,8 +32,6 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 2  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 18.65美元/2年 | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 | 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/3年 | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
-
-
 **普通款**（可以用支付宝）
 
 | 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                             查看详情                              |
@@ -47,15 +45,14 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 
 **香港服务器** （需要注册登录后查看）
 
-| 序号 | 流量/月 |   网速    | CPU核数 | 运行内存 |  硬盘   | 人民币/年 |                 查看详情                  |
-|:--:|:----:|:-------:|:-----:|:----:|:-----:|:-----:|:-------------------------------------:|
-| 1  | 600G | 100Mbps |   2   | 2 G  | 30 GB |  ¥99  | [链接](https://vps.12131618.xyz "点击查看") |
-| 2  | 600G | 100Mbps |   1   | 2 G  | 30 GB | ¥128  | [链接](https://vps.12131618.xyz "点击查看") |
-| 3  | 600G | 100Mbps |   2   | 4 G  | 50 GB | ¥188  | [链接](https://vps.12131618.xyz "点击查看") |
-| 4  | 600G | 100Mbps |   2   | 4 G  | 50 GB | ¥228  | [链接](https://vps.12131618.xyz "点击查看") |
-| 5  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥288  | [链接](https://vps.12131618.xyz "点击查看") |
-| 6  | 800G | 100Mbps |   4   | 12 G | 90 GB | ¥299  | [链接](https://vps.12131618.xyz "点击查看") |
-| 7  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥358  | [链接](https://vps.12131618.xyz "点击查看") |
+| 序号 | 流量/月 |   网速    | CPU核数 | 运行内存 |  硬盘   | 人民币/年 |                         查看详情                          |
+|:--:|:----:|:-------:|:-----:|:----:|:-----:|:-----:|:-----------------------------------------------------:|
+| 1  | 600G | 100Mbps |   2   | 2 G  | 30 GB |  ¥99  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
+| 2  | 600G | 100Mbps |   1   | 2 G  | 30 GB | ¥128  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
+| 3  | 600G | 100Mbps |   2   | 4 G  | 50 GB | ¥188  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
+| 4  | 600G | 100Mbps |   2   | 4 G  | 50 GB | ¥228  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
+| 5  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥288  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
+| 6  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥358  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
 
 ## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
 
