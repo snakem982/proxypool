@@ -22,18 +22,12 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
-      - name: Update Clash 0
+      - name: Update Clash 1
         run: |
           curl -L ${{ secrets.V2RAY_API }} > source/v2ray.txt
           curl -L ${{ secrets.CLASH_API }} > source/clash-meta.yaml
           rand=_$(date +%s%N | md5sum |cut -c 2-6)_
           sed -i "s/${{ secrets.CLASH_REPLACE }}/$rand/g" source/clash-meta.yaml
-
-      - name: Update Clash 1
-        run: |
-          curl -L ${{ secrets.CLASH_API_1 }} > source/clash-meta-1.yaml
-          rand=www.$(date +%s%N | md5sum |cut -c 3-7).com
-          sed -i "s/${{ secrets.CLASH_REPLACE_1 }}/$rand/g" source/clash-meta-1.yaml
 
       - name: Update Clash 2
         run: |

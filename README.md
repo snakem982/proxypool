@@ -59,7 +59,7 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 ### clash.meta/mihomo 订阅地址
 
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
-https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-1.yaml
+https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
 
 ### v2ray 订阅地址
 
