@@ -18,233 +18,161 @@ dns:
   - tls://1.0.0.1:853
   - tls://dns.google:853
 proxies:
-  - {name: CA_43574_0001, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: CA_43574_0002, type: ss, server: 149.22.95.183, port: 443, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: CH_43574_0003, type: vmess, server: 23.166.88.27, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.166.88.27}}}
-  - {name: CH_43574_0004, type: vmess, server: 23.166.88.27, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, servername: 23.166.88.27, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.166.88.27}}}
-  - {name: CN_43574_0005, server: 120.232.153.37, port: 46665, type: vmess, alterId: 64, cipher: auto, skip-cert-verify: true, tls: false, udp: true, uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3}
-  - {name: CN_43574_0006, server: dajbxtw.naikonode1.top, port: 15504, type: ssr, cipher: chacha20-ietf, obfs: plain, obfs-param: 83e2a40208.microsoft.com, password: NaikoCloud, protocol: auth_aes128_md5, protocol-param: "40208:yYyiNvXTethxtYP7", udp: true}
-  - {name: CN_43574_0007, type: vmess, server: b.baodesign.top, port: 25006, uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CR_43574_0008, type: vless, server: 190.93.247.155, port: 80, uuid: a194cf71-ac0f-429f-9ade-c859441e05e0, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: Hu2.v2vless.site.}}}
-  - {name: DE_43574_0009, type: ss, server: 23.157.88.61, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: DE_43574_0010, type: vmess, server: 23.158.56.39, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.158.56.39}}}
-  - {name: DE_43574_0011, type: vmess, server: 23.158.56.145, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.158.56.145}}}
-  - {name: DE_43574_0012, type: vmess, server: 23.158.56.81, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.158.56.81}}}
-  - {name: DE_43574_0013, type: vmess, server: 23.158.56.39, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, servername: 23.158.56.39, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.158.56.39}}}
-  - {name: FR_43574_0014, type: vless, server: 141.145.217.226, port: 443, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, udp: true, tls: true, skip-cert-verify: false, servername: la.ylks01.eu.org, network: ws, ws-opts: {path: /blue, headers: {Host: la.ylks01.eu.org}}}
-  - {name: FR_43574_0015, type: vmess, server: 23.162.152.177, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, servername: 23.162.152.177, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.162.152.177}}}
-  - {name: GB_43574_0016, server: 94.247.142.241, type: vless, port: 443, udp: true, uuid: 775213ac-3976-439a-8977-3277c0e4735d, network: ws, tls: true, skip-cert-verify: true, servername: fq521.6789.cloudns.be, ws-opts: {path: /Twitterfreecodes, headers: {Host: fq521.6789.cloudns.be}}}
-  - {name: GB_43574_0017, port: 443, server: 94.247.142.241, type: vless, network: ws, tls: true, udp: true, servername: fq521.6789.cloudns.be, skip-cert-verify: true, ws-opts: {path: /twitterfreecodessecurity, headers: {Host: fq521.6789.cloudns.be}}, uuid: 775213ac-3976-439a-8977-3277c0e4735d}
-  - {name: GB_43574_0018, type: vless, server: 94.247.142.241, port: 443, uuid: 775213ac-3976-439a-8977-3277c0e4735d, udp: true, tls: true, skip-cert-verify: true, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: "/twitterfreecodessecurityfp=chrome", headers: {Host: fq521.6789.cloudns.be}}}
-  - {name: GB_43574_0019, type: vless, server: 94.247.142.241, port: 443, uuid: 775213ac-3976-439a-8977-3277c0e4735d, udp: true, tls: true, client-fingerprint: edge, alpn: [h3, h2, http/1.1], skip-cert-verify: false, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: "/twitterfreecodessecurity=tls", headers: {Host: fq521.6789.cloudns.be}}}
-  - {name: GB_43574_0020, type: vless, network: ws, server: 94.247.142.241, port: 443, uuid: 775213ac-3976-439a-8977-3277c0e4735d, servername: fq521.6789.cloudns.be, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: fq521.6789.cloudns.be}, path: /twitterfreecodessecurity}}
-  - {name: GB_43574_0021, type: vless, server: 94.247.142.241, port: 443, uuid: 775213ac-3976-439a-8977-3277c0e4735d, tls: true, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: "/twitterfreecodessecurity=tls", headers: {Host: fq521.6789.cloudns.be}}}
-  - {name: GB_43574_0022, port: 443, server: 94.247.142.241, type: vless, network: ws, tls: true, udp: true, servername: fq521.6789.cloudns.be, skip-cert-verify: true, ws-opts: {path: /twitterfreecodessecurity, headers: {Host: fq521.6789.cloudns.be}}, uuid: 775213ac-3976-439a-8977-3277c0e4735d, client-fingerprint: chrome}
-  - {name: GB_43574_0023, port: 443, server: 94.247.142.241, type: vless, network: ws, tls: true, udp: true, servername: fq521.6789.cloudns.be, skip-cert-verify: true, ws-opts: {path: /Twitterfreecodes, headers: {Host: fq521.6789.cloudns.be}}, uuid: 775213ac-3976-439a-8977-3277c0e4735d}
-  - {name: GB_43574_0024, port: 443, server: 94.247.142.241, type: vless, network: ws, tls: true, udp: true, servername: fq521.6789.cloudns.be, skip-cert-verify: true, ws-opts: {path: "/twitterfreecodessecurity=tls", headers: {Host: fq521.6789.cloudns.be}}, uuid: 775213ac-3976-439a-8977-3277c0e4735d}
-  - {name: GB_43574_0025, server: 107.181.155.244, port: 55330, type: ss, cipher: chacha20-ietf-poly1305, password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg}
-  - {name: GB_43574_0026, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: HK_43574_0027, type: vless, server: 156.254.115.158, port: 33032, uuid: 72d37e1d-d577-4db3-dc92-3ec65b6d172b, udp: true, skip-cert-verify: false, network: tcp}
-  - {name: IE_43574_0028, type: ss, server: 52.164.203.76, port: 20143, cipher: chacha20-ietf-poly1305, password: 81aBd6IJIgFwT1lqcojSzK}
-  - {name: IR_43574_0029, type: vless, server: 185.113.10.235, port: 443, uuid: f1a495fd-8236-45b7-ae71-4c855ad15367, udp: true, skip-cert-verify: false, servername: neshan.org, network: http, http-opts: {method: GET, path: [/], headers: {Host: [neshan.org]}}}
-  - {name: JO_43574_0030, type: vless, network: ws, server: 62.72.166.67, port: 2096, uuid: 775213ac-3976-439a-8977-3277c0e4735d, servername: fq521.6789.cloudns.be, tls: true, ws-opts: {headers: {Host: fq521.6789.cloudns.be}, path: /Twitter苏小柠}}
-  - {name: JP_43574_0031, port: 2083, server: 103.116.7.67, type: vless, network: ws, tls: true, udp: true, servername: nicorobin.eula.cloudns.org, skip-cert-verify: true, ws-opts: {path: "/telegram@linkvws?ed=2048", headers: {Host: nicorobin.eula.cloudns.org}}, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29}
-  - {name: JP_43574_0032, type: vless, network: ws, server: 103.116.7.220, port: 2096, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, servername: nicorobin.eula.cloudns.org, tls: true, ws-opts: {headers: {Host: nicorobin.eula.cloudns.org}, path: "/?ed=2048"}}
-  - {name: JP_43574_0033, type: vless, server: 103.116.7.67, port: 2083, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, servername: nicorobin.eula.cloudns.org, network: ws, ws-opts: {path: "/telegram@linkvws?ed=2048", headers: {Host: nicorobin.eula.cloudns.org}}}
-  - {name: JP_43574_0034, type: vless, server: 103.116.7.152, port: 2096, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, servername: nicorobin.eula.cloudns.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: nicorobin.eula.cloudns.org}}}
-  - {name: JP_43574_0035, port: 2096, server: 103.116.7.152, type: vless, network: ws, tls: true, udp: true, servername: nicorobin.eula.cloudns.org, skip-cert-verify: true, ws-opts: {path: "/?ed=2048", headers: {Host: nicorobin.eula.cloudns.org}}, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29}
-  - {name: JP_43574_0036, server: 149.22.87.240, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: JP_43574_0037, server: 149.22.87.241, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: LT_43574_0038, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
-  - {name: NL_43574_0039, type: ss, server: 208.67.105.196, port: 42029, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD}
-  - {name: NL_43574_0040, server: ams1.fromblancwithlove.com, port: 19175, type: ss, cipher: chacha20-ietf-poly1305, password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV}
-  - {name: RU_43574_0041, type: vless, network: ws, server: 188.42.145.159, port: 443, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d, servername: VIrgiNiavPn-nL.pagEs.dEv, skip-cert-verify: true, tls: true, udp: true, ws-opts: {headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}, path: "/security=tls"}}
-  - {name: SC_43574_0042, type: vless, server: 154.83.2.200, port: 443, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19, tls: true, servername: am-tunnel-6fs.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: am-tunnel-6fs.pages.dev}}}
-  - {name: SC_43574_0043, server: 154.83.2.54, type: vless, port: 2096, udp: true, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19, network: ws, tls: true, skip-cert-verify: true, servername: am-tunnel-6fs.pages.dev, ws-opts: {path: /, headers: {Host: am-tunnel-6fs.pages.dev}}}
-  - {name: SC_43574_0044, port: 443, server: 154.83.2.200, type: vless, network: ws, tls: true, udp: true, servername: am-tunnel-6fs.pages.dev, skip-cert-verify: true, ws-opts: {path: /, headers: {Host: am-tunnel-6fs.pages.dev}}, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19}
-  - {name: SC_43574_0045, type: vless, network: ws, server: 154.83.2.54, port: 2096, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19, servername: am-tunnel-6fs.pages.dev, skip-cert-verify: true, tls: true, udp: true, ws-opts: {headers: {Host: am-tunnel-6fs.pages.dev}, path: /}}
-  - {name: SC_43574_0046, type: vless, server: 154.83.2.54, port: 2096, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19, tls: true, servername: am-tunnel-6fs.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: am-tunnel-6fs.pages.dev}}}
-  - {name: SC_43574_0047, port: 2096, server: 154.83.2.54, type: vless, network: ws, tls: true, udp: true, servername: am-tunnel-6fs.pages.dev, skip-cert-verify: true, ws-opts: {path: /, headers: {Host: am-tunnel-6fs.pages.dev}}, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19}
-  - {name: US_43574_0048, type: vless, server: 199.232.5.101, port: 443, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, tls: true, client-fingerprint: chrome, alpn: [h2, http/1.1], skip-cert-verify: true, servername: mefa.ir, network: ws, ws-opts: {path: "/H?ed=2560", headers: {Host: mefa.ir}}}
-  - {name: US_43574_0049, type: vless, network: ws, server: 199.232.37.15, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, skip-cert-verify: false, udp: true, ws-opts: {headers: {Host: sara193.ir}, path: "/BCXzvAcvSB7JzMWj?ed=2560"}}
-  - {name: US_43574_0050, server: 104.19.209.229, type: vless, port: 8880, udp: true, uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: late-tooth.granzinhannah.workers.dev}}}
-  - {name: US_43574_0051, type: vless, server: 172.66.47.66, port: 443, uuid: bb27a0c6-aa5e-4105-a943-b87239507057, tls: true, servername: pardazeshvpn-tg86.pages.dev, network: ws, ws-opts: {path: "/telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn?ed=2048", headers: {Host: pardazeshvpn-tg86.pages.dev}}}
-  - {name: US_43574_0052, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560", headers: {Host: samane.ir}}}
-  - {name: US_43574_0053, type: ss, server: 150.241.95.62, port: 9366, cipher: chacha20-ietf-poly1305, password: rZv1$9veNc}
-  - {name: US_43574_0054, type: vless, server: 199.232.37.15, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/BCXzvAcvSB7JzMWj?ed=2560", headers: {Host: sara193.ir}}}
-  - {name: US_43574_0055, type: vmess, server: cdn1.bpcdn.cc, port: 2086, uuid: aaa1b350-15f7-4837-9a08-2129ff9c6d1e, alterId: 0, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkrg0nf30ik5piq1zr.lovebaipiao.com}}}
-  - {name: US_43574_0056, type: vless, server: 172.67.73.237, port: 443, uuid: 263f4c03-183a-4062-98c7-d42d4b2de9d7, udp: true, tls: true, client-fingerprint: random, alpn: [http/1.1], skip-cert-verify: false, servername: yelaor39jfaan.thelastronin.cloudns.org, network: ws, ws-opts: {path: /VLESS/jp-full.privateip.net, headers: {Host: yelan.thelastronin.cloudns.org}}}
-  - {name: US_43574_0057, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: US_43574_0058, type: vless, server: www.speedtest.net, port: 80, uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/Telegram-Xv2ry2?ed", headers: {Host: www.speedtest.net.nl1.70.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.}}}
-  - {name: US_43574_0059, server: 37.19.198.160, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: US_43574_0060, server: 142.202.48.105, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_43574_0061, server: 37.19.198.243, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: US_43574_0062, server: 38.121.43.204, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: US_43574_0063, type: vless, server: www.speedtest.net, port: 443, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, tls: true, client-fingerprint: chrome, alpn: [h2, http/1.1], skip-cert-verify: false, servername: CCOnfIGPlUS.SPDTest.ggFf.NET, network: ws, ws-opts: {path: "/W5V92vB3BQrJH2yY?ed=2560", headers: {Host: cconfigplus.spdtest.ggff.net}}}
-  - {name: US_43574_0064, type: vless, server: 104.17.234.128, port: 443, uuid: 1ad95b6a-8dca-4773-8947-eedf49fdc4c1, udp: true, tls: true, client-fingerprint: chrome, alpn: [h2, http/1.1], skip-cert-verify: false, servername: join.bede.VPNCUSTOMIZE.www.speedtest.net.Abrha.co.za, network: ws, ws-opts: {path: "/Telegram,VPNCUSTOMIZE?ed=8080", headers: {Host: join.bede.vpncustomize.www.speedtest.net.Abrha.co.za}}}
-  - {name: US_43574_0065, server: 38.110.1.107, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_43574_0066, server: 38.121.43.204, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_43574_0067, server: 150.241.95.62, port: 42445, type: ss, cipher: chacha20-ietf-poly1305, password: "flj72wu+&R"}
-  - {name: US_43574_0068, server: 159.246.55.132, port: 443, type: trojan, password: auto, sni: vip.123789.pp.ua, network: ws, ws-opts: {path: /, headers: {Host: vip.123789.pp.ua}}, skip-cert-verify: true}
-  - {name: US_43574_0069, server: 38.110.1.107, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: US_43574_0070, server: 144.202.112.106, port: 3913, type: ss, cipher: chacha20-ietf-poly1305, password: 76dze09gQEvqS_jOuo}
-  - {name: US_43574_0071, server: 23.150.152.41, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_43574_0072, type: vmess, server: 38.99.82.187, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, servername: 38.99.82.187, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 38.99.82.187}}}
-  - {name: VN_43574_0073, server: 36.50.134.29, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, skip-cert-verify: true}
+  - {name: AE_43f64_0001, type: vless, server: m3.jadidistorefandogh.ir, port: 2053, uuid: 1873b7c8-8341-4759-be82-139037d5c198, udp: true, tls: true, client-fingerprint: chrome, alpn: [h3, h2, http/1.1], skip-cert-verify: false, servername: my.jadidistorefandogh.ir, network: ws, ws-opts: {path: "/digikala.com/login/?ed=2560", headers: {Host: my.jadidistorefandogh.ir}}}
+  - {name: CA_43f64_0002, type: ss, server: 149.22.95.183, port: 443, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: CA_43f64_0003, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: CN_43f64_0004, server: dajbxtw.naikonode1.top, port: 15504, type: ssr, cipher: chacha20-ietf, obfs: plain, obfs-param: 83e2a40208.microsoft.com, password: NaikoCloud, protocol: auth_aes128_md5, protocol-param: "40208:yYyiNvXTethxtYP7", udp: true}
+  - {name: CN_43f64_0005, server: b.baodesign.top, port: 25006, type: vmess, uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b, alterId: 0, cipher: auto, tls: false}
+  - {name: CR_43f64_0006, type: vless, server: 190.93.247.155, port: 80, uuid: a194cf71-ac0f-429f-9ade-c859441e05e0, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: Hu2.v2vless.site.}}}
+  - {name: FR_43f64_0007, type: vmess, server: 23.162.152.177, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, udp: true, tls: true, servername: 23.162.152.177, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.162.152.177}}}
+  - {name: GB_43f64_0008, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_43f64_0009, port: 443, server: 94.247.142.241, type: vless, network: ws, tls: true, udp: true, servername: fq521.6789.cloudns.be, skip-cert-verify: true, ws-opts: {path: /Twitterfreecodes, headers: {Host: fq521.6789.cloudns.be}}, uuid: 775213ac-3976-439a-8977-3277c0e4735d}
+  - {name: GB_43f64_0010, port: 443, server: 94.247.142.241, type: vless, network: ws, tls: true, udp: true, servername: fq521.6789.cloudns.be, skip-cert-verify: true, ws-opts: {path: "/twitterfreecodessecurity=tls", headers: {Host: fq521.6789.cloudns.be}}, uuid: 775213ac-3976-439a-8977-3277c0e4735d}
+  - {name: GB_43f64_0011, port: 443, server: 94.247.142.241, type: vless, network: ws, tls: true, udp: true, servername: fq521.6789.cloudns.be, skip-cert-verify: true, ws-opts: {path: /twitterfreecodessecurity, headers: {Host: fq521.6789.cloudns.be}}, uuid: 775213ac-3976-439a-8977-3277c0e4735d}
+  - {name: GB_43f64_0012, port: 443, server: 94.247.142.241, type: vless, network: ws, tls: true, udp: true, servername: fq521.6789.cloudns.be, skip-cert-verify: true, ws-opts: {path: /twitterfreecodessecurity, headers: {Host: fq521.6789.cloudns.be}}, uuid: 775213ac-3976-439a-8977-3277c0e4735d, client-fingerprint: chrome}
+  - {name: GB_43f64_0013, type: vless, server: 94.247.142.241, port: 443, uuid: 775213ac-3976-439a-8977-3277c0e4735d, tls: true, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: "/twitterfreecodessecurity=tls", headers: {Host: fq521.6789.cloudns.be}}}
+  - {name: GB_43f64_0014, type: vless, server: 94.247.142.241, port: 443, uuid: 775213ac-3976-439a-8977-3277c0e4735d, udp: true, tls: true, client-fingerprint: edge, alpn: [h3, h2, http/1.1], skip-cert-verify: false, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: "/twitterfreecodessecurity=tls", headers: {Host: fq521.6789.cloudns.be}}}
+  - {name: GB_43f64_0015, type: vless, network: ws, server: 94.247.142.241, port: 443, uuid: 775213ac-3976-439a-8977-3277c0e4735d, servername: fq521.6789.cloudns.be, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: fq521.6789.cloudns.be}, path: /twitterfreecodessecurity}}
+  - {name: GB_43f64_0016, server: 94.247.142.241, type: vless, port: 443, udp: true, uuid: 775213ac-3976-439a-8977-3277c0e4735d, network: ws, tls: true, skip-cert-verify: true, servername: fq521.6789.cloudns.be, ws-opts: {path: /Twitterfreecodes, headers: {Host: fq521.6789.cloudns.be}}}
+  - {name: GB_43f64_0017, type: vless, server: 94.247.142.241, port: 443, uuid: 775213ac-3976-439a-8977-3277c0e4735d, udp: true, tls: true, skip-cert-verify: true, servername: fq521.6789.cloudns.be, network: ws, ws-opts: {path: "/twitterfreecodessecurityfp=chrome", headers: {Host: fq521.6789.cloudns.be}}}
+  - {name: IE_43f64_0018, type: ss, server: 52.164.203.76, port: 20143, cipher: chacha20-ietf-poly1305, password: 81aBd6IJIgFwT1lqcojSzK}
+  - {name: IN_43f64_0019, server: 103.174.86.113, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn}
+  - {name: JO_43f64_0020, type: vless, network: ws, server: 62.72.166.67, port: 2096, uuid: 775213ac-3976-439a-8977-3277c0e4735d, servername: fq521.6789.cloudns.be, tls: true, ws-opts: {headers: {Host: fq521.6789.cloudns.be}, path: /Twitter苏小柠}}
+  - {name: JP_43f64_0021, server: 149.22.87.241, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: JP_43f64_0022, server: 149.22.87.240, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: NL_43f64_0023, type: ss, server: 79.127.239.84, port: 19175, cipher: chacha20-ietf-poly1305, password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV}
+  - {name: NL_43f64_0024, server: ams1.fromblancwithlove.com, port: 19175, type: ss, cipher: chacha20-ietf-poly1305, password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV}
+  - {name: RU_43f64_0025, type: vless, network: ws, server: 188.42.145.159, port: 443, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d, servername: VIrgiNiavPn-nL.pagEs.dEv, skip-cert-verify: true, tls: true, udp: true, ws-opts: {headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}, path: "/security=tls"}}
+  - {name: SC_43f64_0026, type: vless, network: ws, server: 154.83.2.54, port: 2096, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19, servername: am-tunnel-6fs.pages.dev, skip-cert-verify: true, tls: true, udp: true, ws-opts: {headers: {Host: am-tunnel-6fs.pages.dev}, path: /}}
+  - {name: SC_43f64_0027, server: 154.83.2.54, type: vless, port: 2096, udp: true, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19, network: ws, tls: true, skip-cert-verify: true, servername: am-tunnel-6fs.pages.dev, ws-opts: {path: /, headers: {Host: am-tunnel-6fs.pages.dev}}}
+  - {name: SC_43f64_0028, type: vless, server: 154.83.2.54, port: 2096, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19, tls: true, servername: am-tunnel-6fs.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: am-tunnel-6fs.pages.dev}}}
+  - {name: SC_43f64_0029, port: 2096, server: 154.83.2.54, type: vless, network: ws, tls: true, udp: true, servername: am-tunnel-6fs.pages.dev, skip-cert-verify: true, ws-opts: {path: /, headers: {Host: am-tunnel-6fs.pages.dev}}, uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19}
+  - {name: SE_43f64_0030, type: vless, server: 185.146.173.58, port: 8080, uuid: 9c92dd71-acac-422b-b23e-e764f8cba0de, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: /servernett, headers: {Host: lc72.lebasnoo.ir.}}}
+  - {name: US_43f64_0031, server: 104.19.209.229, type: vless, port: 8880, udp: true, uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: late-tooth.granzinhannah.workers.dev}}}
+  - {name: US_43f64_0032, server: 150.241.95.62, port: 42445, type: ss, cipher: chacha20-ietf-poly1305, password: "flj72wu+&R"}
+  - {name: US_43f64_0033, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: US_43f64_0034, type: vless, network: ws, server: 199.232.37.15, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, skip-cert-verify: false, udp: true, ws-opts: {headers: {Host: sara193.ir}, path: "/BCXzvAcvSB7JzMWj?ed=2560"}}
+  - {name: US_43f64_0035, type: vless, server: 199.232.5.101, port: 443, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, tls: true, client-fingerprint: chrome, alpn: [h2, http/1.1], skip-cert-verify: true, servername: mefa.ir, network: ws, ws-opts: {path: "/H?ed=2560", headers: {Host: mefa.ir}}}
+  - {name: US_43f64_0036, type: vless, server: 199.232.37.15, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/BCXzvAcvSB7JzMWj?ed=2560", headers: {Host: sara193.ir}}}
+  - {name: US_43f64_0037, type: vless, server: www.speedtest.net, port: 443, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, tls: true, client-fingerprint: chrome, alpn: [h2, http/1.1], skip-cert-verify: false, servername: CCOnfIGPlUS.SPDTest.ggFf.NET, network: ws, ws-opts: {path: "/W5V92vB3BQrJH2yY?ed=2560", headers: {Host: cconfigplus.spdtest.ggff.net}}}
+  - {name: US_43f64_0038, type: ss, server: 23.134.94.168, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_43f64_0039, server: 38.110.1.107, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_43f64_0040, type: trojan, server: 216.128.147.13, port: 443, password: wkmY1R4EcP, sni: z-v2-003274.kailib.com, skip-cert-verify: true, udp: false}
+  - {name: US_43f64_0041, server: 142.202.48.105, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_43f64_0042, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560", headers: {Host: samane.ir}}}
+  - {name: US_43f64_0043, server: 159.246.55.132, port: 443, type: trojan, password: auto, sni: vip.123789.pp.ua, network: ws, ws-opts: {path: /, headers: {Host: vip.123789.pp.ua}}, skip-cert-verify: true}
+  - {name: US_43f64_0044, server: 38.121.43.204, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: US_43f64_0045, type: vmess, server: 104.19.72.200, port: 443, uuid: b87e29df-7dd9-4c0c-8530-b2847e27522c, alterId: 0, cipher: auto, udp: true, tls: true, servername: sjuzius.zdzdzd.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /juzi, headers: {Host: sjuzius.zdzdzd.xyz}}}
+  - {name: US_43f64_0046, type: vmess, server: 69.50.93.90, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 69.50.93.90}}}
+  - {name: US_43f64_0047, type: vmess, server: 69.50.93.90, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}}
+  - {name: US_43f64_0048, type: vless, server: hajlab.ucdavis.edu, port: 443, uuid: 9e8aad0e-5ba2-4005-b5fb-03521dc00345, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: hajlab.ucdavis.edu, network: ws, ws-opts: {path: /, headers: {Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v03.TzZLiMitTNeW.NeT}}}
+  - {name: US_43f64_0049, type: vless, server: hajlab.ucdavis.edu, port: 443, uuid: 9e8aad0e-5ba2-4005-b5fb-03521dc00345, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: hajlab.ucdavis.edu, network: ws, ws-opts: {path: /, headers: {Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v10.TzZLiMitTNeW.NeT}}}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - CA_43574_0001
-  - CA_43574_0002
-  - CH_43574_0003
-  - CH_43574_0004
-  - CN_43574_0005
-  - CN_43574_0006
-  - CN_43574_0007
-  - CR_43574_0008
-  - DE_43574_0009
-  - DE_43574_0010
-  - DE_43574_0011
-  - DE_43574_0012
-  - DE_43574_0013
-  - FR_43574_0014
-  - FR_43574_0015
-  - GB_43574_0016
-  - GB_43574_0017
-  - GB_43574_0018
-  - GB_43574_0019
-  - GB_43574_0020
-  - GB_43574_0021
-  - GB_43574_0022
-  - GB_43574_0023
-  - GB_43574_0024
-  - GB_43574_0025
-  - GB_43574_0026
-  - HK_43574_0027
-  - IE_43574_0028
-  - IR_43574_0029
-  - JO_43574_0030
-  - JP_43574_0031
-  - JP_43574_0032
-  - JP_43574_0033
-  - JP_43574_0034
-  - JP_43574_0035
-  - JP_43574_0036
-  - JP_43574_0037
-  - LT_43574_0038
-  - NL_43574_0039
-  - NL_43574_0040
-  - RU_43574_0041
-  - SC_43574_0042
-  - SC_43574_0043
-  - SC_43574_0044
-  - SC_43574_0045
-  - SC_43574_0046
-  - SC_43574_0047
-  - US_43574_0048
-  - US_43574_0049
-  - US_43574_0050
-  - US_43574_0051
-  - US_43574_0052
-  - US_43574_0053
-  - US_43574_0054
-  - US_43574_0055
-  - US_43574_0056
-  - US_43574_0057
-  - US_43574_0058
-  - US_43574_0059
-  - US_43574_0060
-  - US_43574_0061
-  - US_43574_0062
-  - US_43574_0063
-  - US_43574_0064
-  - US_43574_0065
-  - US_43574_0066
-  - US_43574_0067
-  - US_43574_0068
-  - US_43574_0069
-  - US_43574_0070
-  - US_43574_0071
-  - US_43574_0072
-  - VN_43574_0073
+  - AE_43f64_0001
+  - CA_43f64_0002
+  - CA_43f64_0003
+  - CN_43f64_0004
+  - CN_43f64_0005
+  - CR_43f64_0006
+  - FR_43f64_0007
+  - GB_43f64_0008
+  - GB_43f64_0009
+  - GB_43f64_0010
+  - GB_43f64_0011
+  - GB_43f64_0012
+  - GB_43f64_0013
+  - GB_43f64_0014
+  - GB_43f64_0015
+  - GB_43f64_0016
+  - GB_43f64_0017
+  - IE_43f64_0018
+  - IN_43f64_0019
+  - JO_43f64_0020
+  - JP_43f64_0021
+  - JP_43f64_0022
+  - NL_43f64_0023
+  - NL_43f64_0024
+  - RU_43f64_0025
+  - SC_43f64_0026
+  - SC_43f64_0027
+  - SC_43f64_0028
+  - SC_43f64_0029
+  - SE_43f64_0030
+  - US_43f64_0031
+  - US_43f64_0032
+  - US_43f64_0033
+  - US_43f64_0034
+  - US_43f64_0035
+  - US_43f64_0036
+  - US_43f64_0037
+  - US_43f64_0038
+  - US_43f64_0039
+  - US_43f64_0040
+  - US_43f64_0041
+  - US_43f64_0042
+  - US_43f64_0043
+  - US_43f64_0044
+  - US_43f64_0045
+  - US_43f64_0046
+  - US_43f64_0047
+  - US_43f64_0048
+  - US_43f64_0049
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - CA_43574_0001
-  - CA_43574_0002
-  - CH_43574_0003
-  - CH_43574_0004
-  - CN_43574_0005
-  - CN_43574_0006
-  - CN_43574_0007
-  - CR_43574_0008
-  - DE_43574_0009
-  - DE_43574_0010
-  - DE_43574_0011
-  - DE_43574_0012
-  - DE_43574_0013
-  - FR_43574_0014
-  - FR_43574_0015
-  - GB_43574_0016
-  - GB_43574_0017
-  - GB_43574_0018
-  - GB_43574_0019
-  - GB_43574_0020
-  - GB_43574_0021
-  - GB_43574_0022
-  - GB_43574_0023
-  - GB_43574_0024
-  - GB_43574_0025
-  - GB_43574_0026
-  - HK_43574_0027
-  - IE_43574_0028
-  - IR_43574_0029
-  - JO_43574_0030
-  - JP_43574_0031
-  - JP_43574_0032
-  - JP_43574_0033
-  - JP_43574_0034
-  - JP_43574_0035
-  - JP_43574_0036
-  - JP_43574_0037
-  - LT_43574_0038
-  - NL_43574_0039
-  - NL_43574_0040
-  - RU_43574_0041
-  - SC_43574_0042
-  - SC_43574_0043
-  - SC_43574_0044
-  - SC_43574_0045
-  - SC_43574_0046
-  - SC_43574_0047
-  - US_43574_0048
-  - US_43574_0049
-  - US_43574_0050
-  - US_43574_0051
-  - US_43574_0052
-  - US_43574_0053
-  - US_43574_0054
-  - US_43574_0055
-  - US_43574_0056
-  - US_43574_0057
-  - US_43574_0058
-  - US_43574_0059
-  - US_43574_0060
-  - US_43574_0061
-  - US_43574_0062
-  - US_43574_0063
-  - US_43574_0064
-  - US_43574_0065
-  - US_43574_0066
-  - US_43574_0067
-  - US_43574_0068
-  - US_43574_0069
-  - US_43574_0070
-  - US_43574_0071
-  - US_43574_0072
-  - VN_43574_0073
+  - AE_43f64_0001
+  - CA_43f64_0002
+  - CA_43f64_0003
+  - CN_43f64_0004
+  - CN_43f64_0005
+  - CR_43f64_0006
+  - FR_43f64_0007
+  - GB_43f64_0008
+  - GB_43f64_0009
+  - GB_43f64_0010
+  - GB_43f64_0011
+  - GB_43f64_0012
+  - GB_43f64_0013
+  - GB_43f64_0014
+  - GB_43f64_0015
+  - GB_43f64_0016
+  - GB_43f64_0017
+  - IE_43f64_0018
+  - IN_43f64_0019
+  - JO_43f64_0020
+  - JP_43f64_0021
+  - JP_43f64_0022
+  - NL_43f64_0023
+  - NL_43f64_0024
+  - RU_43f64_0025
+  - SC_43f64_0026
+  - SC_43f64_0027
+  - SC_43f64_0028
+  - SC_43f64_0029
+  - SE_43f64_0030
+  - US_43f64_0031
+  - US_43f64_0032
+  - US_43f64_0033
+  - US_43f64_0034
+  - US_43f64_0035
+  - US_43f64_0036
+  - US_43f64_0037
+  - US_43f64_0038
+  - US_43f64_0039
+  - US_43f64_0040
+  - US_43f64_0041
+  - US_43f64_0042
+  - US_43f64_0043
+  - US_43f64_0044
+  - US_43f64_0045
+  - US_43f64_0046
+  - US_43f64_0047
+  - US_43f64_0048
+  - US_43f64_0049
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
