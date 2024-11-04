@@ -20,7 +20,7 @@ Long-term use is not recommended! ! !</font><br/>
 
 若要持续、稳定、安全、高速的节点请自建，<br/>
 推荐使用Tuic,Hysteria2,Juicity协议套上Tls,任何时候稳定输出，<br/>
-下面是免实名免备案的高性价比 **美国** 云服务器推荐：<br/>
+下面是免实名免备案的高性价比 **德国、美国** 云服务器推荐：<br/>
 If you want a continuous, stable, safe, and high-speed node, please build it yourself.
 The following is a self-built node cost-effective cloud server recommendation:<br/>
 
