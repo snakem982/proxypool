@@ -38,14 +38,17 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 
 **美国服务器**（支付宝）
 
-| 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                             查看详情                              |
-|:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:-------------------------------------------------------------:|
-| 1  | 1500G | 1Gbps |   1   |  1 G  | 21 GB | $11.49 | [链接](https://my.racknerd.com/aff.php?aff=8613&pid=826 "点击查看") |
-| 2  | 2000G | 1Gbps |   1   |  1 G  | 15 GB | $10.99 | [链接](https://my.racknerd.com/aff.php?aff=8613&pid=838 "点击查看") |
-| 3  | 2500G | 1Gbps |   1   |  2 G  | 35 GB | $17.38 | [链接](https://my.racknerd.com/aff.php?aff=8613&pid=827 "点击查看") |
-| 4  | 3000G | 1Gbps |   1   |  1 G  | 17 GB | $10.98 | [链接](https://my.racknerd.com/aff.php?aff=8613&pid=358 "点击查看") |
-| 5  | 4000G | 1Gbps |   1   |  1 G  | 25 GB | $12.98 | [链接](https://my.racknerd.com/aff.php?aff=8613&pid=735 "点击查看") |
-| 6  | 4000G | 1Gbps |   1   | 1.5 G | 25 GB | $16.88 | [链接](https://my.racknerd.com/aff.php?aff=8613&pid=839 "点击查看") |
+| 序号 | 流量/月  |  网速   | CPU核数 | 运行内存 |  硬盘   |  美元/年  |                                查看详情                                |
+|:--:|:-----:|:-----:|:-----:|:----:|:-----:|:------:|:------------------------------------------------------------------:|
+| 1  |  无限   | 1Gbps |   1   | 1 G  | 20 GB |  $10   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=23 "点击查看") |
+| 5  | 3000G | 1Gbps |   1   | 1 G  | 17 GB | $10.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=358 "点击查看")    |
+| 3  | 2000G | 1Gbps |   1   | 1 G  | 15 GB | $10.99 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=838 "点击查看")    |
+| 2  | 1500G | 1Gbps |   1   | 1 G  | 21 GB | $11.49 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=826 "点击查看")    |
+| 6  | 4000G | 1Gbps |   1   | 1 G  | 25 GB | $12.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=735 "点击查看")    |
+| 7  |  无限   | 1Gbps |   1   | 2 G  | 40 GB |  $15   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=24 "点击查看") |
+| 4  | 2500G | 1Gbps |   1   | 2 G  | 35 GB | $17.38 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=827 "点击查看")    |
+| 8  |  无限   | 1Gbps |   2   | 3 G  | 50 GB |  $20   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=25 "点击查看") |
+| 9  |  无限   | 1Gbps |   3   | 4 G  | 60 GB |  $24   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=26 "点击查看") |
 
 **香港服务器** （需要注册登录后查看）
 
