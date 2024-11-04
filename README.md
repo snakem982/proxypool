@@ -24,15 +24,19 @@ Long-term use is not recommended! ! !</font><br/>
 If you want a continuous, stable, safe, and high-speed node, please build it yourself.
 The following is a self-built node cost-effective cloud server recommendation:<br/>
 
-**特别款**（每三年订购一次，将免费延长服务一年！）
+**德国服务器** (PayPal)
 
-| 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |     价格     |                                查看详情                                 |
-|:--:|:----:|:-----:|:-----:|:----:|:-----:|:----------:|:-------------------------------------------------------------------:|
-| 1  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 9.99美元/1年  | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 2  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 18.65美元/2年 | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/3年 | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
+| 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |      价格      |                                查看详情                                 |
+|:--:|:----:|:-----:|:-----:|:----:|:-----:|:------------:|:-------------------------------------------------------------------:|
+| 1  |  无限  | 1Gbps |   1   | 2 G  | 30 GB |  8.99欧元/1年   |  [链接](https://billing.deluxhost.net/aff.php?aff=64&pid=222 "点击查看")  |
+| 2  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  9.99美元/1年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
+| 3  | 20T  | 1Gbps |   1   | 1 G  | 10 GB | 10.87美元/1年 @ |      [链接](https://my.dasabo.com/aff.php?aff=51&pid=173 "点击查看")      |
+| 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  18.65美元/2年  | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
+| 5  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/3年 @ | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
-**稳定款**（可以用支付宝）
+@ 提工单可免费延长一年
+
+**美国服务器**（支付宝）
 
 | 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                             查看详情                              |
 |:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:-------------------------------------------------------------:|
