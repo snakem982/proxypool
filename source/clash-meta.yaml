@@ -18,308 +18,317 @@ dns:
   - tls://1.0.0.1:853
   - tls://dns.google:853
 proxies:
-  - {name: BG_33bd8_0001, type: vless, network: ws, server: 77.77.25.122, port: 11211, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: CA_33bd8_0002, type: ss, server: 149.22.95.183, port: 443, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: CA_33bd8_0003, port: 443, server: 149.22.95.183, type: ss, udp: true, password: shadowsocks, cipher: aes-128-gcm}
-  - {name: CA_33bd8_0004, type: ss, server: 149.22.95.183, port: 443, password: shadowsocks, cipher: aes-128-gcm}
-  - {name: CA_33bd8_0005, type: vmess, server: 23.162.200.227, port: 443, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}}
-  - {name: CA_33bd8_0006, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, tls: true, ws-opts: {path: /linkvws, headers: {Host: 23.162.200.227}}}
-  - {name: CN_33bd8_0007, port: 46602, server: 183.236.51.23, type: vmess, network: tcp, tls: false, udp: true, skip-cert-verify: true, cipher: auto, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64}
-  - {name: CN_33bd8_0008, server: 183.236.51.23, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: CN_33bd8_0009, type: vmess, server: 183.236.51.23, port: 51704, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: CZ_33bd8_0010, server: 194.87.11.56, port: 8000, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: DE_33bd8_0011, type: vless, network: ws, server: 91.107.191.214, port: 8080, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: DE_33bd8_0012, type: vless, network: ws, server: 176.9.50.58, port: 8080, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: DE_33bd8_0013, server: 91.107.140.10, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: DE_33bd8_0014, server: 152.53.13.241, port: 2003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: DE_33bd8_0015, type: vless, network: ws, server: 152.53.13.241, port: 2003, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: DE_33bd8_0016, type: vless, network: ws, server: 213.139.72.80, port: 8080, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: FR_33bd8_0017, server: 77.221.152.41, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: FR_33bd8_0018, type: vless, network: ws, server: 77.221.152.41, port: 2501, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {alterId: -1, cipher: aes-128-gcm, name: GB_33bd8_0019, password: shadowsocks, port: 443, server: 212.102.47.131, type: ss}
-  - {name: GB_33bd8_0020, type: ss, server: 212.102.47.131, port: 443, password: shadowsocks, cipher: aes-128-gcm}
-  - {name: GB_33bd8_0021, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB_33bd8_0022, type: vless, network: ws, server: 13.41.222.150, port: 8080, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: JP_33bd8_0023, port: 443, server: zmaoz.faculty.ucdavis.edu, type: vless, network: ws, tls: true, udp: true, servername: zmaoz.faculty.ucdavis.edu, skip-cert-verify: true, ws-opts: {path: "/5Ve373mPjKg4vceF?ed", headers: {Host: Falcunargo.net}}, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a}
-  - {name: KR_33bd8_0024, server: 221.166.163.61, port: 33890, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: NL_33bd8_0025, port: 2501, server: 194.246.81.62, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
-  - {name: NL_33bd8_0026, port: 2501, server: 89.110.102.115, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
-  - {name: NL_33bd8_0027, server: 194.246.81.62, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: NL_33bd8_0028, server: 89.110.102.115, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: RU_33bd8_0029, port: 443, server: 188.42.145.159, type: vless, network: ws, tls: true, udp: true, servername: VIrgiNiavPn-nL.pagEs.dEv, skip-cert-verify: true, ws-opts: {path: /, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d}
-  - {name: RU_33bd8_0030, port: 443, server: 188.42.145.159, type: vless, network: ws, tls: true, udp: true, servername: VIrgiNiavPn-nL.pagEs.dEv, skip-cert-verify: true, ws-opts: {path: /security=tls, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d}
-  - {name: RU_33bd8_0031, server: 91.219.150.221, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: RU_33bd8_0032, port: 8080, server: 91.219.150.221, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
-  - {name: RU_33bd8_0033, server: 91.219.150.221, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: RU_33bd8_0034, type: vless, network: ws, server: 91.219.150.221, port: 8080, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: RU_33bd8_0035, port: 8080, server: 91.219.150.221, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560fp=chrome", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
-  - {name: SE_33bd8_0036, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: SE_33bd8_0037, type: vless, server: 95.164.51.24, port: 2501, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
-  - {name: SE_33bd8_0038, port: 2501, server: 95.164.51.24, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
-  - {name: SE_33bd8_0039, type: vless, network: ws, server: 95.164.51.24, port: 2501, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: SE_33bd8_0040, port: 8080, server: 185.146.173.58, type: vless, network: ws, udp: true, skip-cert-verify: true, ws-opts: {path: /servernett, headers: {Host: lc73.lebasnoo.ir.}}, uuid: b69b17b9-4074-4316-9d80-103433d6bfe4}
-  - {name: SI_33bd8_0041, port: 443, server: 92.53.190.149, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0042, type: vless, server: 151.101.130.228, port: 443, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a, udp: true, tls: true, skip-cert-verify: false, servername: zmaoz.faculty.ucdavis.edu, network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2087", headers: {Host: Falcunargo.net}}}
-  - {name: US_33bd8_0043, type: vless, server: 151.101.130.228, port: 443, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a, udp: true, tls: true, client-fingerprint: randomized, alpn: [http/1.1], skip-cert-verify: false, servername: zmaoz.faculty.ucdavis.edu, network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2087", headers: {Host: Falcunargo.net}}}
-  - {name: US_33bd8_0044, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0045, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: ios, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0046, type: vless, network: ws, server: 199.232.5.79, port: 443, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, servername: mefa.ir, skip-cert-verify: true, tls: true, udp: true, client-fingerprint: chrome, ws-opts: {headers: {Host: mefa.ir}, path: "/H?ed=2560"}}
-  - {name: US_33bd8_0047, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0048, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: chromefp=chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0049, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: true, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=ios", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0050, type: ss, server: 156.146.38.168, port: 443, password: shadowsocks, cipher: aes-128-gcm}
-  - {name: US_33bd8_0051, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {alterId: -1, cipher: aes-128-gcm, name: US_33bd8_0052, password: shadowsocks, port: 443, server: 37.19.198.160, type: ss}
-  - {name: US_33bd8_0053, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chrome", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0054, server: 199.232.5.79, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: mefa.ir, network: ws, ws-opts: {path: "/H?ed=2560", headers: {Host: mefa.ir}}, udp: true}
-  - {alterId: -1, cipher: aes-128-gcm, name: US_33bd8_0055, password: shadowsocks, port: 443, server: 156.146.38.168, type: ss}
-  - {name: US_33bd8_0056, port: 443, server: 156.146.38.168, type: ss, udp: true, password: shadowsocks, cipher: aes-128-gcm}
-  - {name: US_33bd8_0057, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0058, type: ss, server: 37.19.198.160, port: 443, password: shadowsocks, cipher: aes-128-gcm}
-  - {name: US_33bd8_0059, server: 37.19.198.160, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: US_33bd8_0060, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: true, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chromefp=chromefp=chrome", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0061, port: 443, server: 37.19.198.160, type: ss, udp: true, password: shadowsocks, cipher: aes-128-gcm}
-  - {name: US_33bd8_0062, type: vless, network: ws, server: 199.232.5.101, port: 443, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, servername: mefa.ir, skip-cert-verify: true, tls: true, udp: true, client-fingerprint: chrome, ws-opts: {headers: {Host: mefa.ir}, path: "/H?ed=2560"}}
-  - {name: US_33bd8_0063, port: 443, server: 199.34.228.168, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0064, server: 199.232.5.101, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: mefa.ir, network: ws, ws-opts: {path: "/H?ed=2560", headers: {Host: mefa.ir}}, udp: true}
-  - {name: US_33bd8_0065, type: vless, network: ws, server: 199.34.228.171, port: 443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bpB005.paGeS.DEv, tls: true, ws-opts: {headers: {Host: bpB005.paGeS.DEv}, path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560"}}
-  - {name: US_33bd8_0066, type: vless, server: 199.34.228.182, port: 8443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, udp: true, tls: true, skip-cert-verify: false, servername: bPb005.paGes.DEV, network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2560", headers: {Host: bPb005.paGes.DEV}}}
-  - {name: US_33bd8_0067, port: 443, server: 199.34.228.182, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0068, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: true, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome", headers: {Host: samane.ir}}}
-  - {name: US_33bd8_0069, type: vless, network: ws, server: 199.34.228.161, port: 8443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bPb005.paGes.DEV, tls: true, ws-opts: {headers: {Host: bPb005.paGes.DEV}, path: "/fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560"}}
-  - {name: US_33bd8_0070, port: 443, server: 199.34.228.171, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0071, port: 8443, server: 199.34.228.71, type: vless, network: ws, tls: true, udp: true, servername: bPb005.paGes.DEV, skip-cert-verify: true, ws-opts: {path: "/fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bPb005.paGes.DEV}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0072, port: 2096, server: 199.34.228.171, type: vless, network: ws, tls: true, udp: true, servername: Bpb005.pageS.dev, skip-cert-verify: true, ws-opts: {path: "/hzhfpw9gkziupyad/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: Bpb005.pageS.dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0073, type: vless, network: ws, server: 199.34.228.173, port: 443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bpB005.paGeS.DEv, tls: true, ws-opts: {headers: {Host: bpB005.paGeS.DEv}, path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560"}}
-  - {name: US_33bd8_0074, port: 443, server: 199.34.228.167, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0075, port: 443, server: 199.34.228.135, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0076, port: 443, server: 69.84.182.177, type: vless, network: ws, tls: true, udp: true, servername: lp.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lp.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
-  - {name: US_33bd8_0077, port: 443, server: 199.34.228.181, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0078, server: 150.136.230.175, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: US_33bd8_0079, type: vless, network: ws, server: 199.34.228.162, port: 443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, tls: true, udp: true, ws-opts: {headers: {Host: BPb005.pAgeS.Dev}, path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq}}
-  - {name: US_33bd8_0080, type: vless, network: ws, server: 150.136.230.175, port: 587, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: US_33bd8_0081, server: 172.64.150.145, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, udp: true}
-  - {name: US_33bd8_0082, server: 172.64.150.145, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, network: ws, ws-opts: {path: /trC8BM8bTsAF0AnLYL, headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, skip-cert-verify: true}
-  - {name: US_33bd8_0083, server: 5.161.222.137, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: US_33bd8_0084, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, network: ws, ws-opts: {path: /trC8BM8bTsAF0AnLYL, headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, skip-cert-verify: true}
-  - {name: US_33bd8_0085, type: vless, network: ws, server: 66.235.200.146, port: 8443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bPb005.paGes.DEV, tls: true, ws-opts: {headers: {Host: bPb005.paGes.DEV}, path: "/fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560"}}
-  - {name: US_33bd8_0086, type: trojan, network: ws, server: 104.18.37.111, port: 443, password: bpb-trojan, skip-cert-verify: true, udp: true, sni: mindrOOm-5cz.pAgEs.dEV, ws-opts: {headers: {Host: mindrOOm-5cz.pAgEs.dEV}, path: "/trC8BM8bTsAF0AnLYL?ed=2560"}}
-  - {name: US_33bd8_0087, server: 172.232.23.86, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {alterId: -1, name: US_33bd8_0088, network: ws, password: bpb-trojan, port: 443, server: 104.18.37.111, skip-cert-verify: true, sni: mindrOOm-5cz.pAgEs.dEV, type: trojan, udp: true, ws-opts: {headers: {Host: mindrOOm-5cz.pAgEs.dEV}, path: "/trC8BM8bTsAF0AnLYL?ed=2560"}}
-  - {name: US_33bd8_0089, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, udp: true}
-  - {name: US_33bd8_0090, port: 443, server: 199.34.228.177, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0091, port: 443, server: 199.34.228.71, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0092, port: 443, server: 199.34.228.184, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0093, port: 443, server: 199.34.228.162, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {alterId: -1, name: US_33bd8_0094, network: ws, password: bpb-trojan, port: 443, server: 172.64.150.145, skip-cert-verify: true, sni: mindrOOm-5cz.pAgEs.dEV, type: trojan, udp: true, ws-opts: {headers: {Host: mindrOOm-5cz.pAgEs.dEV}, path: "/trC8BM8bTsAF0AnLYL?ed=2560"}}
-  - {name: US_33bd8_0095, port: 443, server: 199.34.228.70, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0096, type: vless, network: ws, server: 172.232.23.86, port: 587, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
-  - {name: US_33bd8_0097, port: 443, server: 107.174.39.112, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
-  - {name: US_33bd8_0098, type: vless, network: ws, server: 107.174.39.112, port: 443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bpB005.paGeS.DEv, tls: true, ws-opts: {headers: {Host: bpB005.paGeS.DEv}, path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560"}}
+  - {name: BG_34857_0001, server: 77.77.25.122, port: 11211, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: BG_34857_0002, type: vless, network: ws, server: 77.77.25.122, port: 11211, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: CA_34857_0003, port: 443, server: 149.22.95.183, type: ss, udp: true, password: shadowsocks, cipher: aes-128-gcm}
+  - {name: CA_34857_0004, type: ss, server: 149.22.95.183, port: 443, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: CA_34857_0005, type: ss, server: 149.22.95.183, port: 443, password: shadowsocks, cipher: aes-128-gcm}
+  - {name: CN_34857_0006, type: vmess, server: 183.236.51.23, port: 51704, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, udp: true, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: CN_34857_0007, server: 183.236.51.23, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: CN_34857_0008, port: 46602, server: 183.236.51.23, type: vmess, network: tcp, tls: false, udp: true, skip-cert-verify: true, cipher: auto, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64}
+  - {name: DE_34857_0009, server: 152.53.13.241, port: 2003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: DE_34857_0010, type: vless, network: ws, server: 152.53.13.241, port: 2003, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: DE_34857_0011, type: vless, network: ws, server: 176.9.50.58, port: 8080, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: FR_34857_0012, server: 15.188.212.240, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+  - {name: FR_34857_0013, server: 77.221.152.41, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: FR_34857_0014, type: vless, network: ws, server: 77.221.152.41, port: 2501, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: GB_34857_0015, alterId: -1, cipher: aes-128-gcm, password: shadowsocks, port: 443, server: 212.102.47.131, type: ss}
+  - {name: GB_34857_0016, type: ss, server: 212.102.47.131, port: 443, password: shadowsocks, cipher: aes-128-gcm}
+  - {name: GB_34857_0017, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_34857_0018, type: vless, network: ws, server: 13.41.222.150, port: 8080, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: IR_34857_0019, server: 2.189.104.10, port: 52418, type: vless, uuid: c31d6b4e-6105-4197-c94d-c45bce6c23a2, tls: false, skip-cert-verify: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /}}
+  - {name: IR_34857_0020, server: 2.189.130.90, port: 59058, type: vless, uuid: 4748c66f-6fd4-48ca-d64d-164af297af09, tls: false, skip-cert-verify: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /}}
+  - {name: JP_34857_0021, server: plowman.meijireform.com, port: 443, type: trojan, password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA, skip-cert-verify: false}
+  - {name: JP_34857_0022, port: 443, server: zmaoz.faculty.ucdavis.edu, type: vless, network: ws, tls: true, udp: true, servername: zmaoz.faculty.ucdavis.edu, skip-cert-verify: true, ws-opts: {path: "/5Ve373mPjKg4vceF?ed", headers: {Host: Falcunargo.net}}, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a}
+  - {name: NL_34857_0023, port: 2501, server: 89.110.102.115, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
+  - {name: NL_34857_0024, server: 89.110.102.115, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: RU_34857_0025, port: 443, server: 188.42.145.159, type: vless, network: ws, tls: true, udp: true, servername: VIrgiNiavPn-nL.pagEs.dEv, skip-cert-verify: true, ws-opts: {path: /, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d}
+  - {name: RU_34857_0026, port: 443, server: 188.42.145.159, type: vless, network: ws, tls: true, udp: true, servername: VIrgiNiavPn-nL.pagEs.dEv, skip-cert-verify: true, ws-opts: {path: /security=tls, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d}
+  - {name: RU_34857_0027, server: 91.219.150.221, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: RU_34857_0028, server: 91.219.150.221, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: RU_34857_0029, type: vless, network: ws, server: 91.219.150.221, port: 8080, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: RU_34857_0030, port: 8080, server: 91.219.150.221, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
+  - {name: RU_34857_0031, port: 8080, server: 91.219.150.221, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560fp=chrome", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
+  - {name: SE_34857_0032, server: 185.146.173.59, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: obdii.cfd, network: ws, ws-opts: {path: /linkws, headers: {Host: obdii.cfd}}}
+  - {name: SE_34857_0033, server: 185.146.173.58, port: 8080, type: vless, uuid: b69b17b9-4074-4316-9d80-103433d6bfe4, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: lc73.lebasnoo.ir., network: ws, ws-opts: {path: /servernett, headers: {Host: lc73.lebasnoo.ir.}}}
+  - {name: SE_34857_0034, server: 185.146.173.58, port: 80, type: vless, uuid: ab8a989e-ccce-4e0d-9aa7-8ae87928858c, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: lc74.lebasnoo.ir., network: ws, ws-opts: {path: /servernett, headers: {Host: lc74.lebasnoo.ir.}}}
+  - {name: SE_34857_0035, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: SE_34857_0036, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: SE_34857_0037, port: 2501, server: 95.164.51.24, type: vless, network: ws, tls: true, udp: true, servername: vless.ifx.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4}
+  - {name: SE_34857_0038, type: vless, network: ws, server: 95.164.51.24, port: 2501, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: SE_34857_0039, port: 8080, server: 185.146.173.58, type: vless, network: ws, udp: true, skip-cert-verify: true, ws-opts: {path: /servernett, headers: {Host: lc73.lebasnoo.ir.}}, uuid: b69b17b9-4074-4316-9d80-103433d6bfe4}
+  - {name: SI_34857_0040, port: 443, server: 92.53.190.149, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: TR_34857_0041, server: 5.188.36.93, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: wZZkAbTeHLw8AKN9mrpEz0FKWMCV6YW9b6888k2cqTl10PhT}
+  - {name: US_34857_0042, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560", headers: {Host: samane.ir}}}
+  - {name: US_34857_0043, server: 150.136.230.175, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: US_34857_0044, server: 5.161.222.137, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: US_34857_0045, server: obdii.cfd, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: obdii.cfd}}}
+  - {name: US_34857_0046, type: vless, server: 151.101.130.228, port: 443, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a, udp: true, tls: true, skip-cert-verify: false, servername: zmaoz.faculty.ucdavis.edu, network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2087", headers: {Host: Falcunargo.net}}}
+  - {name: US_34857_0047, type: vless, server: 151.101.130.228, port: 443, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a, udp: true, tls: true, client-fingerprint: randomized, alpn: [http/1.1], skip-cert-verify: false, servername: zmaoz.faculty.ucdavis.edu, network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2087", headers: {Host: Falcunargo.net}}}
+  - {name: US_34857_0048, server: speedtest.net, port: 443, type: vmess, uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: mehrjavan.ir, network: ws, ws-opts: {path: /m28jcoZZUhkqg6pk11, headers: {Host: mehrjavan.ir}}}
+  - {name: US_34857_0049, type: vless, network: ws, server: 199.232.5.79, port: 443, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, servername: mefa.ir, skip-cert-verify: true, tls: true, udp: true, client-fingerprint: chrome, ws-opts: {headers: {Host: mefa.ir}, path: "/H?ed=2560"}}
+  - {name: US_34857_0050, server: www.speedtest.net, port: 2087, type: vmess, uuid: 1d01e6ae-0d97-4a9f-af23-8d754085a94f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: OfFeR.MirAclestORy.tOP.}}}
+  - {name: US_34857_0051, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560", headers: {Host: samane.ir}}}
+  - {name: US_34857_0052, type: ss, server: 156.146.38.168, port: 443, password: shadowsocks, cipher: aes-128-gcm}
+  - {name: US_34857_0053, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: US_34857_0054, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chrome", headers: {Host: samane.ir}}}
+  - {name: US_34857_0055, alterId: -1, cipher: aes-128-gcm, password: shadowsocks, port: 443, server: 37.19.198.160, type: ss}
+  - {name: US_34857_0056, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: true, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=ios", headers: {Host: samane.ir}}}
+  - {name: US_34857_0057, server: 199.232.5.79, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: mefa.ir, network: ws, ws-opts: {path: "/H?ed=2560", headers: {Host: mefa.ir}}, udp: true}
+  - {name: US_34857_0058, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: true, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chromefp=chromefp=chrome", headers: {Host: samane.ir}}}
+  - {name: US_34857_0059, port: 443, server: 156.146.38.168, type: ss, udp: true, password: shadowsocks, cipher: aes-128-gcm}
+  - {name: US_34857_0060, type: ss, server: 37.19.198.160, port: 443, password: shadowsocks, cipher: aes-128-gcm}
+  - {name: US_34857_0061, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: chromefp=chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome", headers: {Host: samane.ir}}}
+  - {name: US_34857_0062, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome", headers: {Host: samane.ir}}}
+  - {name: US_34857_0063, server: 37.19.198.160, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: US_34857_0064, port: 443, server: 199.34.228.168, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0065, type: vless, network: ws, server: 199.34.228.171, port: 443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bpB005.paGeS.DEv, tls: true, ws-opts: {headers: {Host: bpB005.paGeS.DEv}, path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560"}}
+  - {name: US_34857_0066, port: 443, server: 199.34.228.182, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0067, type: vless, server: 199.34.228.182, port: 8443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, udp: true, tls: true, skip-cert-verify: false, servername: bPb005.paGes.DEV, network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2560", headers: {Host: bPb005.paGes.DEV}}}
+  - {name: US_34857_0068, port: 443, server: 199.34.228.171, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0069, type: vless, network: ws, server: 199.34.228.161, port: 8443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bPb005.paGes.DEV, tls: true, ws-opts: {headers: {Host: bPb005.paGes.DEV}, path: "/fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560"}}
+  - {name: US_34857_0070, type: vless, server: 167.82.30.71, port: 80, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, udp: true, skip-cert-verify: true, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome", headers: {Host: samane.ir}}}
+  - {name: US_34857_0071, server: 199.232.5.101, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: mefa.ir, network: ws, ws-opts: {path: "/H?ed=2560", headers: {Host: mefa.ir}}, udp: true}
+  - {name: US_34857_0072, port: 8443, server: 199.34.228.71, type: vless, network: ws, tls: true, udp: true, servername: bPb005.paGes.DEV, skip-cert-verify: true, ws-opts: {path: "/fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bPb005.paGes.DEV}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0073, port: 2096, server: 199.34.228.171, type: vless, network: ws, tls: true, udp: true, servername: Bpb005.pageS.dev, skip-cert-verify: true, ws-opts: {path: "/hzhfpw9gkziupyad/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: Bpb005.pageS.dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0074, type: vless, network: ws, server: 199.34.228.173, port: 443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bpB005.paGeS.DEv, tls: true, ws-opts: {headers: {Host: bpB005.paGeS.DEv}, path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560"}}
+  - {name: US_34857_0075, alterId: -1, cipher: aes-128-gcm, password: shadowsocks, port: 443, server: 156.146.38.168, type: ss}
+  - {name: US_34857_0076, port: 443, server: 199.34.228.181, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0077, port: 443, server: 199.34.228.167, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0078, port: 443, server: 199.34.228.135, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0079, port: 443, server: 69.84.182.177, type: vless, network: ws, tls: true, udp: true, servername: lp.ylka.us.kg, skip-cert-verify: true, ws-opts: {path: "/?ed=2560", headers: {Host: lp.ylka.us.kg}}, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a}
+  - {name: US_34857_0080, server: 150.136.230.175, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: US_34857_0081, type: vless, network: ws, server: 199.232.5.101, port: 443, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, servername: mefa.ir, skip-cert-verify: true, tls: true, udp: true, client-fingerprint: chrome, ws-opts: {headers: {Host: mefa.ir}, path: "/H?ed=2560"}}
+  - {name: US_34857_0082, type: vless, network: ws, server: 150.136.230.175, port: 587, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: US_34857_0083, type: vless, network: ws, server: 66.235.200.146, port: 8443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bPb005.paGes.DEV, tls: true, ws-opts: {headers: {Host: bPb005.paGes.DEV}, path: "/fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560"}}
+  - {name: US_34857_0084, type: vless, network: ws, server: 199.34.228.162, port: 443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, tls: true, udp: true, ws-opts: {headers: {Host: BPb005.pAgeS.Dev}, path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq}}
+  - {name: US_34857_0085, server: 172.64.150.145, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, udp: true}
+  - {name: US_34857_0086, server: 172.64.150.145, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, network: ws, ws-opts: {path: /trC8BM8bTsAF0AnLYL, headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, skip-cert-verify: true}
+  - {name: US_34857_0087, server: 5.161.222.137, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: US_34857_0088, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, network: ws, ws-opts: {path: /trC8BM8bTsAF0AnLYL, headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, skip-cert-verify: true}
+  - {name: US_34857_0089, type: trojan, network: ws, server: 104.18.37.111, port: 443, password: bpb-trojan, skip-cert-verify: true, udp: true, sni: mindrOOm-5cz.pAgEs.dEV, ws-opts: {headers: {Host: mindrOOm-5cz.pAgEs.dEV}, path: "/trC8BM8bTsAF0AnLYL?ed=2560"}}
+  - {name: US_34857_0090, port: 443, server: 199.34.228.162, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0091, server: 172.232.23.86, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: US_34857_0092, port: 443, server: 199.34.228.184, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0093, alterId: -1, network: ws, password: bpb-trojan, port: 443, server: 104.18.37.111, skip-cert-verify: true, sni: mindrOOm-5cz.pAgEs.dEV, type: trojan, udp: true, ws-opts: {headers: {Host: mindrOOm-5cz.pAgEs.dEV}, path: "/trC8BM8bTsAF0AnLYL?ed=2560"}}
+  - {name: US_34857_0094, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, udp: true}
+  - {name: US_34857_0095, port: 443, server: 199.34.228.177, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0096, port: 443, server: 199.34.228.71, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0097, port: 443, server: 199.34.228.70, type: vless, network: ws, tls: true, udp: true, servername: BPb005.pAgeS.Dev, skip-cert-verify: true, ws-opts: {path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq, headers: {Host: BPb005.pAgeS.Dev}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0098, alterId: -1, network: ws, password: bpb-trojan, port: 443, server: 172.64.150.145, skip-cert-verify: true, sni: mindrOOm-5cz.pAgEs.dEV, type: trojan, udp: true, ws-opts: {headers: {Host: mindrOOm-5cz.pAgEs.dEV}, path: "/trC8BM8bTsAF0AnLYL?ed=2560"}}
+  - {name: US_34857_0099, port: 443, server: 107.174.39.112, type: vless, network: ws, tls: true, udp: true, servername: bpB005.paGeS.DEv, skip-cert-verify: true, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4}
+  - {name: US_34857_0100, type: vless, network: ws, server: 172.232.23.86, port: 587, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: vless.ifx.us.kg, tls: true, udp: true, ws-opts: {headers: {Host: vless.ifx.us.kg}, path: "/?ed=2560"}}
+  - {name: US_34857_0101, type: vless, network: ws, server: 107.174.39.112, port: 443, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, servername: bpB005.paGeS.DEv, tls: true, ws-opts: {headers: {Host: bpB005.paGeS.DEv}, path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560"}}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - BG_33bd8_0001
-  - CA_33bd8_0002
-  - CA_33bd8_0003
-  - CA_33bd8_0004
-  - CA_33bd8_0005
-  - CA_33bd8_0006
-  - CN_33bd8_0007
-  - CN_33bd8_0008
-  - CN_33bd8_0009
-  - CZ_33bd8_0010
-  - DE_33bd8_0011
-  - DE_33bd8_0012
-  - DE_33bd8_0013
-  - DE_33bd8_0014
-  - DE_33bd8_0015
-  - DE_33bd8_0016
-  - FR_33bd8_0017
-  - FR_33bd8_0018
-  - GB_33bd8_0019
-  - GB_33bd8_0020
-  - GB_33bd8_0021
-  - GB_33bd8_0022
-  - JP_33bd8_0023
-  - KR_33bd8_0024
-  - NL_33bd8_0025
-  - NL_33bd8_0026
-  - NL_33bd8_0027
-  - NL_33bd8_0028
-  - RU_33bd8_0029
-  - RU_33bd8_0030
-  - RU_33bd8_0031
-  - RU_33bd8_0032
-  - RU_33bd8_0033
-  - RU_33bd8_0034
-  - RU_33bd8_0035
-  - SE_33bd8_0036
-  - SE_33bd8_0037
-  - SE_33bd8_0038
-  - SE_33bd8_0039
-  - SE_33bd8_0040
-  - SI_33bd8_0041
-  - US_33bd8_0042
-  - US_33bd8_0043
-  - US_33bd8_0044
-  - US_33bd8_0045
-  - US_33bd8_0046
-  - US_33bd8_0047
-  - US_33bd8_0048
-  - US_33bd8_0049
-  - US_33bd8_0050
-  - US_33bd8_0051
-  - US_33bd8_0052
-  - US_33bd8_0053
-  - US_33bd8_0054
-  - US_33bd8_0055
-  - US_33bd8_0056
-  - US_33bd8_0057
-  - US_33bd8_0058
-  - US_33bd8_0059
-  - US_33bd8_0060
-  - US_33bd8_0061
-  - US_33bd8_0062
-  - US_33bd8_0063
-  - US_33bd8_0064
-  - US_33bd8_0065
-  - US_33bd8_0066
-  - US_33bd8_0067
-  - US_33bd8_0068
-  - US_33bd8_0069
-  - US_33bd8_0070
-  - US_33bd8_0071
-  - US_33bd8_0072
-  - US_33bd8_0073
-  - US_33bd8_0074
-  - US_33bd8_0075
-  - US_33bd8_0076
-  - US_33bd8_0077
-  - US_33bd8_0078
-  - US_33bd8_0079
-  - US_33bd8_0080
-  - US_33bd8_0081
-  - US_33bd8_0082
-  - US_33bd8_0083
-  - US_33bd8_0084
-  - US_33bd8_0085
-  - US_33bd8_0086
-  - US_33bd8_0087
-  - US_33bd8_0088
-  - US_33bd8_0089
-  - US_33bd8_0090
-  - US_33bd8_0091
-  - US_33bd8_0092
-  - US_33bd8_0093
-  - US_33bd8_0094
-  - US_33bd8_0095
-  - US_33bd8_0096
-  - US_33bd8_0097
-  - US_33bd8_0098
+  - BG_34857_0001
+  - BG_34857_0002
+  - CA_34857_0003
+  - CA_34857_0004
+  - CA_34857_0005
+  - CN_34857_0006
+  - CN_34857_0007
+  - CN_34857_0008
+  - DE_34857_0009
+  - DE_34857_0010
+  - DE_34857_0011
+  - FR_34857_0012
+  - FR_34857_0013
+  - FR_34857_0014
+  - GB_34857_0015
+  - GB_34857_0016
+  - GB_34857_0017
+  - GB_34857_0018
+  - IR_34857_0019
+  - IR_34857_0020
+  - JP_34857_0021
+  - JP_34857_0022
+  - NL_34857_0023
+  - NL_34857_0024
+  - RU_34857_0025
+  - RU_34857_0026
+  - RU_34857_0027
+  - RU_34857_0028
+  - RU_34857_0029
+  - RU_34857_0030
+  - RU_34857_0031
+  - SE_34857_0032
+  - SE_34857_0033
+  - SE_34857_0034
+  - SE_34857_0035
+  - SE_34857_0036
+  - SE_34857_0037
+  - SE_34857_0038
+  - SE_34857_0039
+  - SI_34857_0040
+  - TR_34857_0041
+  - US_34857_0042
+  - US_34857_0043
+  - US_34857_0044
+  - US_34857_0045
+  - US_34857_0046
+  - US_34857_0047
+  - US_34857_0048
+  - US_34857_0049
+  - US_34857_0050
+  - US_34857_0051
+  - US_34857_0052
+  - US_34857_0053
+  - US_34857_0054
+  - US_34857_0055
+  - US_34857_0056
+  - US_34857_0057
+  - US_34857_0058
+  - US_34857_0059
+  - US_34857_0060
+  - US_34857_0061
+  - US_34857_0062
+  - US_34857_0063
+  - US_34857_0064
+  - US_34857_0065
+  - US_34857_0066
+  - US_34857_0067
+  - US_34857_0068
+  - US_34857_0069
+  - US_34857_0070
+  - US_34857_0071
+  - US_34857_0072
+  - US_34857_0073
+  - US_34857_0074
+  - US_34857_0075
+  - US_34857_0076
+  - US_34857_0077
+  - US_34857_0078
+  - US_34857_0079
+  - US_34857_0080
+  - US_34857_0081
+  - US_34857_0082
+  - US_34857_0083
+  - US_34857_0084
+  - US_34857_0085
+  - US_34857_0086
+  - US_34857_0087
+  - US_34857_0088
+  - US_34857_0089
+  - US_34857_0090
+  - US_34857_0091
+  - US_34857_0092
+  - US_34857_0093
+  - US_34857_0094
+  - US_34857_0095
+  - US_34857_0096
+  - US_34857_0097
+  - US_34857_0098
+  - US_34857_0099
+  - US_34857_0100
+  - US_34857_0101
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - BG_33bd8_0001
-  - CA_33bd8_0002
-  - CA_33bd8_0003
-  - CA_33bd8_0004
-  - CA_33bd8_0005
-  - CA_33bd8_0006
-  - CN_33bd8_0007
-  - CN_33bd8_0008
-  - CN_33bd8_0009
-  - CZ_33bd8_0010
-  - DE_33bd8_0011
-  - DE_33bd8_0012
-  - DE_33bd8_0013
-  - DE_33bd8_0014
-  - DE_33bd8_0015
-  - DE_33bd8_0016
-  - FR_33bd8_0017
-  - FR_33bd8_0018
-  - GB_33bd8_0019
-  - GB_33bd8_0020
-  - GB_33bd8_0021
-  - GB_33bd8_0022
-  - JP_33bd8_0023
-  - KR_33bd8_0024
-  - NL_33bd8_0025
-  - NL_33bd8_0026
-  - NL_33bd8_0027
-  - NL_33bd8_0028
-  - RU_33bd8_0029
-  - RU_33bd8_0030
-  - RU_33bd8_0031
-  - RU_33bd8_0032
-  - RU_33bd8_0033
-  - RU_33bd8_0034
-  - RU_33bd8_0035
-  - SE_33bd8_0036
-  - SE_33bd8_0037
-  - SE_33bd8_0038
-  - SE_33bd8_0039
-  - SE_33bd8_0040
-  - SI_33bd8_0041
-  - US_33bd8_0042
-  - US_33bd8_0043
-  - US_33bd8_0044
-  - US_33bd8_0045
-  - US_33bd8_0046
-  - US_33bd8_0047
-  - US_33bd8_0048
-  - US_33bd8_0049
-  - US_33bd8_0050
-  - US_33bd8_0051
-  - US_33bd8_0052
-  - US_33bd8_0053
-  - US_33bd8_0054
-  - US_33bd8_0055
-  - US_33bd8_0056
-  - US_33bd8_0057
-  - US_33bd8_0058
-  - US_33bd8_0059
-  - US_33bd8_0060
-  - US_33bd8_0061
-  - US_33bd8_0062
-  - US_33bd8_0063
-  - US_33bd8_0064
-  - US_33bd8_0065
-  - US_33bd8_0066
-  - US_33bd8_0067
-  - US_33bd8_0068
-  - US_33bd8_0069
-  - US_33bd8_0070
-  - US_33bd8_0071
-  - US_33bd8_0072
-  - US_33bd8_0073
-  - US_33bd8_0074
-  - US_33bd8_0075
-  - US_33bd8_0076
-  - US_33bd8_0077
-  - US_33bd8_0078
-  - US_33bd8_0079
-  - US_33bd8_0080
-  - US_33bd8_0081
-  - US_33bd8_0082
-  - US_33bd8_0083
-  - US_33bd8_0084
-  - US_33bd8_0085
-  - US_33bd8_0086
-  - US_33bd8_0087
-  - US_33bd8_0088
-  - US_33bd8_0089
-  - US_33bd8_0090
-  - US_33bd8_0091
-  - US_33bd8_0092
-  - US_33bd8_0093
-  - US_33bd8_0094
-  - US_33bd8_0095
-  - US_33bd8_0096
-  - US_33bd8_0097
-  - US_33bd8_0098
+  - BG_34857_0001
+  - BG_34857_0002
+  - CA_34857_0003
+  - CA_34857_0004
+  - CA_34857_0005
+  - CN_34857_0006
+  - CN_34857_0007
+  - CN_34857_0008
+  - DE_34857_0009
+  - DE_34857_0010
+  - DE_34857_0011
+  - FR_34857_0012
+  - FR_34857_0013
+  - FR_34857_0014
+  - GB_34857_0015
+  - GB_34857_0016
+  - GB_34857_0017
+  - GB_34857_0018
+  - IR_34857_0019
+  - IR_34857_0020
+  - JP_34857_0021
+  - JP_34857_0022
+  - NL_34857_0023
+  - NL_34857_0024
+  - RU_34857_0025
+  - RU_34857_0026
+  - RU_34857_0027
+  - RU_34857_0028
+  - RU_34857_0029
+  - RU_34857_0030
+  - RU_34857_0031
+  - SE_34857_0032
+  - SE_34857_0033
+  - SE_34857_0034
+  - SE_34857_0035
+  - SE_34857_0036
+  - SE_34857_0037
+  - SE_34857_0038
+  - SE_34857_0039
+  - SI_34857_0040
+  - TR_34857_0041
+  - US_34857_0042
+  - US_34857_0043
+  - US_34857_0044
+  - US_34857_0045
+  - US_34857_0046
+  - US_34857_0047
+  - US_34857_0048
+  - US_34857_0049
+  - US_34857_0050
+  - US_34857_0051
+  - US_34857_0052
+  - US_34857_0053
+  - US_34857_0054
+  - US_34857_0055
+  - US_34857_0056
+  - US_34857_0057
+  - US_34857_0058
+  - US_34857_0059
+  - US_34857_0060
+  - US_34857_0061
+  - US_34857_0062
+  - US_34857_0063
+  - US_34857_0064
+  - US_34857_0065
+  - US_34857_0066
+  - US_34857_0067
+  - US_34857_0068
+  - US_34857_0069
+  - US_34857_0070
+  - US_34857_0071
+  - US_34857_0072
+  - US_34857_0073
+  - US_34857_0074
+  - US_34857_0075
+  - US_34857_0076
+  - US_34857_0077
+  - US_34857_0078
+  - US_34857_0079
+  - US_34857_0080
+  - US_34857_0081
+  - US_34857_0082
+  - US_34857_0083
+  - US_34857_0084
+  - US_34857_0085
+  - US_34857_0086
+  - US_34857_0087
+  - US_34857_0088
+  - US_34857_0089
+  - US_34857_0090
+  - US_34857_0091
+  - US_34857_0092
+  - US_34857_0093
+  - US_34857_0094
+  - US_34857_0095
+  - US_34857_0096
+  - US_34857_0097
+  - US_34857_0098
+  - US_34857_0099
+  - US_34857_0100
+  - US_34857_0101
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
