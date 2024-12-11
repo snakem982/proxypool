@@ -18,437 +18,137 @@ dns:
   - tls://1.0.0.1:853
   - tls://dns.google:853
 proxies:
-  - {name: CA_6ad16_0001, server: 38.111.114.114, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CN_6ad16_0002, server: 219.135.231.205, port: 21042, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0003, server: 219.135.231.205, port: 21011, type: trojan, password: ffa68efa-e282-4fae-a4c4-5f1fdaa76d81, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0004, server: 219.135.231.205, port: 21135, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0005, server: 219.135.231.205, port: 21178, type: trojan, password: ffa68efa-e282-4fae-a4c4-5f1fdaa76d81, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0006, server: 120.240.88.37, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 0e91a29a-989d-4934-a1fb-7b653319397f, udp: true}
-  - {name: CN_6ad16_0007, server: 219.135.231.205, port: 18147, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0008, server: 183.236.51.23, port: 41020, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: CN_6ad16_0009, server: 219.135.231.205, port: 21004, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0010, server: 219.135.231.205, port: 21083, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0011, server: h-k03.loveroise.com, port: 54004, type: ss, cipher: chacha20-ietf-poly1305, password: 09833a6f-4d46-426e-87fe-7793a5489f84}
-  - {name: CN_6ad16_0012, server: 219.135.231.205, port: 21019, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0013, server: 219.135.231.205, port: 33955, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0014, server: 219.135.231.205, port: 40037, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0015, server: 219.135.231.205, port: 21181, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0016, server: 219.135.231.205, port: 21126, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: CN_6ad16_0017, server: 219.135.231.205, port: 21154, type: trojan, password: 6307d00e-56e0-4d0d-afe9-254155638bdf, skip-cert-verify: true, udp: true}
-  - {name: DE_6ad16_0018, server: 116.203.201.23, port: 9595, type: vless, uuid: f6f183ff-6bdf-4596-88d3-165feab4417f, tls: false, skip-cert-verify: false, servername: fast.com, network: http, http-opts: {method: GET, path: [/], headers: {Host: [fast.com]}}}
-  - {name: DE_6ad16_0019, server: 159.69.159.25, port: 43745, type: vless, uuid: 9c37a0cb-365d-4f64-bbf2-16f69a3f9a6a, tls: false, skip-cert-verify: false, network: tcp}
-  - {name: DE_6ad16_0020, server: 84.19.31.63, port: 50841, type: ss, cipher: chacha20-ietf-poly1305, password: 2EtPqn6HYjUNcHohLfUpFQwnfjCCQ5mh1mJdEMCBucuWZ9P1udkRKHnVxuo55k1KXz2Fo6jrgt18W66opty1e4bm1jzfCfBb}
-  - {name: FR_6ad16_0021, server: 51.158.244.38, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: GB_6ad16_0022, server: ssca.irundns.net, port: 443, type: ssr, cipher: aes-128-cfb, password: $$Turb0VPN$$, protocol: auth_aes128_md5, obfs: http_post, protocol-param: "", obfs-param: ""}
-  - {name: GB_6ad16_0023, server: 5.39.254.196, port: 23120, type: vmess, uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: HK_6ad16_0024, server: 154.211.8.84, port: 2083, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: HK_6ad16_0025, server: 154.211.8.155, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: JP_6ad16_0026, server: 52.195.210.20, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: JP_6ad16_0027, server: 103.116.7.189, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: JP_6ad16_0028, server: 103.116.7.67, port: 2083, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: JP_6ad16_0029, server: 103.116.7.103, port: 2083, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: JP_6ad16_0030, server: 103.116.7.133, port: 2083, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: JP_6ad16_0031, server: live.theworldwidewolf.com, port: 443, type: vless, uuid: a94a8c47-2dbc-491d-bcc6-2832f914149f, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: www.robertwalters-usa.com, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/@custom_config?ed=2048", headers: {Host: doWnloadlynEt.iR.}}}
-  - {name: JP_6ad16_0032, server: pscresearch.faculty.ucdavis.edu, port: 443, type: vless, uuid: ef78d69f-1bbf-4f5a-a669-df9670ed636a, tls: true, skip-cert-verify: false, servername: pscresearch.faculty.ucdavis.edu, network: ws, ws-opts: {path: "/ws/?ed=2048", headers: {Host: jihvbtctvy9778.com}}}
-  - {name: NL_6ad16_0033, server: 149.34.244.82, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: NN_6ad16_0034, server: 103.160.204.4, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: PL_6ad16_0035, server: 92.118.205.85, port: 20022, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: PL_6ad16_0036, server: 217.30.10.18, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: PL_6ad16_0037, server: 217.30.10.18, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: PL_6ad16_0038, server: 217.30.10.18, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: PL_6ad16_0039, server: 217.30.10.18, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: PL_6ad16_0040, server: 217.30.10.18, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: PL_6ad16_0041, server: 217.30.10.18, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: PL_6ad16_0042, server: 217.30.10.18, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: PL_6ad16_0043, server: 217.30.10.18, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: PL_6ad16_0044, server: 217.30.10.18, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: PL_6ad16_0045, server: 217.30.10.18, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: PL_6ad16_0046, server: 217.30.10.18, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: PL_6ad16_0047, server: 217.30.10.18, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: PL_6ad16_0048, server: 217.30.10.18, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: PL_6ad16_0049, server: 217.30.10.18, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: PL_6ad16_0050, server: 217.30.10.18, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: PL_6ad16_0051, server: 217.30.10.18, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: PL_6ad16_0052, server: 217.30.10.18, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: PL_6ad16_0053, server: 217.30.10.18, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: PL_6ad16_0054, server: 217.30.10.18, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: PL_6ad16_0055, server: 217.30.10.18, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: PL_6ad16_0056, server: 92.118.205.228, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: PL_6ad16_0057, server: 217.30.10.18, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: PL_6ad16_0058, server: 217.30.10.18, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: PL_6ad16_0059, server: 217.30.10.18, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: PL_6ad16_0060, server: 217.30.10.18, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: PL_6ad16_0061, server: 217.30.10.18, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: PL_6ad16_0062, server: 217.30.10.18, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: PL_6ad16_0063, server: 217.30.10.18, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: PL_6ad16_0064, server: 217.30.10.18, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: RU_6ad16_0065, server: 45.8.158.32, port: 13530, type: vmess, uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: SG_6ad16_0066, server: 103.36.91.32, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456}
-  - {name: SG_6ad16_0067, server: 68.183.227.236, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: SG_6ad16_0068, server: 128.199.172.224, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: SG_6ad16_0069, server: 27.50.48.18, port: 2087, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: SG_6ad16_0070, server: 27.50.49.209, port: 2087, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: SG_6ad16_0071, server: 68.183.227.4, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: SG_6ad16_0072, server: 92.243.74.23, port: 2096, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: SG_6ad16_0073, server: 206.238.236.221, port: 2083, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: SG_6ad16_0074, server: 27.50.49.177, port: 8443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, servername: 123.drmIng.bUzz, network: ws, ws-opts: {path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2048", headers: {Host: 123.drmIng.bUzz}}}
-  - {name: TR_6ad16_0075, server: 212.98.224.245, port: 13943, type: vless, uuid: f684b3ec-afcc-4bad-96f6-fefa05a9017f, tls: false, skip-cert-verify: false, network: tcp}
-  - {name: US_6ad16_0076, server: visa.org, port: 80, type: vless, uuid: 071adfc4-b337-4a90-bdcc-e66a4d327c55, tls: false, skip-cert-verify: false, servername: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch., network: ws, ws-opts: {path: "/xmlrpc.php?ed=1080", headers: {Host: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.}}}
-  - {name: US_6ad16_0077, server: 199.232.8.123, port: 80, type: vless, uuid: d578322a-266b-479d-9eda-f1b41324e721, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: IRANINGOAT2.IR, network: ws, ws-opts: {path: "/RsAMasAPMX5yb1YZ?ed=2560fp=chrome", headers: {Host: IRANINGOAT2.IR}}}
-  - {name: US_6ad16_0078, server: 199.232.8.123, port: 80, type: vless, uuid: d578322a-266b-479d-9eda-f1b41324e721, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: IRANINGOAT2.IR, network: ws, ws-opts: {path: "/RsAMasAPMX5yb1YZ?ed=2560fp=chromefp=chrome", headers: {Host: IRANINGOAT2.IR}}}
-  - {name: US_6ad16_0079, server: 140.248.189.52, port: 443, type: vless, uuid: 514371c3-8434-4704-b154-477436fa6fb2, tls: true, skip-cert-verify: true, client-fingerprint: safari, servername: elEnav2rAy.net, network: ws, ws-opts: {path: "/@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO-|-@TEHRANARGO?ed=256", headers: {Host: elEnav2rAy.net}}}
-  - {name: US_6ad16_0080, server: 199.232.255.25, port: 443, type: vless, uuid: 4822eda6-e0a4-5952-944d-79a93594b7d5, tls: true, skip-cert-verify: true, client-fingerprint: qq, servername: TEHRANARGO.cc, network: ws, ws-opts: {path: "/Telegram,@TEHRANARGO-Telegram,@TEHRANARGO-Telegram,@TEHRANARGO-Telegram,@TEHRANARGO-Telegram,@TEHRANARGO-Telegram,@TEHRANARGO-Telegram,@TEHRANARGO-Telegram,@TEHRANARGO-Telegram,@TEHRANARGO-Telegram,@TEHRANARGO?ed=2560", headers: {Host: TEHRANARGO.cc}}}
-  - {name: US_6ad16_0081, server: 67.220.95.102, port: 5498, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV, udp: true}
-  - {name: US_6ad16_0082, server: 38.110.1.252, port: 9090, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0083, server: 38.110.1.252, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_6ad16_0084, server: 38.110.1.252, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_6ad16_0085, server: 38.110.1.252, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_6ad16_0086, server: 38.110.1.252, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_6ad16_0087, server: 38.110.1.252, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_6ad16_0088, server: 67.220.95.102, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6ad16_0089, server: 199.232.125.50, port: 443, type: vless, uuid: ed6db7ef-ffaa-5cca-8bac-10ae46450010, tls: true, skip-cert-verify: true, client-fingerprint: qq, servername: ELiV2--ELENA.COM, network: ws, ws-opts: {path: /, headers: {Host: ELiV2--ELENA.COM}}}
-  - {name: US_6ad16_0090, server: 199.232.255.58, port: 443, type: vless, uuid: 514371c3-8434-4704-b154-477436fa6fb2, tls: true, skip-cert-verify: true, client-fingerprint: qq, servername: ELENAv2RAY.NET, network: ws, ws-opts: {path: /, headers: {Host: ELENAv2RAY.NET}}}
-  - {name: US_6ad16_0091, server: 38.110.1.252, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0092, server: 38.110.1.252, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_6ad16_0093, server: unlimiteddev.fastly80-3.hosting-ip.com, port: 80, type: vless, uuid: 2d1fd678-8bdc-4307-94bc-6e46427e3665, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: UNLIMITEDDEV.channel-telegram-1.ir, alpn: [h3, h2, http/1.1], network: ws, ws-opts: {path: "/@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480", headers: {Host: UNLIMITEDDEV.channel-telegram-1.ir}}}
-  - {name: US_6ad16_0094, server: 38.110.1.252, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0095, server: 151.101.2.219, port: 80, type: vless, uuid: 21116e83-f40b-4f97-a1f1-7bb1c5ea4609, tls: false, skip-cert-verify: false, servername: snapp.com, network: ws, ws-opts: {path: "/Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN?ed=2048", headers: {Host: snapp.com}}}
-  - {name: US_6ad16_0096, server: 67.220.95.102, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_6ad16_0097, server: 151.101.3.8, port: 80, type: vless, uuid: 39d5ea22-1c73-4b12-8b5b-2be82c78add8, tls: false, skip-cert-verify: false, servername: Tehranc2.Org, network: ws, ws-opts: {path: "/Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=443", headers: {Host: Tehranc2.Org}}}
-  - {name: US_6ad16_0098, server: 67.220.95.102, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_6ad16_0099, server: 151.101.128.204, port: 80, type: vless, uuid: c7953896-7bb2-4ce2-c7ca-117b2678b47f, tls: false, skip-cert-verify: false, servername: www.meloammn.ir, network: ws, ws-opts: {path: "/melo/ws?ed=2048", headers: {Host: www.meloammn.ir}}}
-  - {name: US_6ad16_0100, server: 67.220.95.102, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_6ad16_0101, server: 38.110.1.252, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0102, server: 67.220.95.102, port: 5499, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV, udp: true}
-  - {name: US_6ad16_0103, server: 67.220.95.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_6ad16_0104, server: 67.220.95.102, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_6ad16_0105, server: 67.220.95.102, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_6ad16_0106, server: 67.220.95.102, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0107, server: 38.110.1.252, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_6ad16_0108, server: 38.110.1.252, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_6ad16_0109, server: 104.18.165.78, port: 8080, type: vless, uuid: 92f3eba4-086f-4215-b658-20275e7992e1, tls: false, skip-cert-verify: false, servername: WSESmainV.nigh8movie.COM., network: ws, ws-opts: {path: "/TELEGRAM-@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray,@MainV2-ray?ed=8880", headers: {Host: WSESmainV.nigh8movie.COM.}}}
-  - {name: US_6ad16_0110, server: 67.220.95.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_6ad16_0111, server: 67.220.95.102, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_6ad16_0112, server: 151.101.2.165, port: 80, type: vless, uuid: de5eedc7-4292-4b5d-f7ac-851e7236e2c9, tls: false, skip-cert-verify: false, servername: XpnTeam.ir, network: ws, ws-opts: {path: "/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048", headers: {Host: XpnTeam.ir}}}
-  - {name: US_6ad16_0113, server: 67.220.95.102, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0114, server: speedtest.net, port: 80, type: vless, uuid: de5eedc7-4292-4b5d-f7ac-851e7236e2c9, tls: false, skip-cert-verify: false, servername: XpnTeam.ir, network: ws, ws-opts: {path: "/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048", headers: {Host: XpnTeam.ir}}}
-  - {name: US_6ad16_0115, server: 67.220.95.102, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_6ad16_0116, server: 67.220.95.102, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0117, server: 67.220.95.102, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0118, server: 67.220.95.102, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_6ad16_0119, server: 199.232.210.133, port: 443, type: vless, uuid: 2d5d4230-10e2-4ee9-afe5-a55c20d2cb3b, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: redbrain.shopping, network: ws, ws-opts: {path: "/de?ed=1048", headers: {Host: didnegar.com}}}
-  - {name: US_6ad16_0120, server: 107.155.57.11, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: US_6ad16_0121, server: 67.220.95.102, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_6ad16_0122, server: 67.220.95.102, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0123, server: 67.220.95.102, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_6ad16_0124, server: 67.220.95.102, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_6ad16_0125, server: 67.220.95.102, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6ad16_0126, server: 67.220.95.102, port: 9090, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0127, server: 67.220.95.102, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_6ad16_0128, server: 199.232.210.133, port: 443, type: vless, uuid: 2d5d4230-10e2-4ee9-afe5-a55c20d2cb3b, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: hajlab.ucdavis.edu, network: ws, ws-opts: {path: "/de?ed=1048", headers: {Host: didnegar.com}}}
-  - {name: US_6ad16_0129, server: 38.110.1.252, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_6ad16_0130, server: 67.220.95.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_6ad16_0131, server: 67.220.95.102, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_6ad16_0132, server: 67.220.95.102, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6ad16_0133, server: 67.220.95.102, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_6ad16_0134, server: 104.18.114.49, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: p1.613055.xyz, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: p1.613055.xyz}}, udp: true}
-  - {name: US_6ad16_0135, server: 67.220.95.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_6ad16_0136, server: 67.220.95.102, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6ad16_0137, server: us.569520.xyz, port: 10001, type: vmess, uuid: c7716936-798d-4237-b101-2d914e6d543a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: us.569520.xyz, network: ws, ws-opts: {path: /cctv13/4k.m3u8, headers: {Host: us.569520.xyz}}}
-  - {name: US_6ad16_0138, server: 172.67.27.46, port: 80, type: vless, uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e, tls: false, skip-cert-verify: true, servername: cc.ailicf.us.kg, network: ws, ws-opts: {path: /b5cdabf0-e04, headers: {Host: cc.ailicf.us.kg}}, udp: true}
-  - {name: US_6ad16_0139, server: 104.22.53.235, port: 80, type: vless, uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e, tls: false, skip-cert-verify: true, servername: cc.ailicf.us.kg, network: ws, ws-opts: {path: /b5cdabf0-e04, headers: {Host: cc.ailicf.us.kg}}, udp: true}
-  - {name: US_6ad16_0140, server: 151.101.194.133, port: 443, type: vless, uuid: 85143f6a-b331-4700-8c66-94c3190b2440, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: mio.splashthat.com, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80", headers: {Host: kazemi1211zerofun.com}}}
-  - {name: US_6ad16_0141, server: speedtest.net, port: 80, type: vless, uuid: 3e529e36-f5a0-58a9-bd7b-4795ff426e9a, tls: false, skip-cert-verify: false, servername: MOSI-MOSIV2.COM, network: ws, ws-opts: {path: /, headers: {Host: MOSI-MOSIV2.COM}}}
+  - {name: CN_9078a_0001, server: 183.236.51.23, port: 41020, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: GB_9078a_0002, server: 146.70.61.18, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: HK_9078a_0003, server: 43.198.108.18, port: 40793, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: hk12.bilibili.com, skip-cert-verify: true}
+  - {name: HK_9078a_0004, server: 1906e95f0a4e34cca3d5618e3498505d.v1.cac.node-is.green, port: 48539, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: hk12.bilibili.com, skip-cert-verify: true}
+  - {name: HK_9078a_0005, server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green, port: 49089, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: jp12.bilibili.com, skip-cert-verify: true, udp: true}
+  - {name: HK_9078a_0006, server: 7c0bb8d8872425b41520a1a9ad77fa89.v1.cac.node-is.green, port: 49782, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: jp12.bilibili.com, skip-cert-verify: true}
+  - {name: HK_9078a_0007, server: 16.163.104.216, port: 49089, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: jp12.bilibili.com, skip-cert-verify: true}
+  - {name: HK_9078a_0008, server: 18.162.188.231, port: 40793, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: hk12.bilibili.com, skip-cert-verify: true}
+  - {name: HK_9078a_0009, server: 18.163.48.140, port: 44991, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: us1.bilibili.com, skip-cert-verify: true}
+  - {name: HK_9078a_0010, server: ddbfb45e8b47580a5b2c2b5e43fa9213.v1.cac.node-is.green, port: 41790, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: us1.bilibili.com, skip-cert-verify: true}
+  - {name: HK_9078a_0011, server: 0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green, port: 44991, type: trojan, password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856, sni: us1.bilibili.com, skip-cert-verify: true, udp: true}
+  - {name: KZ_9078a_0012, server: 31.43.179.46, port: 443, type: vless, uuid: 6fd4f5b4-7460-4b78-9d25-c0c285b23ce4, tls: true, skip-cert-verify: false, servername: vbbc.ylks01.eu.org, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vbbc.ylks01.eu.org}}}
+  - {name: LV_9078a_0013, server: 46.183.217.232, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: NL_9078a_0014, server: 149.34.244.82, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: PL_9078a_0015, server: 217.30.10.18, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: PL_9078a_0016, server: 217.30.10.18, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: PL_9078a_0017, server: 217.30.10.18, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: PL_9078a_0018, server: 217.30.10.18, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: PL_9078a_0019, server: 217.30.10.18, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: PL_9078a_0020, server: 217.30.10.18, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: PL_9078a_0021, server: 217.30.10.18, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: PL_9078a_0022, server: 92.118.205.228, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: PL_9078a_0023, server: 217.30.10.18, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: PL_9078a_0024, server: 217.30.10.18, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: PL_9078a_0025, server: 217.30.10.18, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: PL_9078a_0026, server: 217.30.10.18, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: PL_9078a_0027, server: 217.30.10.18, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: PL_9078a_0028, server: 217.30.10.18, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: PL_9078a_0029, server: 217.30.10.18, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: PL_9078a_0030, server: 217.30.10.18, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: SG_9078a_0031, server: 68.183.235.122, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: SG_9078a_0032, server: suddaehihub.sudda.store, port: 443, type: vmess, uuid: ad2cea64-7ce8-46eb-b898-5b3a0937416f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true}
+  - {name: US_9078a_0033, server: 54.202.63.77, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: US_9078a_0034, server: visa.org, port: 80, type: vless, uuid: 071adfc4-b337-4a90-bdcc-e66a4d327c55, tls: false, skip-cert-verify: false, servername: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch., network: ws, ws-opts: {path: "/xmlrpc.php?ed=1080", headers: {Host: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.}}}
+  - {name: US_9078a_0035, server: 199.232.8.123, port: 80, type: vless, uuid: d578322a-266b-479d-9eda-f1b41324e721, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: IRANINGOAT2.IR, network: ws, ws-opts: {path: "/RsAMasAPMX5yb1YZ?ed=2560fp=chrome", headers: {Host: IRANINGOAT2.IR}}}
+  - {name: US_9078a_0036, server: 199.232.8.123, port: 80, type: vless, uuid: d578322a-266b-479d-9eda-f1b41324e721, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: IRANINGOAT2.IR, network: ws, ws-opts: {path: "/RsAMasAPMX5yb1YZ?ed=2560fp=chromefp=chrome", headers: {Host: IRANINGOAT2.IR}}}
+  - {name: US_9078a_0037, server: 104.18.165.30, port: 80, type: vless, uuid: 19d13bed-b8c5-4443-920e-12f833fed576, tls: false, skip-cert-verify: false, servername: csgo.mozilla.5.0.xn--2b5baaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.ajab.iP-ddns.com., network: ws, ws-opts: {path: "/xmlrpc.php/Telegram,VPNCUSTOMIZE,Telegram,VPNCUSTOMIZE,Telegram,VPNCUSTOMIZE?ed=1080", headers: {Host: csgo.mozilla.5.0.xn--2b5baaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.ajab.iP-ddns.com.}}}
+  - {name: US_9078a_0038, server: 107.155.57.11, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: US_9078a_0039, server: 142.202.48.220, port: 443, type: trojan, password: f0eb8c92ce8946aaba856569cff1a16b, sni: sherasheba.com, skip-cert-verify: true}
+  - {name: US_9078a_0040, server: sherasheba.com, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, skip-cert-verify: true, udp: true}
+  - {name: US_9078a_0041, server: sherasheba.com, port: 443, type: trojan, password: f0eb8c92ce8946aaba856569cff1a16b, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - CA_6ad16_0001
-  - CN_6ad16_0002
-  - CN_6ad16_0003
-  - CN_6ad16_0004
-  - CN_6ad16_0005
-  - CN_6ad16_0006
-  - CN_6ad16_0007
-  - CN_6ad16_0008
-  - CN_6ad16_0009
-  - CN_6ad16_0010
-  - CN_6ad16_0011
-  - CN_6ad16_0012
-  - CN_6ad16_0013
-  - CN_6ad16_0014
-  - CN_6ad16_0015
-  - CN_6ad16_0016
-  - CN_6ad16_0017
-  - DE_6ad16_0018
-  - DE_6ad16_0019
-  - DE_6ad16_0020
-  - FR_6ad16_0021
-  - GB_6ad16_0022
-  - GB_6ad16_0023
-  - HK_6ad16_0024
-  - HK_6ad16_0025
-  - JP_6ad16_0026
-  - JP_6ad16_0027
-  - JP_6ad16_0028
-  - JP_6ad16_0029
-  - JP_6ad16_0030
-  - JP_6ad16_0031
-  - JP_6ad16_0032
-  - NL_6ad16_0033
-  - NN_6ad16_0034
-  - PL_6ad16_0035
-  - PL_6ad16_0036
-  - PL_6ad16_0037
-  - PL_6ad16_0038
-  - PL_6ad16_0039
-  - PL_6ad16_0040
-  - PL_6ad16_0041
-  - PL_6ad16_0042
-  - PL_6ad16_0043
-  - PL_6ad16_0044
-  - PL_6ad16_0045
-  - PL_6ad16_0046
-  - PL_6ad16_0047
-  - PL_6ad16_0048
-  - PL_6ad16_0049
-  - PL_6ad16_0050
-  - PL_6ad16_0051
-  - PL_6ad16_0052
-  - PL_6ad16_0053
-  - PL_6ad16_0054
-  - PL_6ad16_0055
-  - PL_6ad16_0056
-  - PL_6ad16_0057
-  - PL_6ad16_0058
-  - PL_6ad16_0059
-  - PL_6ad16_0060
-  - PL_6ad16_0061
-  - PL_6ad16_0062
-  - PL_6ad16_0063
-  - PL_6ad16_0064
-  - RU_6ad16_0065
-  - SG_6ad16_0066
-  - SG_6ad16_0067
-  - SG_6ad16_0068
-  - SG_6ad16_0069
-  - SG_6ad16_0070
-  - SG_6ad16_0071
-  - SG_6ad16_0072
-  - SG_6ad16_0073
-  - SG_6ad16_0074
-  - TR_6ad16_0075
-  - US_6ad16_0076
-  - US_6ad16_0077
-  - US_6ad16_0078
-  - US_6ad16_0079
-  - US_6ad16_0080
-  - US_6ad16_0081
-  - US_6ad16_0082
-  - US_6ad16_0083
-  - US_6ad16_0084
-  - US_6ad16_0085
-  - US_6ad16_0086
-  - US_6ad16_0087
-  - US_6ad16_0088
-  - US_6ad16_0089
-  - US_6ad16_0090
-  - US_6ad16_0091
-  - US_6ad16_0092
-  - US_6ad16_0093
-  - US_6ad16_0094
-  - US_6ad16_0095
-  - US_6ad16_0096
-  - US_6ad16_0097
-  - US_6ad16_0098
-  - US_6ad16_0099
-  - US_6ad16_0100
-  - US_6ad16_0101
-  - US_6ad16_0102
-  - US_6ad16_0103
-  - US_6ad16_0104
-  - US_6ad16_0105
-  - US_6ad16_0106
-  - US_6ad16_0107
-  - US_6ad16_0108
-  - US_6ad16_0109
-  - US_6ad16_0110
-  - US_6ad16_0111
-  - US_6ad16_0112
-  - US_6ad16_0113
-  - US_6ad16_0114
-  - US_6ad16_0115
-  - US_6ad16_0116
-  - US_6ad16_0117
-  - US_6ad16_0118
-  - US_6ad16_0119
-  - US_6ad16_0120
-  - US_6ad16_0121
-  - US_6ad16_0122
-  - US_6ad16_0123
-  - US_6ad16_0124
-  - US_6ad16_0125
-  - US_6ad16_0126
-  - US_6ad16_0127
-  - US_6ad16_0128
-  - US_6ad16_0129
-  - US_6ad16_0130
-  - US_6ad16_0131
-  - US_6ad16_0132
-  - US_6ad16_0133
-  - US_6ad16_0134
-  - US_6ad16_0135
-  - US_6ad16_0136
-  - US_6ad16_0137
-  - US_6ad16_0138
-  - US_6ad16_0139
-  - US_6ad16_0140
-  - US_6ad16_0141
+  - CN_9078a_0001
+  - GB_9078a_0002
+  - HK_9078a_0003
+  - HK_9078a_0004
+  - HK_9078a_0005
+  - HK_9078a_0006
+  - HK_9078a_0007
+  - HK_9078a_0008
+  - HK_9078a_0009
+  - HK_9078a_0010
+  - HK_9078a_0011
+  - KZ_9078a_0012
+  - LV_9078a_0013
+  - NL_9078a_0014
+  - PL_9078a_0015
+  - PL_9078a_0016
+  - PL_9078a_0017
+  - PL_9078a_0018
+  - PL_9078a_0019
+  - PL_9078a_0020
+  - PL_9078a_0021
+  - PL_9078a_0022
+  - PL_9078a_0023
+  - PL_9078a_0024
+  - PL_9078a_0025
+  - PL_9078a_0026
+  - PL_9078a_0027
+  - PL_9078a_0028
+  - PL_9078a_0029
+  - PL_9078a_0030
+  - SG_9078a_0031
+  - SG_9078a_0032
+  - US_9078a_0033
+  - US_9078a_0034
+  - US_9078a_0035
+  - US_9078a_0036
+  - US_9078a_0037
+  - US_9078a_0038
+  - US_9078a_0039
+  - US_9078a_0040
+  - US_9078a_0041
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - CA_6ad16_0001
-  - CN_6ad16_0002
-  - CN_6ad16_0003
-  - CN_6ad16_0004
-  - CN_6ad16_0005
-  - CN_6ad16_0006
-  - CN_6ad16_0007
-  - CN_6ad16_0008
-  - CN_6ad16_0009
-  - CN_6ad16_0010
-  - CN_6ad16_0011
-  - CN_6ad16_0012
-  - CN_6ad16_0013
-  - CN_6ad16_0014
-  - CN_6ad16_0015
-  - CN_6ad16_0016
-  - CN_6ad16_0017
-  - DE_6ad16_0018
-  - DE_6ad16_0019
-  - DE_6ad16_0020
-  - FR_6ad16_0021
-  - GB_6ad16_0022
-  - GB_6ad16_0023
-  - HK_6ad16_0024
-  - HK_6ad16_0025
-  - JP_6ad16_0026
-  - JP_6ad16_0027
-  - JP_6ad16_0028
-  - JP_6ad16_0029
-  - JP_6ad16_0030
-  - JP_6ad16_0031
-  - JP_6ad16_0032
-  - NL_6ad16_0033
-  - NN_6ad16_0034
-  - PL_6ad16_0035
-  - PL_6ad16_0036
-  - PL_6ad16_0037
-  - PL_6ad16_0038
-  - PL_6ad16_0039
-  - PL_6ad16_0040
-  - PL_6ad16_0041
-  - PL_6ad16_0042
-  - PL_6ad16_0043
-  - PL_6ad16_0044
-  - PL_6ad16_0045
-  - PL_6ad16_0046
-  - PL_6ad16_0047
-  - PL_6ad16_0048
-  - PL_6ad16_0049
-  - PL_6ad16_0050
-  - PL_6ad16_0051
-  - PL_6ad16_0052
-  - PL_6ad16_0053
-  - PL_6ad16_0054
-  - PL_6ad16_0055
-  - PL_6ad16_0056
-  - PL_6ad16_0057
-  - PL_6ad16_0058
-  - PL_6ad16_0059
-  - PL_6ad16_0060
-  - PL_6ad16_0061
-  - PL_6ad16_0062
-  - PL_6ad16_0063
-  - PL_6ad16_0064
-  - RU_6ad16_0065
-  - SG_6ad16_0066
-  - SG_6ad16_0067
-  - SG_6ad16_0068
-  - SG_6ad16_0069
-  - SG_6ad16_0070
-  - SG_6ad16_0071
-  - SG_6ad16_0072
-  - SG_6ad16_0073
-  - SG_6ad16_0074
-  - TR_6ad16_0075
-  - US_6ad16_0076
-  - US_6ad16_0077
-  - US_6ad16_0078
-  - US_6ad16_0079
-  - US_6ad16_0080
-  - US_6ad16_0081
-  - US_6ad16_0082
-  - US_6ad16_0083
-  - US_6ad16_0084
-  - US_6ad16_0085
-  - US_6ad16_0086
-  - US_6ad16_0087
-  - US_6ad16_0088
-  - US_6ad16_0089
-  - US_6ad16_0090
-  - US_6ad16_0091
-  - US_6ad16_0092
-  - US_6ad16_0093
-  - US_6ad16_0094
-  - US_6ad16_0095
-  - US_6ad16_0096
-  - US_6ad16_0097
-  - US_6ad16_0098
-  - US_6ad16_0099
-  - US_6ad16_0100
-  - US_6ad16_0101
-  - US_6ad16_0102
-  - US_6ad16_0103
-  - US_6ad16_0104
-  - US_6ad16_0105
-  - US_6ad16_0106
-  - US_6ad16_0107
-  - US_6ad16_0108
-  - US_6ad16_0109
-  - US_6ad16_0110
-  - US_6ad16_0111
-  - US_6ad16_0112
-  - US_6ad16_0113
-  - US_6ad16_0114
-  - US_6ad16_0115
-  - US_6ad16_0116
-  - US_6ad16_0117
-  - US_6ad16_0118
-  - US_6ad16_0119
-  - US_6ad16_0120
-  - US_6ad16_0121
-  - US_6ad16_0122
-  - US_6ad16_0123
-  - US_6ad16_0124
-  - US_6ad16_0125
-  - US_6ad16_0126
-  - US_6ad16_0127
-  - US_6ad16_0128
-  - US_6ad16_0129
-  - US_6ad16_0130
-  - US_6ad16_0131
-  - US_6ad16_0132
-  - US_6ad16_0133
-  - US_6ad16_0134
-  - US_6ad16_0135
-  - US_6ad16_0136
-  - US_6ad16_0137
-  - US_6ad16_0138
-  - US_6ad16_0139
-  - US_6ad16_0140
-  - US_6ad16_0141
+  - CN_9078a_0001
+  - GB_9078a_0002
+  - HK_9078a_0003
+  - HK_9078a_0004
+  - HK_9078a_0005
+  - HK_9078a_0006
+  - HK_9078a_0007
+  - HK_9078a_0008
+  - HK_9078a_0009
+  - HK_9078a_0010
+  - HK_9078a_0011
+  - KZ_9078a_0012
+  - LV_9078a_0013
+  - NL_9078a_0014
+  - PL_9078a_0015
+  - PL_9078a_0016
+  - PL_9078a_0017
+  - PL_9078a_0018
+  - PL_9078a_0019
+  - PL_9078a_0020
+  - PL_9078a_0021
+  - PL_9078a_0022
+  - PL_9078a_0023
+  - PL_9078a_0024
+  - PL_9078a_0025
+  - PL_9078a_0026
+  - PL_9078a_0027
+  - PL_9078a_0028
+  - PL_9078a_0029
+  - PL_9078a_0030
+  - SG_9078a_0031
+  - SG_9078a_0032
+  - US_9078a_0033
+  - US_9078a_0034
+  - US_9078a_0035
+  - US_9078a_0036
+  - US_9078a_0037
+  - US_9078a_0038
+  - US_9078a_0039
+  - US_9078a_0040
+  - US_9078a_0041
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
