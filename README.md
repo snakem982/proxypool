@@ -24,31 +24,18 @@ Long-term use is not recommended! ! !</font><br/>
 If you want a continuous, stable, safe, and high-speed node, please build it yourself.
 The following is a self-built node cost-effective cloud server recommendation:<br/>
 
-**德国服务器** (PayPal)
-
-| 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |      价格      |                                查看详情                                 |
-|:--:|:----:|:-----:|:-----:|:----:|:-----:|:------------:|:-------------------------------------------------------------------:|
-| 1  |  无限  | 1Gbps |   1   | 2 G  | 30 GB |  8.99欧元/1年   |  [链接](https://billing.deluxhost.net/aff.php?aff=64&pid=222 "点击查看")  |
-| 2  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  9.99美元/1年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 3  | 20T  | 1Gbps |   1   | 1 G  | 10 GB | 10.87美元/1年 @ |      [链接](https://my.dasabo.com/aff.php?aff=51&pid=173 "点击查看")      |
-| 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  18.65美元/2年  | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 5  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/3年 @ | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-
-@ 提工单可免费延长一年
-
 **美国服务器**（支付宝）
 
-| 序号 | 流量/月  |  网速   | CPU核数 | 运行内存 |  硬盘   |  美元/年  |                                查看详情                                |
-|:--:|:-----:|:-----:|:-----:|:----:|:-----:|:------:|:------------------------------------------------------------------:|
-| 1  |  无限   | 1Gbps |   1   | 1 G  | 20 GB |  $10   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=23 "点击查看") |
-| 5  | 3000G | 1Gbps |   1   | 1 G  | 17 GB | $10.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=358 "点击查看")    |
-| 3  | 2000G | 1Gbps |   1   | 1 G  | 15 GB | $10.99 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=838 "点击查看")    |
-| 2  | 1500G | 1Gbps |   1   | 1 G  | 21 GB | $11.49 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=826 "点击查看")    |
-| 6  | 4000G | 1Gbps |   1   | 1 G  | 25 GB | $12.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=735 "点击查看")    |
-| 7  |  无限   | 1Gbps |   1   | 2 G  | 40 GB |  $15   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=24 "点击查看") |
-| 4  | 2500G | 1Gbps |   1   | 2 G  | 35 GB | $17.38 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=827 "点击查看")    |
-| 8  |  无限   | 1Gbps |   2   | 3 G  | 50 GB |  $20   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=25 "点击查看") |
-| 9  |  无限   | 1Gbps |   3   | 4 G  | 60 GB |  $24   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=26 "点击查看") |
+| 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
+|:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
+| 1  |  无限   | 1Gbps |   1   |  1 G  | 20 GB |  $10   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=23 "点击查看") |
+| 2  | 3000G | 1Gbps |   1   |  1 G  | 17 GB | $10.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=358 "点击查看")    |
+| 3  | 2000G | 1Gbps |   1   |  1 G  | 24 GB | $11.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=903 "点击查看")    |
+| 4  |  无限   | 1Gbps |   1   |  2 G  | 40 GB |  $15   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=24 "点击查看") |
+| 5  | 3500G | 1Gbps |   1   |  2 G  | 40 GB | $18.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=904 "点击查看")    |
+| 6  |  无限   | 1Gbps |   2   |  3 G  | 50 GB |  $20   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=25 "点击查看") |
+| 7  |  无限   | 1Gbps |   3   |  4 G  | 60 GB |  $24   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=26 "点击查看") |
+| 8  | 7000G | 1Gbps |   2   | 3.5 G | 65 GB | $32.49 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=905 "点击查看")    |
 
 **香港服务器** （需要注册登录后查看）
 
@@ -60,6 +47,18 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 4  | 600G | 100Mbps |   2   | 4 G  | 50 GB | ¥228  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
 | 5  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥288  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
 | 6  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥358  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
+
+**德国服务器** (PayPal)
+
+| 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |      价格      |                                查看详情                                 |
+|:--:|:----:|:-----:|:-----:|:----:|:-----:|:------------:|:-------------------------------------------------------------------:|
+| 1  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  9.99美元/1年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
+| 2  | 20T  | 1Gbps |   1   | 1 G  | 10 GB | 10.87美元/1年 @ |      [链接](https://my.dasabo.com/aff.php?aff=51&pid=173 "点击查看")      |
+| 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  18.65美元/2年  | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
+| 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/3年 @ | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
+
+@ 提工单可免费延长一年
+
 
 ## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
 
