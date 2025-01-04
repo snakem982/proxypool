@@ -53,11 +53,9 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |      价格      |                                查看详情                                 |
 |:--:|:----:|:-----:|:-----:|:----:|:-----:|:------------:|:-------------------------------------------------------------------:|
 | 1  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  9.99美元/1年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 2  | 20T  | 1Gbps |   1   | 1 G  | 10 GB | 10.87美元/1年 @ |      [链接](https://my.dasabo.com/aff.php?aff=51&pid=173 "点击查看")      |
+| 2  | 20T  | 1Gbps |   1   | 1 G  | 10 GB | 10.29美元/1年   |      [链接](https://my.dasabo.com/aff.php?aff=51&pid=173 "点击查看")      |
 | 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  18.65美元/2年  | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/3年 @ | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-
-@ 提工单可免费延长一年
+| 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/4年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
 
 ## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
