@@ -18,240 +18,95 @@ dns:
   - tls://1.0.0.1:853
   - tls://dns.google:853
 proxies:
-  - {name: AU_ccb24_0001, server: 45.32.245.199, port: 8080, type: vless, uuid: 9e1457b1-113b-442d-d4dc-6b1f05d374e9, tls: false, skip-cert-verify: false, network: ws}
-  - {name: CH_ccb24_0002, server: 138.124.53.161, port: 443, type: vless, uuid: bf2434c2-2200-4c3e-a5dc-6f9aadd4fcd4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: dd4.trackid.ir, alpn: [h3, h2, http/1.1], network: ws, ws-opts: {path: /, headers: {Host: dd4.trackid.ir}}}
-  - {name: CN_ccb24_0003, server: 120.232.217.96, port: 47479, type: trojan, password: 0bc68743-cff8-4730-9818-9d8192ee335c, skip-cert-verify: true}
-  - {name: CN_ccb24_0004, server: console.02.aliyun.aq.kunlunaqs.com, port: 45578, type: ss, cipher: chacha20-ietf-poly1305, password: 7243745919d6de49a5db, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: CN_ccb24_0005, server: 223.113.54.145, port: 36442, type: trojan, password: phXKwfrd, skip-cert-verify: true}
-  - {name: CN_ccb24_0006, server: 120.232.217.96, port: 16233, type: trojan, password: 0bc68743-cff8-4730-9818-9d8192ee335c, skip-cert-verify: true, udp: true}
-  - {name: CN_ccb24_0007, server: 120.232.217.96, port: 21146, type: trojan, password: 0bc68743-cff8-4730-9818-9d8192ee335c, skip-cert-verify: true, udp: true}
-  - {name: CN_ccb24_0008, server: 120.232.217.96, port: 21142, type: trojan, password: 0bc68743-cff8-4730-9818-9d8192ee335c, skip-cert-verify: true}
-  - {name: CN_ccb24_0009, server: jhdfzvnq.xn--fiqs8sjz2bull.com, port: 27628, type: ss, cipher: chacha20-ietf-poly1305, password: 9a745aad-7df7-480b-8f6b-068ca21f6954, udp: true}
-  - {name: CN_ccb24_0010, server: 183.236.51.23, port: 51037, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: CN_ccb24_0011, server: w72tapyb.slashdevslashnetslashtun.net, port: 16008, type: ss, cipher: aes-256-gcm, password: 9O695G99XQ9IB757}
-  - {name: CN_ccb24_0012, server: 120.232.217.96, port: 39431, type: trojan, password: 0bc68743-cff8-4730-9818-9d8192ee335c, skip-cert-verify: true, udp: true}
-  - {name: CN_ccb24_0013, server: 42.192.52.227, port: 22889, type: socks5, username: zeaslity, password: lovemm.23}
-  - {name: CR_ccb24_0014, server: 190.93.245.137, port: 443, type: vless, uuid: bcaa20f4-589b-4c9a-9c6f-810f31ad6b30, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: WWW.pegAh-Esfahan.De., alpn: [h2, http/1.1], network: ws, ws-opts: {path: /, headers: {Host: WWW.pegAh-Esfahan.De.}}}
-  - {name: CR_ccb24_0015, server: ns4.esfahansiman.com, port: 443, type: vless, uuid: bcaa20f4-589b-4c9a-9c6f-810f31ad6b30, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: WWW.moghavEmat.bLOg., alpn: [h2, http/1.1], network: ws, ws-opts: {path: /, headers: {Host: WWW.moghavEmat.bLOg.}}}
-  - {name: CR_ccb24_0016, server: 190.93.245.137, port: 443, type: vless, uuid: bcaa20f4-589b-4c9a-9c6f-810f31ad6b30, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: WWW.EsfahAnsimaN.infO., alpn: [h2, http/1.1], network: ws, ws-opts: {path: /, headers: {Host: WWW.EsfahAnsimaN.infO.}}}
-  - {name: CR_ccb24_0017, server: ns4.esfahansiman.com, port: 443, type: vless, uuid: bcaa20f4-589b-4c9a-9c6f-810f31ad6b30, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: WWW.pegAh-Esfahan.De., alpn: [h2, http/1.1], network: ws, ws-opts: {path: /, headers: {Host: WWW.pegAh-Esfahan.De.}}}
-  - {name: DE_ccb24_0018, server: 46.101.71.41, port: 45908, type: vless, uuid: b2705a86-7b78-4f59-9205-3a16062b8018, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: tunnel-pro.yoooka.lol, alpn: [h3, h2, http/1.1], network: http, http-opts: {method: GET, path: [/], headers: {Host: [tunnel-pro.yoooka.lol]}}}
-  - {name: DE_ccb24_0019, server: tunnel-pro.yoooka.lol, port: 45908, type: vless, uuid: b2705a86-7b78-4f59-9205-3a16062b8018, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: tunnel-pro.yoooka.lol, alpn: [h3, h2, http/1.1], network: http, http-opts: {method: GET, path: [/], headers: {Host: [m-net.speedtestcustom.com]}}}
-  - {name: ES_ccb24_0020, server: 94.250.246.200, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}}
-  - {name: FR_ccb24_0021, server: 88.218.78.95, port: 8443, type: trojan, password: Aimer, sni: ameqo.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ameqo.esslh.filegear-sg.me}}}
-  - {name: GB_ccb24_0022, server: 143.47.243.144, port: 2053, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}}
-  - {name: HK_ccb24_0023, server: 103.30.76.250, port: 16785, type: vmess, uuid: 086ce045-924d-4538-82ef-debb4ae9ccb5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: HK_ccb24_0024, server: hk9.ftq.ink, port: 4000, type: http, tls: true}
-  - {name: HK_ccb24_0025, server: ftq.ink, port: 4000, type: http, tls: true}
-  - {name: IN_ccb24_0026, server: 5.8.35.208, port: 443, type: trojan, password: '3648425794742788096', sni: loving-boa.treefrog761.one, skip-cert-verify: false}
-  - {name: JP_ccb24_0027, server: 54.199.222.156, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: JP_ccb24_0028, server: live.989bull.com, port: 443, type: vless, uuid: 5f5a590a-1424-4297-902b-466d10535d49, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: live.989bull.com, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/CHANNEL---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN?ed=8080",
-    headers: {Host: Golestan_VPN.com}}}
-  - {name: JP_ccb24_0029, server: zmaoz.faculty.ucdavis.edu, port: 443, type: vless, uuid: b51ca1a1-b1fb-4d60-84c7-aebbf3a66ea1, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: zmaoz.faculty.ucdavis.edu., alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/olem/ws?ed=4096", headers: {Host: fonmelo.com}}}
-  - {name: JP_ccb24_0030, server: cloud.xmsvx.com, port: 443, type: vless, uuid: bcaa20f4-589b-4c9a-9c6f-810f31ad6b30, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: mio.splashthat.com, alpn: [h2, http/1.1], network: ws, ws-opts: {path: /CANALTELEGRAM--@jet_config--CANALTELEGRAM--@jet_config, headers: {Host: jetservices55.ir}}}
-  - {name: KR_ccb24_0031, server: 218.237.185.230, port: 31066, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: KR_ccb24_0032, server: 121.170.203.148, port: 4563, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: KR_ccb24_0033, server: 13.125.197.254, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: KR_ccb24_0034, server: 168.126.234.232, port: 58989, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: KR_ccb24_0035, server: 125.141.31.74, port: 28290, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: KR_ccb24_0036, server: 3.38.105.152, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: NL_ccb24_0037, server: 185.204.109.190, port: 8443, type: trojan, password: Aimer, sni: ameqo.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ameqo.esslh.filegear-sg.me}}}
-  - {name: NL_ccb24_0038, server: 158.101.209.76, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}}
-  - {name: PT_ccb24_0039, server: 185.231.233.173, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: RO_ccb24_0040, server: 45.136.199.132, port: 443, type: trojan, password: Aimer, sni: ameqo.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ameqo.esslh.filegear-sg.me}}}
-  - {name: RU_ccb24_0041, server: 46.254.92.33, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: mmdserver.us.kg, alpn: [h3, h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}}
-  - {name: RU_ccb24_0042, server: 195.58.49.50, port: 17926, type: vmess, uuid: 1ddb0b4d-9010-4e09-809f-86231c204e3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, udp: true}
-  - {name: SE_ccb24_0043, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}}
-  - {name: SI_ccb24_0044, server: 92.60.74.100, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: mmdserver.us.kg, alpn: [h3, h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}}
-  - {name: TR_ccb24_0045, server: 95.164.116.22, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_ccb24_0046, server: 167.82.1.102, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
-  - {name: US_ccb24_0047, server: 167.82.1.103, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0048, server: 167.82.0.47, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@V2ray_Alpha/?ed=2560", headers: {Host: teleirani.ir}}}
-  - {name: US_ccb24_0049, server: 167.82.0.147, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: /, headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0050, server: 167.82.100.124, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0051, server: 167.82.101.100, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0052, server: 198.41.199.226, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_ccb24_0053, server: 198.41.198.40, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_ccb24_0054, server: 198.41.205.44, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_ccb24_0055, server: 167.82.99.4, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0056, server: 167.82.101.10, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0057, server: 167.82.99.180, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0058, server: 198.41.209.27, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_ccb24_0059, server: 167.82.101.76, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/Telegram@V2ray_Alpha/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0060, server: 167.82.101.76, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0061, server: 167.82.102.107, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_ccb24_0062, server: 34.219.111.92, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: US_ccb24_0063, server: 141.101.122.107, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_ccb24_0064, server: 141.101.121.87, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_ccb24_0065, server: 209.94.90.87, port: 2087, type: trojan, password: Aimer, sni: ameqo.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ameqo.esslh.filegear-sg.me}}}
-  - {name: US_ccb24_0066, server: 141.101.123.208, port: 443, type: vless, uuid: 8e63cfe4-8855-4334-9619-a5d403bf2b8e, tls: true, skip-cert-verify: false, servername: usa.warpo.me, network: ws, ws-opts: {path: /bing, headers: {Host: usa.warpo.me}}}
-  - {name: US_ccb24_0067, server: 34.222.159.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: US_ccb24_0068, server: 18.236.91.62, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: US_ccb24_0069, server: 69.84.182.165, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}}
-  - {name: US_ccb24_0070, server: 172.82.16.99, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}}
-  - {name: US_ccb24_0071, server: 198.62.62.198, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}}
-  - {name: US_ccb24_0072, server: 69.84.182.106, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}}
-  - {name: US_ccb24_0073, server: 135.84.76.131, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}}
-  - {name: US_ccb24_0074, server: 198.2.195.7, port: 38005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1736415675034, headers: {Host: www.27306103.xyz}}}
-  - {name: ZA_ccb24_0075, server: 160.123.255.159, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}}
+  - {name: CN_e13c7_0001, server: 120.232.81.50, port: 16088, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, udp: true}
+  - {name: CN_e13c7_0002, server: 183.236.51.23, port: 48109, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: CN_e13c7_0003, server: 183.236.51.23, port: 51037, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_e13c7_0004, server: tk.hzlt.tkddns.xyz, port: 22641, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-a.tkong.cc}}, udp: true}
+  - {name: CN_e13c7_0005, server: tk.hzlt.tkddns.xyz, port: 22642, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-b.tkong.cc}}, udp: true}
+  - {name: CN_e13c7_0006, server: 183.236.48.158, port: 45402, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: FR_e13c7_0007, server: 91.134.66.127, port: 22671, type: vless, uuid: ebc5660f-bb9b-415c-94ab-d3630189ceb9, tls: false, skip-cert-verify: false, servername: telewebion.com, network: http, http-opts: {method: GET, path: [/], headers: {Host: [telewebion.com]}}, udp: true}
+  - {name: IN_e13c7_0008, server: 5.8.35.208, port: 443, type: trojan, password: '3648425794742788096', sni: loving-boa.treefrog761.one, skip-cert-verify: false, udp: true}
+  - {name: JP_e13c7_0009, server: tw02.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: tw02.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: JP_e13c7_0010, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: tw01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: JP_e13c7_0011, server: us01.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: us01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: JP_e13c7_0012, server: 107.148.6.121, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
+  - {name: JP_e13c7_0013, server: 3-112-210-66.nip.io, port: 443, type: trojan, password: jehOWFQKcP, sni: 3-112-210-66.nip.io, skip-cert-verify: false, udp: true}
+  - {name: KR_e13c7_0014, server: p232.panda004.net, port: 59686, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: KR_e13c7_0015, server: 168.126.234.233, port: 40915, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: KR_e13c7_0016, server: 125.141.31.103, port: 43104, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: KR_e13c7_0017, server: 125.141.31.74, port: 28290, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: RU_e13c7_0018, server: 46.254.92.33, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: mmdserver.us.kg, alpn: [h3, h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}, udp: true}
+  - {name: RU_e13c7_0019, server: 195.58.49.50, port: 17926, type: vmess, uuid: 960c95a9-8502-4cbc-a527-d40c2d68d2b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, udp: true}
+  - {name: SE_e13c7_0020, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}, udp: true}
+  - {name: SG_e13c7_0021, server: sg.235261.xyz, port: 443, type: trojan, password: m3fdSqqtcr, sni: sg.235261.xyz, skip-cert-verify: false, udp: true}
+  - {name: UA_e13c7_0022, server: 46.202.194.73, port: 16383, type: vless, uuid: 225a19c0-2f15-4de7-9658-5ffcff656aac, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: speedtest.net, alpn: [h3, h2, http/1.1], network: http, http-opts: {method: GET, path: [/@OpenSSTPVpn@OpenSSTPVpn@OpenSSTPVpn@OpenSSTPVpn@OpenSSTPVpn@OpenSSTPVpn], headers: {Host: [speedtest.net]}}, udp: true}
+  - {name: US_e13c7_0023, server: 192.0.54.235, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, servername: mmdserver.us.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}, udp: true}
+  - {name: US_e13c7_0024, server: 198.62.62.13, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}, udp: true}
+  - {name: US_e13c7_0025, server: 160.79.104.231, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, skip-cert-verify: false, servername: dse.bgm2024.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dse.bgm2024.us.kg}}, udp: true}
+  - {name: US_e13c7_0026, server: 18-189-26-136.nip.io, port: 443, type: trojan, password: vZl3dFcxdE, sni: 18-189-26-136.nip.io, skip-cert-verify: false, udp: true}
+  - {name: US_e13c7_0027, server: 147135004002.sec20org.com, port: 443, type: vless, uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055, tls: true, skip-cert-verify: false, alpn: [h2, http/1.1], udp: true}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - AU_ccb24_0001
-  - CH_ccb24_0002
-  - CN_ccb24_0003
-  - CN_ccb24_0004
-  - CN_ccb24_0005
-  - CN_ccb24_0006
-  - CN_ccb24_0007
-  - CN_ccb24_0008
-  - CN_ccb24_0009
-  - CN_ccb24_0010
-  - CN_ccb24_0011
-  - CN_ccb24_0012
-  - CN_ccb24_0013
-  - CR_ccb24_0014
-  - CR_ccb24_0015
-  - CR_ccb24_0016
-  - CR_ccb24_0017
-  - DE_ccb24_0018
-  - DE_ccb24_0019
-  - ES_ccb24_0020
-  - FR_ccb24_0021
-  - GB_ccb24_0022
-  - HK_ccb24_0023
-  - HK_ccb24_0024
-  - HK_ccb24_0025
-  - IN_ccb24_0026
-  - JP_ccb24_0027
-  - JP_ccb24_0028
-  - JP_ccb24_0029
-  - JP_ccb24_0030
-  - KR_ccb24_0031
-  - KR_ccb24_0032
-  - KR_ccb24_0033
-  - KR_ccb24_0034
-  - KR_ccb24_0035
-  - KR_ccb24_0036
-  - NL_ccb24_0037
-  - NL_ccb24_0038
-  - PT_ccb24_0039
-  - RO_ccb24_0040
-  - RU_ccb24_0041
-  - RU_ccb24_0042
-  - SE_ccb24_0043
-  - SI_ccb24_0044
-  - TR_ccb24_0045
-  - US_ccb24_0046
-  - US_ccb24_0047
-  - US_ccb24_0048
-  - US_ccb24_0049
-  - US_ccb24_0050
-  - US_ccb24_0051
-  - US_ccb24_0052
-  - US_ccb24_0053
-  - US_ccb24_0054
-  - US_ccb24_0055
-  - US_ccb24_0056
-  - US_ccb24_0057
-  - US_ccb24_0058
-  - US_ccb24_0059
-  - US_ccb24_0060
-  - US_ccb24_0061
-  - US_ccb24_0062
-  - US_ccb24_0063
-  - US_ccb24_0064
-  - US_ccb24_0065
-  - US_ccb24_0066
-  - US_ccb24_0067
-  - US_ccb24_0068
-  - US_ccb24_0069
-  - US_ccb24_0070
-  - US_ccb24_0071
-  - US_ccb24_0072
-  - US_ccb24_0073
-  - US_ccb24_0074
-  - ZA_ccb24_0075
+  - CN_e13c7_0001
+  - CN_e13c7_0002
+  - CN_e13c7_0003
+  - CN_e13c7_0004
+  - CN_e13c7_0005
+  - CN_e13c7_0006
+  - FR_e13c7_0007
+  - IN_e13c7_0008
+  - JP_e13c7_0009
+  - JP_e13c7_0010
+  - JP_e13c7_0011
+  - JP_e13c7_0012
+  - JP_e13c7_0013
+  - KR_e13c7_0014
+  - KR_e13c7_0015
+  - KR_e13c7_0016
+  - KR_e13c7_0017
+  - RU_e13c7_0018
+  - RU_e13c7_0019
+  - SE_e13c7_0020
+  - SG_e13c7_0021
+  - UA_e13c7_0022
+  - US_e13c7_0023
+  - US_e13c7_0024
+  - US_e13c7_0025
+  - US_e13c7_0026
+  - US_e13c7_0027
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - AU_ccb24_0001
-  - CH_ccb24_0002
-  - CN_ccb24_0003
-  - CN_ccb24_0004
-  - CN_ccb24_0005
-  - CN_ccb24_0006
-  - CN_ccb24_0007
-  - CN_ccb24_0008
-  - CN_ccb24_0009
-  - CN_ccb24_0010
-  - CN_ccb24_0011
-  - CN_ccb24_0012
-  - CN_ccb24_0013
-  - CR_ccb24_0014
-  - CR_ccb24_0015
-  - CR_ccb24_0016
-  - CR_ccb24_0017
-  - DE_ccb24_0018
-  - DE_ccb24_0019
-  - ES_ccb24_0020
-  - FR_ccb24_0021
-  - GB_ccb24_0022
-  - HK_ccb24_0023
-  - HK_ccb24_0024
-  - HK_ccb24_0025
-  - IN_ccb24_0026
-  - JP_ccb24_0027
-  - JP_ccb24_0028
-  - JP_ccb24_0029
-  - JP_ccb24_0030
-  - KR_ccb24_0031
-  - KR_ccb24_0032
-  - KR_ccb24_0033
-  - KR_ccb24_0034
-  - KR_ccb24_0035
-  - KR_ccb24_0036
-  - NL_ccb24_0037
-  - NL_ccb24_0038
-  - PT_ccb24_0039
-  - RO_ccb24_0040
-  - RU_ccb24_0041
-  - RU_ccb24_0042
-  - SE_ccb24_0043
-  - SI_ccb24_0044
-  - TR_ccb24_0045
-  - US_ccb24_0046
-  - US_ccb24_0047
-  - US_ccb24_0048
-  - US_ccb24_0049
-  - US_ccb24_0050
-  - US_ccb24_0051
-  - US_ccb24_0052
-  - US_ccb24_0053
-  - US_ccb24_0054
-  - US_ccb24_0055
-  - US_ccb24_0056
-  - US_ccb24_0057
-  - US_ccb24_0058
-  - US_ccb24_0059
-  - US_ccb24_0060
-  - US_ccb24_0061
-  - US_ccb24_0062
-  - US_ccb24_0063
-  - US_ccb24_0064
-  - US_ccb24_0065
-  - US_ccb24_0066
-  - US_ccb24_0067
-  - US_ccb24_0068
-  - US_ccb24_0069
-  - US_ccb24_0070
-  - US_ccb24_0071
-  - US_ccb24_0072
-  - US_ccb24_0073
-  - US_ccb24_0074
-  - ZA_ccb24_0075
+  - CN_e13c7_0001
+  - CN_e13c7_0002
+  - CN_e13c7_0003
+  - CN_e13c7_0004
+  - CN_e13c7_0005
+  - CN_e13c7_0006
+  - FR_e13c7_0007
+  - IN_e13c7_0008
+  - JP_e13c7_0009
+  - JP_e13c7_0010
+  - JP_e13c7_0011
+  - JP_e13c7_0012
+  - JP_e13c7_0013
+  - KR_e13c7_0014
+  - KR_e13c7_0015
+  - KR_e13c7_0016
+  - KR_e13c7_0017
+  - RU_e13c7_0018
+  - RU_e13c7_0019
+  - SE_e13c7_0020
+  - SG_e13c7_0021
+  - UA_e13c7_0022
+  - US_e13c7_0023
+  - US_e13c7_0024
+  - US_e13c7_0025
+  - US_e13c7_0026
+  - US_e13c7_0027
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
