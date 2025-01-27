@@ -1,179 +1,178 @@
 port: 7890
-allow-lan: false
 mode: rule
 external-controller: 127.0.0.1:9090
-dns:
-  enabled: true
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  nameserver:
-  - https://doh.pub/dns-query
-  - https://223.5.5.5/dns-query
-  - https://doh.360.cn/dns-query
-  - https://dns.alidns.com/dns-query
-  - 119.29.29.29
-  fallback:
-  - 8.8.8.8
-  - 8.8.4.4
-  - tls://1.0.0.1:853
-  - tls://dns.google:853
 proxies:
-  - {name: AR_2b61c_0001, server: eze-1.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: AR_2b61c_0002, server: 103.50.33.138, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: eze-1.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: BE_2b61c_0003, server: 79.127.224.12, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: bru-be-01.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: BR_2b61c_0004, server: 46.151.194.89, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: sao-br.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: BR_2b61c_0005, server: sao-br.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: CN_2b61c_0007, server: 120.232.153.123, port: 45402, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: CN_2b61c_0008, server: 120.232.81.50, port: 16088, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, udp: true}
-  - {name: CN_2b61c_0009, server: 183.232.239.172, port: 15011, type: ss, cipher: aes-256-gcm, password: 5KM1ZLFIVE4AVS2A, udp: true}
-  - {name: CN_2b61c_0010, server: qh62onjn.slashdevslashnetslashtun.net, port: 16015, type: ss, cipher: aes-256-gcm, password: EKL22E7LU1P3EPZC, udp: true}
-  - {name: CN_2b61c_0011, server: qh62onjn.slashdevslashnetslashtun.net, port: 18015, type: ss, cipher: aes-256-gcm, password: HK94FBWD4KFIPD9F, udp: true}
-  - {name: CN_2b61c_0012, server: sgp.fastsoonlink.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 3FB23A19-9424-40C7-9139-3540228283FA, udp: true}
-  - {name: CN_2b61c_0013, server: cmeiguo4.mmods.site, port: 33436, type: vmess, uuid: 87db8a11-c697-3c85-8369-84554fa9f83e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: CN_2b61c_0014, server: 3.link-hub.click, port: 40239, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: "92902:pFWGOQ", obfs-param: cd2b692902.6602b8463464108506.microsoft.com, udp: true}
-  - {name: CN_2b61c_0015, server: tk.hzlt.tkddns.xyz, port: 22641, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-a.tkong.cc}}, udp: true}
-  - {name: CO_2b61c_0016, server: 169.150.228.24, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: bog-co-01.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: CO_2b61c_0017, server: bog-co-01.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: DE_2b61c_0018, server: 64.225.109.206, port: 2082, type: vmess, uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: DE_2b61c_0019, server: 64.225.109.206, port: 2082, type: vmess, uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc]}}, udp: true}
-  - {name: DE_2b61c_0020, server: 195.181.175.176, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, servername: de1.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: DE_2b61c_0022, server: c.2513142.xyz, port: 18880, type: hysteria2, password: mSIusSz2Ku3YUWxB85cQa, skip-cert-verify: false, udp: true}
-  - {name: DE_2b61c_0024, server: c.2513142.xyz, port: 18884, type: hysteria2, password: mSIusSz2Ku3YUWxB85cQa, skip-cert-verify: false, udp: true}
-  - {name: DE_2b61c_0025, server: 156.67.30.77, port: 443, type: vless, uuid: 1051bfbb-90db-4261-b5e4-8b91f62b436f, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: spotify.com, alpn: [http/1.1], reality-opts: {public-key: SDUAmbkyV3wQEEXwV9wpwTqS2qi7gOekiZNpS1jfcXc, short-id: d59cd3}, udp: true}
-  - {name: ES_2b61c_0026, server: 212.102.48.216, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: mad-es.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: ES_2b61c_0027, server: mad-es.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: FR_2b61c_0028, server: 91.134.102.128, port: 22671, type: vless, uuid: 91989253-37d6-4d28-83fe-8ffd0c3de0f7, tls: false, skip-cert-verify: false, servername: telewebion.com, network: http, http-opts: {method: GET, path: [/], headers: {Host: [telewebion.com]}}, udp: true}
-  - {name: GB_2b61c_0030, server: 95.173.205.70, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: osl-no-01.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: GR_2b61c_0031, server: ath-gr-01.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: GR_2b61c_0032, server: 79.127.218.204, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: ath-gr-01.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: HK_2b61c_0033, server: hk9.ftq.ink, port: 4000, type: http, tls: true, udp: true}
-  - {name: IN_2b61c_0034, server: 64.227.148.121, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: blr-in.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: IR_2b61c_0035, server: 31.184.172.177, port: 26763, type: vmess, uuid: 09ffa976-e1ed-45e3-8a6b-1475e3893fee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [telewebion.com]}}, udp: true}
-  - {name: KZ_2b61c_0037, server: kz-2.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: PE_2b61c_0038, server: lim-pe-01.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: PE_2b61c_0039, server: 79.127.252.81, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: lim-pe-01.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: RU_2b61c_0040, server: 195.58.49.50, port: 23532, type: vmess, uuid: d44df4da-3ee6-4a57-ac22-cd532da65f93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, udp: true}
-  - {name: RU_2b61c_0041, server: 195.58.49.42, port: 23532, type: vmess, uuid: 5057efc1-348d-41aa-a1a7-b35a65ed65fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, udp: true}
-  - {name: RU_2b61c_0042, server: 46.254.92.33, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, servername: mmdserver.us.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}, udp: true}
-  - {name: SG_2b61c_0044, server: 156.146.56.207, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: sin-sg-01.fromblancwithlove.com, alpn: [h2], udp: true}
-  - {name: SG_2b61c_0045, server: sin-sg-01.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: US_2b61c_0046, server: 108.186.26.174, port: 37004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1737626189510, headers: {Host: www.93976091.xyz}}, udp: true}
-  - {name: US_2b61c_0047, server: 192.0.54.235, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, servername: mmdserver.us.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}, udp: true}
-  - {name: ZA_2b61c_0049, server: jnb-sa.fromblancwithlove.com, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: false, alpn: [h2], udp: true}
-  - {name: ZA_2b61c_0050, server: 169.150.246.91, port: 8443, type: vless, uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b, tls: true, skip-cert-verify: true, servername: jnb-sa.fromblancwithlove.com, alpn: [h2], udp: true}
+  - {name: speednode_0001, server: 120.232.153.123, port: 45402, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: speednode_0002, server: 91.134.102.128, port: 22671, type: vless, uuid: 91989253-37d6-4d28-83fe-8ffd0c3de0f7, tls: false, skip-cert-verify: false, servername: telewebion.com, network: http, http-opts: {method: GET, path: [/], headers: {Host: [telewebion.com]}}, udp: true}
+  - {name: speednode_0003, server: tk.hzlt.tkddns.xyz, port: 22641, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-a.tkong.cc}}, udp: true}
+  - {name: speednode_0004, server: 46.254.92.33, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, servername: mmdserver.us.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}, udp: true}
+  - {name: speednode_0005, server: 192.0.54.235, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, servername: mmdserver.us.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}, udp: true}
+  - {name: speednode_0006, server: 154.197.26.120, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456}
+  - {name: speednode_0007, server: 47.128.239.238, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0008, server: gdgs.tarioblink.me, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 11eb9817-94d6-4f96-bd64-6e2bc5ec6b3b}
+  - {name: speednode_0009, server: naiu-other.05vr9nyqg5.download, port: 13035, type: trojan, password: e279c494-c426-443a-a034-a04516409242, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: speednode_0010, server: 13.213.74.131, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0011, server: 2.hublink.pro, port: 40219, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: cd2b692902.6602b8463464108506.microsoft.com}
+  - {name: speednode_0012, server: 3.0.90.29, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0013, server: sgp.fastsoonlink.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 3FB23A19-9424-40C7-9139-3540228283FA, udp: true}
+  - {name: speednode_0014, server: 52.221.179.231, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0015, server: 52.221.196.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0016, server: 2.hublink.pro, port: 40211, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: cd2b692902.6602b8463464108506.microsoft.com}
+  - {name: speednode_0017, server: 2.hublink.pro, port: 40210, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: cd2b692902.6602b8463464108506.microsoft.com}
+  - {name: speednode_0018, server: 54.179.109.29, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0019, server: 1.linkhub.degree, port: 40200, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: cd2b692902.6602b8463464108506.microsoft.com}
+  - {name: speednode_0020, server: qq.miaolianyunapp.com, port: 51181, type: ss, cipher: chacha20-ietf-poly1305, password: a81dd416-d6dc-4268-b088-57ca0447b448}
+  - {name: speednode_0021, server: 1.linkhub.degree, port: 40202, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: cd2b692902.6602b8463464108506.microsoft.com}
+  - {name: speednode_0022, server: 54.95.145.3, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0023, server: 43.203.239.233, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0024, server: 2.hublink.pro, port: 40218, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: cd2b692902.6602b8463464108506.microsoft.com}
+  - {name: speednode_0025, server: 43.203.201.77, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0026, server: 57.180.15.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0027, server: cmc3.5gsieuvip.vn, port: 443, type: trojan, password: 5f7be901-1bb7-4cc5-9c7d-e33bd7e407ad, skip-cert-verify: true}
+  - {name: speednode_0028, server: 87.251.79.34, port: 20684, type: ss, cipher: chacha20-ietf-poly1305, password: nC1vGN5yGoagyWREo1g4DX}
+  - {name: speednode_0029, server: 3.38.251.26, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0030, server: 35.88.145.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0031, server: cmc2.5gsieuvip.vn, port: 443, type: trojan, password: 5f7be901-1bb7-4cc5-9c7d-e33bd7e407ad, skip-cert-verify: true}
+  - {name: speednode_0032, server: 89.39.70.207, port: 443, type: trojan, password: !<str> 3763495894587285504, sni: pet-bulldog.goat627.mom, skip-cert-verify: true}
+  - {name: speednode_0033, server: a-config.96hezar.ir, port: 4017, type: ss, cipher: chacha20-ietf-poly1305, password: o9v9NS2O0sxebNmxvZ06sg}
+  - {name: speednode_0034, server: 109.61.16.83, port: 443, type: trojan, password: !<str> 3763495982449565696, sni: sensible-crow.goat627.mom, skip-cert-verify: true}
+  - {name: speednode_0035, server: 62.210.88.22, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: lnxc3CurVIHhXHy8AZeleq}
+  - {name: speednode_0036, server: 68.183.227.45, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6}
+  - {name: speednode_0037, server: 35.92.44.190, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0038, server: 54.189.160.123, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0039, server: 62.112.221.46, port: 443, type: trojan, password: !<str> 3763495894587285504, sni: enabling-cat.goat627.mom, skip-cert-verify: true}
+  - {name: speednode_0040, server: qq.miaolianyunapp.com, port: 51183, type: ss, cipher: chacha20-ietf-poly1305, password: a81dd416-d6dc-4268-b088-57ca0447b448}
+  - {name: speednode_0041, server: 34.217.211.112, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0042, server: 137.175.113.193, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456}
+  - {name: speednode_0043, server: qq.miaolianyunapp.com, port: 51184, type: ss, cipher: chacha20-ietf-poly1305, password: a81dd416-d6dc-4268-b088-57ca0447b448}
+  - {name: speednode_0044, server: 54.244.34.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: speednode_0045, server: qq.miaolianyunapp.com, port: 51180, type: ss, cipher: chacha20-ietf-poly1305, password: a81dd416-d6dc-4268-b088-57ca0447b448}
+  - {name: speednode_0046, server: 3.23.207.118, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+  - {name: speednode_0047, server: 3.250.247.186, port: 443, type: trojan, password: !<str> 3763495894587285504, sni: daring-puma.goat627.mom, skip-cert-verify: true}
+  - {name: speednode_0048, server: 120.232.81.50, port: 15084, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
 proxy-groups:
-- name: ⭕ proxinode
+- name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - AR_2b61c_0001
-  - AR_2b61c_0002
-  - BE_2b61c_0003
-  - BR_2b61c_0004
-  - BR_2b61c_0005
-  - CN_2b61c_0007
-  - CN_2b61c_0008
-  - CN_2b61c_0009
-  - CN_2b61c_0010
-  - CN_2b61c_0011
-  - CN_2b61c_0012
-  - CN_2b61c_0013
-  - CN_2b61c_0014
-  - CN_2b61c_0015
-  - CO_2b61c_0016
-  - CO_2b61c_0017
-  - DE_2b61c_0018
-  - DE_2b61c_0019
-  - DE_2b61c_0020
-  - DE_2b61c_0022
-  - DE_2b61c_0024
-  - DE_2b61c_0025
-  - ES_2b61c_0026
-  - ES_2b61c_0027
-  - FR_2b61c_0028
-  - GB_2b61c_0030
-  - GR_2b61c_0031
-  - GR_2b61c_0032
-  - HK_2b61c_0033
-  - IN_2b61c_0034
-  - IR_2b61c_0035
-  - KZ_2b61c_0037
-  - PE_2b61c_0038
-  - PE_2b61c_0039
-  - RU_2b61c_0040
-  - RU_2b61c_0041
-  - RU_2b61c_0042
-  - SG_2b61c_0044
-  - SG_2b61c_0045
-  - US_2b61c_0046
-  - US_2b61c_0047
-  - ZA_2b61c_0049
-  - ZA_2b61c_0050
+  - speednode_0001
+  - speednode_0002
+  - speednode_0003
+  - speednode_0004
+  - speednode_0005
+  - speednode_0006
+  - speednode_0007
+  - speednode_0008
+  - speednode_0009
+  - speednode_0010
+  - speednode_0011
+  - speednode_0012
+  - speednode_0013
+  - speednode_0014
+  - speednode_0015
+  - speednode_0016
+  - speednode_0017
+  - speednode_0018
+  - speednode_0019
+  - speednode_0020
+  - speednode_0021
+  - speednode_0022
+  - speednode_0023
+  - speednode_0024
+  - speednode_0025
+  - speednode_0026
+  - speednode_0027
+  - speednode_0028
+  - speednode_0029
+  - speednode_0030
+  - speednode_0031
+  - speednode_0032
+  - speednode_0033
+  - speednode_0034
+  - speednode_0035
+  - speednode_0036
+  - speednode_0037
+  - speednode_0038
+  - speednode_0039
+  - speednode_0040
+  - speednode_0041
+  - speednode_0042
+  - speednode_0043
+  - speednode_0044
+  - speednode_0045
+  - speednode_0046
+  - speednode_0047
+  - speednode_0048
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - AR_2b61c_0001
-  - AR_2b61c_0002
-  - BE_2b61c_0003
-  - BR_2b61c_0004
-  - BR_2b61c_0005
-  - CN_2b61c_0007
-  - CN_2b61c_0008
-  - CN_2b61c_0009
-  - CN_2b61c_0010
-  - CN_2b61c_0011
-  - CN_2b61c_0012
-  - CN_2b61c_0013
-  - CN_2b61c_0014
-  - CN_2b61c_0015
-  - CO_2b61c_0016
-  - CO_2b61c_0017
-  - DE_2b61c_0018
-  - DE_2b61c_0019
-  - DE_2b61c_0020
-  - DE_2b61c_0022
-  - DE_2b61c_0024
-  - DE_2b61c_0025
-  - ES_2b61c_0026
-  - ES_2b61c_0027
-  - FR_2b61c_0028
-  - GB_2b61c_0030
-  - GR_2b61c_0031
-  - GR_2b61c_0032
-  - HK_2b61c_0033
-  - IN_2b61c_0034
-  - IR_2b61c_0035
-  - KZ_2b61c_0037
-  - PE_2b61c_0038
-  - PE_2b61c_0039
-  - RU_2b61c_0040
-  - RU_2b61c_0041
-  - RU_2b61c_0042
-  - SG_2b61c_0044
-  - SG_2b61c_0045
-  - US_2b61c_0046
-  - US_2b61c_0047
-  - ZA_2b61c_0049
-  - ZA_2b61c_0050
+  - speednode_0001
+  - speednode_0002
+  - speednode_0003
+  - speednode_0004
+  - speednode_0005
+  - speednode_0006
+  - speednode_0007
+  - speednode_0008
+  - speednode_0009
+  - speednode_0010
+  - speednode_0011
+  - speednode_0012
+  - speednode_0013
+  - speednode_0014
+  - speednode_0015
+  - speednode_0016
+  - speednode_0017
+  - speednode_0018
+  - speednode_0019
+  - speednode_0020
+  - speednode_0021
+  - speednode_0022
+  - speednode_0023
+  - speednode_0024
+  - speednode_0025
+  - speednode_0026
+  - speednode_0027
+  - speednode_0028
+  - speednode_0029
+  - speednode_0030
+  - speednode_0031
+  - speednode_0032
+  - speednode_0033
+  - speednode_0034
+  - speednode_0035
+  - speednode_0036
+  - speednode_0037
+  - speednode_0038
+  - speednode_0039
+  - speednode_0040
+  - speednode_0041
+  - speednode_0042
+  - speednode_0043
+  - speednode_0044
+  - speednode_0045
+  - speednode_0046
+  - speednode_0047
+  - speednode_0048
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
-- DOMAIN,developer.apple.com,⭕ proxinode
-- DOMAIN-SUFFIX,digicert.com,⭕ proxinode
-- DOMAIN,ocsp.apple.com,⭕ proxinode
-- DOMAIN,ocsp.comodoca.com,⭕ proxinode
-- DOMAIN,ocsp.usertrust.com,⭕ proxinode
-- DOMAIN,ocsp.sectigo.com,⭕ proxinode
-- DOMAIN,ocsp.verisign.net,⭕ proxinode
-- DOMAIN-SUFFIX,apple-dns.net,⭕ proxinode
-- DOMAIN,testflight.apple.com,⭕ proxinode
-- DOMAIN,sandbox.itunes.apple.com,⭕ proxinode
-- DOMAIN,itunes.apple.com,⭕ proxinode
-- DOMAIN-SUFFIX,apps.apple.com,⭕ proxinode
-- DOMAIN-SUFFIX,blobstore.apple.com,⭕ proxinode
-- DOMAIN,cvws.icloud-content.com,⭕ proxinode
+- DOMAIN,developer.apple.com,Proxy
+- DOMAIN-SUFFIX,digicert.com,Proxy
+- DOMAIN,ocsp.apple.com,Proxy
+- DOMAIN,ocsp.comodoca.com,Proxy
+- DOMAIN,ocsp.usertrust.com,Proxy
+- DOMAIN,ocsp.sectigo.com,Proxy
+- DOMAIN,ocsp.verisign.net,Proxy
+- DOMAIN-SUFFIX,apple-dns.net,Proxy
+- DOMAIN,testflight.apple.com,Proxy
+- DOMAIN,sandbox.itunes.apple.com,Proxy
+- DOMAIN,itunes.apple.com,Proxy
+- DOMAIN-SUFFIX,apps.apple.com,Proxy
+- DOMAIN-SUFFIX,blobstore.apple.com,Proxy
+- DOMAIN,cvws.icloud-content.com,Proxy
 - DOMAIN-SUFFIX,mzstatic.com,DIRECT
 - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
 - DOMAIN-SUFFIX,icloud.com,DIRECT
@@ -285,7 +284,7 @@ rules:
 - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
 - DOMAIN-SUFFIX,sohu.com,DIRECT
 - DOMAIN-SUFFIX,soku.com,DIRECT
-- DOMAIN-SUFFIX,speedtest.net,⭕ proxinode
+- DOMAIN-SUFFIX,speedtest.net,Proxy
 - DOMAIN-SUFFIX,sspai.com,DIRECT
 - DOMAIN-SUFFIX,suning.com,DIRECT
 - DOMAIN-SUFFIX,taobao.com,DIRECT
@@ -317,20 +316,20 @@ rules:
 - DOMAIN-SUFFIX,zhimg.com,DIRECT
 - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
 - DOMAIN-SUFFIX,zoho.com,DIRECT
-- DOMAIN-KEYWORD,amazon,⭕ proxinode
-- DOMAIN-KEYWORD,google,⭕ proxinode
-- DOMAIN-KEYWORD,gmail,⭕ proxinode
-- DOMAIN-KEYWORD,youtube,⭕ proxinode
-- DOMAIN-KEYWORD,facebook,⭕ proxinode
-- DOMAIN-SUFFIX,fb.me,⭕ proxinode
-- DOMAIN-SUFFIX,fbcdn.net,⭕ proxinode
-- DOMAIN-KEYWORD,twitter,⭕ proxinode
-- DOMAIN-KEYWORD,instagram,⭕ proxinode
-- DOMAIN-KEYWORD,dropbox,⭕ proxinode
-- DOMAIN-SUFFIX,twimg.com,⭕ proxinode
-- DOMAIN-KEYWORD,blogspot,⭕ proxinode
-- DOMAIN-SUFFIX,youtu.be,⭕ proxinode
-- DOMAIN-KEYWORD,whatsapp,⭕ proxinode
+- DOMAIN-KEYWORD,amazon,Proxy
+- DOMAIN-KEYWORD,google,Proxy
+- DOMAIN-KEYWORD,gmail,Proxy
+- DOMAIN-KEYWORD,youtube,Proxy
+- DOMAIN-KEYWORD,facebook,Proxy
+- DOMAIN-SUFFIX,fb.me,Proxy
+- DOMAIN-SUFFIX,fbcdn.net,Proxy
+- DOMAIN-KEYWORD,twitter,Proxy
+- DOMAIN-KEYWORD,instagram,Proxy
+- DOMAIN-KEYWORD,dropbox,Proxy
+- DOMAIN-SUFFIX,twimg.com,Proxy
+- DOMAIN-KEYWORD,blogspot,Proxy
+- DOMAIN-SUFFIX,youtu.be,Proxy
+- DOMAIN-KEYWORD,whatsapp,Proxy
 - DOMAIN-KEYWORD,admarvel,REJECT
 - DOMAIN-KEYWORD,admaster,REJECT
 - DOMAIN-KEYWORD,adsage,REJECT
@@ -358,285 +357,285 @@ rules:
 - DOMAIN-SUFFIX,vungle.com,REJECT
 - DOMAIN-KEYWORD,wlmonitor,REJECT
 - DOMAIN-KEYWORD,zjtoolbar,REJECT
-- DOMAIN-SUFFIX,9to5mac.com,⭕ proxinode
-- DOMAIN-SUFFIX,abpchina.org,⭕ proxinode
-- DOMAIN-SUFFIX,adblockplus.org,⭕ proxinode
-- DOMAIN-SUFFIX,adobe.com,⭕ proxinode
-- DOMAIN-SUFFIX,akamaized.net,⭕ proxinode
-- DOMAIN-SUFFIX,alfredapp.com,⭕ proxinode
-- DOMAIN-SUFFIX,amplitude.com,⭕ proxinode
-- DOMAIN-SUFFIX,ampproject.org,⭕ proxinode
-- DOMAIN-SUFFIX,android.com,⭕ proxinode
-- DOMAIN-SUFFIX,angularjs.org,⭕ proxinode
-- DOMAIN-SUFFIX,aolcdn.com,⭕ proxinode
-- DOMAIN-SUFFIX,apkpure.com,⭕ proxinode
-- DOMAIN-SUFFIX,appledaily.com,⭕ proxinode
-- DOMAIN-SUFFIX,appshopper.com,⭕ proxinode
-- DOMAIN-SUFFIX,appspot.com,⭕ proxinode
-- DOMAIN-SUFFIX,arcgis.com,⭕ proxinode
-- DOMAIN-SUFFIX,archive.org,⭕ proxinode
-- DOMAIN-SUFFIX,armorgames.com,⭕ proxinode
-- DOMAIN-SUFFIX,aspnetcdn.com,⭕ proxinode
-- DOMAIN-SUFFIX,att.com,⭕ proxinode
-- DOMAIN-SUFFIX,awsstatic.com,⭕ proxinode
-- DOMAIN-SUFFIX,azureedge.net,⭕ proxinode
-- DOMAIN-SUFFIX,azurewebsites.net,⭕ proxinode
-- DOMAIN-SUFFIX,bing.com,⭕ proxinode
-- DOMAIN-SUFFIX,bintray.com,⭕ proxinode
-- DOMAIN-SUFFIX,bit.com,⭕ proxinode
-- DOMAIN-SUFFIX,bit.ly,⭕ proxinode
-- DOMAIN-SUFFIX,bitbucket.org,⭕ proxinode
-- DOMAIN-SUFFIX,bjango.com,⭕ proxinode
-- DOMAIN-SUFFIX,bkrtx.com,⭕ proxinode
-- DOMAIN-SUFFIX,blog.com,⭕ proxinode
-- DOMAIN-SUFFIX,blogcdn.com,⭕ proxinode
-- DOMAIN-SUFFIX,blogger.com,⭕ proxinode
-- DOMAIN-SUFFIX,blogsmithmedia.com,⭕ proxinode
-- DOMAIN-SUFFIX,blogspot.com,⭕ proxinode
-- DOMAIN-SUFFIX,blogspot.hk,⭕ proxinode
-- DOMAIN-SUFFIX,bloomberg.com,⭕ proxinode
-- DOMAIN-SUFFIX,box.com,⭕ proxinode
-- DOMAIN-SUFFIX,box.net,⭕ proxinode
-- DOMAIN-SUFFIX,cachefly.net,⭕ proxinode
-- DOMAIN-SUFFIX,chromium.org,⭕ proxinode
-- DOMAIN-SUFFIX,cl.ly,⭕ proxinode
-- DOMAIN-SUFFIX,cloudflare.com,⭕ proxinode
-- DOMAIN-SUFFIX,cloudfront.net,⭕ proxinode
-- DOMAIN-SUFFIX,cloudmagic.com,⭕ proxinode
-- DOMAIN-SUFFIX,cmail19.com,⭕ proxinode
-- DOMAIN-SUFFIX,cnet.com,⭕ proxinode
-- DOMAIN-SUFFIX,cocoapods.org,⭕ proxinode
-- DOMAIN-SUFFIX,comodoca.com,⭕ proxinode
-- DOMAIN-SUFFIX,crashlytics.com,⭕ proxinode
-- DOMAIN-SUFFIX,culturedcode.com,⭕ proxinode
-- DOMAIN-SUFFIX,d.pr,⭕ proxinode
-- DOMAIN-SUFFIX,danilo.to,⭕ proxinode
-- DOMAIN-SUFFIX,dayone.me,⭕ proxinode
-- DOMAIN-SUFFIX,db.tt,⭕ proxinode
-- DOMAIN-SUFFIX,deskconnect.com,⭕ proxinode
-- DOMAIN-SUFFIX,disq.us,⭕ proxinode
-- DOMAIN-SUFFIX,disqus.com,⭕ proxinode
-- DOMAIN-SUFFIX,disquscdn.com,⭕ proxinode
-- DOMAIN-SUFFIX,dnsimple.com,⭕ proxinode
-- DOMAIN-SUFFIX,docker.com,⭕ proxinode
-- DOMAIN-SUFFIX,dribbble.com,⭕ proxinode
-- DOMAIN-SUFFIX,droplr.com,⭕ proxinode
-- DOMAIN-SUFFIX,duckduckgo.com,⭕ proxinode
-- DOMAIN-SUFFIX,dueapp.com,⭕ proxinode
-- DOMAIN-SUFFIX,dytt8.net,⭕ proxinode
-- DOMAIN-SUFFIX,edgecastcdn.net,⭕ proxinode
-- DOMAIN-SUFFIX,edgekey.net,⭕ proxinode
-- DOMAIN-SUFFIX,edgesuite.net,⭕ proxinode
-- DOMAIN-SUFFIX,engadget.com,⭕ proxinode
-- DOMAIN-SUFFIX,entrust.net,⭕ proxinode
-- DOMAIN-SUFFIX,eurekavpt.com,⭕ proxinode
-- DOMAIN-SUFFIX,evernote.com,⭕ proxinode
-- DOMAIN-SUFFIX,fabric.io,⭕ proxinode
-- DOMAIN-SUFFIX,fast.com,⭕ proxinode
-- DOMAIN-SUFFIX,fastly.net,⭕ proxinode
-- DOMAIN-SUFFIX,fc2.com,⭕ proxinode
-- DOMAIN-SUFFIX,feedburner.com,⭕ proxinode
-- DOMAIN-SUFFIX,feedly.com,⭕ proxinode
-- DOMAIN-SUFFIX,feedsportal.com,⭕ proxinode
-- DOMAIN-SUFFIX,fiftythree.com,⭕ proxinode
-- DOMAIN-SUFFIX,firebaseio.com,⭕ proxinode
-- DOMAIN-SUFFIX,flexibits.com,⭕ proxinode
-- DOMAIN-SUFFIX,flickr.com,⭕ proxinode
-- DOMAIN-SUFFIX,flipboard.com,⭕ proxinode
-- DOMAIN-SUFFIX,g.co,⭕ proxinode
-- DOMAIN-SUFFIX,gabia.net,⭕ proxinode
-- DOMAIN-SUFFIX,geni.us,⭕ proxinode
-- DOMAIN-SUFFIX,gfx.ms,⭕ proxinode
-- DOMAIN-SUFFIX,ggpht.com,⭕ proxinode
-- DOMAIN-SUFFIX,ghostnoteapp.com,⭕ proxinode
-- DOMAIN-SUFFIX,git.io,⭕ proxinode
-- DOMAIN-KEYWORD,github,⭕ proxinode
-- DOMAIN-SUFFIX,globalsign.com,⭕ proxinode
-- DOMAIN-SUFFIX,gmodules.com,⭕ proxinode
-- DOMAIN-SUFFIX,godaddy.com,⭕ proxinode
-- DOMAIN-SUFFIX,golang.org,⭕ proxinode
-- DOMAIN-SUFFIX,gongm.in,⭕ proxinode
-- DOMAIN-SUFFIX,goo.gl,⭕ proxinode
-- DOMAIN-SUFFIX,goodreaders.com,⭕ proxinode
-- DOMAIN-SUFFIX,goodreads.com,⭕ proxinode
-- DOMAIN-SUFFIX,gravatar.com,⭕ proxinode
-- DOMAIN-SUFFIX,gstatic.com,⭕ proxinode
-- DOMAIN-SUFFIX,gvt0.com,⭕ proxinode
-- DOMAIN-SUFFIX,hockeyapp.net,⭕ proxinode
-- DOMAIN-SUFFIX,hotmail.com,⭕ proxinode
-- DOMAIN-SUFFIX,icons8.com,⭕ proxinode
-- DOMAIN-SUFFIX,ifixit.com,⭕ proxinode
-- DOMAIN-SUFFIX,ift.tt,⭕ proxinode
-- DOMAIN-SUFFIX,ifttt.com,⭕ proxinode
-- DOMAIN-SUFFIX,iherb.com,⭕ proxinode
-- DOMAIN-SUFFIX,imageshack.us,⭕ proxinode
-- DOMAIN-SUFFIX,img.ly,⭕ proxinode
-- DOMAIN-SUFFIX,imgur.com,⭕ proxinode
-- DOMAIN-SUFFIX,imore.com,⭕ proxinode
-- DOMAIN-SUFFIX,instapaper.com,⭕ proxinode
-- DOMAIN-SUFFIX,ipn.li,⭕ proxinode
-- DOMAIN-SUFFIX,is.gd,⭕ proxinode
-- DOMAIN-SUFFIX,issuu.com,⭕ proxinode
-- DOMAIN-SUFFIX,itgonglun.com,⭕ proxinode
-- DOMAIN-SUFFIX,itun.es,⭕ proxinode
-- DOMAIN-SUFFIX,ixquick.com,⭕ proxinode
-- DOMAIN-SUFFIX,j.mp,⭕ proxinode
-- DOMAIN-SUFFIX,js.revsci.net,⭕ proxinode
-- DOMAIN-SUFFIX,jshint.com,⭕ proxinode
-- DOMAIN-SUFFIX,jtvnw.net,⭕ proxinode
-- DOMAIN-SUFFIX,justgetflux.com,⭕ proxinode
-- DOMAIN-SUFFIX,kat.cr,⭕ proxinode
-- DOMAIN-SUFFIX,klip.me,⭕ proxinode
-- DOMAIN-SUFFIX,libsyn.com,⭕ proxinode
-- DOMAIN-SUFFIX,linkedin.com,⭕ proxinode
-- DOMAIN-SUFFIX,linode.com,⭕ proxinode
-- DOMAIN-SUFFIX,lithium.com,⭕ proxinode
-- DOMAIN-SUFFIX,littlehj.com,⭕ proxinode
-- DOMAIN-SUFFIX,live.com,⭕ proxinode
-- DOMAIN-SUFFIX,live.net,⭕ proxinode
-- DOMAIN-SUFFIX,livefilestore.com,⭕ proxinode
-- DOMAIN-SUFFIX,llnwd.net,⭕ proxinode
-- DOMAIN-SUFFIX,macid.co,⭕ proxinode
-- DOMAIN-SUFFIX,macromedia.com,⭕ proxinode
-- DOMAIN-SUFFIX,macrumors.com,⭕ proxinode
-- DOMAIN-SUFFIX,mashable.com,⭕ proxinode
-- DOMAIN-SUFFIX,mathjax.org,⭕ proxinode
-- DOMAIN-SUFFIX,medium.com,⭕ proxinode
-- DOMAIN-SUFFIX,mega.co.nz,⭕ proxinode
-- DOMAIN-SUFFIX,mega.nz,⭕ proxinode
-- DOMAIN-SUFFIX,megaupload.com,⭕ proxinode
-- DOMAIN-SUFFIX,microsofttranslator.com,⭕ proxinode
-- DOMAIN-SUFFIX,mindnode.com,⭕ proxinode
-- DOMAIN-SUFFIX,mobile01.com,⭕ proxinode
-- DOMAIN-SUFFIX,modmyi.com,⭕ proxinode
-- DOMAIN-SUFFIX,msedge.net,⭕ proxinode
-- DOMAIN-SUFFIX,myfontastic.com,⭕ proxinode
-- DOMAIN-SUFFIX,name.com,⭕ proxinode
-- DOMAIN-SUFFIX,nextmedia.com,⭕ proxinode
-- DOMAIN-SUFFIX,nsstatic.net,⭕ proxinode
-- DOMAIN-SUFFIX,nssurge.com,⭕ proxinode
-- DOMAIN-SUFFIX,nyt.com,⭕ proxinode
-- DOMAIN-SUFFIX,nytimes.com,⭕ proxinode
-- DOMAIN-SUFFIX,omnigroup.com,⭕ proxinode
-- DOMAIN-SUFFIX,onedrive.com,⭕ proxinode
-- DOMAIN-SUFFIX,onenote.com,⭕ proxinode
-- DOMAIN-SUFFIX,ooyala.com,⭕ proxinode
-- DOMAIN-SUFFIX,openvpn.net,⭕ proxinode
-- DOMAIN-SUFFIX,openwrt.org,⭕ proxinode
-- DOMAIN-SUFFIX,orkut.com,⭕ proxinode
-- DOMAIN-SUFFIX,osxdaily.com,⭕ proxinode
-- DOMAIN-SUFFIX,outlook.com,⭕ proxinode
-- DOMAIN-SUFFIX,ow.ly,⭕ proxinode
-- DOMAIN-SUFFIX,paddleapi.com,⭕ proxinode
-- DOMAIN-SUFFIX,parallels.com,⭕ proxinode
-- DOMAIN-SUFFIX,parse.com,⭕ proxinode
-- DOMAIN-SUFFIX,pdfexpert.com,⭕ proxinode
-- DOMAIN-SUFFIX,periscope.tv,⭕ proxinode
-- DOMAIN-SUFFIX,pinboard.in,⭕ proxinode
-- DOMAIN-SUFFIX,pinterest.com,⭕ proxinode
-- DOMAIN-SUFFIX,pixelmator.com,⭕ proxinode
-- DOMAIN-SUFFIX,pixiv.net,⭕ proxinode
-- DOMAIN-SUFFIX,playpcesor.com,⭕ proxinode
-- DOMAIN-SUFFIX,playstation.com,⭕ proxinode
-- DOMAIN-SUFFIX,playstation.com.hk,⭕ proxinode
-- DOMAIN-SUFFIX,playstation.net,⭕ proxinode
-- DOMAIN-SUFFIX,playstationnetwork.com,⭕ proxinode
-- DOMAIN-SUFFIX,pushwoosh.com,⭕ proxinode
-- DOMAIN-SUFFIX,rime.im,⭕ proxinode
-- DOMAIN-SUFFIX,servebom.com,⭕ proxinode
-- DOMAIN-SUFFIX,sfx.ms,⭕ proxinode
-- DOMAIN-SUFFIX,shadowsocks.org,⭕ proxinode
-- DOMAIN-SUFFIX,sharethis.com,⭕ proxinode
-- DOMAIN-SUFFIX,shazam.com,⭕ proxinode
-- DOMAIN-SUFFIX,skype.com,⭕ proxinode
-- DOMAIN-SUFFIX,smartdns⭕ proxinode.com,⭕ proxinode
-- DOMAIN-SUFFIX,smartmailcloud.com,⭕ proxinode
-- DOMAIN-SUFFIX,sndcdn.com,⭕ proxinode
-- DOMAIN-SUFFIX,sony.com,⭕ proxinode
-- DOMAIN-SUFFIX,soundcloud.com,⭕ proxinode
-- DOMAIN-SUFFIX,sourceforge.net,⭕ proxinode
-- DOMAIN-SUFFIX,spotify.com,⭕ proxinode
-- DOMAIN-SUFFIX,squarespace.com,⭕ proxinode
-- DOMAIN-SUFFIX,sstatic.net,⭕ proxinode
-- DOMAIN-SUFFIX,st.luluku.pw,⭕ proxinode
-- DOMAIN-SUFFIX,stackoverflow.com,⭕ proxinode
-- DOMAIN-SUFFIX,startpage.com,⭕ proxinode
-- DOMAIN-SUFFIX,staticflickr.com,⭕ proxinode
-- DOMAIN-SUFFIX,steamcommunity.com,⭕ proxinode
-- DOMAIN-SUFFIX,symauth.com,⭕ proxinode
-- DOMAIN-SUFFIX,symcb.com,⭕ proxinode
-- DOMAIN-SUFFIX,symcd.com,⭕ proxinode
-- DOMAIN-SUFFIX,tapbots.com,⭕ proxinode
-- DOMAIN-SUFFIX,tapbots.net,⭕ proxinode
-- DOMAIN-SUFFIX,tdesktop.com,⭕ proxinode
-- DOMAIN-SUFFIX,techcrunch.com,⭕ proxinode
-- DOMAIN-SUFFIX,techsmith.com,⭕ proxinode
-- DOMAIN-SUFFIX,thepiratebay.org,⭕ proxinode
-- DOMAIN-SUFFIX,theverge.com,⭕ proxinode
-- DOMAIN-SUFFIX,time.com,⭕ proxinode
-- DOMAIN-SUFFIX,timeinc.net,⭕ proxinode
-- DOMAIN-SUFFIX,tiny.cc,⭕ proxinode
-- DOMAIN-SUFFIX,tinypic.com,⭕ proxinode
-- DOMAIN-SUFFIX,tmblr.co,⭕ proxinode
-- DOMAIN-SUFFIX,todoist.com,⭕ proxinode
-- DOMAIN-SUFFIX,trello.com,⭕ proxinode
-- DOMAIN-SUFFIX,trustasiassl.com,⭕ proxinode
-- DOMAIN-SUFFIX,tumblr.co,⭕ proxinode
-- DOMAIN-SUFFIX,tumblr.com,⭕ proxinode
-- DOMAIN-SUFFIX,tweetdeck.com,⭕ proxinode
-- DOMAIN-SUFFIX,tweetmarker.net,⭕ proxinode
-- DOMAIN-SUFFIX,twitch.tv,⭕ proxinode
-- DOMAIN-SUFFIX,txmblr.com,⭕ proxinode
-- DOMAIN-SUFFIX,typekit.net,⭕ proxinode
-- DOMAIN-SUFFIX,ubertags.com,⭕ proxinode
-- DOMAIN-SUFFIX,ublock.org,⭕ proxinode
-- DOMAIN-SUFFIX,ubnt.com,⭕ proxinode
-- DOMAIN-SUFFIX,ulyssesapp.com,⭕ proxinode
-- DOMAIN-SUFFIX,urchin.com,⭕ proxinode
-- DOMAIN-SUFFIX,usertrust.com,⭕ proxinode
-- DOMAIN-SUFFIX,v.gd,⭕ proxinode
-- DOMAIN-SUFFIX,v2ex.com,⭕ proxinode
-- DOMAIN-SUFFIX,vimeo.com,⭕ proxinode
-- DOMAIN-SUFFIX,vimeocdn.com,⭕ proxinode
-- DOMAIN-SUFFIX,vine.co,⭕ proxinode
-- DOMAIN-SUFFIX,vivaldi.com,⭕ proxinode
-- DOMAIN-SUFFIX,vox-cdn.com,⭕ proxinode
-- DOMAIN-SUFFIX,vsco.co,⭕ proxinode
-- DOMAIN-SUFFIX,vultr.com,⭕ proxinode
-- DOMAIN-SUFFIX,w.org,⭕ proxinode
-- DOMAIN-SUFFIX,w3schools.com,⭕ proxinode
-- DOMAIN-SUFFIX,webtype.com,⭕ proxinode
-- DOMAIN-SUFFIX,wikiwand.com,⭕ proxinode
-- DOMAIN-SUFFIX,wikileaks.org,⭕ proxinode
-- DOMAIN-SUFFIX,wikimedia.org,⭕ proxinode
-- DOMAIN-SUFFIX,wikipedia.com,⭕ proxinode
-- DOMAIN-SUFFIX,wikipedia.org,⭕ proxinode
-- DOMAIN-SUFFIX,windows.com,⭕ proxinode
-- DOMAIN-SUFFIX,windows.net,⭕ proxinode
-- DOMAIN-SUFFIX,wire.com,⭕ proxinode
-- DOMAIN-SUFFIX,wordpress.com,⭕ proxinode
-- DOMAIN-SUFFIX,workflowy.com,⭕ proxinode
-- DOMAIN-SUFFIX,wp.com,⭕ proxinode
-- DOMAIN-SUFFIX,wsj.com,⭕ proxinode
-- DOMAIN-SUFFIX,wsj.net,⭕ proxinode
-- DOMAIN-SUFFIX,xda-developers.com,⭕ proxinode
-- DOMAIN-SUFFIX,xeeno.com,⭕ proxinode
-- DOMAIN-SUFFIX,xiti.com,⭕ proxinode
-- DOMAIN-SUFFIX,yahoo.com,⭕ proxinode
-- DOMAIN-SUFFIX,yimg.com,⭕ proxinode
-- DOMAIN-SUFFIX,ying.com,⭕ proxinode
-- DOMAIN-SUFFIX,yoyo.org,⭕ proxinode
-- DOMAIN-SUFFIX,ytimg.com,⭕ proxinode
-- DOMAIN-SUFFIX,telegra.ph,⭕ proxinode
-- DOMAIN-SUFFIX,telegram.org,⭕ proxinode
-- IP-CIDR,91.108.4.0/22,⭕ proxinode
-- IP-CIDR,91.108.8.0/21,⭕ proxinode
-- IP-CIDR,91.108.16.0/22,⭕ proxinode
-- IP-CIDR,91.108.56.0/22,⭕ proxinode
-- IP-CIDR,149.154.160.0/20,⭕ proxinode
-- IP-CIDR6,2001:67c:4e8::/48,⭕ proxinode
-- IP-CIDR6,2001:b28:f23d::/48,⭕ proxinode
-- IP-CIDR6,2001:b28:f23f::/48,⭕ proxinode
+- DOMAIN-SUFFIX,9to5mac.com,Proxy
+- DOMAIN-SUFFIX,abpchina.org,Proxy
+- DOMAIN-SUFFIX,adblockplus.org,Proxy
+- DOMAIN-SUFFIX,adobe.com,Proxy
+- DOMAIN-SUFFIX,akamaized.net,Proxy
+- DOMAIN-SUFFIX,alfredapp.com,Proxy
+- DOMAIN-SUFFIX,amplitude.com,Proxy
+- DOMAIN-SUFFIX,ampproject.org,Proxy
+- DOMAIN-SUFFIX,android.com,Proxy
+- DOMAIN-SUFFIX,angularjs.org,Proxy
+- DOMAIN-SUFFIX,aolcdn.com,Proxy
+- DOMAIN-SUFFIX,apkpure.com,Proxy
+- DOMAIN-SUFFIX,appledaily.com,Proxy
+- DOMAIN-SUFFIX,appshopper.com,Proxy
+- DOMAIN-SUFFIX,appspot.com,Proxy
+- DOMAIN-SUFFIX,arcgis.com,Proxy
+- DOMAIN-SUFFIX,archive.org,Proxy
+- DOMAIN-SUFFIX,armorgames.com,Proxy
+- DOMAIN-SUFFIX,aspnetcdn.com,Proxy
+- DOMAIN-SUFFIX,att.com,Proxy
+- DOMAIN-SUFFIX,awsstatic.com,Proxy
+- DOMAIN-SUFFIX,azureedge.net,Proxy
+- DOMAIN-SUFFIX,azurewebsites.net,Proxy
+- DOMAIN-SUFFIX,bing.com,Proxy
+- DOMAIN-SUFFIX,bintray.com,Proxy
+- DOMAIN-SUFFIX,bit.com,Proxy
+- DOMAIN-SUFFIX,bit.ly,Proxy
+- DOMAIN-SUFFIX,bitbucket.org,Proxy
+- DOMAIN-SUFFIX,bjango.com,Proxy
+- DOMAIN-SUFFIX,bkrtx.com,Proxy
+- DOMAIN-SUFFIX,blog.com,Proxy
+- DOMAIN-SUFFIX,blogcdn.com,Proxy
+- DOMAIN-SUFFIX,blogger.com,Proxy
+- DOMAIN-SUFFIX,blogsmithmedia.com,Proxy
+- DOMAIN-SUFFIX,blogspot.com,Proxy
+- DOMAIN-SUFFIX,blogspot.hk,Proxy
+- DOMAIN-SUFFIX,bloomberg.com,Proxy
+- DOMAIN-SUFFIX,box.com,Proxy
+- DOMAIN-SUFFIX,box.net,Proxy
+- DOMAIN-SUFFIX,cachefly.net,Proxy
+- DOMAIN-SUFFIX,chromium.org,Proxy
+- DOMAIN-SUFFIX,cl.ly,Proxy
+- DOMAIN-SUFFIX,cloudflare.com,Proxy
+- DOMAIN-SUFFIX,cloudfront.net,Proxy
+- DOMAIN-SUFFIX,cloudmagic.com,Proxy
+- DOMAIN-SUFFIX,cmail19.com,Proxy
+- DOMAIN-SUFFIX,cnet.com,Proxy
+- DOMAIN-SUFFIX,cocoapods.org,Proxy
+- DOMAIN-SUFFIX,comodoca.com,Proxy
+- DOMAIN-SUFFIX,crashlytics.com,Proxy
+- DOMAIN-SUFFIX,culturedcode.com,Proxy
+- DOMAIN-SUFFIX,d.pr,Proxy
+- DOMAIN-SUFFIX,danilo.to,Proxy
+- DOMAIN-SUFFIX,dayone.me,Proxy
+- DOMAIN-SUFFIX,db.tt,Proxy
+- DOMAIN-SUFFIX,deskconnect.com,Proxy
+- DOMAIN-SUFFIX,disq.us,Proxy
+- DOMAIN-SUFFIX,disqus.com,Proxy
+- DOMAIN-SUFFIX,disquscdn.com,Proxy
+- DOMAIN-SUFFIX,dnsimple.com,Proxy
+- DOMAIN-SUFFIX,docker.com,Proxy
+- DOMAIN-SUFFIX,dribbble.com,Proxy
+- DOMAIN-SUFFIX,droplr.com,Proxy
+- DOMAIN-SUFFIX,duckduckgo.com,Proxy
+- DOMAIN-SUFFIX,dueapp.com,Proxy
+- DOMAIN-SUFFIX,dytt8.net,Proxy
+- DOMAIN-SUFFIX,edgecastcdn.net,Proxy
+- DOMAIN-SUFFIX,edgekey.net,Proxy
+- DOMAIN-SUFFIX,edgesuite.net,Proxy
+- DOMAIN-SUFFIX,engadget.com,Proxy
+- DOMAIN-SUFFIX,entrust.net,Proxy
+- DOMAIN-SUFFIX,eurekavpt.com,Proxy
+- DOMAIN-SUFFIX,evernote.com,Proxy
+- DOMAIN-SUFFIX,fabric.io,Proxy
+- DOMAIN-SUFFIX,fast.com,Proxy
+- DOMAIN-SUFFIX,fastly.net,Proxy
+- DOMAIN-SUFFIX,fc2.com,Proxy
+- DOMAIN-SUFFIX,feedburner.com,Proxy
+- DOMAIN-SUFFIX,feedly.com,Proxy
+- DOMAIN-SUFFIX,feedsportal.com,Proxy
+- DOMAIN-SUFFIX,fiftythree.com,Proxy
+- DOMAIN-SUFFIX,firebaseio.com,Proxy
+- DOMAIN-SUFFIX,flexibits.com,Proxy
+- DOMAIN-SUFFIX,flickr.com,Proxy
+- DOMAIN-SUFFIX,flipboard.com,Proxy
+- DOMAIN-SUFFIX,g.co,Proxy
+- DOMAIN-SUFFIX,gabia.net,Proxy
+- DOMAIN-SUFFIX,geni.us,Proxy
+- DOMAIN-SUFFIX,gfx.ms,Proxy
+- DOMAIN-SUFFIX,ggpht.com,Proxy
+- DOMAIN-SUFFIX,ghostnoteapp.com,Proxy
+- DOMAIN-SUFFIX,git.io,Proxy
+- DOMAIN-KEYWORD,github,Proxy
+- DOMAIN-SUFFIX,globalsign.com,Proxy
+- DOMAIN-SUFFIX,gmodules.com,Proxy
+- DOMAIN-SUFFIX,godaddy.com,Proxy
+- DOMAIN-SUFFIX,golang.org,Proxy
+- DOMAIN-SUFFIX,gongm.in,Proxy
+- DOMAIN-SUFFIX,goo.gl,Proxy
+- DOMAIN-SUFFIX,goodreaders.com,Proxy
+- DOMAIN-SUFFIX,goodreads.com,Proxy
+- DOMAIN-SUFFIX,gravatar.com,Proxy
+- DOMAIN-SUFFIX,gstatic.com,Proxy
+- DOMAIN-SUFFIX,gvt0.com,Proxy
+- DOMAIN-SUFFIX,hockeyapp.net,Proxy
+- DOMAIN-SUFFIX,hotmail.com,Proxy
+- DOMAIN-SUFFIX,icons8.com,Proxy
+- DOMAIN-SUFFIX,ifixit.com,Proxy
+- DOMAIN-SUFFIX,ift.tt,Proxy
+- DOMAIN-SUFFIX,ifttt.com,Proxy
+- DOMAIN-SUFFIX,iherb.com,Proxy
+- DOMAIN-SUFFIX,imageshack.us,Proxy
+- DOMAIN-SUFFIX,img.ly,Proxy
+- DOMAIN-SUFFIX,imgur.com,Proxy
+- DOMAIN-SUFFIX,imore.com,Proxy
+- DOMAIN-SUFFIX,instapaper.com,Proxy
+- DOMAIN-SUFFIX,ipn.li,Proxy
+- DOMAIN-SUFFIX,is.gd,Proxy
+- DOMAIN-SUFFIX,issuu.com,Proxy
+- DOMAIN-SUFFIX,itgonglun.com,Proxy
+- DOMAIN-SUFFIX,itun.es,Proxy
+- DOMAIN-SUFFIX,ixquick.com,Proxy
+- DOMAIN-SUFFIX,j.mp,Proxy
+- DOMAIN-SUFFIX,js.revsci.net,Proxy
+- DOMAIN-SUFFIX,jshint.com,Proxy
+- DOMAIN-SUFFIX,jtvnw.net,Proxy
+- DOMAIN-SUFFIX,justgetflux.com,Proxy
+- DOMAIN-SUFFIX,kat.cr,Proxy
+- DOMAIN-SUFFIX,klip.me,Proxy
+- DOMAIN-SUFFIX,libsyn.com,Proxy
+- DOMAIN-SUFFIX,linkedin.com,Proxy
+- DOMAIN-SUFFIX,linode.com,Proxy
+- DOMAIN-SUFFIX,lithium.com,Proxy
+- DOMAIN-SUFFIX,littlehj.com,Proxy
+- DOMAIN-SUFFIX,live.com,Proxy
+- DOMAIN-SUFFIX,live.net,Proxy
+- DOMAIN-SUFFIX,livefilestore.com,Proxy
+- DOMAIN-SUFFIX,llnwd.net,Proxy
+- DOMAIN-SUFFIX,macid.co,Proxy
+- DOMAIN-SUFFIX,macromedia.com,Proxy
+- DOMAIN-SUFFIX,macrumors.com,Proxy
+- DOMAIN-SUFFIX,mashable.com,Proxy
+- DOMAIN-SUFFIX,mathjax.org,Proxy
+- DOMAIN-SUFFIX,medium.com,Proxy
+- DOMAIN-SUFFIX,mega.co.nz,Proxy
+- DOMAIN-SUFFIX,mega.nz,Proxy
+- DOMAIN-SUFFIX,megaupload.com,Proxy
+- DOMAIN-SUFFIX,microsofttranslator.com,Proxy
+- DOMAIN-SUFFIX,mindnode.com,Proxy
+- DOMAIN-SUFFIX,mobile01.com,Proxy
+- DOMAIN-SUFFIX,modmyi.com,Proxy
+- DOMAIN-SUFFIX,msedge.net,Proxy
+- DOMAIN-SUFFIX,myfontastic.com,Proxy
+- DOMAIN-SUFFIX,name.com,Proxy
+- DOMAIN-SUFFIX,nextmedia.com,Proxy
+- DOMAIN-SUFFIX,nsstatic.net,Proxy
+- DOMAIN-SUFFIX,nssurge.com,Proxy
+- DOMAIN-SUFFIX,nyt.com,Proxy
+- DOMAIN-SUFFIX,nytimes.com,Proxy
+- DOMAIN-SUFFIX,omnigroup.com,Proxy
+- DOMAIN-SUFFIX,onedrive.com,Proxy
+- DOMAIN-SUFFIX,onenote.com,Proxy
+- DOMAIN-SUFFIX,ooyala.com,Proxy
+- DOMAIN-SUFFIX,openvpn.net,Proxy
+- DOMAIN-SUFFIX,openwrt.org,Proxy
+- DOMAIN-SUFFIX,orkut.com,Proxy
+- DOMAIN-SUFFIX,osxdaily.com,Proxy
+- DOMAIN-SUFFIX,outlook.com,Proxy
+- DOMAIN-SUFFIX,ow.ly,Proxy
+- DOMAIN-SUFFIX,paddleapi.com,Proxy
+- DOMAIN-SUFFIX,parallels.com,Proxy
+- DOMAIN-SUFFIX,parse.com,Proxy
+- DOMAIN-SUFFIX,pdfexpert.com,Proxy
+- DOMAIN-SUFFIX,periscope.tv,Proxy
+- DOMAIN-SUFFIX,pinboard.in,Proxy
+- DOMAIN-SUFFIX,pinterest.com,Proxy
+- DOMAIN-SUFFIX,pixelmator.com,Proxy
+- DOMAIN-SUFFIX,pixiv.net,Proxy
+- DOMAIN-SUFFIX,playpcesor.com,Proxy
+- DOMAIN-SUFFIX,playstation.com,Proxy
+- DOMAIN-SUFFIX,playstation.com.hk,Proxy
+- DOMAIN-SUFFIX,playstation.net,Proxy
+- DOMAIN-SUFFIX,playstationnetwork.com,Proxy
+- DOMAIN-SUFFIX,pushwoosh.com,Proxy
+- DOMAIN-SUFFIX,rime.im,Proxy
+- DOMAIN-SUFFIX,servebom.com,Proxy
+- DOMAIN-SUFFIX,sfx.ms,Proxy
+- DOMAIN-SUFFIX,shadowsocks.org,Proxy
+- DOMAIN-SUFFIX,sharethis.com,Proxy
+- DOMAIN-SUFFIX,shazam.com,Proxy
+- DOMAIN-SUFFIX,skype.com,Proxy
+- DOMAIN-SUFFIX,smartdnsProxy.com,Proxy
+- DOMAIN-SUFFIX,smartmailcloud.com,Proxy
+- DOMAIN-SUFFIX,sndcdn.com,Proxy
+- DOMAIN-SUFFIX,sony.com,Proxy
+- DOMAIN-SUFFIX,soundcloud.com,Proxy
+- DOMAIN-SUFFIX,sourceforge.net,Proxy
+- DOMAIN-SUFFIX,spotify.com,Proxy
+- DOMAIN-SUFFIX,squarespace.com,Proxy
+- DOMAIN-SUFFIX,sstatic.net,Proxy
+- DOMAIN-SUFFIX,st.luluku.pw,Proxy
+- DOMAIN-SUFFIX,stackoverflow.com,Proxy
+- DOMAIN-SUFFIX,startpage.com,Proxy
+- DOMAIN-SUFFIX,staticflickr.com,Proxy
+- DOMAIN-SUFFIX,steamcommunity.com,Proxy
+- DOMAIN-SUFFIX,symauth.com,Proxy
+- DOMAIN-SUFFIX,symcb.com,Proxy
+- DOMAIN-SUFFIX,symcd.com,Proxy
+- DOMAIN-SUFFIX,tapbots.com,Proxy
+- DOMAIN-SUFFIX,tapbots.net,Proxy
+- DOMAIN-SUFFIX,tdesktop.com,Proxy
+- DOMAIN-SUFFIX,techcrunch.com,Proxy
+- DOMAIN-SUFFIX,techsmith.com,Proxy
+- DOMAIN-SUFFIX,thepiratebay.org,Proxy
+- DOMAIN-SUFFIX,theverge.com,Proxy
+- DOMAIN-SUFFIX,time.com,Proxy
+- DOMAIN-SUFFIX,timeinc.net,Proxy
+- DOMAIN-SUFFIX,tiny.cc,Proxy
+- DOMAIN-SUFFIX,tinypic.com,Proxy
+- DOMAIN-SUFFIX,tmblr.co,Proxy
+- DOMAIN-SUFFIX,todoist.com,Proxy
+- DOMAIN-SUFFIX,trello.com,Proxy
+- DOMAIN-SUFFIX,trustasiassl.com,Proxy
+- DOMAIN-SUFFIX,tumblr.co,Proxy
+- DOMAIN-SUFFIX,tumblr.com,Proxy
+- DOMAIN-SUFFIX,tweetdeck.com,Proxy
+- DOMAIN-SUFFIX,tweetmarker.net,Proxy
+- DOMAIN-SUFFIX,twitch.tv,Proxy
+- DOMAIN-SUFFIX,txmblr.com,Proxy
+- DOMAIN-SUFFIX,typekit.net,Proxy
+- DOMAIN-SUFFIX,ubertags.com,Proxy
+- DOMAIN-SUFFIX,ublock.org,Proxy
+- DOMAIN-SUFFIX,ubnt.com,Proxy
+- DOMAIN-SUFFIX,ulyssesapp.com,Proxy
+- DOMAIN-SUFFIX,urchin.com,Proxy
+- DOMAIN-SUFFIX,usertrust.com,Proxy
+- DOMAIN-SUFFIX,v.gd,Proxy
+- DOMAIN-SUFFIX,v2ex.com,Proxy
+- DOMAIN-SUFFIX,vimeo.com,Proxy
+- DOMAIN-SUFFIX,vimeocdn.com,Proxy
+- DOMAIN-SUFFIX,vine.co,Proxy
+- DOMAIN-SUFFIX,vivaldi.com,Proxy
+- DOMAIN-SUFFIX,vox-cdn.com,Proxy
+- DOMAIN-SUFFIX,vsco.co,Proxy
+- DOMAIN-SUFFIX,vultr.com,Proxy
+- DOMAIN-SUFFIX,w.org,Proxy
+- DOMAIN-SUFFIX,w3schools.com,Proxy
+- DOMAIN-SUFFIX,webtype.com,Proxy
+- DOMAIN-SUFFIX,wikiwand.com,Proxy
+- DOMAIN-SUFFIX,wikileaks.org,Proxy
+- DOMAIN-SUFFIX,wikimedia.org,Proxy
+- DOMAIN-SUFFIX,wikipedia.com,Proxy
+- DOMAIN-SUFFIX,wikipedia.org,Proxy
+- DOMAIN-SUFFIX,windows.com,Proxy
+- DOMAIN-SUFFIX,windows.net,Proxy
+- DOMAIN-SUFFIX,wire.com,Proxy
+- DOMAIN-SUFFIX,wordpress.com,Proxy
+- DOMAIN-SUFFIX,workflowy.com,Proxy
+- DOMAIN-SUFFIX,wp.com,Proxy
+- DOMAIN-SUFFIX,wsj.com,Proxy
+- DOMAIN-SUFFIX,wsj.net,Proxy
+- DOMAIN-SUFFIX,xda-developers.com,Proxy
+- DOMAIN-SUFFIX,xeeno.com,Proxy
+- DOMAIN-SUFFIX,xiti.com,Proxy
+- DOMAIN-SUFFIX,yahoo.com,Proxy
+- DOMAIN-SUFFIX,yimg.com,Proxy
+- DOMAIN-SUFFIX,ying.com,Proxy
+- DOMAIN-SUFFIX,yoyo.org,Proxy
+- DOMAIN-SUFFIX,ytimg.com,Proxy
+- DOMAIN-SUFFIX,telegra.ph,Proxy
+- DOMAIN-SUFFIX,telegram.org,Proxy
+- IP-CIDR,91.108.4.0/22,Proxy
+- IP-CIDR,91.108.8.0/21,Proxy
+- IP-CIDR,91.108.16.0/22,Proxy
+- IP-CIDR,91.108.56.0/22,Proxy
+- IP-CIDR,149.154.160.0/20,Proxy
+- IP-CIDR6,2001:67c:4e8::/48,Proxy
+- IP-CIDR6,2001:b28:f23d::/48,Proxy
+- IP-CIDR6,2001:b28:f23f::/48,Proxy
 - DOMAIN,injections.adguard.org,DIRECT
 - DOMAIN,local.adguard.org,DIRECT
 - DOMAIN-SUFFIX,local,DIRECT
@@ -648,9 +647,5 @@ rules:
 - IP-CIDR,100.64.0.0/10,DIRECT
 - IP-CIDR,224.0.0.0/4,DIRECT
 - IP-CIDR6,fe80::/10,DIRECT
-- IP-CIDR,2002::/16,DIRECT
-- IP-CIDR,2001:db8::/32,DIRECT
-- IP-CIDR,2001::/32,DIRECT
-- IP-CIDR,2001:20::/28,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,⭕ proxinode
+- MATCH,Proxy
