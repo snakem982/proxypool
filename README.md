@@ -28,14 +28,14 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 
 | 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
 |:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
-| 1  |  无限   | 1Gbps |   1   |  1 G  | 20 GB |  $10   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=23 "点击查看") |
+| 1  |  20T  | 1Gbps |   1   |  1 G  | 25 GB |  $10   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=49 "点击查看") |
 | 2  | 3000G | 1Gbps |   1   |  1 G  | 17 GB | $10.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=358 "点击查看")    |
-| 3  | 2000G | 1Gbps |   1   |  1 G  | 24 GB | $11.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=903 "点击查看")    |
-| 4  |  无限   | 1Gbps |   1   |  2 G  | 40 GB |  $15   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=24 "点击查看") |
+| 3  |  20T  | 1Gbps |   1   |  1 G  | 20 GB |  $12   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=33 "点击查看") |
+| 4  | 2000G | 1Gbps |   1   |  1 G  | 24 GB | $11.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=903 "点击查看")    |
 | 5  | 3500G | 1Gbps |   1   |  2 G  | 40 GB | $18.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=904 "点击查看")    |
-| 6  |  无限   | 1Gbps |   2   |  3 G  | 50 GB |  $20   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=25 "点击查看") |
-| 7  |  无限   | 1Gbps |   3   |  4 G  | 60 GB |  $24   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=26 "点击查看") |
-| 8  | 7000G | 1Gbps |   2   | 3.5 G | 65 GB | $32.49 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=905 "点击查看")    |
+| 6  |  20T  | 1Gbps |   1   |  2 G  | 40 GB |  $20   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=34 "点击查看") |
+| 7  | 7000G | 1Gbps |   2   | 3.5 G | 65 GB | $32.49 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=905 "点击查看")    |
+
 
 **香港服务器** （需要注册登录后查看）
 
