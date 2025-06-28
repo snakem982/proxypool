@@ -52,7 +52,7 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 5  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥288  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
 | 6  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥358  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
 
-**德国服务器** (PayPal)
+**美国纽约、英国伦敦、德国法兰克福 服务器** (PayPal)
 
 | 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |      价格      |                                查看详情                                 |
 |:--:|:----:|:-----:|:-----:|:----:|:-----:|:------------:|:-------------------------------------------------------------------:|
