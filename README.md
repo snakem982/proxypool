@@ -39,6 +39,14 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 9  | 5000G | 1Gbps |   3   | 3.5 G | 60 GB | $29.89 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=914 "点击查看")    |
 | 10 | 7000G | 1Gbps |   2   | 3.5 G | 65 GB | $32.49 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=905 "点击查看")    |
 
+**美国纽约、英国伦敦、德国法兰克福 服务器** (PayPal)
+
+| 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |      价格      |                                查看详情                                 |
+|:--:|:----:|:-----:|:-----:|:----:|:-----:|:------------:|:-------------------------------------------------------------------:|
+| 1  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  9.99美元/1年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
+| 2  | 20T  | 1Gbps |   1   | 1 G  | 10 GB | 10.29美元/1年   |      [链接](https://my.dasabo.com/aff.php?aff=51&pid=173 "点击查看")      |
+| 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  18.65美元/2年  | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
+| 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/4年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
 
 **香港服务器** （需要注册登录后查看）
@@ -51,15 +59,6 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 4  | 600G | 100Mbps |   2   | 4 G  | 50 GB | ¥228  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
 | 5  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥288  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
 | 6  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥358  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
-
-**美国纽约、英国伦敦、德国法兰克福 服务器** (PayPal)
-
-| 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |      价格      |                                查看详情                                 |
-|:--:|:----:|:-----:|:-----:|:----:|:-----:|:------------:|:-------------------------------------------------------------------:|
-| 1  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  9.99美元/1年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 2  | 20T  | 1Gbps |   1   | 1 G  | 10 GB | 10.29美元/1年   |      [链接](https://my.dasabo.com/aff.php?aff=51&pid=173 "点击查看")      |
-| 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  18.65美元/2年  | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/4年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
 
 ## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
