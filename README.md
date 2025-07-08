@@ -70,7 +70,6 @@ https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.y
 
 ### v2ray 订阅地址
 
-https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray.txt
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt
 
 ### nodelist.txt
