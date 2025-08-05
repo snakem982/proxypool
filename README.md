@@ -49,18 +49,6 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/4年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
 
-**香港服务器** （需要注册登录后查看）
-
-| 序号 | 流量/月 |   网速    | CPU核数 | 运行内存 |  硬盘   | 人民币/年 |                         查看详情                          |
-|:--:|:----:|:-------:|:-----:|:----:|:-----:|:-----:|:-----------------------------------------------------:|
-| 1  | 600G | 100Mbps |   2   | 2 G  | 30 GB |  ¥99  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
-| 2  | 600G | 100Mbps |   1   | 2 G  | 30 GB | ¥128  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
-| 3  | 600G | 100Mbps |   2   | 4 G  | 50 GB | ¥188  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
-| 4  | 600G | 100Mbps |   2   | 4 G  | 50 GB | ¥228  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
-| 5  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥288  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
-| 6  | 800G | 100Mbps |   4   | 8 G  | 90 GB | ¥358  | [链接](https://my.yecaoyun.com/aff.php?aff=5170 "点击查看") |
-
-
 ## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
 
 ### clash.meta/mihomo 订阅地址
