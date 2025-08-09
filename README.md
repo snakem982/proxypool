@@ -85,5 +85,3 @@ https://github.com/snakem982/proxypool/blob/main/source/tgchannel.json
 This project is meant for personal and educational uses only.
 Please follow relevant laws and regulations when using this project.
 Project owner is not responsible or liable in any manner for the use of the content.
-
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
