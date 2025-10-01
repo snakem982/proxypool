@@ -5,66 +5,156 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇦🇪 阿联酋 | ARE, server: 139.185.34.29, port: 50000, type: hysteria2, password: 3abe69d9-20ed-49ae-9d18-8d4b9e050472, auth: 3abe69d9-20ed-49ae-9d18-8d4b9e050472, sni: www.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
-  - {name: 🇧🇩 孟加拉 | BGD, server: kh5.9966662.xyz, port: 51423, type: vless, uuid: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 2IbS5DAoAxEG9wEG99huRaHljbEDQdhpcKE9q9x52TE, short-id: "1ce76a90" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇧🇷 巴西 | BRA, server: 194.87.198.32, port: 12517, type: tuic, password: 8bd19584-f233-4050-9718-e193b70cf18e, uuid: 8bd19584-f233-4050-9718-e193b70cf18e, sni: apple.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇧🇷 巴西 | BRA 2, server: 194.87.198.32, port: 62436, type: tuic, password: 82a752b1-af3a-4d18-a440-b9ac20a44c45, uuid: 82a752b1-af3a-4d18-a440-b9ac20a44c45, sni: apple.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇧🇷 巴西 | BRA 3, server: 194.87.198.32, port: 12517, type: tuic, password: 8c111c4f-af43-43fe-bbf8-d7e075479557, uuid: 8c111c4f-af43-43fe-bbf8-d7e075479557, sni: apple.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇧🇷 巴西 | BRA 4, server: 194.87.198.32, port: 62316, type: tuic, password: a89e13bd-c23c-4fd6-9b96-8854a705ada9, uuid: a89e13bd-c23c-4fd6-9b96-8854a705ada9, sni: apple.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇧🇷 巴西 | BRA 5, server: 194.87.198.32, port: 12536, type: tuic, password: 4827b0dc-79fa-412e-adbf-a1f8f53d2562, uuid: 4827b0dc-79fa-412e-adbf-a1f8f53d2562, sni: apple.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇧🇷 巴西 | BRA 6, server: 194.87.198.32, port: 62436, type: tuic, password: 4887241d-0a03-4c01-8a6d-e5fc24838d58, uuid: 4887241d-0a03-4c01-8a6d-e5fc24838d58, sni: apple.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇩🇪 德国 | DEU, server: 193.122.12.150, port: 50000, type: hysteria2, password: 767ed51d-2358-4981-9447-a807c1419e93, auth: 767ed51d-2358-4981-9447-a807c1419e93, sni: fastcdn.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
-  - {name: 🇩🇪 德国 | DEU 2, server: ydyh1.nanbeicloud.top, port: 26907, type: ss, cipher: chacha20-ietf-poly1305, password: 8148e864-9da5-40a5-b888-6c2014452865, udp: true}
-  - {name: 🇫🇮 芬兰 | FIN, server: 46.62.156.154, port: 59594, type: vless, uuid: c5bcf3fb-eb77-4472-8750-55b56efef262, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇫🇷 法国 | FRA, server: fq-fr.mxtn.net, port: 11069, type: hysteria2, password: a54ad565-1853-4954-98ab-1b1bd2f5f724, auth: a54ad565-1853-4954-98ab-1b1bd2f5f724, sni: fq-fr.mxtn.net, skip-cert-verify: false, ports: 11001-11099, udp: true}
-  - {name: 🇭🇰 香港 | HKG, server: yy2.vyunyunnode.top, port: 19009, type: ss, cipher: chacha20-ietf-poly1305, password: e63e32fc-c4d2-4cb5-9bbd-a5d51b1144bf, udp: true}
-  - {name: 🇭🇰 香港 | HKG 2, server: yy3.vyunyunnode.top, port: 19027, type: ss, cipher: 2022-blake3-aes-128-gcm, password: OWI3MTM5NjUyOTM2N2RhNA==:ZTYzZTMyZmMtYzRkMi00Yw==, udp: true}
-  - {name: 🇭🇰 香港 | HKG 3, server: fq-hk.mxtn.net, port: 11044, type: hysteria2, password: a54ad565-1853-4954-98ab-1b1bd2f5f724, auth: a54ad565-1853-4954-98ab-1b1bd2f5f724, sni: fq-hk.mxtn.net, skip-cert-verify: false, ports: 11001-11099, udp: true}
-  - {name: 🇭🇰 香港 | HKG 4, server: yy3.vyunyunnode.top, port: 19006, type: ss, cipher: chacha20-ietf-poly1305, password: e63e32fc-c4d2-4cb5-9bbd-a5d51b1144bf, udp: true}
-  - {name: 🇭🇰 香港 | HKG 5, server: yy2.vyunyunnode.top, port: 19026, type: ss, cipher: 2022-blake3-aes-128-gcm, password: OWI3MTM5NjUyOTM2N2RhNA==:ZTYzZTMyZmMtYzRkMi00Yw==, udp: true}
-  - {name: 🇭🇰 香港 | HKG 6, server: hg1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: c0b7ec35-d4d8-4e6c-aecf-9e2a18efd2e2, auth: c0b7ec35-d4d8-4e6c-aecf-9e2a18efd2e2, sni: hg1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 7, server: yy3.vyunyunnode.top, port: 19023, type: ss, cipher: 2022-blake3-aes-128-gcm, password: MzRlY2YwNDQzMzY0OTI3OQ==:ZTYzZTMyZmMtYzRkMi00Yw==, udp: true}
-  - {name: 🇭🇰 香港 | HKG 8, server: hg1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 45183e5f-ff99-44ac-95ef-22a13d2356fd, auth: 45183e5f-ff99-44ac-95ef-22a13d2356fd, sni: hg1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 9, server: 156.251.179.135, port: 443, type: ss, cipher: aes-256-gcm, password: 2b5fad3874e5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: hk6v1.dsjsapp.com, path: /aqwshiog, tls: true, mux: true}, udp: true}
-  - {name: 🇭🇰 香港 | HKG 10, server: hg1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 49904f74-629c-40e4-ab64-19613e557ca8, auth: 49904f74-629c-40e4-ab64-19613e557ca8, sni: hg1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 11, server: hg1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 7038e834-4587-425d-81af-a12d8779a6bd, auth: 7038e834-4587-425d-81af-a12d8779a6bd, sni: hg1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 12, server: hg1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 3997f23e-2d49-44ef-8f52-292ff3e73633, auth: 3997f23e-2d49-44ef-8f52-292ff3e73633, sni: hg1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇷 克罗地亚 | HRV, server: 32ffe6-20-co-hr1-2.9966661.xyz, port: 3000, type: hysteria2, password: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6, auth: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6, sni: 32ffe6-20-co-hr1.9966661.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇷 克罗地亚 | HRV 2, server: 32ffe6-20-co-hr1-4.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 32ffe6-20-co-hr1.9966661.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇲 马恩岛 | IMN, server: 213.111.132.100, port: 8443, type: ss, cipher: chacha20-ietf-poly1305, password: UEz3lCgyrS2nL9xJAgboy1, udp: true}
-  - {name: 🇮🇹 意大利 | ITA, server: 5f6a56-20-4.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 5f6a56-20.9966661.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇲🇾 马来西亚 | MYS, server: my075.jd.kunlunpx.com, port: 45576, type: ss, cipher: aes-128-gcm, password: fe51727afe2fca582ebf, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD, server: yapc-1.adamhayward.co.uk, port: 36300, type: hysteria2, password: Yet-Another-Public-Config-1, auth: Yet-Another-Public-Config-1, sni: YAPC-1.afshin.ir, skip-cert-verify: true, obfs: salamander, obfs-password: Yet-Another-Public-Config-1, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 2, server: gavazn.lnmarketplace.net, port: 45000, type: hysteria2, password: Telegram-->@Ln2Ray, auth: Telegram-->@Ln2Ray, sni: gavazn.55994421.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: Telegram-->@Ln2Ray, udp: true}
-  - {name: 🇺🇦 乌克兰 | UKR, server: ua5.9966662.xyz, port: 20073, type: vless, uuid: a24c6851-2055-42c1-9c20-2d3bad97334f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZWmuJMm4nOp6QgkYnwE04cb78sxa-Mt4c3fBlkuAYG4, short-id: "8d4d18f7" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: rb1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 331302eb-3f6c-48ab-bd67-5c747c6b5496, auth: 331302eb-3f6c-48ab-bd67-5c747c6b5496, sni: rb1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: 208.87.242.163, port: 50000, type: hysteria2, password: 3abe69d9-20ed-49ae-9d18-8d4b9e050472, auth: 3abe69d9-20ed-49ae-9d18-8d4b9e050472, sni: www.bing.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: c20d8f-20-3.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: c20d8f-20.9966661.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 | USA 4, server: rb1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: aa57ea6d-0218-4e7d-bb8e-c7864f8e3e38, auth: aa57ea6d-0218-4e7d-bb8e-c7864f8e3e38, sni: rb1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 5, server: 144.24.54.157, port: 50000, type: hysteria2, password: 3abe69d9-20ed-49ae-9d18-8d4b9e050472, auth: 3abe69d9-20ed-49ae-9d18-8d4b9e050472, sni: www.bing.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
-  - {name: 🇺🇸 美国 | USA 6, server: 104.192.226.106, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇺🇸 美国 | USA 7, server: rb1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 8a60ebba-5ae6-488b-9f6e-ee5f8d25cba8, auth: 8a60ebba-5ae6-488b-9f6e-ee5f8d25cba8, sni: rb1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 8, server: 167.68.4.199, port: 2053, type: trojan, password: Aimer, sni: epge.muarua.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epge.muarua.filegear-sg.me}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 9, server: rb1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 879cf33f-d0ea-4eda-9d80-b9db942fd628, auth: 879cf33f-d0ea-4eda-9d80-b9db942fd628, sni: rb1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 10, server: 185.148.14.230, port: 30000, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aa, headers: {Host: us.nbee.pp.ua}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 11, server: xjp1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 71a1a8ab-8898-4427-a7d7-9d9b56a0467f, auth: 71a1a8ab-8898-4427-a7d7-9d9b56a0467f, sni: xjp1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 12, server: xjp1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 3cd3fac3-7ace-4f60-8002-d2a1efe8db28, auth: 3cd3fac3-7ace-4f60-8002-d2a1efe8db28, sni: xjp1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 13, server: 212.192.12.251, port: 22122, type: vmess, uuid: 07558080-2897-42a1-98f9-ac4503b36b02, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国 | USA 14, server: rb1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: c6cc43a9-20a4-43c3-aa26-758cd31161c7, auth: c6cc43a9-20a4-43c3-aa26-758cd31161c7, sni: rb1.xiaohuolongjc.top, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 | USA 15, server: xjp1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 1a001e41-030b-46c1-ae5c-606710f9ae1d, auth: 1a001e41-030b-46c1-ae5c-606710f9ae1d, sni: xjp1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 16, server: dg1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 756b0d5d-3829-4804-a5b8-cf957f5c2e5f, auth: 756b0d5d-3829-4804-a5b8-cf957f5c2e5f, sni: dg1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 17, server: us069.jd.kunlunpx.com, port: 45938, type: ss, cipher: aes-128-gcm, password: 3938bfae997974860251, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}, udp: true}
-  - {name: 🇺🇸 美国 | USA 18, server: rb1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 37cb73f5-178e-4552-bbfd-12cd815f97dd, auth: 37cb73f5-178e-4552-bbfd-12cd815f97dd, sni: rb1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 19, server: xjp1.xiaohuolongjc.top, port: 37771, type: hysteria2, password: 9596fba6-7f65-49b5-a36e-38571a549389, auth: 9596fba6-7f65-49b5-a36e-38571a549389, sni: xjp1.xiaohuolongjc.top, skip-cert-verify: true, udp: true}
-  - {name: 🇻🇳 越南 | VNM, server: 103.186.154.159, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 2, server: 103.186.155.204, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 3, server: 103.186.154.204, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 4, server: ydyh1.nanbeicloud.top, port: 26915, type: ss, cipher: chacha20-ietf-poly1305, password: 8148e864-9da5-40a5-b888-6c2014452865, udp: true}
-  - {name: 🇻🇳 越南 | VNM 5, server: 103.186.155.63, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 6, server: 103.186.155.133, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 7, server: 103.186.155.147, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 8, server: 103.186.154.219, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇿🇦 南非 | ZAF, server: 129.151.169.64, port: 65535, type: hysteria2, password: 3abe69d9-20ed-49ae-9d18-8d4b9e050472, auth: 3abe69d9-20ed-49ae-9d18-8d4b9e050472, sni: www.microsoft.com, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE, server: ae1-4.9966662.xyz, port: 20223, type: vless, uuid: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: RsbED0LyE3f2byTPx5t-dQewju6z9R4xqTWrADM4WnM, short-id: "c6842be1" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇦🇲 亚美尼亚 | ARM, server: 7be4b6-20-2.9966661.xyz, port: 3000, type: hysteria2, password: a24c6851-2055-42c1-9c20-2d3bad97334f, auth: a24c6851-2055-42c1-9c20-2d3bad97334f, sni: 7be4b6-20.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇧🇷 巴西 | BRA, server: afb4b1-20-3.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: afb4b1-20.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大 | CAN, server: 40.233.82.111, port: 42557, type: vless, uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo, short-id: "f430927d" }, servername: www.yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 加拿大 | CAN 2, server: 40.233.81.116, port: 54530, type: hysteria2, password: 862e90e1-2f26-4506-b8b9-0adf20da05fc, auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc, sni: www.bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇨🇳 台湾 | TWN, server: baigou1.kkieo555.cn, port: 21874, type: trojan, password: fbb92a17-a6ea-493e-85a8-d718355e85cf, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 2, server: baigou1.kkieo555.cn, port: 21878, type: trojan, password: b2f345c7-3279-4ec8-8601-43428144ad5e, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 3, server: baigou1.kkieo555.cn, port: 21874, type: trojan, password: 856e7f69-6f59-458c-ad20-a86f046b3cb8, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 4, server: baigou1.kkieo555.cn, port: 21874, type: trojan, password: 7bcc0f74-a9f3-4bcb-8547-da0be73e8e28, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 5, server: baigou1.kkieo555.cn, port: 21878, type: trojan, password: 9587395f-b23e-4451-a3f3-4446065803de, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 6, server: baigou1.kkieo555.cn, port: 21874, type: trojan, password: d3c12443-c761-4f6f-952a-0f4380b94ba4, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 7, server: baigou1.kkieo555.cn, port: 21874, type: trojan, password: 9587395f-b23e-4451-a3f3-4446065803de, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 8, server: baigou1.kkieo555.cn, port: 21878, type: trojan, password: 3cf07c8e-b270-458f-9876-0a58b6ac6c22, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 9, server: baigou1.kkieo555.cn, port: 21874, type: trojan, password: 8129a45a-8ded-4434-ae7e-5f3d2168e0d1, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 10, server: baigou1.kkieo555.cn, port: 21878, type: trojan, password: 8e61821e-cef9-4f11-a6d3-f86748ae6f65, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 11, server: baigou1.kkieo555.cn, port: 21874, type: trojan, password: 5455c473-28d6-42df-9c5e-b67f2a211b7d, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 12, server: baigou1.kkieo555.cn, port: 21878, type: trojan, password: 95237656-2861-4a2e-a43b-d924031169e7, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 13, server: baigou1.kkieo555.cn, port: 21878, type: trojan, password: 4fe3708e-cf7d-4b71-822c-ad8b145c01b1, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: banmabanmabanmabanmabanmabanma2.wanlidag.top, port: 54265, type: hysteria2, password: a9d90262-a45f-4a73-8038-417d512402d7, auth: a9d90262-a45f-4a73-8038-417d512402d7, sni: banmabanmabanmabanmabanmabanma2.wanlidag.top, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 | GBR, server: baigou1.kkieo555.cn, port: 21876, type: trojan, password: 407fd047-288a-4ff4-af81-5ef031684af2, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 | GBR 2, server: creativecommons.org, port: 443, type: trojan, password: biOrJGlcfX, sni: ghasem.kotlet.org, alpn: [h2%2Chttp%2F1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /kos-madaret-khamneii, headers: {Host: ghasem.kotlet.org}}, udp: true}
+  - {name: 🇬🇧 英国 | GBR 3, server: baigou1.kkieo555.cn, port: 21876, type: trojan, password: 58e4bf84-475e-4ff3-b4c0-1b8fa13a437f, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: baigou1.kkieo555.cn, port: 21863, type: trojan, password: 234d3f47-9f4f-42ff-9ea2-2d4cb241b351, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 2, server: baigou1.kkieo555.cn, port: 21866, type: trojan, password: dfcad48b-77ef-402d-9a85-323999cbac2c, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 3, server: baigou1.kkieo555.cn, port: 21866, type: trojan, password: 4fe3708e-cf7d-4b71-822c-ad8b145c01b1, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 4, server: baigou1.kkieo555.cn, port: 21863, type: trojan, password: 777fec4f-0a18-494b-950a-852bdb271638, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 5, server: baigou1.kkieo555.cn, port: 21863, type: trojan, password: 64d35e8a-daf0-4c22-8139-ad22f993e3b7, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 6, server: 121.147.229.1, port: 50000, type: vmess, uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /aa, headers: {Host: hk.nbee.pp.ua}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG 7, server: baigou1.kkieo555.cn, port: 21866, type: trojan, password: 162b69d6-c1d7-430c-8834-b1a8bfa3aee7, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 8, server: baigou1.kkieo555.cn, port: 21866, type: trojan, password: 48001c46-b4cc-49b5-bf29-bc250303c2bf, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 9, server: 168.93.198.17, port: 443, type: vmess, uuid: ffde381b-4a30-41d4-90eb-151f228b06ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /qq, headers: {Host: aa.nbee.pp.ua}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG 10, server: baigou1.kkieo555.cn, port: 21863, type: trojan, password: 99eead3f-8db1-420c-94ff-3b0f681bdbf9, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 11, server: baigou1.kkieo555.cn, port: 21863, type: trojan, password: d3c12443-c761-4f6f-952a-0f4380b94ba4, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 12, server: baigou1.kkieo555.cn, port: 21866, type: trojan, password: 69485c4d-48df-457d-a17d-4728581585a2, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 13, server: 742343-u-jv-hk2-5.9966661.xyz, port: 3000, type: hysteria2, password: a24c6851-2055-42c1-9c20-2d3bad97334f, auth: a24c6851-2055-42c1-9c20-2d3bad97334f, sni: 742343-u-jv-hk2.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 | HKG 14, server: baigou1.kkieo555.cn, port: 21863, type: trojan, password: 2fa132be-a5c4-4ef0-800a-deea21311f15, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 15, server: baigou1.kkieo555.cn, port: 21866, type: trojan, password: 856e7f69-6f59-458c-ad20-a86f046b3cb8, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 16, server: baigou1.kkieo555.cn, port: 21863, type: trojan, password: 856e7f69-6f59-458c-ad20-a86f046b3cb8, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇷 克罗地亚 | HRV, server: 32ffe6-20-co-hr1-4.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 32ffe6-20-co-hr1.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN, server: baigou1.kkieo555.cn, port: 21868, type: trojan, password: 9587395f-b23e-4451-a3f3-4446065803de, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 2, server: q0wpu-g04.jp06-jz-vm0.entry.fr0528.art, port: 28786, type: vmess, uuid: c18c4112-fb51-3167-bb76-515d7a2b512d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 3, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: 4c59eb89-cad3-403f-8d6c-d5d8f5af4f87, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 4, server: 8xp6r-g04.jp05-h6-vm0.entry.fr0528.art, port: 46485, type: vmess, uuid: c18c4112-fb51-3167-bb76-515d7a2b512d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 5, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: 777fec4f-0a18-494b-950a-852bdb271638, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 6, server: abm0p-g03.jp06-jz-vm0.entry.fr0528.art, port: 28785, type: vmess, uuid: 339cf625-ef70-3be4-8965-5a1e3f384d9f, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 7, server: tls.19.node-for-bigairport.win, port: 23211, type: vmess, uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 8, server: 0jxrv-g06.jp01-nn-vm0.entry.fr0528.art, port: 21586, type: vmess, uuid: 8e0c2bc2-705f-375f-a246-82955b5165ef, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 9, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: fbb92a17-a6ea-493e-85a8-d718355e85cf, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 10, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: 9587395f-b23e-4451-a3f3-4446065803de, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 11, server: baigou1.kkieo555.cn, port: 21868, type: trojan, password: 81c9051e-0d8f-4cac-bb27-6ab6e96b8596, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 12, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: 9a4d5ed4-1e08-4e58-9a29-1facc7f937e4, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 13, server: blidt-g03.jp05-h6-vm0.entry.fr0528.art, port: 46484, type: vmess, uuid: 339cf625-ef70-3be4-8965-5a1e3f384d9f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 14, server: baigou1.kkieo555.cn, port: 21869, type: trojan, password: fbb92a17-a6ea-493e-85a8-d718355e85cf, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 15, server: baigou1.kkieo555.cn, port: 21868, type: trojan, password: b2f345c7-3279-4ec8-8601-43428144ad5e, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 16, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: 40ec8eba-dd4b-4e95-94e1-775a5cbe0157, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 17, server: baigou1.kkieo555.cn, port: 21869, type: trojan, password: d3b02e52-1fb1-4d31-8469-dd4dea7132d1, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 18, server: baigou1.kkieo555.cn, port: 21868, type: trojan, password: fe45f8ef-2dda-4236-b141-b96635b2a565, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 19, server: e3ji8-g04.jp01-nn-vm0.entry.fr0528.art, port: 21584, type: vmess, uuid: c18c4112-fb51-3167-bb76-515d7a2b512d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 20, server: baigou1.kkieo555.cn, port: 21868, type: trojan, password: 58e4bf84-475e-4ff3-b4c0-1b8fa13a437f, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 21, server: dv-jp-3.9966661.xyz, port: 3000, type: hysteria2, password: a24c6851-2055-42c1-9c20-2d3bad97334f, auth: a24c6851-2055-42c1-9c20-2d3bad97334f, sni: dv-jp.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 22, server: baigou1.kkieo555.cn, port: 21868, type: trojan, password: 69485c4d-48df-457d-a17d-4728581585a2, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 23, server: tb012-g01.jp03-j7-vm0.entry.fr0528.art, port: 21581, type: vmess, uuid: 1a9f857f-9a07-3a8c-a155-f9ab3c457343, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 24, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: 856e7f69-6f59-458c-ad20-a86f046b3cb8, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 25, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: 812d2033-d12a-44c7-abed-da0662d0a5e4, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 26, server: baigou1.kkieo555.cn, port: 21867, type: trojan, password: 70b1464a-1268-4536-8bdc-9e37c0d4e970, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 27, server: baigou1.kkieo555.cn, port: 21868, type: trojan, password: 9ab1394b-1ec9-41e3-84be-a6a65593d702, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 28, server: baigou1.kkieo555.cn, port: 21869, type: trojan, password: c47266b2-4ecc-413f-ab72-3941fac429a3, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 29, server: baigou1.kkieo555.cn, port: 21868, type: trojan, password: 70b1464a-1268-4536-8bdc-9e37c0d4e970, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 30, server: vznsd-g01.jp06-jz-vm0.entry.fr0528.art, port: 28783, type: vmess, uuid: 763e08a1-c289-3a41-aa80-e63a56bc1447, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 31, server: baigou1.kkieo555.cn, port: 21869, type: trojan, password: 73ca514a-b0cf-474d-a41e-acb95b1aeb5e, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 | KOR, server: baigou1.kkieo555.cn, port: 21871, type: trojan, password: 70b1464a-1268-4536-8bdc-9e37c0d4e970, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 2, server: baigou1.kkieo555.cn, port: 21871, type: trojan, password: 270206e6-31f8-4d15-828b-4f458bf2970b, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 3, server: baigou1.kkieo555.cn, port: 21871, type: trojan, password: f48c1926-e92d-4180-bd9b-edda946c6e1a, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 4, server: baigou1.kkieo555.cn, port: 21871, type: trojan, password: d3c12443-c761-4f6f-952a-0f4380b94ba4, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇩 摩尔多瓦 | MDA, server: 185.153.197.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: v30.heduian.link, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 2, server: yapc-1.adamhayward.co.uk, port: 35200, type: hysteria2, password: Yet-Another-Public-Config-1, auth: Yet-Another-Public-Config-1, sni: YAPC-1.afshin.ir, skip-cert-verify: false, obfs: salamander, obfs-password: Yet-Another-Public-Config-1, udp: true}
+  - {name: 🇵🇹 葡萄牙 | PRT, server: 185.231.233.112, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: 812d2033-d12a-44c7-abed-da0662d0a5e4, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 2, server: 162.159.43.92, port: 443, type: vless, uuid: 0c0537c3-f0fb-40e6-bd59-f5038e1855ed, tls: true, servername: juzi.634676.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi.634676.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 3, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: aadc4bf6-77ec-460a-af45-11d87431a430, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 4, server: sg002.421421.xyz, port: 20230, type: vless, uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e, tls: true, reality-opts: {public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ, short-id: "46bf6ea0" }, servername: www.nvidia.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: tj}, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 5, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: a5fdbe3f-f770-4825-9133-b824713cf849, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 6, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: d3c12443-c761-4f6f-952a-0f4380b94ba4, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 7, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: a28532ad-0584-44c4-bee1-a5bdeddbcdce, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 8, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: 81c9051e-0d8f-4cac-bb27-6ab6e96b8596, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 9, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: fe45f8ef-2dda-4236-b141-b96635b2a565, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 10, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: 5455c473-28d6-42df-9c5e-b67f2a211b7d, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 11, server: baigou1.kkieo555.cn, port: 21877, type: trojan, password: 69485c4d-48df-457d-a17d-4728581585a2, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: els.ylccloud.top, port: 16090, type: hysteria2, password: 5b9f999d-343c-4a1c-8b35-f41c33effe83, auth: 5b9f999d-343c-4a1c-8b35-f41c33effe83, sni: els.ylccloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 2, server: xg.jjzcloud.top, port: 57338, type: hysteria2, password: 40e600c5-530b-4f2a-8a19-94564e5c6b83, auth: 40e600c5-530b-4f2a-8a19-94564e5c6b83, sni: xg.jjzcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 3, server: 03e37e-330-co-4.9966661.xyz, port: 3000, type: hysteria2, password: a24c6851-2055-42c1-9c20-2d3bad97334f, auth: a24c6851-2055-42c1-9c20-2d3bad97334f, sni: 03e37e-330-co.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 | USA 4, server: els.ylccloud.top, port: 16090, type: hysteria2, password: b06dc287-412d-40fa-8253-92a687ecb151, auth: b06dc287-412d-40fa-8253-92a687ecb151, sni: els.ylccloud.top, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 | USA 5, server: baigou1.kkieo555.cn, port: 27865, type: trojan, password: 8129a45a-8ded-4434-ae7e-5f3d2168e0d1, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 6, server: 154.17.227.158, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /aa, headers: {Host: us.nbee.pp.ua}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 7, server: baigou1.kkieo555.cn, port: 21865, type: trojan, password: 9a4d5ed4-1e08-4e58-9a29-1facc7f937e4, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 8, server: baigou1.kkieo555.cn, port: 21864, type: trojan, password: 69485c4d-48df-457d-a17d-4728581585a2, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 9, server: baigou1.kkieo555.cn, port: 21864, type: trojan, password: c47266b2-4ecc-413f-ab72-3941fac429a3, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 10, server: els.ylccloud.top, port: 16090, type: hysteria2, password: 6b1e5732-80ca-43cd-9e27-c22037f00496, auth: 6b1e5732-80ca-43cd-9e27-c22037f00496, sni: els.ylccloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 11, server: els.ylccloud.top, port: 16090, type: hysteria2, password: 432f1d00-0fcf-472e-bef2-ee575c8e85fe, auth: 432f1d00-0fcf-472e-bef2-ee575c8e85fe, sni: els.ylccloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 12, server: mg1.jjzcloud.top, port: 57238, type: hysteria2, password: fd28e1cf-77ad-4af5-9ffd-dbdecd7b08e0, auth: fd28e1cf-77ad-4af5-9ffd-dbdecd7b08e0, sni: mg1.jjzcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 13, server: 79706e-20-4.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 79706e-20.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 | USA 14, server: baigou1.kkieo555.cn, port: 21864, type: trojan, password: b2f345c7-3279-4ec8-8601-43428144ad5e, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 15, server: els.ylccloud.top, port: 16090, type: hysteria2, password: 834f205e-90b1-4d9b-9583-d9bacb43c0ca, auth: 834f205e-90b1-4d9b-9583-d9bacb43c0ca, sni: els.ylccloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 16, server: els.ylccloud.top, port: 16090, type: hysteria2, password: e6a347a8-2f87-4c9e-9f5a-935e698f6327, auth: e6a347a8-2f87-4c9e-9f5a-935e698f6327, sni: els.ylccloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 17, server: baigou1.kkieo555.cn, port: 27865, type: trojan, password: aadc4bf6-77ec-460a-af45-11d87431a430, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 18, server: mg1.jjzcloud.top, port: 57238, type: hysteria2, password: 7f27f71f-98d9-43cb-9f00-9fd3ba213ac2, auth: 7f27f71f-98d9-43cb-9f00-9fd3ba213ac2, sni: mg1.jjzcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 19, server: xg.jjzcloud.top, port: 57338, type: hysteria2, password: a283eacc-0157-410f-93d9-50cb91e0565e, auth: a283eacc-0157-410f-93d9-50cb91e0565e, sni: xg.jjzcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 20, server: mf1.ylccloud.top, port: 16090, type: hysteria2, password: 0fe762b5-1b6f-4ff4-b4f4-9b2260f93b9f, auth: 0fe762b5-1b6f-4ff4-b4f4-9b2260f93b9f, sni: mf1.ylccloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 21, server: baigou1.kkieo555.cn, port: 27865, type: trojan, password: 234d3f47-9f4f-42ff-9ea2-2d4cb241b351, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 22, server: baigou1.kkieo555.cn, port: 21865, type: trojan, password: b2f345c7-3279-4ec8-8601-43428144ad5e, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 23, server: baigou1.kkieo555.cn, port: 27865, type: trojan, password: fbb92a17-a6ea-493e-85a8-d718355e85cf, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 24, server: baigou1.kkieo555.cn, port: 27865, type: trojan, password: 48001c46-b4cc-49b5-bf29-bc250303c2bf, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 25, server: mg1.jjzcloud.top, port: 57238, type: hysteria2, password: 1c79b7e4-aadc-4657-8552-8ab436feae17, auth: 1c79b7e4-aadc-4657-8552-8ab436feae17, sni: mg1.jjzcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 26, server: 104.21.9.71, port: 443, type: vless, uuid: c226ac5d-65e9-4379-95c3-fb542bc242d8, tls: true, alpn: [http%2F1.1], servername: ddDDdDDdDDF.777198.XyZ, client-fingerprint: chrome, network: ws, ws-opts: {path: /OjdW89Bpg4ykd4O, headers: {Host: ddDDdDDdDDF.777198.XyZ}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 27, server: mg1.jjzcloud.top, port: 57238, type: hysteria2, password: 48a77195-958b-4d0c-a313-006982a7b4ae, auth: 48a77195-958b-4d0c-a313-006982a7b4ae, sni: mg1.jjzcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 28, server: mg1.jjzcloud.top, port: 57238, type: hysteria2, password: 9ce26ac2-edbf-45f4-9534-093a23766dfc, auth: 9ce26ac2-edbf-45f4-9534-093a23766dfc, sni: mg1.jjzcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 29, server: us1-2.9966662.xyz, port: 20133, type: vless, uuid: a24c6851-2055-42c1-9c20-2d3bad97334f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbNAnIWBHu4NRuaJsE5X1dIRLSWjmREoudx7TZltYS0, short-id: "4926f6d9" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国 | USA 30, server: baigou1.kkieo555.cn, port: 21865, type: trojan, password: aadc4bf6-77ec-460a-af45-11d87431a430, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 31, server: us1-4.9966662.xyz, port: 20133, type: vless, uuid: a24c6851-2055-42c1-9c20-2d3bad97334f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbNAnIWBHu4NRuaJsE5X1dIRLSWjmREoudx7TZltYS0, short-id: "4926f6d9" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国 | USA 32, server: baigou1.kkieo555.cn, port: 21865, type: trojan, password: 95237656-2861-4a2e-a43b-d924031169e7, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 33, server: 32ffe6-20-co-hr1.9966661.xyz, port: 3000, type: hysteria2, password: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6, auth: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6, sni: 32ffe6-20-co-hr1.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 | USA 34, server: baigou1.kkieo555.cn, port: 27865, type: trojan, password: 8e61821e-cef9-4f11-a6d3-f86748ae6f65, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 35, server: wels1.wanlidag.top, port: 5555, type: hysteria2, password: 5fe87ec5-d448-43e6-ba81-f7a63bc0eb10, auth: 5fe87ec5-d448-43e6-ba81-f7a63bc0eb10, sni: wels1.wanlidag.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 36, server: baigou1.kkieo555.cn, port: 21864, type: trojan, password: f48c1926-e92d-4180-bd9b-edda946c6e1a, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 37, server: mg1.jjzcloud.top, port: 57238, type: hysteria2, password: d14a338a-90bc-4d61-8a9f-03207dc62551, auth: d14a338a-90bc-4d61-8a9f-03207dc62551, sni: mg1.jjzcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 38, server: baigou1.kkieo555.cn, port: 21865, type: trojan, password: dfcad48b-77ef-402d-9a85-323999cbac2c, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM, server: baigou1.kkieo555.cn, port: 21870, type: trojan, password: 2fa132be-a5c4-4ef0-800a-deea21311f15, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 2, server: 103.186.154.141, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 3, server: baigou1.kkieo555.cn, port: 21870, type: trojan, password: c47266b2-4ecc-413f-ab72-3941fac429a3, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 4, server: 103.186.155.17, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 5, server: baigou1.kkieo555.cn, port: 21870, type: trojan, password: 777fec4f-0a18-494b-950a-852bdb271638, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 6, server: 103.186.155.147, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 7, server: 103.186.155.2, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 8, server: baigou1.kkieo555.cn, port: 21870, type: trojan, password: 7bcc0f74-a9f3-4bcb-8547-da0be73e8e28, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 9, server: vnvnnian-u-do-vn2-5.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: vnvnnian-u-do-vn2.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇻🇳 越南 | VNM 10, server: 103.186.154.252, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 11, server: 103.186.154.13, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 12, server: 103.186.155.226, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 13, server: baigou1.kkieo555.cn, port: 21870, type: trojan, password: 8e61821e-cef9-4f11-a6d3-f86748ae6f65, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 14, server: 103.186.154.39, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 15, server: baigou1.kkieo555.cn, port: 21870, type: trojan, password: 407fd047-288a-4ff4-af81-5ef031684af2, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 16, server: 103.186.154.229, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 17, server: baigou1.kkieo555.cn, port: 21870, type: trojan, password: 9ab1394b-1ec9-41e3-84be-a6a65593d702, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 18, server: 103.186.154.155, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 19, server: 103.186.154.154, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 20, server: baigou1.kkieo555.cn, port: 21870, type: trojan, password: fe45f8ef-2dda-4236-b141-b96635b2a565, sni: douyin.com, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 21, server: 103.186.154.208, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 22, server: 103.186.154.198, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 23, server: 103.186.155.237, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
 proxy-groups:
   - name: ☁️ 代理选择
     type: select
@@ -81,17 +171,27 @@ proxy-groups:
     type: select
     proxies:
       - 🇦🇪 阿联酋 | ARE
-      - 🇧🇩 孟加拉 | BGD
+      - 🇦🇲 亚美尼亚 | ARM
       - 🇧🇷 巴西 | BRA
-      - 🇧🇷 巴西 | BRA 2
-      - 🇧🇷 巴西 | BRA 3
-      - 🇧🇷 巴西 | BRA 4
-      - 🇧🇷 巴西 | BRA 5
-      - 🇧🇷 巴西 | BRA 6
+      - 🇨🇦 加拿大 | CAN
+      - 🇨🇦 加拿大 | CAN 2
+      - 🇨🇳 台湾 | TWN
+      - 🇨🇳 台湾 | TWN 2
+      - 🇨🇳 台湾 | TWN 3
+      - 🇨🇳 台湾 | TWN 4
+      - 🇨🇳 台湾 | TWN 5
+      - 🇨🇳 台湾 | TWN 6
+      - 🇨🇳 台湾 | TWN 7
+      - 🇨🇳 台湾 | TWN 8
+      - 🇨🇳 台湾 | TWN 9
+      - 🇨🇳 台湾 | TWN 10
+      - 🇨🇳 台湾 | TWN 11
+      - 🇨🇳 台湾 | TWN 12
+      - 🇨🇳 台湾 | TWN 13
       - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU 2
-      - 🇫🇮 芬兰 | FIN
-      - 🇫🇷 法国 | FRA
+      - 🇬🇧 英国 | GBR
+      - 🇬🇧 英国 | GBR 2
+      - 🇬🇧 英国 | GBR 3
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
@@ -104,14 +204,61 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 10
       - 🇭🇰 香港 | HKG 11
       - 🇭🇰 香港 | HKG 12
+      - 🇭🇰 香港 | HKG 13
+      - 🇭🇰 香港 | HKG 14
+      - 🇭🇰 香港 | HKG 15
+      - 🇭🇰 香港 | HKG 16
       - 🇭🇷 克罗地亚 | HRV
-      - 🇭🇷 克罗地亚 | HRV 2
-      - 🇮🇲 马恩岛 | IMN
-      - 🇮🇹 意大利 | ITA
-      - 🇲🇾 马来西亚 | MYS
+      - 🇯🇵 日本 | JPN
+      - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇯🇵 日本 | JPN 4
+      - 🇯🇵 日本 | JPN 5
+      - 🇯🇵 日本 | JPN 6
+      - 🇯🇵 日本 | JPN 7
+      - 🇯🇵 日本 | JPN 8
+      - 🇯🇵 日本 | JPN 9
+      - 🇯🇵 日本 | JPN 10
+      - 🇯🇵 日本 | JPN 11
+      - 🇯🇵 日本 | JPN 12
+      - 🇯🇵 日本 | JPN 13
+      - 🇯🇵 日本 | JPN 14
+      - 🇯🇵 日本 | JPN 15
+      - 🇯🇵 日本 | JPN 16
+      - 🇯🇵 日本 | JPN 17
+      - 🇯🇵 日本 | JPN 18
+      - 🇯🇵 日本 | JPN 19
+      - 🇯🇵 日本 | JPN 20
+      - 🇯🇵 日本 | JPN 21
+      - 🇯🇵 日本 | JPN 22
+      - 🇯🇵 日本 | JPN 23
+      - 🇯🇵 日本 | JPN 24
+      - 🇯🇵 日本 | JPN 25
+      - 🇯🇵 日本 | JPN 26
+      - 🇯🇵 日本 | JPN 27
+      - 🇯🇵 日本 | JPN 28
+      - 🇯🇵 日本 | JPN 29
+      - 🇯🇵 日本 | JPN 30
+      - 🇯🇵 日本 | JPN 31
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR 2
+      - 🇰🇷 韩国 | KOR 3
+      - 🇰🇷 韩国 | KOR 4
+      - 🇲🇩 摩尔多瓦 | MDA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
-      - 🇺🇦 乌克兰 | UKR
+      - 🇵🇹 葡萄牙 | PRT
+      - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
+      - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇸🇬 新加坡 | SGP 5
+      - 🇸🇬 新加坡 | SGP 6
+      - 🇸🇬 新加坡 | SGP 7
+      - 🇸🇬 新加坡 | SGP 8
+      - 🇸🇬 新加坡 | SGP 9
+      - 🇸🇬 新加坡 | SGP 10
+      - 🇸🇬 新加坡 | SGP 11
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -131,6 +278,25 @@ proxy-groups:
       - 🇺🇸 美国 | USA 17
       - 🇺🇸 美国 | USA 18
       - 🇺🇸 美国 | USA 19
+      - 🇺🇸 美国 | USA 20
+      - 🇺🇸 美国 | USA 21
+      - 🇺🇸 美国 | USA 22
+      - 🇺🇸 美国 | USA 23
+      - 🇺🇸 美国 | USA 24
+      - 🇺🇸 美国 | USA 25
+      - 🇺🇸 美国 | USA 26
+      - 🇺🇸 美国 | USA 27
+      - 🇺🇸 美国 | USA 28
+      - 🇺🇸 美国 | USA 29
+      - 🇺🇸 美国 | USA 30
+      - 🇺🇸 美国 | USA 31
+      - 🇺🇸 美国 | USA 32
+      - 🇺🇸 美国 | USA 33
+      - 🇺🇸 美国 | USA 34
+      - 🇺🇸 美国 | USA 35
+      - 🇺🇸 美国 | USA 36
+      - 🇺🇸 美国 | USA 37
+      - 🇺🇸 美国 | USA 38
       - 🇻🇳 越南 | VNM
       - 🇻🇳 越南 | VNM 2
       - 🇻🇳 越南 | VNM 3
@@ -139,7 +305,21 @@ proxy-groups:
       - 🇻🇳 越南 | VNM 6
       - 🇻🇳 越南 | VNM 7
       - 🇻🇳 越南 | VNM 8
-      - 🇿🇦 南非 | ZAF
+      - 🇻🇳 越南 | VNM 9
+      - 🇻🇳 越南 | VNM 10
+      - 🇻🇳 越南 | VNM 11
+      - 🇻🇳 越南 | VNM 12
+      - 🇻🇳 越南 | VNM 13
+      - 🇻🇳 越南 | VNM 14
+      - 🇻🇳 越南 | VNM 15
+      - 🇻🇳 越南 | VNM 16
+      - 🇻🇳 越南 | VNM 17
+      - 🇻🇳 越南 | VNM 18
+      - 🇻🇳 越南 | VNM 19
+      - 🇻🇳 越南 | VNM 20
+      - 🇻🇳 越南 | VNM 21
+      - 🇻🇳 越南 | VNM 22
+      - 🇻🇳 越南 | VNM 23
   - name: 📲 电报消息
     type: select
     proxies:
@@ -230,34 +410,93 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 10
       - 🇭🇰 香港 | HKG 11
       - 🇭🇰 香港 | HKG 12
+      - 🇭🇰 香港 | HKG 13
+      - 🇭🇰 香港 | HKG 14
+      - 🇭🇰 香港 | HKG 15
+      - 🇭🇰 香港 | HKG 16
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - DIRECT
+      - 🇨🇳 台湾 | TWN
+      - 🇨🇳 台湾 | TWN 2
+      - 🇨🇳 台湾 | TWN 3
+      - 🇨🇳 台湾 | TWN 4
+      - 🇨🇳 台湾 | TWN 5
+      - 🇨🇳 台湾 | TWN 6
+      - 🇨🇳 台湾 | TWN 7
+      - 🇨🇳 台湾 | TWN 8
+      - 🇨🇳 台湾 | TWN 9
+      - 🇨🇳 台湾 | TWN 10
+      - 🇨🇳 台湾 | TWN 11
+      - 🇨🇳 台湾 | TWN 12
+      - 🇨🇳 台湾 | TWN 13
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
+      - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇸🇬 新加坡 | SGP 5
+      - 🇸🇬 新加坡 | SGP 6
+      - 🇸🇬 新加坡 | SGP 7
+      - 🇸🇬 新加坡 | SGP 8
+      - 🇸🇬 新加坡 | SGP 9
+      - 🇸🇬 新加坡 | SGP 10
+      - 🇸🇬 新加坡 | SGP 11
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
+      - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇯🇵 日本 | JPN 4
+      - 🇯🇵 日本 | JPN 5
+      - 🇯🇵 日本 | JPN 6
+      - 🇯🇵 日本 | JPN 7
+      - 🇯🇵 日本 | JPN 8
+      - 🇯🇵 日本 | JPN 9
+      - 🇯🇵 日本 | JPN 10
+      - 🇯🇵 日本 | JPN 11
+      - 🇯🇵 日本 | JPN 12
+      - 🇯🇵 日本 | JPN 13
+      - 🇯🇵 日本 | JPN 14
+      - 🇯🇵 日本 | JPN 15
+      - 🇯🇵 日本 | JPN 16
+      - 🇯🇵 日本 | JPN 17
+      - 🇯🇵 日本 | JPN 18
+      - 🇯🇵 日本 | JPN 19
+      - 🇯🇵 日本 | JPN 20
+      - 🇯🇵 日本 | JPN 21
+      - 🇯🇵 日本 | JPN 22
+      - 🇯🇵 日本 | JPN 23
+      - 🇯🇵 日本 | JPN 24
+      - 🇯🇵 日本 | JPN 25
+      - 🇯🇵 日本 | JPN 26
+      - 🇯🇵 日本 | JPN 27
+      - 🇯🇵 日本 | JPN 28
+      - 🇯🇵 日本 | JPN 29
+      - 🇯🇵 日本 | JPN 30
+      - 🇯🇵 日本 | JPN 31
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - DIRECT
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR 2
+      - 🇰🇷 韩国 | KOR 3
+      - 🇰🇷 韩国 | KOR 4
   - name: 🇺🇸 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -283,23 +522,52 @@ proxy-groups:
       - 🇺🇸 美国 | USA 17
       - 🇺🇸 美国 | USA 18
       - 🇺🇸 美国 | USA 19
+      - 🇺🇸 美国 | USA 20
+      - 🇺🇸 美国 | USA 21
+      - 🇺🇸 美国 | USA 22
+      - 🇺🇸 美国 | USA 23
+      - 🇺🇸 美国 | USA 24
+      - 🇺🇸 美国 | USA 25
+      - 🇺🇸 美国 | USA 26
+      - 🇺🇸 美国 | USA 27
+      - 🇺🇸 美国 | USA 28
+      - 🇺🇸 美国 | USA 29
+      - 🇺🇸 美国 | USA 30
+      - 🇺🇸 美国 | USA 31
+      - 🇺🇸 美国 | USA 32
+      - 🇺🇸 美国 | USA 33
+      - 🇺🇸 美国 | USA 34
+      - 🇺🇸 美国 | USA 35
+      - 🇺🇸 美国 | USA 36
+      - 🇺🇸 美国 | USA 37
+      - 🇺🇸 美国 | USA 38
   - name: ⚡ 延迟最低
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 🇦🇪 阿联酋 | ARE
-      - 🇧🇩 孟加拉 | BGD
+      - 🇦🇲 亚美尼亚 | ARM
       - 🇧🇷 巴西 | BRA
-      - 🇧🇷 巴西 | BRA 2
-      - 🇧🇷 巴西 | BRA 3
-      - 🇧🇷 巴西 | BRA 4
-      - 🇧🇷 巴西 | BRA 5
-      - 🇧🇷 巴西 | BRA 6
+      - 🇨🇦 加拿大 | CAN
+      - 🇨🇦 加拿大 | CAN 2
+      - 🇨🇳 台湾 | TWN
+      - 🇨🇳 台湾 | TWN 2
+      - 🇨🇳 台湾 | TWN 3
+      - 🇨🇳 台湾 | TWN 4
+      - 🇨🇳 台湾 | TWN 5
+      - 🇨🇳 台湾 | TWN 6
+      - 🇨🇳 台湾 | TWN 7
+      - 🇨🇳 台湾 | TWN 8
+      - 🇨🇳 台湾 | TWN 9
+      - 🇨🇳 台湾 | TWN 10
+      - 🇨🇳 台湾 | TWN 11
+      - 🇨🇳 台湾 | TWN 12
+      - 🇨🇳 台湾 | TWN 13
       - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU 2
-      - 🇫🇮 芬兰 | FIN
-      - 🇫🇷 法国 | FRA
+      - 🇬🇧 英国 | GBR
+      - 🇬🇧 英国 | GBR 2
+      - 🇬🇧 英国 | GBR 3
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
@@ -312,14 +580,61 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 10
       - 🇭🇰 香港 | HKG 11
       - 🇭🇰 香港 | HKG 12
+      - 🇭🇰 香港 | HKG 13
+      - 🇭🇰 香港 | HKG 14
+      - 🇭🇰 香港 | HKG 15
+      - 🇭🇰 香港 | HKG 16
       - 🇭🇷 克罗地亚 | HRV
-      - 🇭🇷 克罗地亚 | HRV 2
-      - 🇮🇲 马恩岛 | IMN
-      - 🇮🇹 意大利 | ITA
-      - 🇲🇾 马来西亚 | MYS
+      - 🇯🇵 日本 | JPN
+      - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇯🇵 日本 | JPN 4
+      - 🇯🇵 日本 | JPN 5
+      - 🇯🇵 日本 | JPN 6
+      - 🇯🇵 日本 | JPN 7
+      - 🇯🇵 日本 | JPN 8
+      - 🇯🇵 日本 | JPN 9
+      - 🇯🇵 日本 | JPN 10
+      - 🇯🇵 日本 | JPN 11
+      - 🇯🇵 日本 | JPN 12
+      - 🇯🇵 日本 | JPN 13
+      - 🇯🇵 日本 | JPN 14
+      - 🇯🇵 日本 | JPN 15
+      - 🇯🇵 日本 | JPN 16
+      - 🇯🇵 日本 | JPN 17
+      - 🇯🇵 日本 | JPN 18
+      - 🇯🇵 日本 | JPN 19
+      - 🇯🇵 日本 | JPN 20
+      - 🇯🇵 日本 | JPN 21
+      - 🇯🇵 日本 | JPN 22
+      - 🇯🇵 日本 | JPN 23
+      - 🇯🇵 日本 | JPN 24
+      - 🇯🇵 日本 | JPN 25
+      - 🇯🇵 日本 | JPN 26
+      - 🇯🇵 日本 | JPN 27
+      - 🇯🇵 日本 | JPN 28
+      - 🇯🇵 日本 | JPN 29
+      - 🇯🇵 日本 | JPN 30
+      - 🇯🇵 日本 | JPN 31
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR 2
+      - 🇰🇷 韩国 | KOR 3
+      - 🇰🇷 韩国 | KOR 4
+      - 🇲🇩 摩尔多瓦 | MDA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
-      - 🇺🇦 乌克兰 | UKR
+      - 🇵🇹 葡萄牙 | PRT
+      - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
+      - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇸🇬 新加坡 | SGP 5
+      - 🇸🇬 新加坡 | SGP 6
+      - 🇸🇬 新加坡 | SGP 7
+      - 🇸🇬 新加坡 | SGP 8
+      - 🇸🇬 新加坡 | SGP 9
+      - 🇸🇬 新加坡 | SGP 10
+      - 🇸🇬 新加坡 | SGP 11
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -339,6 +654,25 @@ proxy-groups:
       - 🇺🇸 美国 | USA 17
       - 🇺🇸 美国 | USA 18
       - 🇺🇸 美国 | USA 19
+      - 🇺🇸 美国 | USA 20
+      - 🇺🇸 美国 | USA 21
+      - 🇺🇸 美国 | USA 22
+      - 🇺🇸 美国 | USA 23
+      - 🇺🇸 美国 | USA 24
+      - 🇺🇸 美国 | USA 25
+      - 🇺🇸 美国 | USA 26
+      - 🇺🇸 美国 | USA 27
+      - 🇺🇸 美国 | USA 28
+      - 🇺🇸 美国 | USA 29
+      - 🇺🇸 美国 | USA 30
+      - 🇺🇸 美国 | USA 31
+      - 🇺🇸 美国 | USA 32
+      - 🇺🇸 美国 | USA 33
+      - 🇺🇸 美国 | USA 34
+      - 🇺🇸 美国 | USA 35
+      - 🇺🇸 美国 | USA 36
+      - 🇺🇸 美国 | USA 37
+      - 🇺🇸 美国 | USA 38
       - 🇻🇳 越南 | VNM
       - 🇻🇳 越南 | VNM 2
       - 🇻🇳 越南 | VNM 3
@@ -347,7 +681,21 @@ proxy-groups:
       - 🇻🇳 越南 | VNM 6
       - 🇻🇳 越南 | VNM 7
       - 🇻🇳 越南 | VNM 8
-      - 🇿🇦 南非 | ZAF
+      - 🇻🇳 越南 | VNM 9
+      - 🇻🇳 越南 | VNM 10
+      - 🇻🇳 越南 | VNM 11
+      - 🇻🇳 越南 | VNM 12
+      - 🇻🇳 越南 | VNM 13
+      - 🇻🇳 越南 | VNM 14
+      - 🇻🇳 越南 | VNM 15
+      - 🇻🇳 越南 | VNM 16
+      - 🇻🇳 越南 | VNM 17
+      - 🇻🇳 越南 | VNM 18
+      - 🇻🇳 越南 | VNM 19
+      - 🇻🇳 越南 | VNM 20
+      - 🇻🇳 越南 | VNM 21
+      - 🇻🇳 越南 | VNM 22
+      - 🇻🇳 越南 | VNM 23
   - name: 🎈 其余流量
     type: select
     proxies:
