@@ -5,203 +5,156 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇦🇪 阿联酋 | ARE, server: n001.xunxunmimisbs.sbs, port: 28100, type: trojan, password: e4ea1b70-0a90-438e-b289-2f77c6e844b6, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇪 阿联酋 | ARE 2, server: n002.xunxunmimisbs.sbs, port: 28100, type: trojan, password: 3b44d213-f503-4e15-ab55-feeff4a39ca1, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇪 阿联酋 | ARE 3, server: n001.xunxunmimisbs.sbs, port: 49100, type: trojan, password: fa35d323-4a54-4cc8-a8ab-b9f966cf9298, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇪 阿联酋 | ARE 4, server: n002.xunxunmimisbs.sbs, port: 49100, type: trojan, password: e83beea1-48bc-425d-9869-3563de25957b, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇺 澳大利亚 | AUS, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 3e21f3ef-5303-4212-9636-53a48ef3d5f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇦🇺 澳大利亚 | AUS 2, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: e386bae4-449d-43dd-8105-f16f2d89e023, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇦🇺 澳大利亚 | AUS 3, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 10a07fe6-d3c8-43d4-8883-07ea467c51b2, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇦🇺 澳大利亚 | AUS 4, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: e1967acf-9342-4e76-b3f0-ffe6ce557498, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇦🇺 澳大利亚 | AUS 5, server: 152.69.160.74, port: 50000, type: hysteria2, password: c6dd9b72-548c-47ee-b884-c8dad34408db, auth: c6dd9b72-548c-47ee-b884-c8dad34408db, sni: fastcdn.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
-  - {name: 🇨🇦 加拿大 | CAN, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 206e11dd-3f38-4297-a1f5-30a8ba02270c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 加拿大 | CAN 2, server: 129.153.58.39, port: 26113, type: vless, uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng, short-id: "1fbd20fd" }, servername: www.yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇨🇦 加拿大 | CAN 3, server: 40.233.92.219, port: 13805, type: hysteria2, password: dcdd09ad-4519-46f7-8107-4c4290a9b2a3, auth: dcdd09ad-4519-46f7-8107-4c4290a9b2a3, sni: www.bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: 🇨🇦 加拿大 | CAN 4, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: e1967acf-9342-4e76-b3f0-ffe6ce557498, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇦 加拿大 | CAN 5, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 3e21f3ef-5303-4212-9636-53a48ef3d5f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 加拿大 | CAN 6, server: xc.xunyunnode.sbs, port: 19707, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇨🇦 加拿大 | CAN 7, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: d071233d-75b3-4bd4-a10a-f7a391c650ed, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇦 加拿大 | CAN 8, server: 02.xunyunnode.sbs, port: 57990, type: ss, cipher: chacha20-ietf-poly1305, password: 5fc5c34c-3591-4a06-9e75-6455ed64b085, udp: true}
-  - {name: 🇨🇦 加拿大 | CAN 9, server: 01.xunyunnode.sbs, port: 44306, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇨🇳 台湾 | TWN, server: n001.xunxunmimisbs.sbs, port: 49130, type: trojan, password: e83beea1-48bc-425d-9869-3563de25957b, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: e1967acf-9342-4e76-b3f0-ffe6ce557498, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 3, server: n002.xunxunmimisbs.sbs, port: 49130, type: trojan, password: e686a2aa-a26f-448f-87a3-d9fb3c6e9bd6, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 4, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: e386bae4-449d-43dd-8105-f16f2d89e023, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 5, server: n001.xunxunmimisbs.sbs, port: 49130, type: trojan, password: e686a2aa-a26f-448f-87a3-d9fb3c6e9bd6, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 6, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 9899c234-fb49-4e5b-bf14-78282d50d30e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 7, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: e386bae4-449d-43dd-8105-f16f2d89e023, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 8, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: e1967acf-9342-4e76-b3f0-ffe6ce557498, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 9, server: n002.xunxunmimisbs.sbs, port: 49130, type: trojan, password: 1080720a-df1b-458f-8ded-69202a9bd06f, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾 | TWN 10, server: n002.xunxunmimisbs.sbs, port: 49130, type: trojan, password: fa35d323-4a54-4cc8-a8ab-b9f966cf9298, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 | DEU, server: n001.xunxunmimisbs.sbs, port: 25100, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 | DEU 2, server: n002.xunxunmimisbs.sbs, port: 25100, type: trojan, password: 3b44d213-f503-4e15-ab55-feeff4a39ca1, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 | DEU 3, server: n001.xunxunmimisbs.sbs, port: 17000, type: trojan, password: 248f8c70-6710-4f76-941b-4cc43cd5f70b, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 | DEU 4, server: n002.xunxunmimisbs.sbs, port: 17000, type: trojan, password: 248f8c70-6710-4f76-941b-4cc43cd5f70b, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 | DEU 5, server: n001.xunxunmimisbs.sbs, port: 46100, type: trojan, password: 1080720a-df1b-458f-8ded-69202a9bd06f, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA, server: n002.xunxunmimisbs.sbs, port: 19000, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国 | FRA 2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 168d21e3-fcff-40f8-8fd1-a32c9da5d2b9, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA 3, server: n002.xunxunmimisbs.sbs, port: 48100, type: trojan, password: e686a2aa-a26f-448f-87a3-d9fb3c6e9bd6, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA 4, server: n001.xunxunmimisbs.sbs, port: 26100, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA 5, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: e386bae4-449d-43dd-8105-f16f2d89e023, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA 6, server: n002.xunxunmimisbs.sbs, port: 48100, type: trojan, password: 1080720a-df1b-458f-8ded-69202a9bd06f, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA 7, server: 62.210.127.217, port: 50011, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: 🇫🇷 法国 | FRA 8, server: n001.xunxunmimisbs.sbs, port: 48100, type: trojan, password: fa35d323-4a54-4cc8-a8ab-b9f966cf9298, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA 9, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 206e11dd-3f38-4297-a1f5-30a8ba02270c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国 | FRA 10, server: n002.xunxunmimisbs.sbs, port: 48100, type: trojan, password: fa35d323-4a54-4cc8-a8ab-b9f966cf9298, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA 11, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 3e21f3ef-5303-4212-9636-53a48ef3d5f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国 | FRA 12, server: n002.xunxunmimisbs.sbs, port: 26100, type: trojan, password: e4ea1b70-0a90-438e-b289-2f77c6e844b6, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 | FRA 13, server: n002.xunxunmimisbs.sbs, port: 19000, type: trojan, password: 248f8c70-6710-4f76-941b-4cc43cd5f70b, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 | GBR, server: n001.xunxunmimisbs.sbs, port: 23100, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国 | GBR 2, server: n002.xunxunmimisbs.sbs, port: 23100, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国 | GBR 3, server: n001.xunxunmimisbs.sbs, port: 44100, type: trojan, password: 1080720a-df1b-458f-8ded-69202a9bd06f, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国 | GBR 4, server: wa.xunyunnode.sbs, port: 25174, type: ss, cipher: chacha20-ietf-poly1305, password: ca0e9abc-b595-48ed-bd10-aa46cc5e418c, udp: true}
-  - {name: 🇬🇧 英国 | GBR 5, server: n002.xunxunmimisbs.sbs, port: 15000, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, sni: uk1.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 | GBR 6, server: xc.xunyunnode.sbs, port: 43421, type: ss, cipher: chacha20-ietf-poly1305, password: c8438f4b-b4c5-4fc1-9a9c-c1a2a35d90b0, udp: true}
-  - {name: 🇬🇧 英国 | GBR 7, server: xc.xunyunnode.sbs, port: 43421, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇬🇧 英国 | GBR 8, server: 02.xunyunnode.sbs, port: 59406, type: ss, cipher: chacha20-ietf-poly1305, password: 36e6fb49-87e1-4691-820f-1717c7e05826, udp: true}
-  - {name: 🇬🇧 英国 | GBR 9, server: 01.xunyunnode.sbs, port: 17587, type: ss, cipher: chacha20-ietf-poly1305, password: 36e6fb49-87e1-4691-820f-1717c7e05826, udp: true}
-  - {name: 🇬🇷 希腊 | GRC, server: 02.xunyunnode.sbs, port: 45473, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇬🇷 希腊 | GRC 2, server: 02.xunyunnode.sbs, port: 45473, type: ss, cipher: chacha20-ietf-poly1305, password: c8438f4b-b4c5-4fc1-9a9c-c1a2a35d90b0, udp: true}
-  - {name: 🇬🇷 希腊 | GRC 3, server: banmabanmabanmabanmabanmabanma10.wanlidag.top, port: 54265, type: hysteria2, password: 8beb0aef-2334-4882-9126-1aa18e1bbf67, auth: 8beb0aef-2334-4882-9126-1aa18e1bbf67, sni: banmabanmabanmabanmabanmabanma10.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇷 希腊 | GRC 4, server: 02.xunyunnode.sbs, port: 45473, type: ss, cipher: chacha20-ietf-poly1305, password: 36e6fb49-87e1-4691-820f-1717c7e05826, udp: true}
-  - {name: 🇬🇷 希腊 | GRC 5, server: wa.xunyunnode.sbs, port: 35301, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇬🇷 希腊 | GRC 6, server: xc.xunyunnode.sbs, port: 26200, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇭🇰 香港 | HKG, server: cn.eans.top, port: 7008, type: vless, uuid: 3228eeee-fef2-43e4-a39b-2bbd6e6501ea, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 2, server: 212.192.15.176, port: 23185, type: vmess, uuid: dc42b84f-b307-4d76-94ab-a147ac77bc33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 香港 | HKG 3, server: cn.eans.top, port: 7009, type: hysteria2, password: 2e91c5b8-3c72-44a3-bffb-6206a30e8a0b, auth: 2e91c5b8-3c72-44a3-bffb-6206a30e8a0b, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 4, server: 217.60.248.66, port: 443, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: 🇭🇰 香港 | HKG 5, server: cn.eans.top, port: 7008, type: vless, uuid: f6631199-cb64-4737-bdd2-657baa36f232, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 6, server: 212.192.15.176, port: 33079, type: hysteria2, password: 45455b1c-1599-4ee2-a164-82990bdb54ea, auth: 45455b1c-1599-4ee2-a164-82990bdb54ea, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇭🇰 香港 | HKG 7, server: cn.eans.top, port: 7009, type: hysteria2, password: 06b28a92-ad0a-4048-bf24-e1d06c4396bd, auth: 06b28a92-ad0a-4048-bf24-e1d06c4396bd, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 8, server: cn.eans.top, port: 7009, type: hysteria2, password: ace36c4c-b070-4cbf-85e8-ef7d86b568d6, auth: ace36c4c-b070-4cbf-85e8-ef7d86b568d6, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 9, server: cn.eans.top, port: 7009, type: hysteria2, password: 837b9d14-68d0-41f2-b2ae-684821b4b303, auth: 837b9d14-68d0-41f2-b2ae-684821b4b303, sni: h.eans.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 10, server: 212.192.15.176, port: 33079, type: hysteria2, password: 8fe8af0b-0597-4538-90b6-1fc6b800c76a, auth: 8fe8af0b-0597-4538-90b6-1fc6b800c76a, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇭🇰 香港 | HKG 11, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 222d3a7f-e29c-4322-8258-82db8437e122, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 12, server: cn.eans.top, port: 7009, type: hysteria2, password: 9a3884a3-e10e-44bd-8932-c17c78953612, auth: 9a3884a3-e10e-44bd-8932-c17c78953612, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 13, server: cn.eans.top, port: 7008, type: vless, uuid: f71c1fd7-001d-4306-946f-e2c1033cd809, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 14, server: cn.eans.top, port: 7009, type: hysteria2, password: 24d3cacb-b624-4ad7-b40a-c79773f92f32, auth: 24d3cacb-b624-4ad7-b40a-c79773f92f32, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 15, server: cn.eans.top, port: 7008, type: vless, uuid: 932518b8-e712-409d-b944-c6ef9262824d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 16, server: 212.192.15.176, port: 33079, type: hysteria2, password: 6ad64821-f4dc-4f55-a051-80eadcb238b2, auth: 6ad64821-f4dc-4f55-a051-80eadcb238b2, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇭🇰 香港 | HKG 17, server: cn.eans.top, port: 7009, type: hysteria2, password: aef512fa-5a81-4750-a8ef-6a5901602aa7, auth: aef512fa-5a81-4750-a8ef-6a5901602aa7, sni: h.eans.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 18, server: 212.192.15.176, port: 23185, type: vmess, uuid: acba81c1-fcd4-4206-91d9-e87cc2bfc4fd, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 香港 | HKG 19, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 47033078-3eb7-4549-9e05-b9057c3f14ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 20, server: cn.eans.top, port: 7009, type: hysteria2, password: 36525d15-ae0b-4843-a996-4549d4079642, auth: 36525d15-ae0b-4843-a996-4549d4079642, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 21, server: n002.xunxunmimisbs.sbs, port: 21200, type: trojan, password: 3b44d213-f503-4e15-ab55-feeff4a39ca1, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 | HKG 22, server: cn.eans.top, port: 7008, type: vless, uuid: c8de8e04-b4ee-4113-a1c4-56b8411ff7f1, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 23, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: e386bae4-449d-43dd-8105-f16f2d89e023, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港 | HKG 24, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 206e11dd-3f38-4297-a1f5-30a8ba02270c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 25, server: cn.eans.top, port: 7008, type: vless, uuid: 8d240e33-3611-4887-a18b-f8b31975f851, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 26, server: cn.eans.top, port: 7008, type: vless, uuid: aef512fa-5a81-4750-a8ef-6a5901602aa7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 27, server: cn.eans.top, port: 7008, type: vless, uuid: 2a65e8f6-0b7f-4b4c-842a-aa4b644f3e21, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 28, server: cn.eans.top, port: 7008, type: vless, uuid: 4625f2da-1eb5-4ad3-8c98-d7a08ae4ee2a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 29, server: cn.eans.top, port: 7009, type: hysteria2, password: 6c86fd03-ecfb-4ac9-adb7-a1a7ea7f4f81, auth: 6c86fd03-ecfb-4ac9-adb7-a1a7ea7f4f81, sni: h.eans.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 30, server: cn.eans.top, port: 7009, type: hysteria2, password: a11280de-d08e-4a3a-9b68-f1a07fa31de0, auth: a11280de-d08e-4a3a-9b68-f1a07fa31de0, sni: h.eans.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 31, server: 212.192.15.176, port: 23185, type: vmess, uuid: f43e3cf4-9bdc-4cf3-8b65-96a17fdd44e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 香港 | HKG 32, server: cn.eans.top, port: 7009, type: hysteria2, password: 71c2c03a-a52e-4559-b674-dcc9a77f9719, auth: 71c2c03a-a52e-4559-b674-dcc9a77f9719, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 33, server: cn.eans.top, port: 7009, type: hysteria2, password: d9ecf3a8-616e-4a04-90a7-8860a4efa06a, auth: d9ecf3a8-616e-4a04-90a7-8860a4efa06a, sni: h.eans.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 34, server: cn.eans.top, port: 7008, type: vless, uuid: 58bf90bb-57cd-4af3-bbe6-58e5a0fe06ce, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 35, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 168d21e3-fcff-40f8-8fd1-a32c9da5d2b9, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港 | HKG 36, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: d071233d-75b3-4bd4-a10a-f7a391c650ed, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港 | HKG 37, server: cn.eans.top, port: 7008, type: vless, uuid: 7ac47cd5-b14b-484b-b3e3-ccd9f50cbb27, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 38, server: cn.eans.top, port: 7008, type: vless, uuid: 1a6bf68f-9c30-4cac-905f-416b4199ffb3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 39, server: cn.eans.top, port: 7009, type: hysteria2, password: 21f2448a-5cdb-4540-9827-4635cd2e905e, auth: 21f2448a-5cdb-4540-9827-4635cd2e905e, sni: h.eans.top, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 40, server: cn.eans.top, port: 7008, type: vless, uuid: 77d50496-c32d-4b8e-afd1-9245f7dc1396, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 41, server: cn.eans.top, port: 7009, type: hysteria2, password: 4f23ef30-65d7-4a6e-a5be-5d16ac6cd9a6, auth: 4f23ef30-65d7-4a6e-a5be-5d16ac6cd9a6, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 42, server: cn.eans.top, port: 7009, type: hysteria2, password: 3e4769fa-74b8-4472-934f-bd0c45135d27, auth: 3e4769fa-74b8-4472-934f-bd0c45135d27, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 43, server: 36.141.40.42, port: 13007, type: trojan, password: 3c77ad6b-9c9c-4aff-beff-0a16e2cdea15, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 | IND, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: e386bae4-449d-43dd-8105-f16f2d89e023, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇳 印度 | IND 2, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 978ab59d-153e-4713-8129-30247e209f19, udp: true}
-  - {name: 🇮🇳 印度 | IND 3, server: 68.233.105.39, port: 50000, type: hysteria2, password: c6dd9b72-548c-47ee-b884-c8dad34408db, auth: c6dd9b72-548c-47ee-b884-c8dad34408db, sni: fastcdn.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
-  - {name: 🇮🇳 印度 | IND 4, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 3e21f3ef-5303-4212-9636-53a48ef3d5f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 | IND 5, server: n002.xunxunmimisbs.sbs, port: 18000, type: trojan, password: 248f8c70-6710-4f76-941b-4cc43cd5f70b, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 | IND 6, server: n002.xunxunmimisbs.sbs, port: 18000, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 | IND 7, server: n002.xunxunmimisbs.sbs, port: 27100, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度 | IND 8, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: d071233d-75b3-4bd4-a10a-f7a391c650ed, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇳 印度 | IND 9, server: n001.xunxunmimisbs.sbs, port: 47100, type: trojan, password: fa35d323-4a54-4cc8-a8ab-b9f966cf9298, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度 | IND 10, server: n002.xunxunmimisbs.sbs, port: 27100, type: trojan, password: e4ea1b70-0a90-438e-b289-2f77c6e844b6, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度 | IND 11, server: n001.xunxunmimisbs.sbs, port: 47100, type: trojan, password: e686a2aa-a26f-448f-87a3-d9fb3c6e9bd6, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇸 冰岛 | ISL, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 978ab59d-153e-4713-8129-30247e209f19, udp: true}
-  - {name: 🇯🇵 日本 | JPN, server: n001.xunxunmimisbs.sbs, port: 42100, type: trojan, password: e83beea1-48bc-425d-9869-3563de25957b, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN 2, server: n002.xunxunmimisbs.sbs, port: 42100, type: trojan, password: e83beea1-48bc-425d-9869-3563de25957b, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN 3, server: n001.xunxunmimisbs.sbs, port: 42101, type: trojan, password: 1080720a-df1b-458f-8ded-69202a9bd06f, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN 4, server: xc.xunyunnode.sbs, port: 26329, type: ss, cipher: chacha20-ietf-poly1305, password: 5fc5c34c-3591-4a06-9e75-6455ed64b085, udp: true}
-  - {name: 🇯🇵 日本 | JPN 5, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 10a07fe6-d3c8-43d4-8883-07ea467c51b2, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本 | JPN 6, server: n001.xunxunmimisbs.sbs, port: 41300, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN 7, server: 01.xunyunnode.sbs, port: 38763, type: ss, cipher: chacha20-ietf-poly1305, password: 7d7fc836-92fd-4424-ae79-81a38adeb706, udp: true}
-  - {name: 🇯🇵 日本 | JPN 8, server: n002.xunxunmimisbs.sbs, port: 42101, type: trojan, password: fa35d323-4a54-4cc8-a8ab-b9f966cf9298, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN 9, server: 02.xunyunnode.sbs, port: 44447, type: ss, cipher: chacha20-ietf-poly1305, password: 36e6fb49-87e1-4691-820f-1717c7e05826, udp: true}
-  - {name: 🇯🇵 日本 | JPN 10, server: 121.85.55.59, port: 19842, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /X@节点狂魔/, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 11, server: xc.xunyunnode.sbs, port: 26329, type: ss, cipher: chacha20-ietf-poly1305, password: c8438f4b-b4c5-4fc1-9a9c-c1a2a35d90b0, udp: true}
-  - {name: 🇯🇵 日本 | JPN 12, server: 01.xunyunnode.sbs, port: 38763, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇯🇵 日本 | JPN 13, server: wa.xunyunnode.sbs, port: 25856, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇯🇵 日本 | JPN 14, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: e1967acf-9342-4e76-b3f0-ffe6ce557498, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本 | JPN 15, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 3e21f3ef-5303-4212-9636-53a48ef3d5f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN 16, server: 02.xunyunnode.sbs, port: 44447, type: ss, cipher: chacha20-ietf-poly1305, password: 5fc5c34c-3591-4a06-9e75-6455ed64b085, udp: true}
-  - {name: 🇯🇵 日本 | JPN 17, server: cdnfire.xiaomispeed.com, port: 24401, type: trojan, password: d655c9bd-e5c6-4ef8-9eea-5d7f118dddf2, sni: cdnfire.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN 18, server: n001.xunxunmimisbs.sbs, port: 41001, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN 19, server: 02.xunyunnode.sbs, port: 44447, type: ss, cipher: chacha20-ietf-poly1305, password: c8438f4b-b4c5-4fc1-9a9c-c1a2a35d90b0, udp: true}
-  - {name: 🇰🇷 韩国 | KOR, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: e1967acf-9342-4e76-b3f0-ffe6ce557498, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 2, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: e386bae4-449d-43dd-8105-f16f2d89e023, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 3, server: 115.40.244.240, port: 23023, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "Telegram@freecodes/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 4, server: 211.59.232.85, port: 18077, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 5, server: 193.123.237.20, port: 50000, type: hysteria2, password: c6dd9b72-548c-47ee-b884-c8dad34408db, auth: c6dd9b72-548c-47ee-b884-c8dad34408db, sni: fastcdn.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 6, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: d071233d-75b3-4bd4-a10a-f7a391c650ed, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 7, server: n001.xunxunmimisbs.sbs, port: 22100, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 8, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 47033078-3eb7-4549-9e05-b9057c3f14ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 9, server: 58.143.198.82, port: 18097, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "Telegram@freecodes/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 10, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 222d3a7f-e29c-4322-8258-82db8437e122, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 11, server: 222.113.18.207, port: 16030, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /X@节点狂魔, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: 🇲🇦 摩洛哥 | MAR, server: 188.214.157.58, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP, server: n001.xunxunmimisbs.sbs, port: 31200, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 2, server: zl-sg01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 3, server: n001.xunxunmimisbs.sbs, port: 31000, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 4, server: 02.xunyunnode.sbs, port: 10463, type: ss, cipher: chacha20-ietf-poly1305, password: ca0e9abc-b595-48ed-bd10-aa46cc5e418c, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 5, server: 01.xunyunnode.sbs, port: 14195, type: ss, cipher: chacha20-ietf-poly1305, password: 36e6fb49-87e1-4691-820f-1717c7e05826, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 6, server: 47.245.106.193, port: 22525, type: vmess, uuid: cabe905a-28ea-4e7e-c34d-2fa38604001f, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 7, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 9899c234-fb49-4e5b-bf14-78282d50d30e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 8, server: wa.xunyunnode.sbs, port: 50764, type: ss, cipher: chacha20-ietf-poly1305, password: 36e6fb49-87e1-4691-820f-1717c7e05826, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 9, server: n002.xunxunmimisbs.sbs, port: 31201, type: trojan, password: e4ea1b70-0a90-438e-b289-2f77c6e844b6, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 10, server: wa.xunyunnode.sbs, port: 50764, type: ss, cipher: chacha20-ietf-poly1305, password: 7d7fc836-92fd-4424-ae79-81a38adeb706, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 11, server: 47.245.106.193, port: 22433, type: vmess, uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 12, server: n002.xunxunmimisbs.sbs, port: 31000, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 13, server: xc.xunyunnode.sbs, port: 18416, type: ss, cipher: chacha20-ietf-poly1305, password: 7d7fc836-92fd-4424-ae79-81a38adeb706, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 14, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: d071233d-75b3-4bd4-a10a-f7a391c650ed, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 15, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 3e21f3ef-5303-4212-9636-53a48ef3d5f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 16, server: n001.xunxunmimisbs.sbs, port: 31001, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇭 泰国 | THA, server: n001.xunxunmimisbs.sbs, port: 28300, type: trojan, password: e4ea1b70-0a90-438e-b289-2f77c6e844b6, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇹🇭 泰国 | THA 2, server: n002.xunxunmimisbs.sbs, port: 49120, type: trojan, password: fa35d323-4a54-4cc8-a8ab-b9f966cf9298, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇹🇭 泰国 | THA 3, server: n002.xunxunmimisbs.sbs, port: 28300, type: trojan, password: 90b2223f-78c9-4bfc-9c7c-407e964ef00a, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: banmabanmabanmabanmabanmabanma5.wanlidag.top, port: 54265, type: hysteria2, password: 8beb0aef-2334-4882-9126-1aa18e1bbf67, auth: 8beb0aef-2334-4882-9126-1aa18e1bbf67, sni: banmabanmabanmabanmabanmabanma5.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: sfjmg4.sufujia.top, port: 57300, type: hysteria2, password: 4747687e-bd59-4b35-94f0-30d5d42e2ac2, auth: 4747687e-bd59-4b35-94f0-30d5d42e2ac2, sni: sfjmg4.sufujia.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: banmabanmabanmabanmabanmabanma5.wanlidag.top, port: 54265, type: hysteria2, password: 0e67e5b4-8a0b-4ae8-8806-8f62895a7863, auth: 0e67e5b4-8a0b-4ae8-8806-8f62895a7863, sni: banmabanmabanmabanmabanmabanma5.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 4, server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, password: d5b5b4e1-08f5-4b7b-93b3-4a5c988f23e7, auth: d5b5b4e1-08f5-4b7b-93b3-4a5c988f23e7, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 5, server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, password: de4d3dfc-bac3-4132-8fc3-88c3a8ee27c0, auth: de4d3dfc-bac3-4132-8fc3-88c3a8ee27c0, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 6, server: n001.xunxunmimisbs.sbs, port: 16000, type: trojan, password: 42a8ef97-2a28-411b-ab2b-52b6229db654, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 7, server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, password: 57bd699f-1a16-4c8f-a9c6-481c47a6421e, auth: 57bd699f-1a16-4c8f-a9c6-481c47a6421e, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 8, server: n002.xunxunmimisbs.sbs, port: 24100, type: trojan, password: e4ea1b70-0a90-438e-b289-2f77c6e844b6, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 | USA 9, server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, password: eda181f0-0757-434f-99c2-6df4124338a7, auth: eda181f0-0757-434f-99c2-6df4124338a7, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 10, server: 02.xunyunnode.sbs, port: 37699, type: ss, cipher: chacha20-ietf-poly1305, password: ca0e9abc-b595-48ed-bd10-aa46cc5e418c, udp: true}
-  - {name: 🇺🇸 美国 | USA 11, server: n001.xunxunmimisbs.sbs, port: 45100, type: trojan, password: e686a2aa-a26f-448f-87a3-d9fb3c6e9bd6, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 | USA 12, server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, password: 1f1711e8-d2c0-4870-996a-0e8e2f333d85, auth: 1f1711e8-d2c0-4870-996a-0e8e2f333d85, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 13, server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, password: d528ec4c-d588-4f7c-a1a5-9eb72312853c, auth: d528ec4c-d588-4f7c-a1a5-9eb72312853c, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 14, server: 220.118.109.204, port: 10042, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 15, server: nop-55q.pages.dev, port: 2053, type: trojan, password: "T@_WvT8Ho@LW%w_,", sni: NOp-55q.pAgEs.dEv, skip-cert-verify: false, network: ws, ws-opts: {path: "/trGPZDfetEwuO25SAs?ed=2560", headers: {Host: NOp-55q.pAgEs.dEv}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 16, server: 02.xunyunnode.sbs, port: 37699, type: ss, cipher: chacha20-ietf-poly1305, password: 5fc5c34c-3591-4a06-9e75-6455ed64b085, udp: true}
-  - {name: 🇺🇸 美国 | USA 17, server: banmabanmabanmabanmabanmabanma5.wanlidag.top, port: 54265, type: hysteria2, password: 3957e5c1-074a-437a-9f80-a19dc100447d, auth: 3957e5c1-074a-437a-9f80-a19dc100447d, sni: banmabanmabanmabanmabanmabanma5.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 18, server: n002.xunxunmimisbs.sbs, port: 24100, type: trojan, password: 3b44d213-f503-4e15-ab55-feeff4a39ca1, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 | USA 19, server: banmabanmabanmabanmabanmabanma3.wanlidag.top, port: 54265, type: hysteria2, password: 3957e5c1-074a-437a-9f80-a19dc100447d, auth: 3957e5c1-074a-437a-9f80-a19dc100447d, sni: banmabanmabanmabanmabanmabanma3.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 20, server: 104.19.50.238, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram🇨🇳@wangcai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 21, server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, password: 487e85be-92ae-4a2b-b488-50d7b0372998, auth: 487e85be-92ae-4a2b-b488-50d7b0372998, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true, udp: true}
-  - {name: 🇻🇳 越南 | VNM, server: wa.xunyunnode.sbs, port: 43680, type: ss, cipher: chacha20-ietf-poly1305, password: ca0e9abc-b595-48ed-bd10-aa46cc5e418c, udp: true}
-  - {name: 🇻🇳 越南 | VNM 2, server: n001.xunxunmimisbs.sbs, port: 49110, type: trojan, password: fa35d323-4a54-4cc8-a8ab-b9f966cf9298, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇻🇳 越南 | VNM 3, server: xc.xunyunnode.sbs, port: 42767, type: ss, cipher: chacha20-ietf-poly1305, password: cc7b48be-254d-4f94-a5f0-de38b763e6ce, udp: true}
-  - {name: 🇻🇳 越南 | VNM 4, server: wa.xunyunnode.sbs, port: 43680, type: ss, cipher: chacha20-ietf-poly1305, password: 5fc5c34c-3591-4a06-9e75-6455ed64b085, udp: true}
-  - {name: 🇻🇳 越南 | VNM 5, server: wa.xunyunnode.sbs, port: 43680, type: ss, cipher: chacha20-ietf-poly1305, password: c8438f4b-b4c5-4fc1-9a9c-c1a2a35d90b0, udp: true}
-  - {name: 🇻🇳 越南 | VNM 6, server: 103.186.154.172, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 7, server: n001.xunxunmimisbs.sbs, port: 28200, type: trojan, password: 3b44d213-f503-4e15-ab55-feeff4a39ca1, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇻🇳 越南 | VNM 8, server: n001.xunxunmimisbs.sbs, port: 49110, type: trojan, password: e83beea1-48bc-425d-9869-3563de25957b, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇻🇳 越南 | VNM 9, server: n001.xunxunmimisbs.sbs, port: 49110, type: trojan, password: e686a2aa-a26f-448f-87a3-d9fb3c6e9bd6, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
-  - {name: 🇻🇳 越南 | VNM 10, server: xc.xunyunnode.sbs, port: 42767, type: ss, cipher: chacha20-ietf-poly1305, password: ca0e9abc-b595-48ed-bd10-aa46cc5e418c, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE, server: n002.xunxunmimisbs.sbs, port: 28100, type: trojan, password: 1fd23d40-4fb3-46c1-a6b9-1f2689143423, sni: db01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 2, server: 193.123.93.213, port: 50000, type: hysteria2, password: e04a407d-66f1-46b7-9f23-6500606c737f, auth: e04a407d-66f1-46b7-9f23-6500606c737f, sni: fastcdn.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 3, server: n002.xunxunmimisbs.sbs, port: 28100, type: trojan, password: e8b50520-8781-49ac-9aef-7d735d5451f2, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 4, server: n002.xunxunmimisbs.sbs, port: 49100, type: trojan, password: 9b771e2d-7017-459f-b454-472a5846ed51, sni: db01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 5, server: n002.xunxunmimisbs.sbs, port: 28100, type: trojan, password: ba7121c1-6cf4-4cdd-ac6e-1c3577889444, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 6, server: n001.xunxunmimisbs.sbs, port: 28100, type: trojan, password: 1fdead6e-ad6f-4b2d-8dea-6ea81b67a0e1, sni: db01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 7, server: n002.xunxunmimisbs.sbs, port: 28100, type: trojan, password: 389a33c6-e198-416c-8630-535018ea30dc, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 8, server: n001.xunxunmimisbs.sbs, port: 28100, type: trojan, password: 4308d622-4a3e-4fdd-9c3c-26eab282feea, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 9, server: n002.xunxunmimisbs.sbs, port: 28100, type: trojan, password: 9708b161-65be-4ac1-9218-50a29b79972d, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 10, server: n002.xunxunmimisbs.sbs, port: 49100, type: trojan, password: 9d53e27b-b863-4512-ab2b-945014a7d3a1, sni: db01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇦🇪 阿联酋 | ARE 11, server: n001.xunxunmimisbs.sbs, port: 28100, type: trojan, password: ba7121c1-6cf4-4cdd-ac6e-1c3577889444, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇦🇺 澳大利亚 | AUS, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 41c0f574-cb75-4436-9801-fa462311fb8a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚 | AUS 2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: a8545625-efe0-44e0-a660-5033bfbe8bee, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚 | AUS 3, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: f72aa9cf-5349-42e9-a0cd-dbb8b988e80f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚 | AUS 4, server: 168.138.109.21, port: 50000, type: hysteria2, password: e04a407d-66f1-46b7-9f23-6500606c737f, auth: e04a407d-66f1-46b7-9f23-6500606c737f, sni: fastcdn.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
+  - {name: 🇦🇺 澳大利亚 | AUS 5, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 519d80cb-6464-4858-b2d4-eec2c9f7d77a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大 | CAN, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: f72aa9cf-5349-42e9-a0cd-dbb8b988e80f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大 | CAN 2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: a8545625-efe0-44e0-a660-5033bfbe8bee, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大 | CAN 3, server: 129.153.58.39, port: 26113, type: vless, uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng, short-id: "1fbd20fd" }, servername: www.yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 加拿大 | CAN 4, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 41c0f574-cb75-4436-9801-fa462311fb8a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大 | CAN 5, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 655dd9f0-0c48-4c5d-a071-0bf53da75ef1, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇳 台湾 | TWN, server: n001.xunxunmimisbs.sbs, port: 49130, type: trojan, password: 47277ded-8cc3-44e3-ba69-9e6c9630332d, sni: tw01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 6fd39e06-e9ad-4cb7-8a5e-aeee486aefca, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 3, server: n002.xunxunmimisbs.sbs, port: 49130, type: trojan, password: 9b771e2d-7017-459f-b454-472a5846ed51, sni: tw01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 4, server: 210.61.97.241, port: 81, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "X@节点狂魔/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 5, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 655dd9f0-0c48-4c5d-a071-0bf53da75ef1, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 6, server: n002.xunxunmimisbs.sbs, port: 49130, type: trojan, password: 8520ae92-a2f8-4798-9f0a-9f2750cf2f67, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 7, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: cdc9e7e4-d54c-4e56-9a6f-91a17c4ec811, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇳 台湾 | TWN 8, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 8d12bdbc-2aca-4b9f-8db1-e1047af3bafe, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: n001.xunxunmimisbs.sbs, port: 25100, type: trojan, password: e8b50520-8781-49ac-9aef-7d735d5451f2, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: n001.xunxunmimisbs.sbs, port: 25100, type: trojan, password: d46fd688-1c25-483e-8eb8-c31fa2edd60f, sni: de01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇩🇪 德国 | DEU 3, server: 193.122.12.150, port: 50000, type: hysteria2, password: e04a407d-66f1-46b7-9f23-6500606c737f, auth: e04a407d-66f1-46b7-9f23-6500606c737f, sni: fastcdn.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
+  - {name: 🇩🇪 德国 | DEU 4, server: n002.xunxunmimisbs.sbs, port: 25100, type: trojan, password: 4308d622-4a3e-4fdd-9c3c-26eab282feea, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 | DEU 5, server: n001.xunxunmimisbs.sbs, port: 25100, type: trojan, password: 1fd23d40-4fb3-46c1-a6b9-1f2689143423, sni: de01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇩🇪 德国 | DEU 6, server: n001.xunxunmimisbs.sbs, port: 46100, type: trojan, password: 9d53e27b-b863-4512-ab2b-945014a7d3a1, sni: de01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇩🇪 德国 | DEU 7, server: n002.xunxunmimisbs.sbs, port: 25100, type: trojan, password: d46fd688-1c25-483e-8eb8-c31fa2edd60f, sni: de01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇩🇪 德国 | DEU 8, server: n002.xunxunmimisbs.sbs, port: 25100, type: trojan, password: 1fd23d40-4fb3-46c1-a6b9-1f2689143423, sni: de01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇩🇪 德国 | DEU 9, server: n001.xunxunmimisbs.sbs, port: 25100, type: trojan, password: b199fdb3-1064-4912-a3e8-53ec38476c93, sni: de01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇩🇪 德国 | DEU 10, server: n001.xunxunmimisbs.sbs, port: 46100, type: trojan, password: 47277ded-8cc3-44e3-ba69-9e6c9630332d, sni: de01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇫🇷 法国 | FRA, server: n001.xunxunmimisbs.sbs, port: 26100, type: trojan, password: 354ca2ce-74df-4350-8ab6-3e5ec56cb468, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国 | FRA 2, server: n001.xunxunmimisbs.sbs, port: 26100, type: trojan, password: 9708b161-65be-4ac1-9218-50a29b79972d, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 | FRA 3, server: 89.168.32.96, port: 50000, type: hysteria2, password: e04a407d-66f1-46b7-9f23-6500606c737f, auth: e04a407d-66f1-46b7-9f23-6500606c737f, sni: www.microsoft.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
+  - {name: 🇫🇷 法国 | FRA 4, server: n002.xunxunmimisbs.sbs, port: 26100, type: trojan, password: 354ca2ce-74df-4350-8ab6-3e5ec56cb468, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国 | FRA 5, server: n002.xunxunmimisbs.sbs, port: 48100, type: trojan, password: 9d53e27b-b863-4512-ab2b-945014a7d3a1, sni: fr01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇫🇷 法国 | FRA 6, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 8d12bdbc-2aca-4b9f-8db1-e1047af3bafe, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇫🇷 法国 | FRA 7, server: n002.xunxunmimisbs.sbs, port: 26100, type: trojan, password: 1fdead6e-ad6f-4b2d-8dea-6ea81b67a0e1, sni: fr01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇫🇷 法国 | FRA 8, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 655dd9f0-0c48-4c5d-a071-0bf53da75ef1, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇫🇷 法国 | FRA 9, server: n001.xunxunmimisbs.sbs, port: 26100, type: trojan, password: b199fdb3-1064-4912-a3e8-53ec38476c93, sni: fr01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇫🇷 法国 | FRA 10, server: n001.xunxunmimisbs.sbs, port: 48100, type: trojan, password: 8520ae92-a2f8-4798-9f0a-9f2750cf2f67, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国 | FRA 11, server: n001.xunxunmimisbs.sbs, port: 48100, type: trojan, password: 9d53e27b-b863-4512-ab2b-945014a7d3a1, sni: fr01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇬🇧 英国 | GBR, server: n001.xunxunmimisbs.sbs, port: 23100, type: trojan, password: b199fdb3-1064-4912-a3e8-53ec38476c93, sni: uk01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇬🇧 英国 | GBR 2, server: n002.xunxunmimisbs.sbs, port: 23100, type: trojan, password: 354ca2ce-74df-4350-8ab6-3e5ec56cb468, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 | GBR 3, server: n001.xunxunmimisbs.sbs, port: 44100, type: trojan, password: 9b771e2d-7017-459f-b454-472a5846ed51, sni: uk01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇬🇧 英国 | GBR 4, server: n002.xunxunmimisbs.sbs, port: 23100, type: trojan, password: 389a33c6-e198-416c-8630-535018ea30dc, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 | GBR 5, server: n002.xunxunmimisbs.sbs, port: 23100, type: trojan, password: c025db2b-39a5-4459-807f-6d4fda3f1253, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 | GBR 6, server: n002.xunxunmimisbs.sbs, port: 23100, type: trojan, password: 1fdead6e-ad6f-4b2d-8dea-6ea81b67a0e1, sni: uk01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇬🇧 英国 | GBR 7, server: n002.xunxunmimisbs.sbs, port: 23100, type: trojan, password: b199fdb3-1064-4912-a3e8-53ec38476c93, sni: uk01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇬🇷 希腊 | GRC, server: banmabanmabanmabanmabanmabanma10.wanlidag.top, port: 54265, type: hysteria2, password: 08329b77-3af4-495c-8081-8f1784d729e0, auth: 08329b77-3af4-495c-8081-8f1784d729e0, sni: banmabanmabanmabanmabanmabanma10.wanlidag.top, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇷 希腊 | GRC 2, server: banmabanmabanmabanmabanmabanma10.wanlidag.top, port: 54265, type: hysteria2, password: 92cc90e1-ce24-4d60-a6e4-ed087b802591, auth: 92cc90e1-ce24-4d60-a6e4-ed087b802591, sni: banmabanmabanmabanmabanmabanma10.wanlidag.top, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: cn.eans.top, port: 7009, type: hysteria2, password: 93073513-828b-4e32-97fb-bcaf7ba6ed88, auth: 93073513-828b-4e32-97fb-bcaf7ba6ed88, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 2, server: cn.eans.top, port: 7009, type: hysteria2, password: 31cfa08c-e431-4476-91b6-b535bc651494, auth: 31cfa08c-e431-4476-91b6-b535bc651494, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 3, server: cn.eans.top, port: 7009, type: hysteria2, password: 1fb8c79d-ba23-4367-a9c8-7f3bd1943fea, auth: 1fb8c79d-ba23-4367-a9c8-7f3bd1943fea, sni: h.eans.top, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 4, server: cn.eans.top, port: 7009, type: hysteria2, password: 30585750-f3e8-4de8-af72-3a9d642cbb02, auth: 30585750-f3e8-4de8-af72-3a9d642cbb02, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 5, server: cn.eans.top, port: 7009, type: hysteria2, password: 06b28a92-ad0a-4048-bf24-e1d06c4396bd, auth: 06b28a92-ad0a-4048-bf24-e1d06c4396bd, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 6, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 6fd39e06-e9ad-4cb7-8a5e-aeee486aefca, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港 | HKG 7, server: 212.192.15.176, port: 33079, type: hysteria2, password: 0172c343-b9c9-45ec-b683-36d5fcad1763, auth: 0172c343-b9c9-45ec-b683-36d5fcad1763, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇭🇰 香港 | HKG 8, server: cn.eans.top, port: 7008, type: vless, uuid: 2e91c5b8-3c72-44a3-bffb-6206a30e8a0b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 9, server: cn.eans.top, port: 7009, type: hysteria2, password: 6c4f8e36-35e9-4c04-905c-335ce0848e9f, auth: 6c4f8e36-35e9-4c04-905c-335ce0848e9f, sni: h.eans.top, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 10, server: cn.eans.top, port: 7008, type: vless, uuid: 4625f2da-1eb5-4ad3-8c98-d7a08ae4ee2a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 11, server: cn.eans.top, port: 7009, type: hysteria2, password: a1ecb740-9f5a-4ec1-9bcf-6f53982a03af, auth: a1ecb740-9f5a-4ec1-9bcf-6f53982a03af, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 12, server: n001.xunxunmimisbs.sbs, port: 21201, type: trojan, password: 354ca2ce-74df-4350-8ab6-3e5ec56cb468, sni: hk02.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 | HKG 13, server: cn.eans.top, port: 7009, type: hysteria2, password: f91730a3-23be-4668-958d-727f9f8c5af7, auth: f91730a3-23be-4668-958d-727f9f8c5af7, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 14, server: cn.eans.top, port: 7009, type: hysteria2, password: 82ae7e9b-bb31-4274-a6f2-42f5db127af4, auth: 82ae7e9b-bb31-4274-a6f2-42f5db127af4, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 15, server: cn.eans.top, port: 7008, type: vless, uuid: 09e7c360-ddc2-469a-a090-8187c861042d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 16, server: 217.60.248.66, port: 443, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram@freecodes/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG 17, server: cn.eans.top, port: 7008, type: vless, uuid: 015f7183-53ab-4a1b-a33a-9b5dac7a5cac, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 18, server: cn.eans.top, port: 7009, type: hysteria2, password: 0d36b0c6-dfb9-4459-91e1-c91b3b9f6200, auth: 0d36b0c6-dfb9-4459-91e1-c91b3b9f6200, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 19, server: cn.eans.top, port: 7008, type: vless, uuid: 2a65e8f6-0b7f-4b4c-842a-aa4b644f3e21, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 20, server: cn.eans.top, port: 7008, type: vless, uuid: a0efbf16-2a67-4d9e-8669-e3719c521372, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 21, server: n002.xunxunmimisbs.sbs, port: 21201, type: trojan, password: d46fd688-1c25-483e-8eb8-c31fa2edd60f, sni: hk02.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇭🇰 香港 | HKG 22, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: cdc9e7e4-d54c-4e56-9a6f-91a17c4ec811, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港 | HKG 23, server: cn.eans.top, port: 7008, type: vless, uuid: fe679f00-bf22-44ac-9799-52a33e748324, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs, short-id: "806ba558" }, servername: addons.mozilla.org, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 24, server: 212.192.15.176, port: 33079, type: hysteria2, password: 254ce8ad-9181-488f-90c7-9c4bd7ac65d8, auth: 254ce8ad-9181-488f-90c7-9c4bd7ac65d8, up: 15, down: 15, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇭🇰 香港 | HKG 25, server: n002.xunxunmimisbs.sbs, port: 21200, type: trojan, password: 1fdead6e-ad6f-4b2d-8dea-6ea81b67a0e1, sni: hk01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇭🇰 香港 | HKG 26, server: 58.152.30.133, port: 443, type: trojan, password: ea39fa94f1ee00999337ea1fd3318e69, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 | HKG 27, server: n002.xunxunmimisbs.sbs, port: 21201, type: trojan, password: 1fd23d40-4fb3-46c1-a6b9-1f2689143423, sni: hk02.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇮🇳 印度 | IND, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 519d80cb-6464-4858-b2d4-eec2c9f7d77a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 印度 | IND 2, server: n002.xunxunmimisbs.sbs, port: 27100, type: trojan, password: 389a33c6-e198-416c-8630-535018ea30dc, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 | IND 3, server: n001.xunxunmimisbs.sbs, port: 27100, type: trojan, password: 354ca2ce-74df-4350-8ab6-3e5ec56cb468, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 | IND 4, server: n002.xunxunmimisbs.sbs, port: 27100, type: trojan, password: 1fdead6e-ad6f-4b2d-8dea-6ea81b67a0e1, sni: in01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇮🇳 印度 | IND 5, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: cdc9e7e4-d54c-4e56-9a6f-91a17c4ec811, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 印度 | IND 6, server: n001.xunxunmimisbs.sbs, port: 27100, type: trojan, password: c025db2b-39a5-4459-807f-6d4fda3f1253, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 | IND 7, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 519d80cb-6464-4858-b2d4-eec2c9f7d77a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 印度 | IND 8, server: n002.xunxunmimisbs.sbs, port: 27100, type: trojan, password: 354ca2ce-74df-4350-8ab6-3e5ec56cb468, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 | IND 9, server: n001.xunxunmimisbs.sbs, port: 47100, type: trojan, password: 47277ded-8cc3-44e3-ba69-9e6c9630332d, sni: in01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇯🇵 日本 | JPN, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 8f9f3009-5ec3-46a9-93f2-c772f16e5923, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 2, server: n001.xunxunmimisbs.sbs, port: 42100, type: trojan, password: 9b771e2d-7017-459f-b454-472a5846ed51, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 3, server: n001.xunxunmimisbs.sbs, port: 41300, type: trojan, password: 389a33c6-e198-416c-8630-535018ea30dc, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 4, server: n002.xunxunmimisbs.sbs, port: 41300, type: trojan, password: 389a33c6-e198-416c-8630-535018ea30dc, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 5, server: n002.xunxunmimisbs.sbs, port: 42100, type: trojan, password: 9d53e27b-b863-4512-ab2b-945014a7d3a1, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 6, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 32016a41-3e5d-4b21-b03f-46d63c836324, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本 | JPN 7, server: n002.xunxunmimisbs.sbs, port: 41300, type: trojan, password: c025db2b-39a5-4459-807f-6d4fda3f1253, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 8, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 8d12bdbc-2aca-4b9f-8db1-e1047af3bafe, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国 | KOR, server: 27.100.229.147, port: 50000, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 2, server: 218.151.91.131, port: 12151, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/x@节点狂魔/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 3, server: 211.177.114.117, port: 50001, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 4, server: 211.48.77.114, port: 12312, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /x @节点狂魔, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 5, server: n001.xunxunmimisbs.sbs, port: 22100, type: trojan, password: b199fdb3-1064-4912-a3e8-53ec38476c93, sni: kr01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 6, server: n002.xunxunmimisbs.sbs, port: 43100, type: trojan, password: 47277ded-8cc3-44e3-ba69-9e6c9630332d, sni: kr01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 7, server: n002.xunxunmimisbs.sbs, port: 22100, type: trojan, password: 1fdead6e-ad6f-4b2d-8dea-6ea81b67a0e1, sni: kr01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 8, server: n002.xunxunmimisbs.sbs, port: 22100, type: trojan, password: d46fd688-1c25-483e-8eb8-c31fa2edd60f, sni: kr01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 9, server: n001.xunxunmimisbs.sbs, port: 22100, type: trojan, password: e8b50520-8781-49ac-9aef-7d735d5451f2, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 10, server: n002.xunxunmimisbs.sbs, port: 22100, type: trojan, password: 4308d622-4a3e-4fdd-9c3c-26eab282feea, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 11, server: 183.106.76.116, port: 29429, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram@freecodes/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 12, server: n001.xunxunmimisbs.sbs, port: 22100, type: trojan, password: 9708b161-65be-4ac1-9218-50a29b79972d, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇵🇹 葡萄牙 | PRT, server: 185.231.233.112, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇸🇪 瑞典 | SWE, server: 46.246.97.245, port: 2340, type: ss, cipher: chacha20-ietf-poly1305, password: tgKls86JHy7cJPUlnkWpNZ, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: f72aa9cf-5349-42e9-a0cd-dbb8b988e80f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 2, server: n002.xunxunmimisbs.sbs, port: 31101, type: trojan, password: 8520ae92-a2f8-4798-9f0a-9f2750cf2f67, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 3, server: n002.xunxunmimisbs.sbs, port: 31200, type: trojan, password: 389a33c6-e198-416c-8630-535018ea30dc, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 4, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 32016a41-3e5d-4b21-b03f-46d63c836324, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 5, server: n002.xunxunmimisbs.sbs, port: 31100, type: trojan, password: 9d53e27b-b863-4512-ab2b-945014a7d3a1, sni: sg01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 6, server: n002.xunxunmimisbs.sbs, port: 31200, type: trojan, password: 4308d622-4a3e-4fdd-9c3c-26eab282feea, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 7, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 8f9f3009-5ec3-46a9-93f2-c772f16e5923, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 8, server: n002.xunxunmimisbs.sbs, port: 31101, type: trojan, password: 47277ded-8cc3-44e3-ba69-9e6c9630332d, sni: sg02.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 9, server: n001.xunxunmimisbs.sbs, port: 31201, type: trojan, password: 1fd23d40-4fb3-46c1-a6b9-1f2689143423, sni: sg02.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 10, server: n001.xunxunmimisbs.sbs, port: 31200, type: trojan, password: 354ca2ce-74df-4350-8ab6-3e5ec56cb468, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 11, server: n002.xunxunmimisbs.sbs, port: 31201, type: trojan, password: 4308d622-4a3e-4fdd-9c3c-26eab282feea, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 12, server: n001.xunxunmimisbs.sbs, port: 31200, type: trojan, password: d46fd688-1c25-483e-8eb8-c31fa2edd60f, sni: sg01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇹🇭 泰国 | THA, server: n002.xunxunmimisbs.sbs, port: 28300, type: trojan, password: d46fd688-1c25-483e-8eb8-c31fa2edd60f, sni: tai01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇹🇭 泰国 | THA 2, server: n001.xunxunmimisbs.sbs, port: 28300, type: trojan, password: 9708b161-65be-4ac1-9218-50a29b79972d, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇭 泰国 | THA 3, server: n001.xunxunmimisbs.sbs, port: 49120, type: trojan, password: 8520ae92-a2f8-4798-9f0a-9f2750cf2f67, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇹🇭 泰国 | THA 4, server: n001.xunxunmimisbs.sbs, port: 28300, type: trojan, password: b199fdb3-1064-4912-a3e8-53ec38476c93, sni: tai01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇹🇭 泰国 | THA 5, server: n001.xunxunmimisbs.sbs, port: 28300, type: trojan, password: 354ca2ce-74df-4350-8ab6-3e5ec56cb468, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇹🇭 泰国 | THA 6, server: n002.xunxunmimisbs.sbs, port: 28300, type: trojan, password: ba7121c1-6cf4-4cdd-ac6e-1c3577889444, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: 167.234.222.167, port: 50000, type: hysteria2, password: e04a407d-66f1-46b7-9f23-6500606c737f, auth: e04a407d-66f1-46b7-9f23-6500606c737f, sni: fastcdn.hoyoverse.com, skip-cert-verify: true, ports: 50000-53000, udp: true}
+  - {name: 🇺🇸 美国 | USA 2, server: cdnfire.xiaomispeed.com, port: 25502, type: trojan, password: 648f134c-6213-4be7-99c5-a42564770e4c, sni: cdnfire.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 3, server: 212.192.15.176, port: 22126, type: vmess, uuid: d7ace2ef-ef19-4a77-b2f8-f807e3d5e376, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国 | USA 4, server: sfjmg4.sufujia.top, port: 57300, type: hysteria2, password: e59f7414-17f1-4403-a567-3faf838fcf63, auth: e59f7414-17f1-4403-a567-3faf838fcf63, sni: sfjmg4.sufujia.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 5, server: 212.192.15.176, port: 80, type: hysteria2, password: 2a4ba254-9519-4d75-b5b4-bb8a64b77647, auth: 2a4ba254-9519-4d75-b5b4-bb8a64b77647, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇺🇸 美国 | USA 6, server: 104.18.109.147, port: 80, type: vless, uuid: c29d39bd-92a4-45db-bb61-56013998617c, tls: false, servername: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com, network: ws, ws-opts: {path: "/Telegram-XV2ry2?ed=2048&?q=V2rayJOKERRVPNJoin_Bade_Channel@JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN", headers: {Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 7, server: n001.xunxunmimisbs.sbs, port: 45100, type: trojan, password: 8520ae92-a2f8-4798-9f0a-9f2750cf2f67, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 | USA 8, server: sfjmg4.sufujia.top, port: 57300, type: hysteria2, password: 61139adb-9689-41cb-8924-9b12ff63af9c, auth: 61139adb-9689-41cb-8924-9b12ff63af9c, sni: sfjmg4.sufujia.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 9, server: n001.xunxunmimisbs.sbs, port: 24100, type: trojan, password: e8b50520-8781-49ac-9aef-7d735d5451f2, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 10, server: n002.xunxunmimisbs.sbs, port: 24100, type: trojan, password: b199fdb3-1064-4912-a3e8-53ec38476c93, sni: us01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇻🇳 越南 | VNM, server: n001.xunxunmimisbs.sbs, port: 28200, type: trojan, password: 1fd23d40-4fb3-46c1-a6b9-1f2689143423, sni: vn01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇻🇳 越南 | VNM 2, server: n002.xunxunmimisbs.sbs, port: 28200, type: trojan, password: 9708b161-65be-4ac1-9218-50a29b79972d, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 3, server: n001.xunxunmimisbs.sbs, port: 49110, type: trojan, password: 47277ded-8cc3-44e3-ba69-9e6c9630332d, sni: vn01.xxxxyyyysbs.sbs, udp: true}
+  - {name: 🇻🇳 越南 | VNM 4, server: n001.xunxunmimisbs.sbs, port: 28200, type: trojan, password: 9708b161-65be-4ac1-9218-50a29b79972d, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 越南 | VNM 5, server: n002.xunxunmimisbs.sbs, port: 28200, type: trojan, password: 1fd23d40-4fb3-46c1-a6b9-1f2689143423, sni: vn01.xxxxyyyysbs.sbs, udp: true}
 proxy-groups:
   - name: ☁️ 代理选择
     type: select
@@ -221,6 +174,13 @@ proxy-groups:
       - 🇦🇪 阿联酋 | ARE 2
       - 🇦🇪 阿联酋 | ARE 3
       - 🇦🇪 阿联酋 | ARE 4
+      - 🇦🇪 阿联酋 | ARE 5
+      - 🇦🇪 阿联酋 | ARE 6
+      - 🇦🇪 阿联酋 | ARE 7
+      - 🇦🇪 阿联酋 | ARE 8
+      - 🇦🇪 阿联酋 | ARE 9
+      - 🇦🇪 阿联酋 | ARE 10
+      - 🇦🇪 阿联酋 | ARE 11
       - 🇦🇺 澳大利亚 | AUS
       - 🇦🇺 澳大利亚 | AUS 2
       - 🇦🇺 澳大利亚 | AUS 3
@@ -231,10 +191,6 @@ proxy-groups:
       - 🇨🇦 加拿大 | CAN 3
       - 🇨🇦 加拿大 | CAN 4
       - 🇨🇦 加拿大 | CAN 5
-      - 🇨🇦 加拿大 | CAN 6
-      - 🇨🇦 加拿大 | CAN 7
-      - 🇨🇦 加拿大 | CAN 8
-      - 🇨🇦 加拿大 | CAN 9
       - 🇨🇳 台湾 | TWN
       - 🇨🇳 台湾 | TWN 2
       - 🇨🇳 台湾 | TWN 3
@@ -243,13 +199,16 @@ proxy-groups:
       - 🇨🇳 台湾 | TWN 6
       - 🇨🇳 台湾 | TWN 7
       - 🇨🇳 台湾 | TWN 8
-      - 🇨🇳 台湾 | TWN 9
-      - 🇨🇳 台湾 | TWN 10
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
+      - 🇩🇪 德国 | DEU 7
+      - 🇩🇪 德国 | DEU 8
+      - 🇩🇪 德国 | DEU 9
+      - 🇩🇪 德国 | DEU 10
       - 🇫🇷 法国 | FRA
       - 🇫🇷 法国 | FRA 2
       - 🇫🇷 法国 | FRA 3
@@ -261,8 +220,6 @@ proxy-groups:
       - 🇫🇷 法国 | FRA 9
       - 🇫🇷 法国 | FRA 10
       - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
-      - 🇫🇷 法国 | FRA 13
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
       - 🇬🇧 英国 | GBR 3
@@ -270,14 +227,8 @@ proxy-groups:
       - 🇬🇧 英国 | GBR 5
       - 🇬🇧 英国 | GBR 6
       - 🇬🇧 英国 | GBR 7
-      - 🇬🇧 英国 | GBR 8
-      - 🇬🇧 英国 | GBR 9
       - 🇬🇷 希腊 | GRC
       - 🇬🇷 希腊 | GRC 2
-      - 🇬🇷 希腊 | GRC 3
-      - 🇬🇷 希腊 | GRC 4
-      - 🇬🇷 希腊 | GRC 5
-      - 🇬🇷 希腊 | GRC 6
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
@@ -305,22 +256,6 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 25
       - 🇭🇰 香港 | HKG 26
       - 🇭🇰 香港 | HKG 27
-      - 🇭🇰 香港 | HKG 28
-      - 🇭🇰 香港 | HKG 29
-      - 🇭🇰 香港 | HKG 30
-      - 🇭🇰 香港 | HKG 31
-      - 🇭🇰 香港 | HKG 32
-      - 🇭🇰 香港 | HKG 33
-      - 🇭🇰 香港 | HKG 34
-      - 🇭🇰 香港 | HKG 35
-      - 🇭🇰 香港 | HKG 36
-      - 🇭🇰 香港 | HKG 37
-      - 🇭🇰 香港 | HKG 38
-      - 🇭🇰 香港 | HKG 39
-      - 🇭🇰 香港 | HKG 40
-      - 🇭🇰 香港 | HKG 41
-      - 🇭🇰 香港 | HKG 42
-      - 🇭🇰 香港 | HKG 43
       - 🇮🇳 印度 | IND
       - 🇮🇳 印度 | IND 2
       - 🇮🇳 印度 | IND 3
@@ -330,9 +265,6 @@ proxy-groups:
       - 🇮🇳 印度 | IND 7
       - 🇮🇳 印度 | IND 8
       - 🇮🇳 印度 | IND 9
-      - 🇮🇳 印度 | IND 10
-      - 🇮🇳 印度 | IND 11
-      - 🇮🇸 冰岛 | ISL
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
       - 🇯🇵 日本 | JPN 3
@@ -341,17 +273,6 @@ proxy-groups:
       - 🇯🇵 日本 | JPN 6
       - 🇯🇵 日本 | JPN 7
       - 🇯🇵 日本 | JPN 8
-      - 🇯🇵 日本 | JPN 9
-      - 🇯🇵 日本 | JPN 10
-      - 🇯🇵 日本 | JPN 11
-      - 🇯🇵 日本 | JPN 12
-      - 🇯🇵 日本 | JPN 13
-      - 🇯🇵 日本 | JPN 14
-      - 🇯🇵 日本 | JPN 15
-      - 🇯🇵 日本 | JPN 16
-      - 🇯🇵 日本 | JPN 17
-      - 🇯🇵 日本 | JPN 18
-      - 🇯🇵 日本 | JPN 19
       - 🇰🇷 韩国 | KOR
       - 🇰🇷 韩国 | KOR 2
       - 🇰🇷 韩国 | KOR 3
@@ -363,7 +284,9 @@ proxy-groups:
       - 🇰🇷 韩国 | KOR 9
       - 🇰🇷 韩国 | KOR 10
       - 🇰🇷 韩国 | KOR 11
-      - 🇲🇦 摩洛哥 | MAR
+      - 🇰🇷 韩国 | KOR 12
+      - 🇵🇹 葡萄牙 | PRT
+      - 🇸🇪 瑞典 | SWE
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
@@ -376,13 +299,12 @@ proxy-groups:
       - 🇸🇬 新加坡 | SGP 10
       - 🇸🇬 新加坡 | SGP 11
       - 🇸🇬 新加坡 | SGP 12
-      - 🇸🇬 新加坡 | SGP 13
-      - 🇸🇬 新加坡 | SGP 14
-      - 🇸🇬 新加坡 | SGP 15
-      - 🇸🇬 新加坡 | SGP 16
       - 🇹🇭 泰国 | THA
       - 🇹🇭 泰国 | THA 2
       - 🇹🇭 泰国 | THA 3
+      - 🇹🇭 泰国 | THA 4
+      - 🇹🇭 泰国 | THA 5
+      - 🇹🇭 泰国 | THA 6
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -393,27 +315,11 @@ proxy-groups:
       - 🇺🇸 美国 | USA 8
       - 🇺🇸 美国 | USA 9
       - 🇺🇸 美国 | USA 10
-      - 🇺🇸 美国 | USA 11
-      - 🇺🇸 美国 | USA 12
-      - 🇺🇸 美国 | USA 13
-      - 🇺🇸 美国 | USA 14
-      - 🇺🇸 美国 | USA 15
-      - 🇺🇸 美国 | USA 16
-      - 🇺🇸 美国 | USA 17
-      - 🇺🇸 美国 | USA 18
-      - 🇺🇸 美国 | USA 19
-      - 🇺🇸 美国 | USA 20
-      - 🇺🇸 美国 | USA 21
       - 🇻🇳 越南 | VNM
       - 🇻🇳 越南 | VNM 2
       - 🇻🇳 越南 | VNM 3
       - 🇻🇳 越南 | VNM 4
       - 🇻🇳 越南 | VNM 5
-      - 🇻🇳 越南 | VNM 6
-      - 🇻🇳 越南 | VNM 7
-      - 🇻🇳 越南 | VNM 8
-      - 🇻🇳 越南 | VNM 9
-      - 🇻🇳 越南 | VNM 10
   - name: 📲 电报消息
     type: select
     proxies:
@@ -519,22 +425,6 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 25
       - 🇭🇰 香港 | HKG 26
       - 🇭🇰 香港 | HKG 27
-      - 🇭🇰 香港 | HKG 28
-      - 🇭🇰 香港 | HKG 29
-      - 🇭🇰 香港 | HKG 30
-      - 🇭🇰 香港 | HKG 31
-      - 🇭🇰 香港 | HKG 32
-      - 🇭🇰 香港 | HKG 33
-      - 🇭🇰 香港 | HKG 34
-      - 🇭🇰 香港 | HKG 35
-      - 🇭🇰 香港 | HKG 36
-      - 🇭🇰 香港 | HKG 37
-      - 🇭🇰 香港 | HKG 38
-      - 🇭🇰 香港 | HKG 39
-      - 🇭🇰 香港 | HKG 40
-      - 🇭🇰 香港 | HKG 41
-      - 🇭🇰 香港 | HKG 42
-      - 🇭🇰 香港 | HKG 43
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -549,8 +439,6 @@ proxy-groups:
       - 🇨🇳 台湾 | TWN 6
       - 🇨🇳 台湾 | TWN 7
       - 🇨🇳 台湾 | TWN 8
-      - 🇨🇳 台湾 | TWN 9
-      - 🇨🇳 台湾 | TWN 10
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -569,10 +457,6 @@ proxy-groups:
       - 🇸🇬 新加坡 | SGP 10
       - 🇸🇬 新加坡 | SGP 11
       - 🇸🇬 新加坡 | SGP 12
-      - 🇸🇬 新加坡 | SGP 13
-      - 🇸🇬 新加坡 | SGP 14
-      - 🇸🇬 新加坡 | SGP 15
-      - 🇸🇬 新加坡 | SGP 16
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -587,17 +471,6 @@ proxy-groups:
       - 🇯🇵 日本 | JPN 6
       - 🇯🇵 日本 | JPN 7
       - 🇯🇵 日本 | JPN 8
-      - 🇯🇵 日本 | JPN 9
-      - 🇯🇵 日本 | JPN 10
-      - 🇯🇵 日本 | JPN 11
-      - 🇯🇵 日本 | JPN 12
-      - 🇯🇵 日本 | JPN 13
-      - 🇯🇵 日本 | JPN 14
-      - 🇯🇵 日本 | JPN 15
-      - 🇯🇵 日本 | JPN 16
-      - 🇯🇵 日本 | JPN 17
-      - 🇯🇵 日本 | JPN 18
-      - 🇯🇵 日本 | JPN 19
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -615,6 +488,7 @@ proxy-groups:
       - 🇰🇷 韩国 | KOR 9
       - 🇰🇷 韩国 | KOR 10
       - 🇰🇷 韩国 | KOR 11
+      - 🇰🇷 韩国 | KOR 12
   - name: 🇺🇸 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -631,17 +505,6 @@ proxy-groups:
       - 🇺🇸 美国 | USA 8
       - 🇺🇸 美国 | USA 9
       - 🇺🇸 美国 | USA 10
-      - 🇺🇸 美国 | USA 11
-      - 🇺🇸 美国 | USA 12
-      - 🇺🇸 美国 | USA 13
-      - 🇺🇸 美国 | USA 14
-      - 🇺🇸 美国 | USA 15
-      - 🇺🇸 美国 | USA 16
-      - 🇺🇸 美国 | USA 17
-      - 🇺🇸 美国 | USA 18
-      - 🇺🇸 美国 | USA 19
-      - 🇺🇸 美国 | USA 20
-      - 🇺🇸 美国 | USA 21
   - name: ⚡ 延迟最低
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -651,6 +514,13 @@ proxy-groups:
       - 🇦🇪 阿联酋 | ARE 2
       - 🇦🇪 阿联酋 | ARE 3
       - 🇦🇪 阿联酋 | ARE 4
+      - 🇦🇪 阿联酋 | ARE 5
+      - 🇦🇪 阿联酋 | ARE 6
+      - 🇦🇪 阿联酋 | ARE 7
+      - 🇦🇪 阿联酋 | ARE 8
+      - 🇦🇪 阿联酋 | ARE 9
+      - 🇦🇪 阿联酋 | ARE 10
+      - 🇦🇪 阿联酋 | ARE 11
       - 🇦🇺 澳大利亚 | AUS
       - 🇦🇺 澳大利亚 | AUS 2
       - 🇦🇺 澳大利亚 | AUS 3
@@ -661,10 +531,6 @@ proxy-groups:
       - 🇨🇦 加拿大 | CAN 3
       - 🇨🇦 加拿大 | CAN 4
       - 🇨🇦 加拿大 | CAN 5
-      - 🇨🇦 加拿大 | CAN 6
-      - 🇨🇦 加拿大 | CAN 7
-      - 🇨🇦 加拿大 | CAN 8
-      - 🇨🇦 加拿大 | CAN 9
       - 🇨🇳 台湾 | TWN
       - 🇨🇳 台湾 | TWN 2
       - 🇨🇳 台湾 | TWN 3
@@ -673,13 +539,16 @@ proxy-groups:
       - 🇨🇳 台湾 | TWN 6
       - 🇨🇳 台湾 | TWN 7
       - 🇨🇳 台湾 | TWN 8
-      - 🇨🇳 台湾 | TWN 9
-      - 🇨🇳 台湾 | TWN 10
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
+      - 🇩🇪 德国 | DEU 7
+      - 🇩🇪 德国 | DEU 8
+      - 🇩🇪 德国 | DEU 9
+      - 🇩🇪 德国 | DEU 10
       - 🇫🇷 法国 | FRA
       - 🇫🇷 法国 | FRA 2
       - 🇫🇷 法国 | FRA 3
@@ -691,8 +560,6 @@ proxy-groups:
       - 🇫🇷 法国 | FRA 9
       - 🇫🇷 法国 | FRA 10
       - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
-      - 🇫🇷 法国 | FRA 13
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
       - 🇬🇧 英国 | GBR 3
@@ -700,14 +567,8 @@ proxy-groups:
       - 🇬🇧 英国 | GBR 5
       - 🇬🇧 英国 | GBR 6
       - 🇬🇧 英国 | GBR 7
-      - 🇬🇧 英国 | GBR 8
-      - 🇬🇧 英国 | GBR 9
       - 🇬🇷 希腊 | GRC
       - 🇬🇷 希腊 | GRC 2
-      - 🇬🇷 希腊 | GRC 3
-      - 🇬🇷 希腊 | GRC 4
-      - 🇬🇷 希腊 | GRC 5
-      - 🇬🇷 希腊 | GRC 6
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
@@ -735,22 +596,6 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 25
       - 🇭🇰 香港 | HKG 26
       - 🇭🇰 香港 | HKG 27
-      - 🇭🇰 香港 | HKG 28
-      - 🇭🇰 香港 | HKG 29
-      - 🇭🇰 香港 | HKG 30
-      - 🇭🇰 香港 | HKG 31
-      - 🇭🇰 香港 | HKG 32
-      - 🇭🇰 香港 | HKG 33
-      - 🇭🇰 香港 | HKG 34
-      - 🇭🇰 香港 | HKG 35
-      - 🇭🇰 香港 | HKG 36
-      - 🇭🇰 香港 | HKG 37
-      - 🇭🇰 香港 | HKG 38
-      - 🇭🇰 香港 | HKG 39
-      - 🇭🇰 香港 | HKG 40
-      - 🇭🇰 香港 | HKG 41
-      - 🇭🇰 香港 | HKG 42
-      - 🇭🇰 香港 | HKG 43
       - 🇮🇳 印度 | IND
       - 🇮🇳 印度 | IND 2
       - 🇮🇳 印度 | IND 3
@@ -760,9 +605,6 @@ proxy-groups:
       - 🇮🇳 印度 | IND 7
       - 🇮🇳 印度 | IND 8
       - 🇮🇳 印度 | IND 9
-      - 🇮🇳 印度 | IND 10
-      - 🇮🇳 印度 | IND 11
-      - 🇮🇸 冰岛 | ISL
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
       - 🇯🇵 日本 | JPN 3
@@ -771,17 +613,6 @@ proxy-groups:
       - 🇯🇵 日本 | JPN 6
       - 🇯🇵 日本 | JPN 7
       - 🇯🇵 日本 | JPN 8
-      - 🇯🇵 日本 | JPN 9
-      - 🇯🇵 日本 | JPN 10
-      - 🇯🇵 日本 | JPN 11
-      - 🇯🇵 日本 | JPN 12
-      - 🇯🇵 日本 | JPN 13
-      - 🇯🇵 日本 | JPN 14
-      - 🇯🇵 日本 | JPN 15
-      - 🇯🇵 日本 | JPN 16
-      - 🇯🇵 日本 | JPN 17
-      - 🇯🇵 日本 | JPN 18
-      - 🇯🇵 日本 | JPN 19
       - 🇰🇷 韩国 | KOR
       - 🇰🇷 韩国 | KOR 2
       - 🇰🇷 韩国 | KOR 3
@@ -793,7 +624,9 @@ proxy-groups:
       - 🇰🇷 韩国 | KOR 9
       - 🇰🇷 韩国 | KOR 10
       - 🇰🇷 韩国 | KOR 11
-      - 🇲🇦 摩洛哥 | MAR
+      - 🇰🇷 韩国 | KOR 12
+      - 🇵🇹 葡萄牙 | PRT
+      - 🇸🇪 瑞典 | SWE
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
@@ -806,13 +639,12 @@ proxy-groups:
       - 🇸🇬 新加坡 | SGP 10
       - 🇸🇬 新加坡 | SGP 11
       - 🇸🇬 新加坡 | SGP 12
-      - 🇸🇬 新加坡 | SGP 13
-      - 🇸🇬 新加坡 | SGP 14
-      - 🇸🇬 新加坡 | SGP 15
-      - 🇸🇬 新加坡 | SGP 16
       - 🇹🇭 泰国 | THA
       - 🇹🇭 泰国 | THA 2
       - 🇹🇭 泰国 | THA 3
+      - 🇹🇭 泰国 | THA 4
+      - 🇹🇭 泰国 | THA 5
+      - 🇹🇭 泰国 | THA 6
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -823,27 +655,11 @@ proxy-groups:
       - 🇺🇸 美国 | USA 8
       - 🇺🇸 美国 | USA 9
       - 🇺🇸 美国 | USA 10
-      - 🇺🇸 美国 | USA 11
-      - 🇺🇸 美国 | USA 12
-      - 🇺🇸 美国 | USA 13
-      - 🇺🇸 美国 | USA 14
-      - 🇺🇸 美国 | USA 15
-      - 🇺🇸 美国 | USA 16
-      - 🇺🇸 美国 | USA 17
-      - 🇺🇸 美国 | USA 18
-      - 🇺🇸 美国 | USA 19
-      - 🇺🇸 美国 | USA 20
-      - 🇺🇸 美国 | USA 21
       - 🇻🇳 越南 | VNM
       - 🇻🇳 越南 | VNM 2
       - 🇻🇳 越南 | VNM 3
       - 🇻🇳 越南 | VNM 4
       - 🇻🇳 越南 | VNM 5
-      - 🇻🇳 越南 | VNM 6
-      - 🇻🇳 越南 | VNM 7
-      - 🇻🇳 越南 | VNM 8
-      - 🇻🇳 越南 | VNM 9
-      - 🇻🇳 越南 | VNM 10
   - name: 🎈 其余流量
     type: select
     proxies:
