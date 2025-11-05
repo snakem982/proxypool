@@ -18,29 +18,29 @@ dns:
   - tls://1.0.0.1:853
   - tls://dns.google:853
 proxies:
-  - {name: KR_f0bc1_0004, server: testkr3.ssv.vc, port: 30446, type: http, username: test, password: test.+, tls: true, skip-cert-verify: true, udp: true}
-  - {name: TW_f0bc1_0009, server: twmoon1-cdn-route.couldflare-cdn.com, port: 1443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, udp: true}
-  - {name: US_f0bc1_0019, server: usa32.clearorbitllc.com, port: 443, type: vless, uuid: 9daf8f3e-089b-4989-9502-dd3d727edb6c, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: firefox, servername: usa32.clearorbitllc.com, reality-opts: {public-key: 9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns, short-id: c7f3cc}, udp: true}
-  - {name: VN_f0bc1_0020, server: 103.197.185.149, port: 23806, type: vmess, uuid: 841550b4-d4bf-4e3e-de9c-cff7baa47df3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: VN_f0bc1_0021, server: 103.186.154.67, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: KR_ee2e8_0004, server: testkr3.ssv.vc, port: 30446, type: http, username: test, password: test.+, tls: true, skip-cert-verify: true, udp: true}
+  - {name: TW_ee2e8_0009, server: twmoon1-cdn-route.couldflare-cdn.com, port: 1443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, udp: true}
+  - {name: US_ee2e8_0019, server: usa32.clearorbitllc.com, port: 443, type: vless, uuid: 9daf8f3e-089b-4989-9502-dd3d727edb6c, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: firefox, servername: usa32.clearorbitllc.com, reality-opts: {public-key: 9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns, short-id: c7f3cc}, udp: true}
+  - {name: VN_ee2e8_0020, server: 103.197.185.149, port: 23806, type: vmess, uuid: 841550b4-d4bf-4e3e-de9c-cff7baa47df3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: VN_ee2e8_0021, server: 103.186.154.67, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - KR_f0bc1_0004
-  - TW_f0bc1_0009
-  - US_f0bc1_0019
-  - VN_f0bc1_0020
-  - VN_f0bc1_0021
+  - KR_ee2e8_0004
+  - TW_ee2e8_0009
+  - US_ee2e8_0019
+  - VN_ee2e8_0020
+  - VN_ee2e8_0021
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - KR_f0bc1_0004
-  - TW_f0bc1_0009
-  - US_f0bc1_0019
-  - VN_f0bc1_0020
-  - VN_f0bc1_0021
+  - KR_ee2e8_0004
+  - TW_ee2e8_0009
+  - US_ee2e8_0019
+  - VN_ee2e8_0020
+  - VN_ee2e8_0021
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
