@@ -29,15 +29,14 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
 |:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
 | 1  |  20T  | 1Gbps |   1   |  1 G  | 25 GB |  $10   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=49 "点击查看") |
-| 2  | 2000G | 1Gbps |   1   |  1 G  | 20 GB | $10.96 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=912 "点击查看")    |
+| 2  | 2000G | 1Gbps |   1   |  1 G  | 25 GB | $10.6 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=923 "点击查看") 
 | 3  | 3000G | 1Gbps |   1   |  1 G  | 17 GB | $10.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=358 "点击查看")    |
-| 4  |  20T  | 1Gbps |   1   |  1 G  | 20 GB |  $12   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=33 "点击查看") |
-| 5  | 2000G | 1Gbps |   1   |  1 G  | 24 GB | $11.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=903 "点击查看")    |
+| 4  | 2000G | 1Gbps |   1   |  1 G  | 24 GB | $11.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=903 "点击查看")    |
+| 5  |  20T  | 1Gbps |   1   |  1 G  | 20 GB |  $12   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=33 "点击查看") |
 | 6  | 4000G | 1Gbps |   2   |  2 G  | 30 GB | $17.66 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=913 "点击查看")    |
-| 7  | 3500G | 1Gbps |   1   |  2 G  | 40 GB | $18.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=904 "点击查看")    |
+| 7  | 3000G | 1Gbps |   2   |  2.5 G  | 45 GB | $18.66 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=924 "点击查看")    |
 | 8  |  20T  | 1Gbps |   1   |  2 G  | 40 GB |  $20   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=34 "点击查看") |
-| 9  | 5000G | 1Gbps |   3   | 3.5 G | 60 GB | $29.89 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=914 "点击查看")    |
-| 10 | 7000G | 1Gbps |   2   | 3.5 G | 65 GB | $32.49 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=905 "点击查看")    |
+| 9  | 6500G | 1Gbps |   3   | 4 G | 65 GB | $29.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=925 "点击查看")    |
 
 **美国纽约、英国伦敦、德国法兰克福 服务器** (PayPal)
 
