@@ -18,23 +18,23 @@ dns:
   - tls://1.0.0.1:853
   - tls://dns.google:853
 proxies:
-  - {name: RU_a1df1_0009, server: 51.250.25.172, port: 4248, type: vless, uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ads.x5.ru, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc, short-id: 6ba85179e30d4fc2}, udp: true}
-  - {name: RU_a1df1_0010, server: 89.169.182.230, port: 443, type: vless, uuid: ac2c8871-d4eb-40a6-8487-fd1b31c3bc22, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vk.com, reality-opts: {public-key: dFORJuMEa7izUStNjvhLFvJ2Hudr4v07VQhQS-Wbyh8, short-id: fd}, udp: true}
-  - {name: RU_a1df1_0011, server: 51.250.25.11, port: 1488, type: vless, uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ads.x5.ru, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc}, udp: true}
+  - {name: RU_24c5a_0009, server: 51.250.25.172, port: 4248, type: vless, uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ads.x5.ru, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc, short-id: 6ba85179e30d4fc2}, udp: true}
+  - {name: RU_24c5a_0010, server: 89.169.182.230, port: 443, type: vless, uuid: ac2c8871-d4eb-40a6-8487-fd1b31c3bc22, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vk.com, reality-opts: {public-key: dFORJuMEa7izUStNjvhLFvJ2Hudr4v07VQhQS-Wbyh8, short-id: fd}, udp: true}
+  - {name: RU_24c5a_0011, server: 51.250.25.11, port: 1488, type: vless, uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ads.x5.ru, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc}, udp: true}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - RU_a1df1_0009
-  - RU_a1df1_0010
-  - RU_a1df1_0011
+  - RU_24c5a_0009
+  - RU_24c5a_0010
+  - RU_24c5a_0011
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - RU_a1df1_0009
-  - RU_a1df1_0010
-  - RU_a1df1_0011
+  - RU_24c5a_0009
+  - RU_24c5a_0010
+  - RU_24c5a_0011
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
