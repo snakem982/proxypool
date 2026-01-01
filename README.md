@@ -19,12 +19,10 @@ Long-term use is not recommended! ! !</font><br/>
 - https://www.youtube.com/watch?v=7yTpdsOF8us<br/>
 
 若要持续、稳定、安全、高速的节点请自建，<br/>
-推荐使用Tuic,Hysteria2,Juicity协议套上Tls,任何时候稳定输出，<br/>
+推荐使用 Hysteria2 协议套上Tls,任何时候稳定输出，<br/>
 下面是免实名免备案的高性价比 **美国** 云服务器推荐：<br/>
 If you want a continuous, stable, safe, and high-speed node, please build it yourself.
 The following is a self-built node cost-effective cloud server recommendation:<br/>
-
-**美国服务器**（支付宝）
 
 | 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
 |:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
@@ -37,15 +35,6 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 7  | 3000G | 1Gbps |   2   |  2.5 G  | 45 GB | $18.66 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=924 "点击查看")    |
 | 8  |  20T  | 1Gbps |   1   |  2 G  | 40 GB |  $20   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=34 "点击查看") |
 | 9  | 6500G | 1Gbps |   3   | 4 G | 65 GB | $29.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=925 "点击查看")    |
-
-**美国纽约、英国伦敦、德国法兰克福 服务器** (PayPal)
-
-| 序号 | 流量/月 |  网速   | CPU核数 | 运行内存 |  硬盘   |      价格      |                                查看详情                                 |
-|:--:|:----:|:-----:|:-----:|:----:|:-----:|:------------:|:-------------------------------------------------------------------:|
-| 1  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  9.99美元/1年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 2  | 20T  | 1Gbps |   1   | 1 G  | 10 GB | 10.29美元/1年   |      [链接](https://my.dasabo.com/aff.php?aff=51&pid=173 "点击查看")      |
-| 3  | 20T  | 1Gbps |   1   | 1 G  | 32 GB |  18.65美元/2年  | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
-| 4  | 20T  | 1Gbps |   1   | 1 G  | 32 GB | 23.98美元/4年   | [链接](https://portal.massivegrid.com/aff.php?aff=277&pid=896 "点击查看") |
 
 
 ## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
