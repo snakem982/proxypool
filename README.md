@@ -29,32 +29,16 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 6  | 2000G | 1Gbps |   1   |  1 G  | 24 GB | $11.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=903 "点击查看")    |
 
 
-## <br>订阅地址或分享链接在如下文件里<br>The subscription address or sharing link is in the following file
+## <br>订阅地址如下<br>The subscription address is as follows
 
-### clash.meta/mihomo 订阅地址
+### clash.meta/mihomo
 
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
 
-### v2ray 订阅地址
+### v2ray
 
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt
-
-### nodelist.txt
-
-https://github.com/snakem982/proxypool/blob/main/source/nodelist.txt
-
-### proxies.txt
-
-https://github.com/snakem982/proxypool/blob/main/source/proxies.txt
-
-### webfuzz.yaml
-
-https://github.com/snakem982/proxypool/blob/main/source/webfuzz.yaml
-
-### telegram channel hub
-
-https://github.com/snakem982/proxypool/blob/main/source/tgchannel.json
 
 ## <br>免责声明 <br/>Disclaimer
 
