@@ -18,29 +18,29 @@ dns:
   - tls://1.0.0.1:853
   - tls://dns.google:853
 proxies:
-  - {name: CN_3f3c6_0001, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: DE_3f3c6_0002, server: 192.76.160.216, port: 2280, type: vless, uuid: 3fa2f5cd-0cbc-4e4f-bce1-a59ae090eef4, tls: true, skip-cert-verify: false, client-fingerprint: firefox, servername: tgju.org, reality-opts: {public-key: 3O9CVvzD_0omAKw17VJoL0NlezpzxRAHNIbOWGBto2I, short-id: faf804ddc2e49f6c}, udp: true}
-  - {name: ES_3f3c6_0003, server: sahand.cocomelon.org, port: 443, type: vless, uuid: 0a0d8e6f-8747-4ff6-afe0-e70aa97e7de8, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: finance.yahoo.com, reality-opts: {public-key: 1LHMePKT5PP9F9WQ1HhZUWZlrK2p9AW_sUwKNfO4ZC0, short-id: dd8ca121bb77dad9}, udp: true}
-  - {name: LB_3f3c6_0004, server: finland.tortvpnbot.world, port: 8080, type: vless, uuid: a001c9c4-ece2-4dc1-9658-cbad90fcd2e0, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: main.tortvpnbot.world, reality-opts: {public-key: w28tNIWZCfW4X9aQDLwXECK3pU59zihJ0GIMA13u5X8}, udp: true}
-  - {name: US_3f3c6_0005, server: 143.20.236.51, port: 443, type: vless, uuid: d65cc14c-f53f-4fe2-b262-97856601319c, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: yahoo.com, reality-opts: {public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg, short-id: c39cc7310a}, udp: true}
+  - {name: CN_9bff8_0001, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: DE_9bff8_0002, server: 192.76.160.216, port: 2280, type: vless, uuid: 3fa2f5cd-0cbc-4e4f-bce1-a59ae090eef4, tls: true, skip-cert-verify: false, client-fingerprint: firefox, servername: tgju.org, reality-opts: {public-key: 3O9CVvzD_0omAKw17VJoL0NlezpzxRAHNIbOWGBto2I, short-id: faf804ddc2e49f6c}, udp: true}
+  - {name: ES_9bff8_0003, server: sahand.cocomelon.org, port: 443, type: vless, uuid: 0a0d8e6f-8747-4ff6-afe0-e70aa97e7de8, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: finance.yahoo.com, reality-opts: {public-key: 1LHMePKT5PP9F9WQ1HhZUWZlrK2p9AW_sUwKNfO4ZC0, short-id: dd8ca121bb77dad9}, udp: true}
+  - {name: LB_9bff8_0004, server: finland.tortvpnbot.world, port: 8080, type: vless, uuid: a001c9c4-ece2-4dc1-9658-cbad90fcd2e0, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: main.tortvpnbot.world, reality-opts: {public-key: w28tNIWZCfW4X9aQDLwXECK3pU59zihJ0GIMA13u5X8}, udp: true}
+  - {name: US_9bff8_0005, server: 143.20.236.51, port: 443, type: vless, uuid: d65cc14c-f53f-4fe2-b262-97856601319c, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: yahoo.com, reality-opts: {public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg, short-id: c39cc7310a}, udp: true}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - CN_3f3c6_0001
-  - DE_3f3c6_0002
-  - ES_3f3c6_0003
-  - LB_3f3c6_0004
-  - US_3f3c6_0005
+  - CN_9bff8_0001
+  - DE_9bff8_0002
+  - ES_9bff8_0003
+  - LB_9bff8_0004
+  - US_9bff8_0005
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - CN_3f3c6_0001
-  - DE_3f3c6_0002
-  - ES_3f3c6_0003
-  - LB_3f3c6_0004
-  - US_3f3c6_0005
+  - CN_9bff8_0001
+  - DE_9bff8_0002
+  - ES_9bff8_0003
+  - LB_9bff8_0004
+  - US_9bff8_0005
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
