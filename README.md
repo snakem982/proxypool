@@ -29,6 +29,15 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 6  | 2000G | 1Gbps |   1   |  1 G  | 24 GB | $11.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=903 "点击查看")    |
 
 
+以下是跑 **OpenClaw** 推荐配置：<br/>
+The following is the recommended configuration for running **OpenClaw**:<br/>
+
+| 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
+|:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
+| 1  |  40T  | 1Gbps |   2   |  2 G  | 40 GB |  $15.99   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=148 "点击查看") |
+| 2  |  40T  | 1Gbps |   3   |  4 G  | 60 GB |  $20.99   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=149 "点击查看") |
+| 3  |  40T  | 1Gbps |   4   |  8 G  | 80 GB |  $39.99   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=150 "点击查看") |
+
 ## <br>订阅地址如下<br>The subscription address is as follows
 
 ### clash.meta/mihomo
