@@ -18,68 +18,146 @@ dns:
   - tls://1.0.0.1:853
   - tls://dns.google:853
 proxies:
-  - {name: FR_78870_0001, server: 188.130.207.158, port: 2053, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, skip-cert-verify: false, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.navy}}, udp: true}
-  - {name: FR_78870_0002, server: 188.130.207.92, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, skip-cert-verify: false, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.navy}}, udp: true}
-  - {name: GB_78870_0003, server: 138.124.186.202, port: 443, type: vless, uuid: e346f220-4ca4-4f69-a66b-52e992b3b625, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: www.fh-aachen.de, reality-opts: {public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs}, udp: true}
-  - {name: HK_78870_0004, server: 203.168.131.110, port: 3389, type: vless, uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d, tls: true, skip-cert-verify: false, client-fingerprint: random, servername: snippet.chinav.eu.cc, alpn: [http/1.1], network: ws, ws-opts: {path: /danfeng, headers: {Host: snippet.chinav.eu.cc}}, udp: true}
-  - {name: HK_78870_0005, server: 203.168.131.110, port: 3389, type: vless, uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d, tls: true, skip-cert-verify: false, client-fingerprint: random, servername: snippet.chinav.eu.cc, alpn: [http/1.1], network: ws, ws-opts: {path: /danfengfp=random, headers: {Host: snippet.chinav.eu.cc}}, udp: true}
-  - {name: IR_78870_0006, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR_78870_0007, server: 106.251.70.75, port: 10162, type: vless, uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d, tls: true, skip-cert-verify: false, client-fingerprint: random, servername: snippet.chinav.eu.cc, alpn: [http/1.1], network: ws, ws-opts: {path: /danfeng, headers: {Host: snippet.chinav.eu.cc}}, udp: true}
-  - {name: KR_78870_0008, server: 211.194.9.159, port: 20244, type: vless, uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: snippet.danfeng.theworkpc.com, network: ws, ws-opts: {path: "/danfeng?ed=2560", headers: {Host: snippet.danfeng.theworkpc.com}}, udp: true}
-  - {name: NL_78870_0009, server: 94.131.105.125, port: 4443, type: trojan, password: strong-secret-pass-777, skip-cert-verify: true, udp: true}
-  - {name: NL_78870_0010, server: 103.97.88.133, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, skip-cert-verify: false, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.navy}}, udp: true}
-  - {name: US_78870_0011, server: 54.46.72.234, port: 8025, type: trojan, password: trojan, sni: jflsjlaf.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jflsjlaf.pages.dev}}, udp: true}
-  - {name: US_78870_0012, server: 192.0.54.131, port: 443, type: vless, uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d, tls: true, skip-cert-verify: false, servername: snippet.danfeng.kozow.com, network: ws, ws-opts: {path: "/danfeng?ed=2560", headers: {Host: snippet.danfeng.kozow.com}}, udp: true}
-  - {name: US_78870_0013, server: 192.0.63.230, port: 443, type: vless, uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d, tls: true, skip-cert-verify: false, servername: snippet.danfeng.kozow.com, network: ws, ws-opts: {path: "/danfeng?ed=2560", headers: {Host: snippet.danfeng.kozow.com}}, udp: true}
-  - {name: US_78870_0014, server: 192.0.63.56, port: 443, type: vless, uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d, tls: true, skip-cert-verify: false, servername: snippet.danfeng.kozow.com, network: ws, ws-opts: {path: "/danfeng?ed=2560", headers: {Host: snippet.danfeng.kozow.com}}, udp: true}
-  - {name: US_78870_0015, server: 88.210.36.107, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: "feb7fa9:154948", tls: false}, udp: true}
-  - {name: US_78870_0016, server: 192.0.63.49, port: 443, type: vless, uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d, tls: true, skip-cert-verify: false, servername: snippet.danfeng.theworkpc.com, network: ws, ws-opts: {path: "/danfeng?ed=2560", headers: {Host: snippet.danfeng.theworkpc.com}}, udp: true}
-  - {name: US_78870_0017, server: 64.23.143.23, port: 34045, type: vless, uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me, reality-opts: {public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA, short-id: e8ab71d0}, udp: true}
-  - {name: US_78870_0018, server: 199.181.197.38, port: 443, type: ss, cipher: none, password: 3e96ef7d-8637-42c2-ac73-75182196e755, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: mfvpn.fuchen.indevs.in, path: "3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560", tls: true, mux: false}, udp: true}
+  - {name: AT_91d74_0001, server: 152.53.200.167, port: 8444, type: trojan, password: trojan, sni: jflsjlaf.pages.dev, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jflsjlaf.pages.dev}}, udp: true}
+  - {name: AT_91d74_0002, server: 152.53.200.98, port: 8444, type: trojan, password: trojan, sni: jflsjlaf.pages.dev, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jflsjlaf.pages.dev}}, udp: true}
+  - {name: AT_91d74_0003, server: 95.164.36.217, port: 443, type: vless, uuid: 43488128-319e-f480-64ea-0acdc712e2a8, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: www.booking.com, reality-opts: {public-key: P7XdTB-V3VEV_B5Wenifit6OriVM5YUQ8ir-SSqes0U, short-id: 7a4f4b55a899ae1d}, udp: true}
+  - {name: AT_91d74_0004, server: 152.53.1.32, port: 7443, type: vless, uuid: 8f8380ae-9f5d-4cb5-8f5f-0f70fbe054a9, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: chat.deepseek.com, reality-opts: {public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI, short-id: d82fb387}, udp: true}
+  - {name: CH_91d74_0005, server: 138.226.240.199, port: 4433, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, skip-cert-verify: true, servername: sub.mot.ip-ddns.com, network: ws, ws-opts: {path: /, headers: {Host: sub.mot.ip-ddns.com}}, udp: true}
+  - {name: DE_91d74_0006, server: 185.94.29.156, port: 4001, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, skip-cert-verify: true, servername: sub.mot.ip-ddns.com, network: ws, ws-opts: {path: /, headers: {Host: sub.mot.ip-ddns.com}}, udp: true}
+  - {name: DE_91d74_0007, server: 37.114.50.157, port: 4002, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, skip-cert-verify: false, servername: sub.mot.ip-ddns.com, network: ws, ws-opts: {path: /, headers: {Host: sub.mot.ip-ddns.com}}, udp: true}
+  - {name: FR_91d74_0008, server: 51.210.151.165, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, skip-cert-verify: false, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.navy}}, udp: true}
+  - {name: GB_91d74_0009, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_91d74_0010, server: d928a6f8-t9zts0-tcc9uq-1rnrp.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 989aa406-ea9b-11ef-97da-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: HK_91d74_0011, server: 1389306e-t9w4g0-tcr22d-1rsuw.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: HK_91d74_0012, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0013, server: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0014, server: 222.167.202.14, port: 7443, type: vless, uuid: 06ef598c-1555-4887-b3f9-08214a2f6792, tls: true, skip-cert-verify: false, servername: 2026.hhhhh.eu.org, network: ws, ws-opts: {path: "/222.167.202.14:7443", headers: {Host: 2026.hhhhh.eu.org}}, udp: true}
+  - {name: HK_91d74_0015, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 0114339c-488d-11ee-8792-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0016, server: ff61e176-t9u9s0-tsjk4v-1atkp.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: HK_91d74_0017, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0018, server: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0019, server: 1808992d-t9mv40-tcmken-19les.hkt.gotochinatown.net, port: 80, type: vmess, uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: HK_91d74_0020, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, udp: true}
+  - {name: HK_91d74_0021, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0022, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, udp: true}
+  - {name: HK_91d74_0023, server: 9c402b0d-t70f40-tfeciy-1iddy.hkt.gotochinatown.net, port: 80, type: vmess, uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 9c402b0d-t70f40-tfeciy-1iddy.hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0024, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 31676725-b0fd-fed2-c857-2da8ce5a6e4f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0025, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0026, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 80aa5178-f936-11ed-8ce6-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0027, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0028, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0029, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: HK_91d74_0030, server: 584a79d6-t9w4g0-tb5rbt-1kcpe.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: HK_91d74_0031, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: ID_91d74_0032, server: qfdfsg.wsone.icu, port: 443, type: trojan, password: M7v%w11Se*, sni: qfdfsg.wsone.icu, skip-cert-verify: true, udp: true}
+  - {name: ID_91d74_0033, server: 202.155.11.137, port: 8443, type: vless, uuid: f3a1017d-1ebf-11f1-8cae-c3845d39d2de, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: www.apple.com, reality-opts: {public-key: FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc, short-id: a1b2c3d4e5f6}, udp: true}
+  - {name: IR_91d74_0034, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_91d74_0035, server: 217.142.250.195, port: 587, type: trojan, password: trojan, sni: jflsjlaf.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jflsjlaf.pages.dev}}, udp: true}
+  - {name: KR_91d74_0036, server: krp01.jumperservice.com, port: 19001, type: vless, uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: addons.mozilla.org, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, udp: true}
+  - {name: KR_91d74_0037, server: krp01.jumperservice.com, port: 19001, type: vless, uuid: 455fc271-3ee2-493b-8c75-9324b4851e2f, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, udp: true}
+  - {name: LV_91d74_0038, server: 31.128.32.98, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, skip-cert-verify: false, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.navy}}, udp: true}
+  - {name: NL_91d74_0039, server: 185.243.112.61, port: 2053, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, skip-cert-verify: false, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.navy}}, udp: true}
+  - {name: NL_91d74_0040, server: 94.131.105.125, port: 4443, type: trojan, password: strong-secret-pass-777, sni: 94.131.105.125, skip-cert-verify: true, udp: true}
+  - {name: RU_91d74_0041, server: 217.114.11.246, port: 443, type: vless, uuid: 9768f14f-a790-4c78-b1d9-60cc0e9d99a0, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: max.ru, reality-opts: {public-key: FZbK0E3QBK7QslwVEXimX6vmXC8cb6826lSLJUkIEgU}, udp: true}
+  - {name: US_91d74_0042, server: store.ubi.com, port: 443, type: ss, cipher: none, password: 3e96ef7d-8637-42c2-ac73-75182196e755, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: mfvpn.fuchen.indevs.in, path: "/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560", tls: true, mux: false}, udp: true}
+  - {name: US_91d74_0043, server: 135.84.74.155, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, skip-cert-verify: false, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: /, headers: {Host: sni.111000.v6.navy}}, udp: true}
+  - {name: US_91d74_0044, server: 94.131.101.135, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, skip-cert-verify: false, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.navy}}, udp: true}
 proxy-groups:
 - name: ⭕ proxinode
   type: select
   proxies:
   - ♻️ automatic
-  - FR_78870_0001
-  - FR_78870_0002
-  - GB_78870_0003
-  - HK_78870_0004
-  - HK_78870_0005
-  - IR_78870_0006
-  - KR_78870_0007
-  - KR_78870_0008
-  - NL_78870_0009
-  - NL_78870_0010
-  - US_78870_0011
-  - US_78870_0012
-  - US_78870_0013
-  - US_78870_0014
-  - US_78870_0015
-  - US_78870_0016
-  - US_78870_0017
-  - US_78870_0018
+  - AT_91d74_0001
+  - AT_91d74_0002
+  - AT_91d74_0003
+  - AT_91d74_0004
+  - CH_91d74_0005
+  - DE_91d74_0006
+  - DE_91d74_0007
+  - FR_91d74_0008
+  - GB_91d74_0009
+  - HK_91d74_0010
+  - HK_91d74_0011
+  - HK_91d74_0012
+  - HK_91d74_0013
+  - HK_91d74_0014
+  - HK_91d74_0015
+  - HK_91d74_0016
+  - HK_91d74_0017
+  - HK_91d74_0018
+  - HK_91d74_0019
+  - HK_91d74_0020
+  - HK_91d74_0021
+  - HK_91d74_0022
+  - HK_91d74_0023
+  - HK_91d74_0024
+  - HK_91d74_0025
+  - HK_91d74_0026
+  - HK_91d74_0027
+  - HK_91d74_0028
+  - HK_91d74_0029
+  - HK_91d74_0030
+  - HK_91d74_0031
+  - ID_91d74_0032
+  - ID_91d74_0033
+  - IR_91d74_0034
+  - JP_91d74_0035
+  - KR_91d74_0036
+  - KR_91d74_0037
+  - LV_91d74_0038
+  - NL_91d74_0039
+  - NL_91d74_0040
+  - RU_91d74_0041
+  - US_91d74_0042
+  - US_91d74_0043
+  - US_91d74_0044
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - FR_78870_0001
-  - FR_78870_0002
-  - GB_78870_0003
-  - HK_78870_0004
-  - HK_78870_0005
-  - IR_78870_0006
-  - KR_78870_0007
-  - KR_78870_0008
-  - NL_78870_0009
-  - NL_78870_0010
-  - US_78870_0011
-  - US_78870_0012
-  - US_78870_0013
-  - US_78870_0014
-  - US_78870_0015
-  - US_78870_0016
-  - US_78870_0017
-  - US_78870_0018
+  - AT_91d74_0001
+  - AT_91d74_0002
+  - AT_91d74_0003
+  - AT_91d74_0004
+  - CH_91d74_0005
+  - DE_91d74_0006
+  - DE_91d74_0007
+  - FR_91d74_0008
+  - GB_91d74_0009
+  - HK_91d74_0010
+  - HK_91d74_0011
+  - HK_91d74_0012
+  - HK_91d74_0013
+  - HK_91d74_0014
+  - HK_91d74_0015
+  - HK_91d74_0016
+  - HK_91d74_0017
+  - HK_91d74_0018
+  - HK_91d74_0019
+  - HK_91d74_0020
+  - HK_91d74_0021
+  - HK_91d74_0022
+  - HK_91d74_0023
+  - HK_91d74_0024
+  - HK_91d74_0025
+  - HK_91d74_0026
+  - HK_91d74_0027
+  - HK_91d74_0028
+  - HK_91d74_0029
+  - HK_91d74_0030
+  - HK_91d74_0031
+  - ID_91d74_0032
+  - ID_91d74_0033
+  - IR_91d74_0034
+  - JP_91d74_0035
+  - KR_91d74_0036
+  - KR_91d74_0037
+  - LV_91d74_0038
+  - NL_91d74_0039
+  - NL_91d74_0040
+  - RU_91d74_0041
+  - US_91d74_0042
+  - US_91d74_0043
+  - US_91d74_0044
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
