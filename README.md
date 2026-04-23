@@ -23,7 +23,7 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 |:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
 | 1  |  20T  | 1Gbps |   1   |  1 G  | 25 GB |  $10   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=49 "点击查看") |
 | 2  | 40T | 1Gbps |   1   |  1 G  | 30 GB | $10.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=147 "点击查看")    |
-| 3  | 3000G | 1Gbps |   1   |  1 G  | 20 GB | $21.99 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=952 "点击查看")    |
+| 3  | 3000G | 1Gbps |   1   |  1 G  | 20 GB | $21.99 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=952 "点击查看")  <br>多地区可选  |
 
 
 以下是跑 **OpenClaw** 推荐配置：<br/>
