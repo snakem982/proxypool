@@ -22,11 +22,8 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
 |:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
 | 1  |  20T  | 1Gbps |   1   |  1 G  | 25 GB |  $10   | [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=49 "点击查看") |
-| 2  | 2000G | 1Gbps |   1   |  1 G  | 25 GB | $10.6 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=923 "点击查看") 
-| 3  | 3000G | 1Gbps |   1   |  1 G  | 17 GB | $10.98 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=358 "点击查看")    |
-| 4  | 40T | 1Gbps |   1   |  1 G  | 30 GB | $10.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=147 "点击查看")    |
-| 5  | 40T | 1Gbps |   1   |  1 G  | 30 GB | $11.11 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=112 "点击查看")    |
-| 6  | 2000G | 1Gbps |   1   |  1 G  | 24 GB | $11.29 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=903 "点击查看")    |
+| 2  | 40T | 1Gbps |   1   |  1 G  | 30 GB | $10.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=147 "点击查看")    |
+| 3  | 3000G | 1Gbps |   1   |  1 G  | 20 GB | $21.99 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=952 "点击查看")    |
 
 
 以下是跑 **OpenClaw** 推荐配置：<br/>
