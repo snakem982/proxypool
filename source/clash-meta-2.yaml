@@ -5,87 +5,81 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇦🇺 澳大利亚 | AUS, server: 103.62.50.130, port: 443, type: http, tls: true, skip-cert-verify: true}
-  - {name: 🇨🇾 塞浦路斯 | CYP, server: 45.82.245.37, port: 50043, type: tuic, password: strong-secret-pass-777, uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇨🇿 捷克 | CZE, server: 77.110.96.142, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.latonyamadeline.ndjp.net, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.latonyamadeline.ndjp.net}}, udp: true}
-  - {name: 🇨🇿 捷克 | CZE 2, server: 211.193.169.223, port: 10243, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU, server: 204.168.174.36, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 2, server: 144.31.188.1, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 3, server: frankfurt1.ap221.com, port: 443, type: vless, uuid: 8f25d191-c31c-4d07-86ec-db01fe1085d9, tls: true, flow: xtls-rprx-vision, servername: frankfurt.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 | DEU 4, server: 188.226.153.14, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 5, server: 40.160.239.172, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 6, server: 38.55.110.29, port: 12025, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 7, server: frankfurt1.ap221.com, port: 443, type: vless, uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1, tls: true, flow: xtls-rprx-vision, servername: frankfurt.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇫🇮 芬兰 | FIN, server: 144.31.90.75, port: 9443, type: vless, uuid: 4649d681-7f26-4959-a3f2-02eb8866230f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg, short-id: "2344766a270a6298" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇫🇷 法国 | FRA, server: planb.mojcn.com, port: 16645, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "%2F", headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
-  - {name: 🇬🇧 英国 | GBR, server: london1.ap221.com, port: 443, type: vless, uuid: 79b78774-0ccd-4792-aa2d-189887dd987f, tls: true, flow: xtls-rprx-vision, servername: london.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG, server: hk1.ap221.com, port: 443, type: vless, uuid: 3a1d7c1d-09c6-4c81-8e11-75dd4ab1ac07, tls: true, flow: xtls-rprx-vision, servername: hk.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 2, server: 1.6rguyesfdhvbz.uk, port: 52095, type: anytls, password: 4f87f425-6fc3-4955-a61a-53877e3d00e3, udp: true}
-  - {name: 🇭🇰 香港 | HKG 3, server: hk1.ap221.com, port: 443, type: vless, uuid: 0dcd0d55-8a1c-4a8b-91c5-6967720a8444, tls: true, flow: xtls-rprx-vision, servername: hk.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇮🇳 印度 | IND, server: 43.205.130.21, port: 80, type: ss, cipher: aes-256-gcm, password: dada1203, udp: true}
-  - {name: 🇮🇳 印度 | IND 2, server: 2.6rguyesfdhvbz.uk, port: 52041, type: anytls, password: 4f87f425-6fc3-4955-a61a-53877e3d00e3, udp: true}
-  - {name: 🇯🇵 日本 | JPN, server: planb.mojcn.com, port: 16617, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "%2F", headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 2, server: jdatau654714155239871.jcdn.cdnxiaohongshu.com, port: 443, type: http, username: f8eca8df-a1a5-4918-a194-d34112a3673f, password: f8eca8df-a1a5-4918-a194-d34112a3673f, tls: true}
-  - {name: 🇰🇷 韩国 | KOR, server: kr.baqi.indevs.in, port: 39010, type: vless, uuid: 9f1d6cb6-b2fb-4813-8351-383b72749e2c, tls: false, network: ws, ws-opts: {path: /, headers: {Host: d0a6b4d945dbfc846b18fade7d631883.mobgslb.tbcache.com}}, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 2, server: 152.67.211.233, port: 8899, type: vless, uuid: ed285fbd-528e-4610-9a8d-2ad95767c00b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: B7eELUOn0QM6fKSrr5v_AE4JPHQIxvb9-xX3WLqnLAk, short-id: "11d27eb4" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 3, server: 20.249.24.202, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: gogo.onetap.qzz.io, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: gogo.onetap.qzz.io}}, udp: true}
-  - {name: 🇱🇹 立陶宛 | LTU, server: vltch.mostserv.xyz, port: 443, type: vless, uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI, short-id: "226509f017e4c36d" }, servername: vltch.mostserv.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA, server: 112.171.112.109, port: 29876, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 2, server: 175.213.181.45, port: 12121, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 3, server: 59.3.192.122, port: 12445, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 4, server: 59.3.192.122, port: 18888, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 5, server: 59.11.151.238, port: 29999, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 6, server: 119.195.0.158, port: 35342, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 7, server: 59.0.95.106, port: 32773, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 8, server: 221.156.228.221, port: 10443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 9, server: 59.24.62.82, port: 10554, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 10, server: 140.235.36.50, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 11, server: 121.179.210.184, port: 28017, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 12, server: 222.117.231.32, port: 38241, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 13, server: 210.123.143.214, port: 18789, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 14, server: 112.172.95.115, port: 32400, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 15, server: 183.103.4.162, port: 10912, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 16, server: 112.184.132.12, port: 12300, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 17, server: 222.98.185.243, port: 37215, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 18, server: 121.175.77.73, port: 14929, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇱🇻 拉脱维亚 | LVA 19, server: 146.56.138.33, port: 10443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇲🇩 摩尔多瓦 | MDA, server: 140.83.34.214, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇲🇩 摩尔多瓦 | MDA 2, server: 109.120.157.29, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.latonyamadeline.ndjp.net, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/wangcai2🇨🇳", headers: {Host: sni.latonyamadeline.ndjp.net}}, udp: true}
-  - {name: 🇲🇩 摩尔多瓦 | MDA 3, server: 138.124.32.78, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.latonyamadeline.ndjp.net, network: ws, ws-opts: {path: /, headers: {Host: sni.latonyamadeline.ndjp.net}}, udp: true}
-  - {name: 🇲🇩 摩尔多瓦 | MDA 4, server: 144.31.237.162, port: 2053, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇧🇷 巴西 | BRA, server: ctybtv.yytls.top, port: 27030, type: anytls, password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280, udp: true, skip-cert-verify: false, alpn: [h2, http/1.1]}
+  - {name: 🇨🇦 加拿大 | CAN, server: planb.mojcn.com, port: 16641, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "%2F", headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇨🇿 捷克 | CZE, server: 217.144.190.230, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.latonyamadeline.ndjp.net, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.latonyamadeline.ndjp.net}}, udp: true}
+  - {name: 🇨🇿 捷克 | CZE 2, server: 103.75.118.144, port: 2053, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇨🇿 捷克 | CZE 3, server: 121.179.3.58, port: 35342, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: 159.195.82.187, port: 9443, type: vless, uuid: 4649d681-7f26-4959-a3f2-02eb8866230f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg, short-id: "2344766a270a6298" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: 43.160.207.33, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 3, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇩🇪 德国 | DEU 4, server: 82.118.21.88, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 5, server: 63.141.128.3, port: 443, type: vless, uuid: 8c4604ef-749c-4b56-adf1-7da405002a21, tls: true, servername: qyi.fqjd663.ggff.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: qyi.fqjd663.ggff.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 6, server: 43.160.247.81, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 7, server: 37.27.188.213, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇫🇷 法国 | FRA, server: 163.172.116.154, port: 33887, type: tuic, password: dongtaiwang.com, uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87, sni: bing.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
+  - {name: 🇬🇧 英国 | GBR, server: london1.ap221.com, port: 443, type: vless, uuid: 8f25d191-c31c-4d07-86ec-db01fe1085d9, tls: true, flow: xtls-rprx-vision, servername: london.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: select-hk.ddnskunlun.com, port: 9003, type: vmess, uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: select-hk.ddnskunlun.com, udp: true}
+  - {name: 🇭🇰 香港 | HKG 2, server: hk1.ap221.com, port: 443, type: vless, uuid: 3a1d7c1d-09c6-4c81-8e11-75dd4ab1ac07, tls: true, flow: xtls-rprx-vision, servername: hk.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 3, server: planb.mojcn.com, port: 16632, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "%2F", headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG 4, server: hk1.ap221.com, port: 443, type: vless, uuid: 79b78774-0ccd-4792-aa2d-189887dd987f, tls: true, flow: xtls-rprx-vision, servername: hk.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 5, server: n16voh.yytls.top, port: 27005, type: anytls, password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280, udp: true, skip-cert-verify: false, alpn: [h2, http/1.1]}
+  - {name: 🇭🇰 香港 | HKG 6, server: hk1.ap221.com, port: 443, type: vless, uuid: 2bd9c075-e47a-46d8-a777-93baa759d8aa, tls: true, flow: xtls-rprx-vision, servername: hk.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG 7, server: board-01.ddnskunlun.com, port: 11903, type: vmess, uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: board-01.ddnskunlun.com, udp: true}
+  - {name: 🇭🇰 香港 | HKG 8, server: board-02.ddnskunlun.com, port: 11998, type: vmess, uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: board-02.ddnskunlun.com, udp: true}
+  - {name: 🇮🇳 印度 | IND, server: amanm.wsone.icu, port: 443, type: trojan, password: M7v%w11Se*, sni: amanm.wsone.icu, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN, server: vpn-jp-004.fastervpn.world, port: 443, type: hysteria2, password: qQe1z5kU8kN6SlKnDt9Ru3Qp, auth: qQe1z5kU8kN6SlKnDt9Ru3Qp, sni: vpn-jp-004.fastervpn.world, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 2, server: 142.248.151.249, port: 39085, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me, network: ws, ws-opts: {path: /@Marisa_kristifp=chrome, headers: {Host: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me}}, udp: true}
+  - {name: 🇯🇵 日本 | JPN 3, server: tokyo1.ap221.com, port: 443, type: vless, uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1, tls: true, flow: xtls-rprx-vision, servername: tokyo.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 日本 | JPN 4, server: tokyo1.ap221.com, port: 443, type: vless, uuid: 79b78774-0ccd-4792-aa2d-189887dd987f, tls: true, flow: xtls-rprx-vision, servername: tokyo.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇷 韩国 | KOR, server: 203.227.191.189, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: gogo.wknm.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: gogo.wknm.dpdns.org}}, udp: true}
+  - {name: 🇱🇹 立陶宛 | LTU, server: 84.32.209.6, port: 443, type: vless, uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI, short-id: "226509f017e4c36d" }, servername: vltch.mostserv.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA, server: 46.8.229.26, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 2, server: 46.8.229.218, port: 2053, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 3, server: 175.215.188.34, port: 26214, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 4, server: 59.17.184.164, port: 27016, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 5, server: 175.204.72.94, port: 11001, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 6, server: 183.103.4.162, port: 10912, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 7, server: 121.158.68.235, port: 20000, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 8, server: 210.123.143.214, port: 18789, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 9, server: 183.103.4.162, port: 16992, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 10, server: 140.83.34.214, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 11, server: 121.128.161.235, port: 10002, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 12, server: 211.51.201.180, port: 11001, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 13, server: 144.31.237.162, port: 2053, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA 14, server: 61.77.75.94, port: 10001, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
+  - {name: 🇲🇩 摩尔多瓦 | MDA, server: 59.24.62.82, port: 20002, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
   - {name: 🇳🇬 尼日利亚 | NGA, server: de.6rguyesfdhvbz.uk, port: 52098, type: anytls, password: 4f87f425-6fc3-4955-a61a-53877e3d00e3, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD, server: 95.169.192.234, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 2, server: 62.60.253.89, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇷🇴 罗马尼亚 | ROU, server: 84.239.49.247, port: 9002, type: http, tls: true, skip-cert-verify: true}
-  - {name: 🇷🇴 罗马尼亚 | ROU 2, server: 84.239.49.233, port: 9002, type: http, tls: true, skip-cert-verify: true}
-  - {name: 🇷🇴 罗马尼亚 | ROU 3, server: 84.239.49.239, port: 9002, type: http, tls: true, skip-cert-verify: true}
-  - {name: 🇷🇴 罗马尼亚 | ROU 4, server: 84.239.49.156, port: 9002, type: http, tls: true, skip-cert-verify: true}
-  - {name: 🇷🇴 罗马尼亚 | ROU 5, server: 84.239.49.163, port: 9002, type: http, tls: true, skip-cert-verify: true}
-  - {name: 🇷🇺 俄罗斯 | RUS, server: cluster-russia-1.firstvideocdn.ru, port: 52006, type: vless, uuid: 75807638-6f19-07d0-ae08-38492ee85c88, tls: true, flow: xtls-rprx-vision, servername: cluster-russia-1.firstvideocdn.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇷🇺 俄罗斯 | RUS 2, server: 185.22.154.104, port: 50129, type: ss, cipher: aes-256-gcm, password: f34579d0148b2581, udp: true}
-  - {name: 🇸🇪 瑞典 | SWE, server: 65.109.205.130, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇸🇪 瑞典 | SWE 2, server: 13.51.48.73, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇪 瑞典 | SWE 3, server: 13.62.58.81, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP, server: 47.128.72.35, port: 80, type: ss, cipher: aes-256-gcm, password: dada1203, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 2, server: 47.84.95.77, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: gogo.wknm.qzz.io, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: gogo.wknm.qzz.io}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: 82.38.31.149, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 2, server: 152.53.200.129, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇷🇴 罗马尼亚 | ROU, server: 84.239.49.156, port: 9002, type: http, tls: true, skip-cert-verify: true}
+  - {name: 🇷🇴 罗马尼亚 | ROU 2, server: 84.239.49.211, port: 9002, type: http, tls: true, skip-cert-verify: true}
+  - {name: 🇷🇴 罗马尼亚 | ROU 3, server: 84.239.49.219, port: 9002, type: http, tls: true, skip-cert-verify: true}
+  - {name: 🇷🇴 罗马尼亚 | ROU 4, server: 84.239.49.224, port: 9002, type: http, tls: true, skip-cert-verify: true}
+  - {name: 🇷🇴 罗马尼亚 | ROU 5, server: 84.239.49.198, port: 9002, type: http, tls: true, skip-cert-verify: true}
+  - {name: 🇷🇴 罗马尼亚 | ROU 6, server: 84.239.49.37, port: 9002, type: http, tls: true, skip-cert-verify: true}
+  - {name: 🇷🇴 罗马尼亚 | ROU 7, server: 193.176.84.25, port: 9002, type: http, tls: true, skip-cert-verify: true}
+  - {name: 🇷🇴 罗马尼亚 | ROU 8, server: 84.239.14.158, port: 9002, type: http, tls: true, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡 | SGP, server: cf.090227.xyz, port: 2053, type: vless, uuid: da025996-e96a-4d77-aaff-513c75e8c12c, tls: true, servername: sg1.337777777.xyz, client-fingerprint: firefox, network: ws, ws-opts: {path: /tr3gaeg, headers: {Host: sg1.337777777.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 2, server: 1.6rguyesfdhvbz.uk, port: 12466, type: anytls, password: 4f87f425-6fc3-4955-a61a-53877e3d00e3, udp: true}
   - {name: 🇸🇬 新加坡 | SGP 3, server: 47.129.200.134, port: 80, type: ss, cipher: aes-256-gcm, password: dada1203, udp: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN, server: tw1.catzl.top, port: 40071, type: anytls, password: 6356eaac-e6c4-41d8-8923-d254ff711ff8, udp: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN 2, server: 223.165.4.173, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇺🇦 乌克兰 | UKR, server: 61.76.179.211, port: 18246, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.v6.army}}, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: u.pineappled.org, port: 443, type: vless, uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ, short-id: "23" }, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: us1.cloudsegl1.ccwu.cc, port: 30003, type: hysteria2, password: facd2e09-75a3-46a5-8202-e586446994d4, auth: facd2e09-75a3-46a5-8202-e586446994d4, sni: www.iq.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 4, server: 263b4f67-texls0-tjilbf-1o8ak.isp.cdnkuaishou.com, port: 8443, type: http, username: 8bb68d04-6973-11ee-b518-f23c9164ca5d, password: 8bb68d04-6973-11ee-b518-f23c9164ca5d, tls: true}
-  - {name: 🇺🇸 美国 | USA 5, server: a0b6009e-texls0-tjilbf-1o8ak.se.oshuawei.com, port: 443, type: http, username: 8bb68d04-6973-11ee-b518-f23c9164ca5d, password: 8bb68d04-6973-11ee-b518-f23c9164ca5d, tls: true}
-  - {name: 🇺🇸 美国 | USA 6, server: ohio1.ap221.com, port: 443, type: vless, uuid: 0dcd0d55-8a1c-4a8b-91c5-6967720a8444, tls: true, flow: xtls-rprx-vision, servername: ohio.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇻🇳 越南 | VNM, server: 103.186.154.202, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 2, server: 103.186.154.249, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 3, server: 103.186.154.139, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 4, server: 103.186.154.29, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 5, server: 103.186.155.44, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 6, server: 103.186.154.158, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 7, server: 103.186.155.121, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 8, server: 103.186.155.26, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 4, server: 2.6rguyesfdhvbz.uk, port: 12466, type: anytls, password: 4f87f425-6fc3-4955-a61a-53877e3d00e3, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 5, server: 192.124.176.141, port: 8388, type: ss, cipher: aes-256-gcm, password: lJfHOnRyZveL, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 6, server: 43.160.207.175, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇹🇼 🇨🇳 台湾 | TWN, server: 2.6rguyesfdhvbz.uk, port: 12344, type: anytls, password: 4f87f425-6fc3-4955-a61a-53877e3d00e3, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: usa.6rguyesfdhvbz.uk, port: 23489, type: anytls, password: 4f87f425-6fc3-4955-a61a-53877e3d00e3, udp: true}
+  - {name: 🇺🇸 美国 | USA 2, server: cf.090227.xyz, port: 443, type: vless, uuid: da025996-e96a-4d77-aaff-513c75e8c12c, tls: true, servername: us1.337777777.xyz, client-fingerprint: firefox, network: ws, ws-opts: {path: /tr3gaeg, headers: {Host: us1.337777777.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 3, server: 13.59.38.191, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 美国 | USA 4, server: 34.229.121.217, port: 80, type: ss, cipher: aes-256-gcm, password: dada1203, udp: true}
+  - {name: 🇺🇸 美国 | USA 5, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 | USA 6, server: ohio1.ap221.com, port: 443, type: vless, uuid: 8f25d191-c31c-4d07-86ec-db01fe1085d9, tls: true, flow: xtls-rprx-vision, servername: ohio.ap221.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇻🇳 越南 | VNM, server: 103.186.154.19, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 2, server: 103.186.154.182, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 3, server: 103.186.154.232, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 4, server: 103.186.154.160, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 5, server: 103.186.155.80, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 6, server: 103.186.155.8, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 | VNM 7, server: 103.186.154.252, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -114,10 +108,11 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇦🇺 澳大利亚 | AUS
-      - 🇨🇾 塞浦路斯 | CYP
+      - 🇧🇷 巴西 | BRA
+      - 🇨🇦 加拿大 | CAN
       - 🇨🇿 捷克 | CZE
       - 🇨🇿 捷克 | CZE 2
+      - 🇨🇿 捷克 | CZE 3
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
@@ -125,19 +120,22 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
       - 🇩🇪 德国 | DEU 7
-      - 🇫🇮 芬兰 | FIN
       - 🇫🇷 法国 | FRA
       - 🇬🇧 英国 | GBR
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+      - 🇭🇰 香港 | HKG 8
       - 🇮🇳 印度 | IND
-      - 🇮🇳 印度 | IND 2
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇯🇵 日本 | JPN 4
       - 🇰🇷 韩国 | KOR
-      - 🇰🇷 韩国 | KOR 2
-      - 🇰🇷 韩国 | KOR 3
       - 🇱🇹 立陶宛 | LTU
       - 🇱🇻 拉脱维亚 | LVA
       - 🇱🇻 拉脱维亚 | LVA 2
@@ -153,15 +151,7 @@ proxy-groups:
       - 🇱🇻 拉脱维亚 | LVA 12
       - 🇱🇻 拉脱维亚 | LVA 13
       - 🇱🇻 拉脱维亚 | LVA 14
-      - 🇱🇻 拉脱维亚 | LVA 15
-      - 🇱🇻 拉脱维亚 | LVA 16
-      - 🇱🇻 拉脱维亚 | LVA 17
-      - 🇱🇻 拉脱维亚 | LVA 18
-      - 🇱🇻 拉脱维亚 | LVA 19
       - 🇲🇩 摩尔多瓦 | MDA
-      - 🇲🇩 摩尔多瓦 | MDA 2
-      - 🇲🇩 摩尔多瓦 | MDA 3
-      - 🇲🇩 摩尔多瓦 | MDA 4
       - 🇳🇬 尼日利亚 | NGA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
@@ -170,17 +160,16 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 | ROU 3
       - 🇷🇴 罗马尼亚 | ROU 4
       - 🇷🇴 罗马尼亚 | ROU 5
-      - 🇷🇺 俄罗斯 | RUS
-      - 🇷🇺 俄罗斯 | RUS 2
-      - 🇸🇪 瑞典 | SWE
-      - 🇸🇪 瑞典 | SWE 2
-      - 🇸🇪 瑞典 | SWE 3
+      - 🇷🇴 罗马尼亚 | ROU 6
+      - 🇷🇴 罗马尼亚 | ROU 7
+      - 🇷🇴 罗马尼亚 | ROU 8
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇸🇬 新加坡 | SGP 5
+      - 🇸🇬 新加坡 | SGP 6
       - 🇹🇼 🇨🇳 台湾 | TWN
-      - 🇹🇼 🇨🇳 台湾 | TWN 2
-      - 🇺🇦 乌克兰 | UKR
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -194,14 +183,14 @@ proxy-groups:
       - 🇻🇳 越南 | VNM 5
       - 🇻🇳 越南 | VNM 6
       - 🇻🇳 越南 | VNM 7
-      - 🇻🇳 越南 | VNM 8
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇦🇺 澳大利亚 | AUS
-      - 🇨🇾 塞浦路斯 | CYP
+      - 🇧🇷 巴西 | BRA
+      - 🇨🇦 加拿大 | CAN
       - 🇨🇿 捷克 | CZE
       - 🇨🇿 捷克 | CZE 2
+      - 🇨🇿 捷克 | CZE 3
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
@@ -209,19 +198,22 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
       - 🇩🇪 德国 | DEU 7
-      - 🇫🇮 芬兰 | FIN
       - 🇫🇷 法国 | FRA
       - 🇬🇧 英国 | GBR
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+      - 🇭🇰 香港 | HKG 8
       - 🇮🇳 印度 | IND
-      - 🇮🇳 印度 | IND 2
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇯🇵 日本 | JPN 4
       - 🇰🇷 韩国 | KOR
-      - 🇰🇷 韩国 | KOR 2
-      - 🇰🇷 韩国 | KOR 3
       - 🇱🇹 立陶宛 | LTU
       - 🇱🇻 拉脱维亚 | LVA
       - 🇱🇻 拉脱维亚 | LVA 2
@@ -237,15 +229,7 @@ proxy-groups:
       - 🇱🇻 拉脱维亚 | LVA 12
       - 🇱🇻 拉脱维亚 | LVA 13
       - 🇱🇻 拉脱维亚 | LVA 14
-      - 🇱🇻 拉脱维亚 | LVA 15
-      - 🇱🇻 拉脱维亚 | LVA 16
-      - 🇱🇻 拉脱维亚 | LVA 17
-      - 🇱🇻 拉脱维亚 | LVA 18
-      - 🇱🇻 拉脱维亚 | LVA 19
       - 🇲🇩 摩尔多瓦 | MDA
-      - 🇲🇩 摩尔多瓦 | MDA 2
-      - 🇲🇩 摩尔多瓦 | MDA 3
-      - 🇲🇩 摩尔多瓦 | MDA 4
       - 🇳🇬 尼日利亚 | NGA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
@@ -254,17 +238,16 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 | ROU 3
       - 🇷🇴 罗马尼亚 | ROU 4
       - 🇷🇴 罗马尼亚 | ROU 5
-      - 🇷🇺 俄罗斯 | RUS
-      - 🇷🇺 俄罗斯 | RUS 2
-      - 🇸🇪 瑞典 | SWE
-      - 🇸🇪 瑞典 | SWE 2
-      - 🇸🇪 瑞典 | SWE 3
+      - 🇷🇴 罗马尼亚 | ROU 6
+      - 🇷🇴 罗马尼亚 | ROU 7
+      - 🇷🇴 罗马尼亚 | ROU 8
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇸🇬 新加坡 | SGP 5
+      - 🇸🇬 新加坡 | SGP 6
       - 🇹🇼 🇨🇳 台湾 | TWN
-      - 🇹🇼 🇨🇳 台湾 | TWN 2
-      - 🇺🇦 乌克兰 | UKR
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -278,7 +261,6 @@ proxy-groups:
       - 🇻🇳 越南 | VNM 5
       - 🇻🇳 越南 | VNM 6
       - 🇻🇳 越南 | VNM 7
-      - 🇻🇳 越南 | VNM 8
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -334,6 +316,11 @@ proxy-groups:
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+      - 🇭🇰 香港 | HKG 8
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -341,7 +328,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇹🇼 🇨🇳 台湾 | TWN
-      - 🇹🇼 🇨🇳 台湾 | TWN 2
   - name: 🇨🇳 ‍中国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -351,8 +337,12 @@ proxy-groups:
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+      - 🇭🇰 香港 | HKG 8
       - 🇹🇼 🇨🇳 台湾 | TWN
-      - 🇹🇼 🇨🇳 台湾 | TWN 2
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -362,6 +352,9 @@ proxy-groups:
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇸🇬 新加坡 | SGP 5
+      - 🇸🇬 新加坡 | SGP 6
   - name: 🇯🇵 ‍日本
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -370,6 +363,8 @@ proxy-groups:
     proxies:
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇯🇵 日本 | JPN 4
   - name: 🇺🇸 ‍美国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -388,10 +383,11 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇦🇺 澳大利亚 | AUS
-      - 🇨🇾 塞浦路斯 | CYP
+      - 🇧🇷 巴西 | BRA
+      - 🇨🇦 加拿大 | CAN
       - 🇨🇿 捷克 | CZE
       - 🇨🇿 捷克 | CZE 2
+      - 🇨🇿 捷克 | CZE 3
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
@@ -399,14 +395,10 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
       - 🇩🇪 德国 | DEU 7
-      - 🇫🇮 芬兰 | FIN
       - 🇫🇷 法国 | FRA
       - 🇬🇧 英国 | GBR
       - 🇮🇳 印度 | IND
-      - 🇮🇳 印度 | IND 2
       - 🇰🇷 韩国 | KOR
-      - 🇰🇷 韩国 | KOR 2
-      - 🇰🇷 韩国 | KOR 3
       - 🇱🇹 立陶宛 | LTU
       - 🇱🇻 拉脱维亚 | LVA
       - 🇱🇻 拉脱维亚 | LVA 2
@@ -422,15 +414,7 @@ proxy-groups:
       - 🇱🇻 拉脱维亚 | LVA 12
       - 🇱🇻 拉脱维亚 | LVA 13
       - 🇱🇻 拉脱维亚 | LVA 14
-      - 🇱🇻 拉脱维亚 | LVA 15
-      - 🇱🇻 拉脱维亚 | LVA 16
-      - 🇱🇻 拉脱维亚 | LVA 17
-      - 🇱🇻 拉脱维亚 | LVA 18
-      - 🇱🇻 拉脱维亚 | LVA 19
       - 🇲🇩 摩尔多瓦 | MDA
-      - 🇲🇩 摩尔多瓦 | MDA 2
-      - 🇲🇩 摩尔多瓦 | MDA 3
-      - 🇲🇩 摩尔多瓦 | MDA 4
       - 🇳🇬 尼日利亚 | NGA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
@@ -439,12 +423,9 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 | ROU 3
       - 🇷🇴 罗马尼亚 | ROU 4
       - 🇷🇴 罗马尼亚 | ROU 5
-      - 🇷🇺 俄罗斯 | RUS
-      - 🇷🇺 俄罗斯 | RUS 2
-      - 🇸🇪 瑞典 | SWE
-      - 🇸🇪 瑞典 | SWE 2
-      - 🇸🇪 瑞典 | SWE 3
-      - 🇺🇦 乌克兰 | UKR
+      - 🇷🇴 罗马尼亚 | ROU 6
+      - 🇷🇴 罗马尼亚 | ROU 7
+      - 🇷🇴 罗马尼亚 | ROU 8
       - 🇻🇳 越南 | VNM
       - 🇻🇳 越南 | VNM 2
       - 🇻🇳 越南 | VNM 3
@@ -452,37 +433,49 @@ proxy-groups:
       - 🇻🇳 越南 | VNM 5
       - 🇻🇳 越南 | VNM 6
       - 🇻🇳 越南 | VNM 7
-      - 🇻🇳 越南 | VNM 8
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+      - 🇭🇰 香港 | HKG 8
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
       - 🇹🇼 🇨🇳 台湾 | TWN
-      - 🇹🇼 🇨🇳 台湾 | TWN 2
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+      - 🇭🇰 香港 | HKG 8
       - 🇹🇼 🇨🇳 台湾 | TWN
-      - 🇹🇼 🇨🇳 台湾 | TWN 2
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇸🇬 新加坡 | SGP 5
+      - 🇸🇬 新加坡 | SGP 6
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇯🇵 日本 | JPN 4
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
@@ -495,10 +488,11 @@ proxy-groups:
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - 🇦🇺 澳大利亚 | AUS
-      - 🇨🇾 塞浦路斯 | CYP
+      - 🇧🇷 巴西 | BRA
+      - 🇨🇦 加拿大 | CAN
       - 🇨🇿 捷克 | CZE
       - 🇨🇿 捷克 | CZE 2
+      - 🇨🇿 捷克 | CZE 3
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
@@ -506,14 +500,10 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
       - 🇩🇪 德国 | DEU 7
-      - 🇫🇮 芬兰 | FIN
       - 🇫🇷 法国 | FRA
       - 🇬🇧 英国 | GBR
       - 🇮🇳 印度 | IND
-      - 🇮🇳 印度 | IND 2
       - 🇰🇷 韩国 | KOR
-      - 🇰🇷 韩国 | KOR 2
-      - 🇰🇷 韩国 | KOR 3
       - 🇱🇹 立陶宛 | LTU
       - 🇱🇻 拉脱维亚 | LVA
       - 🇱🇻 拉脱维亚 | LVA 2
@@ -529,15 +519,7 @@ proxy-groups:
       - 🇱🇻 拉脱维亚 | LVA 12
       - 🇱🇻 拉脱维亚 | LVA 13
       - 🇱🇻 拉脱维亚 | LVA 14
-      - 🇱🇻 拉脱维亚 | LVA 15
-      - 🇱🇻 拉脱维亚 | LVA 16
-      - 🇱🇻 拉脱维亚 | LVA 17
-      - 🇱🇻 拉脱维亚 | LVA 18
-      - 🇱🇻 拉脱维亚 | LVA 19
       - 🇲🇩 摩尔多瓦 | MDA
-      - 🇲🇩 摩尔多瓦 | MDA 2
-      - 🇲🇩 摩尔多瓦 | MDA 3
-      - 🇲🇩 摩尔多瓦 | MDA 4
       - 🇳🇬 尼日利亚 | NGA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
@@ -546,12 +528,9 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 | ROU 3
       - 🇷🇴 罗马尼亚 | ROU 4
       - 🇷🇴 罗马尼亚 | ROU 5
-      - 🇷🇺 俄罗斯 | RUS
-      - 🇷🇺 俄罗斯 | RUS 2
-      - 🇸🇪 瑞典 | SWE
-      - 🇸🇪 瑞典 | SWE 2
-      - 🇸🇪 瑞典 | SWE 3
-      - 🇺🇦 乌克兰 | UKR
+      - 🇷🇴 罗马尼亚 | ROU 6
+      - 🇷🇴 罗马尼亚 | ROU 7
+      - 🇷🇴 罗马尼亚 | ROU 8
       - 🇻🇳 越南 | VNM
       - 🇻🇳 越南 | VNM 2
       - 🇻🇳 越南 | VNM 3
@@ -559,7 +538,6 @@ proxy-groups:
       - 🇻🇳 越南 | VNM 5
       - 🇻🇳 越南 | VNM 6
       - 🇻🇳 越南 | VNM 7
-      - 🇻🇳 越南 | VNM 8
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
