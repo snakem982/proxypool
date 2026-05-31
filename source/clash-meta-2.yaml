@@ -7,11 +7,10 @@ external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🇨🇦 加拿大 | CAN, server: 15.223.186.62, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇩🇪 德国 | DEU, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: aes-128-gcm, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 | DEU 2, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: aes-128-gcm, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 | DEU 3, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 | DEU 4, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: 🇰🇷 韩国 | KOR, server: 47.80.14.130, port: 443, type: vless, uuid: 3e7f67de-648e-4871-b51a-a225214d41ee, tls: true, reality-opts: {public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw}, servername: api.company-target.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇲🇾 马来西亚 | MYS, server: v29.hdacd.com, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国 | DEU 3, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇯🇵 日本 | JPN, server: 103.127.243.54, port: 53229, type: vmess, uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/ABCDE]}, udp: true}
+  - {name: 🇲🇾 马来西亚 | MYS, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇳🇿 新西兰 | NZL, server: 202.37.33.81, port: 443, type: vless, uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6, tls: true, alpn: [http/1.1], servername: m.udemy.com.cyylr.eu.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: /id-tksi, headers: {Host: m.udemy.com.cyylr.eu.cc}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
@@ -45,8 +44,7 @@ proxy-groups:
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
-      - 🇩🇪 德国 | DEU 4
-      - 🇰🇷 韩国 | KOR
+      - 🇯🇵 日本 | JPN
       - 🇲🇾 马来西亚 | MYS
       - 🇳🇿 新西兰 | NZL
   - name: 👆🏻 ‍指定
@@ -56,8 +54,7 @@ proxy-groups:
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
-      - 🇩🇪 德国 | DEU 4
-      - 🇰🇷 韩国 | KOR
+      - 🇯🇵 日本 | JPN
       - 🇲🇾 马来西亚 | MYS
       - 🇳🇿 新西兰 | NZL
   - name: 🛩️ ‍墙内
@@ -140,7 +137,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
   - name: 🇺🇸 ‍美国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -158,8 +155,6 @@ proxy-groups:
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
-      - 🇩🇪 德国 | DEU 4
-      - 🇰🇷 韩国 | KOR
       - 🇲🇾 马来西亚 | MYS
       - 🇳🇿 新西兰 | NZL
   - name: 👆🏻🇭🇰 ‍香港
@@ -181,7 +176,7 @@ proxy-groups:
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
@@ -193,8 +188,6 @@ proxy-groups:
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
-      - 🇩🇪 德国 | DEU 4
-      - 🇰🇷 韩国 | KOR
       - 🇲🇾 马来西亚 | MYS
       - 🇳🇿 新西兰 | NZL
 rules:
