@@ -5,11 +5,28 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇩🇪 德国 | DEU, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: 🇮🇩 印尼 | IDN, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇧🇪 比利时 | BEL, server: 150.251.158.76, port: 443, type: vless, uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7, tls: true, flow: xtls-rprx-vision, servername: s646.okgg.top, client-fingerprint: random, network: tcp, udp: true}
+  - {name: 🇨🇭 瑞士 | CHE, server: world.t.51guangtaobao.com, port: 2510, type: vmess, uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: aes-128-gcm, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇩🇪 德国 | DEU 3, server: 87.120.93.69, port: 443, type: vless, uuid: 2001daf3-5c56-4bef-8ea6-8dd0493c5a4c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU}, servername: www.deepl.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU 4, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇮 芬兰 | FIN, server: 109.107.182.229, port: 51544, type: ss, cipher: chacha20-ietf-poly1305, password: MZeSTvpl2uoey1R0frhPyJ, udp: true}
+  - {name: 🇬🇧 英国 | GBR, server: kobe.ns.cloudflare.com, port: 443, type: vless, uuid: e277ac9b-3225-4381-a9fb-3585419f7142, tls: true, alpn: [http/1.1], servername: 35cdnws.frnstatic.info, client-fingerprint: firefox, network: ws, ws-opts: {path: /35cdnws, headers: {Host: 35cdnws.frnstatic.info}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: 95.40.4.37, port: 2520, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 2, server: 103.149.182.79, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
+  - {name: 🇯🇵 日本 | JPN, server: 103.127.243.54, port: 53229, type: vmess, uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/ABCDE]}, udp: true}
+  - {name: 🇲🇾 马来西亚 | MYS, server: a.twodnwnpoe.xyz, port: 40017, type: trojan, password: da292191-b895-3264-b41c-200512b8f965, sni: water.waittomorrow.top, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇾 马来西亚 | MYS 2, server: a.twodnwnpoe.xyz, port: 40015, type: trojan, password: da292191-b895-3264-b41c-200512b8f965, sni: 1.lossyesterday.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇾 马来西亚 | MYS 3, server: a.twodnwnpoe.xyz, port: 52225, type: trojan, password: da292191-b895-3264-b41c-200512b8f965, sni: i.comfortableyou.top, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇾 马来西亚 | MYS 4, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: ssr2.762988.xyz, port: 33336, type: ssr, cipher: chacha20-ietf, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: "", udp: true}
   - {name: 🇳🇿 新西兰 | NZL, server: 202.37.33.81, port: 443, type: vless, uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6, tls: true, alpn: [http/1.1], servername: m.udemy.com.cyylr.eu.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: /id-tksi, headers: {Host: m.udemy.com.cyylr.eu.cc}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 | RUS, server: 85.234.114.53, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇷🇺 俄罗斯 | RUS 2, server: r1.mizulina.top, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS, server: r1.mizulina.top, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS 2, server: 85.234.114.53, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS 3, server: 217.26.24.101, port: 23151, type: vless, uuid: 9287f532-4150-48ff-a755-64b21e30e9c3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: eP0MKUFOcNVSVFbHT8GgBLP4LIHZFq8JuVGlCAlH1HI}, servername: cms-res-web.online.sberbank.ru, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS 4, server: 85.234.114.53, port: 443, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇹🇼 🇨🇳 台湾 | TWN, server: r3mrcg001269pz2.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -38,19 +55,53 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
+      - 🇧🇪 比利时 | BEL
+      - 🇨🇭 瑞士 | CHE
       - 🇩🇪 德国 | DEU
-      - 🇮🇩 印尼 | IDN
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
+      - 🇫🇮 芬兰 | FIN
+      - 🇬🇧 英国 | GBR
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇯🇵 日本 | JPN
+      - 🇲🇾 马来西亚 | MYS
+      - 🇲🇾 马来西亚 | MYS 2
+      - 🇲🇾 马来西亚 | MYS 3
+      - 🇲🇾 马来西亚 | MYS 4
+      - 🇳🇱 荷兰 | NLD
       - 🇳🇿 新西兰 | NZL
       - 🇷🇺 俄罗斯 | RUS
       - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇷🇺 俄罗斯 | RUS 4
+      - 🇹🇼 🇨🇳 台湾 | TWN
   - name: 👆🏻 ‍指定
     type: select
     proxies:
+      - 🇧🇪 比利时 | BEL
+      - 🇨🇭 瑞士 | CHE
       - 🇩🇪 德国 | DEU
-      - 🇮🇩 印尼 | IDN
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
+      - 🇫🇮 芬兰 | FIN
+      - 🇬🇧 英国 | GBR
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇯🇵 日本 | JPN
+      - 🇲🇾 马来西亚 | MYS
+      - 🇲🇾 马来西亚 | MYS 2
+      - 🇲🇾 马来西亚 | MYS 3
+      - 🇲🇾 马来西亚 | MYS 4
+      - 🇳🇱 荷兰 | NLD
       - 🇳🇿 新西兰 | NZL
       - 🇷🇺 俄罗斯 | RUS
       - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇷🇺 俄罗斯 | RUS 4
+      - 🇹🇼 🇨🇳 台湾 | TWN
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -103,21 +154,24 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇹🇼 🇨🇳 台湾 | TWN
   - name: 🇨🇳 ‍中国
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇹🇼 🇨🇳 台湾 | TWN
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -131,7 +185,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
   - name: 🇺🇸 ‍美国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -145,23 +199,39 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
+      - 🇧🇪 比利时 | BEL
+      - 🇨🇭 瑞士 | CHE
       - 🇩🇪 德国 | DEU
-      - 🇮🇩 印尼 | IDN
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
+      - 🇫🇮 芬兰 | FIN
+      - 🇬🇧 英国 | GBR
+      - 🇲🇾 马来西亚 | MYS
+      - 🇲🇾 马来西亚 | MYS 2
+      - 🇲🇾 马来西亚 | MYS 3
+      - 🇲🇾 马来西亚 | MYS 4
+      - 🇳🇱 荷兰 | NLD
       - 🇳🇿 新西兰 | NZL
       - 🇷🇺 俄罗斯 | RUS
       - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇷🇺 俄罗斯 | RUS 4
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
-      - DIRECT
+      - 🇹🇼 🇨🇳 台湾 | TWN
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇹🇼 🇨🇳 台湾 | TWN
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
@@ -169,7 +239,7 @@ proxy-groups:
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
@@ -177,11 +247,24 @@ proxy-groups:
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
+      - 🇧🇪 比利时 | BEL
+      - 🇨🇭 瑞士 | CHE
       - 🇩🇪 德国 | DEU
-      - 🇮🇩 印尼 | IDN
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
+      - 🇫🇮 芬兰 | FIN
+      - 🇬🇧 英国 | GBR
+      - 🇲🇾 马来西亚 | MYS
+      - 🇲🇾 马来西亚 | MYS 2
+      - 🇲🇾 马来西亚 | MYS 3
+      - 🇲🇾 马来西亚 | MYS 4
+      - 🇳🇱 荷兰 | NLD
       - 🇳🇿 新西兰 | NZL
       - 🇷🇺 俄罗斯 | RUS
       - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇷🇺 俄罗斯 | RUS 4
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
