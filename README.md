@@ -21,7 +21,17 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 
 | 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
 |:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
-| 1  | 3000G | 1Gbps |   1   |  1 G  | 20 GB | $21.99 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=952 "点击查看")  <br>多地区可选  |
+| 1  | 40T | 1Gbps |   1   |  1 G  | 30 GB | $10.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=153 "点击查看") <br>仅纽约地区    | 
+| 2  | 40T | 1Gbps |   1   |  1 G  | 30 GB | $11.11 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=112 "点击查看") <br>仅纽约地区    | 
+| 3  | 3000G | 1Gbps |   1   |  1 G  | 20 GB | $21.99 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=952 "点击查看")  <br>多地区可选  |
+
+以下配置推荐部署 **OpenClaw**
+
+| 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
+|:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
+| 1  | 40T | 1Gbps |   2   |  2 G  | 40 GB | $15.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=156 "点击查看") <br>仅纽约地区    | 
+| 2  | 40T | 1Gbps |   3   |  4 G  | 60 GB | $20.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=158 "点击查看") <br>仅纽约地区    | 
+| 3  | 40T | 1Gbps |   4   |  8 G  | 80 GB | $39.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=161 "点击查看") <br>仅纽约地区    |
 
 
 ## <br>订阅地址如下<br>The subscription address is as follows
