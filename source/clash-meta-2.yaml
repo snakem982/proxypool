@@ -6,6 +6,7 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🇩🇪 德国 | DEU, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: ssr2.762988.xyz, port: 33336, type: ssr, cipher: chacha20-ietf, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: "", udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -35,10 +36,12 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇳🇱 荷兰 | NLD
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇳🇱 荷兰 | NLD
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -134,6 +137,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇳🇱 荷兰 | NLD
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -162,6 +166,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇳🇱 荷兰 | NLD
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
