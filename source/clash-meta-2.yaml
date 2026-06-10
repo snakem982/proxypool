@@ -6,10 +6,13 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🇩🇪 德国 | DEU, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: 154.37.223.19, port: 56972, type: vmess, uuid: ae225455-5e8c-491d-d931-c06ac56f4aee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇯🇵 日本 | JPN, server: 54.65.58.58, port: 443, type: ss, cipher: aes-128-gcm, password: eeb6823c-b926-4ea2-866a-5542edd26e59, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: ss.hhll.qqs.me, path: "/proxyip=104.168.132.123,172.104.53.198,85.121.50.16,151.242.125.226?enc=aes-128-gcm", tls: true, mux: false}, udp: true}
   - {name: 🇳🇱 荷兰 | NLD, server: ssr2.762988.xyz, port: 33336, type: ssr, cipher: chacha20-ietf, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: "", udp: true}
   - {name: 🇷🇺 俄罗斯 | RUS, server: r1.mizulina.top, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN, server: namrcg001640lrm.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: a9a0d092-6f0e-4701-81ee-454643d6d506, udp: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN 2, server: namrcg001640lrm.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56, udp: true}
+  - {name: 🇹🇼 🇨🇳 台湾 | TWN, server: namrcg001640lrm.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56, udp: true}
+  - {name: 🇹🇼 🇨🇳 台湾 | TWN 2, server: namrcg001640lrm.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: a9a0d092-6f0e-4701-81ee-454643d6d506, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: 172.67.195.79, port: 443, type: vless, uuid: 30980fc4-8789-42df-80d1-0c8e5cd26881, tls: true, servername: cdn.veilvpn.fans, network: ws, ws-opts: {path: /vpnhu, headers: {Host: cdn.veilvpn.fans}, v2ray-http-upgrade: true}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -39,18 +42,24 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG
+      - 🇯🇵 日本 | JPN
       - 🇳🇱 荷兰 | NLD
       - 🇷🇺 俄罗斯 | RUS
       - 🇹🇼 🇨🇳 台湾 | TWN
       - 🇹🇼 🇨🇳 台湾 | TWN 2
+      - 🇺🇸 美国 | USA
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG
+      - 🇯🇵 日本 | JPN
       - 🇳🇱 荷兰 | NLD
       - 🇷🇺 俄罗斯 | RUS
       - 🇹🇼 🇨🇳 台湾 | TWN
       - 🇹🇼 🇨🇳 台湾 | TWN 2
+      - 🇺🇸 美国 | USA
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -103,7 +112,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -118,6 +127,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
+      - 🇭🇰 香港 | HKG
       - 🇹🇼 🇨🇳 台湾 | TWN
       - 🇹🇼 🇨🇳 台湾 | TWN 2
   - name: 🇸🇬 ‍新加坡
@@ -133,14 +143,14 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
   - name: 🇺🇸 ‍美国
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 15
     tolerance: 300
     proxies:
-      - DIRECT
+      - 🇺🇸 美国 | USA
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -153,7 +163,7 @@ proxy-groups:
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
@@ -162,6 +172,7 @@ proxy-groups:
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
+      - 🇭🇰 香港 | HKG
       - 🇹🇼 🇨🇳 台湾 | TWN
       - 🇹🇼 🇨🇳 台湾 | TWN 2
   - name: 👆🏻🇸🇬 ‍新加坡
@@ -171,11 +182,11 @@ proxy-groups:
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
-      - DIRECT
+      - 🇺🇸 美国 | USA
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
