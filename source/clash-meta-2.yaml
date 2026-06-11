@@ -5,9 +5,15 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇩🇪 德国 | DEU, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: 151.101.0.1, port: 80, type: vless, uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: 151.101.2.219, port: 80, type: vless, uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 3, server: 151.101.194.219, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 4, server: 167.82.0.1, port: 80, type: vless, uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 5, server: 151.101.0.1, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 6, server: speedtest.net, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 7, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: ssr2.762988.xyz, port: 33336, type: ssr, cipher: chacha20-ietf, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: "", udp: true}
   - {name: 🇷🇺 俄罗斯 | RUS, server: r1.mizulina.top, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: 172.67.195.79, port: 443, type: vless, uuid: 30980fc4-8789-42df-80d1-0c8e5cd26881, tls: true, servername: cdn.veilvpn.fans, network: ws, ws-opts: {path: /vpnhu, headers: {Host: cdn.veilvpn.fans}, v2ray-http-upgrade: true}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -37,14 +43,26 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
+      - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
+      - 🇩🇪 德国 | DEU 7
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇺 俄罗斯 | RUS
-      - 🇺🇸 美国 | USA
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
+      - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
+      - 🇩🇪 德国 | DEU 7
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇺 俄罗斯 | RUS
-      - 🇺🇸 美国 | USA
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -132,7 +150,7 @@ proxy-groups:
     interval: 15
     tolerance: 300
     proxies:
-      - 🇺🇸 美国 | USA
+      - DIRECT
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -140,6 +158,13 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
+      - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
+      - 🇩🇪 德国 | DEU 7
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇺 俄罗斯 | RUS
   - name: 👆🏻🇭🇰 ‍香港
     type: select
@@ -164,11 +189,18 @@ proxy-groups:
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
-      - 🇺🇸 美国 | USA
+      - DIRECT
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
+      - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
+      - 🇩🇪 德国 | DEU 7
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇺 俄罗斯 | RUS
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
