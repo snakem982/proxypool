@@ -5,7 +5,10 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇩🇪 德国 | DEU, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: 151.101.2.219, port: 80, type: vless, uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: 151.101.0.1, port: 80, type: vless, uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 3, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇩🇪 德国 | DEU 4, server: 199.232.197.131, port: 80, type: vless, uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -35,10 +38,16 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -134,6 +143,9 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -162,6 +174,9 @@ proxy-groups:
     type: select
     proxies:
       - 🇩🇪 德国 | DEU
+      - 🇩🇪 德国 | DEU 2
+      - 🇩🇪 德国 | DEU 3
+      - 🇩🇪 德国 | DEU 4
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
