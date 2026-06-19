@@ -33,6 +33,10 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 | 2  | 40T | 1Gbps |   3   |  4 G  | 60 GB | $20.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=158 "点击查看") <br>仅纽约地区    | 
 | 3  | 40T | 1Gbps |   4   |  8 G  | 80 GB | $39.99 |   [链接](https://cloud.colocrossing.com/aff.php?aff=821&pid=161 "点击查看") <br>仅纽约地区    |
 
+**更多vps挑选**
+
+<a href="https://my.racknerd.com/aff.php?aff=8613"><img src="https://racknerd.com/banners/320x50.gif" alt="RackNerd Mobile Leaderboard Banner" width="320" height="50"></a>
+
 
 ## <br>订阅地址如下<br>The subscription address is as follows
 
