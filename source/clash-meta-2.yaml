@@ -5,14 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇩🇪 德国 | DEU, server: 199.232.197.131, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 2, server: 151.101.194.219, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 3, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: 🇩🇪 德国 | DEU 4, server: 151.101.109.223, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 5, server: 167.82.0.1, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 6, server: speedtest.net, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 7, server: 151.101.0.1, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇩🇰 丹麦 | DNK, server: assets.trorays.com, port: 443, type: vless, uuid: b69a71ef-51dc-48c6-b3df-4c3533062606, tls: true, flow: xtls-rprx-vision, servername: assets.trorays.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 500, down: 1000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: speedtest.net, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 3, server: 151.101.0.1, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 4, server: 167.82.0.1, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 5, server: 151.101.109.223, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 6, server: 151.101.194.219, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, servername: max-gb1.global.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -47,8 +45,6 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇩🇰 丹麦 | DNK
   - name: 👆🏻 ‍指定
     type: select
     proxies:
@@ -58,8 +54,6 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇩🇰 丹麦 | DNK
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -160,8 +154,6 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇩🇰 丹麦 | DNK
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -195,8 +187,6 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇩🇰 丹麦 | DNK
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
