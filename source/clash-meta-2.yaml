@@ -5,9 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇸 美国 | USA, server: 134.195.101.118, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: 134.195.101.117, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: 134.195.101.127, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
+  - {name: 🇦🇹 奥地利 | AUT, server: iranpoems.ir, port: 443, type: trojan, password: Mitivpn, sni: www.gamingdll.ir, skip-cert-verify: false, network: ws, ws-opts: {path: /usa=mitivpn, headers: {Host: www.gamingdll.ir}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -36,15 +34,11 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🇺🇸 美国 | USA 3
+      - 🇦🇹 奥地利 | AUT
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🇺🇸 美国 | USA 3
+      - 🇦🇹 奥地利 | AUT
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -132,16 +126,14 @@ proxy-groups:
     interval: 15
     tolerance: 300
     proxies:
-      - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🇺🇸 美国 | USA 3
+      - DIRECT
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 30
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇦🇹 奥地利 | AUT
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -165,13 +157,11 @@ proxy-groups:
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
-      - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🇺🇸 美国 | USA 3
+      - DIRECT
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - DIRECT
+      - 🇦🇹 奥地利 | AUT
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
