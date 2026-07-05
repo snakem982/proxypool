@@ -6,6 +6,7 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🇭🇰 香港 | HKG, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v6.hdacd.com, udp: true}
+  - {name: 🇹🇷 土耳其 | TUR, server: auto.mhjstudio.ir, port: 443, type: trojan, password: dfdse334053vuohm, sni: alternative.mhjstudio.ir, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: alternative.mhjstudio.ir}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -35,10 +36,12 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇭🇰 香港 | HKG
+      - 🇹🇷 土耳其 | TUR
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - 🇭🇰 香港 | HKG
+      - 🇹🇷 土耳其 | TUR
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -133,7 +136,7 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇹🇷 土耳其 | TUR
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -161,7 +164,7 @@ proxy-groups:
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - DIRECT
+      - 🇹🇷 土耳其 | TUR
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
