@@ -5,13 +5,9 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇨🇦 加拿大 | CAN, server: c87s5.portablesubmarines.com, port: 18339, type: vmess, uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇫🇮 芬兰 | FIN, server: 146.75.119.82, port: 80, type: vless, uuid: 0a4695e5-7e65-4f1d-906c-d1c0618ebae9, tls: false, network: ws, ws-opts: {path: "ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048", headers: {Host: rb24.ir}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA, server: 35.180.229.83, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇬🇧 英国 | GBR, server: 82.38.31.35, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: 3.15.193.107, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: www.gov.ua, port: 8880, type: vless, uuid: da5ff974-c135-4b57-a0ff-53dd2502e71e, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.US.CMLiussss.net, headers: {Host: long-smoke-b6cb.290-cd1.workers.dev}}, udp: true}
-  - {name: 🏴‍☠️ 未知地区 | Unknown, server: 39.107.252.182, port: 443, type: vless, uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832, tls: true, servername: nbhhh.mrcool.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=Telegram-WangCai2🇨🇳, headers: {Host: nbhhh.mrcool.kdns.fr}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v6.hdacd.com, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: 39.107.252.182, port: 443, type: vless, uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832, tls: true, servername: nbhhh.mrcool.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=Telegram-WangCai2🇨🇳, headers: {Host: nbhhh.mrcool.kdns.fr}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -40,23 +36,15 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇨🇦 加拿大 | CAN
-      - 🇫🇮 芬兰 | FIN
-      - 🇫🇷 法国 | FRA
       - 🇬🇧 英国 | GBR
+      - 🇭🇰 香港 | HKG
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🏴‍☠️ 未知地区 | Unknown
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇨🇦 加拿大 | CAN
-      - 🇫🇮 芬兰 | FIN
-      - 🇫🇷 法国 | FRA
       - 🇬🇧 英国 | GBR
+      - 🇭🇰 香港 | HKG
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🏴‍☠️ 未知地区 | Unknown
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -109,7 +97,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -123,7 +111,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -145,22 +133,17 @@ proxy-groups:
     tolerance: 300
     proxies:
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 30
     tolerance: 100
     proxies:
-      - 🇨🇦 加拿大 | CAN
-      - 🇫🇮 芬兰 | FIN
-      - 🇫🇷 法国 | FRA
       - 🇬🇧 英国 | GBR
-      - 🏴‍☠️ 未知地区 | Unknown
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
@@ -168,7 +151,7 @@ proxy-groups:
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
@@ -181,15 +164,10 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - 🇨🇦 加拿大 | CAN
-      - 🇫🇮 芬兰 | FIN
-      - 🇫🇷 法国 | FRA
       - 🇬🇧 英国 | GBR
-      - 🏴‍☠️ 未知地区 | Unknown
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
