@@ -5,9 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇫🇷 法国 | FRA, server: 15.236.37.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇫🇷 法国 | FRA 2, server: 188.114.96.3, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 3, server: 45.130.125.126, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
   - {name: 🇬🇧 英国 | GBR, server: mail2.thirdpaull.monster, port: 57327, type: ss, cipher: chacha20-ietf-poly1305, password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP, udp: true}
   - {name: 🇭🇰 香港 | HKG, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v6.hdacd.com, udp: true}
   - {name: 🇰🇷 韩国 | KOR, server: 217.142.138.61, port: 80, type: vmess, uuid: ac1b933d-afff-4487-93ef-f57130a55dff, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
@@ -40,9 +37,6 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇫🇷 法国 | FRA
-      - 🇫🇷 法国 | FRA 2
-      - 🇫🇷 法国 | FRA 3
       - 🇬🇧 英国 | GBR
       - 🇭🇰 香港 | HKG
       - 🇰🇷 韩国 | KOR
@@ -50,9 +44,6 @@ proxy-groups:
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇫🇷 法国 | FRA
-      - 🇫🇷 法国 | FRA 2
-      - 🇫🇷 法国 | FRA 3
       - 🇬🇧 英国 | GBR
       - 🇭🇰 香港 | HKG
       - 🇰🇷 韩国 | KOR
@@ -151,9 +142,6 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇫🇷 法国 | FRA
-      - 🇫🇷 法国 | FRA 2
-      - 🇫🇷 法国 | FRA 3
       - 🇬🇧 英国 | GBR
       - 🇰🇷 韩国 | KOR
   - name: 👆🏻🇭🇰 ‍香港
@@ -183,9 +171,6 @@ proxy-groups:
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - 🇫🇷 法国 | FRA
-      - 🇫🇷 法国 | FRA 2
-      - 🇫🇷 法国 | FRA 3
       - 🇬🇧 英国 | GBR
       - 🇰🇷 韩国 | KOR
 rules:
