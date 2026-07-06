@@ -5,11 +5,13 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇬🇧 英国 | GBR, server: 82.38.31.35, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 🇮🇷 伊朗 | IRN, server: n4.cover20.ir, port: 19964, type: ss, cipher: chacha20-ietf-poly1305, password: zH5VwKuZuabr8Z30patq1/V8DOrIx/bHssWAmk1J51c=, udp: true}
+  - {name: 🇫🇷 法国 | FRA, server: 15.236.37.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇫🇷 法国 | FRA 2, server: 188.114.96.3, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
+  - {name: 🇫🇷 法国 | FRA 3, server: 45.130.125.126, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
+  - {name: 🇬🇧 英国 | GBR, server: mail2.thirdpaull.monster, port: 57327, type: ss, cipher: chacha20-ietf-poly1305, password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v6.hdacd.com, udp: true}
   - {name: 🇰🇷 韩国 | KOR, server: 217.142.138.61, port: 80, type: vmess, uuid: ac1b933d-afff-4487-93ef-f57130a55dff, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 🇺🇸 美国 | USA, server: tinkered-pennies-puppies.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hbGrpfvNrJsUmKmPbR3iY2, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: 39.107.252.182, port: 443, type: vless, uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832, tls: true, servername: nbhhh.mrcool.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=Telegram-WangCai2🇨🇳, headers: {Host: nbhhh.mrcool.kdns.fr}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -38,19 +40,23 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
+      - 🇫🇷 法国 | FRA
+      - 🇫🇷 法国 | FRA 2
+      - 🇫🇷 法国 | FRA 3
       - 🇬🇧 英国 | GBR
-      - 🇮🇷 伊朗 | IRN
+      - 🇭🇰 香港 | HKG
       - 🇰🇷 韩国 | KOR
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
   - name: 👆🏻 ‍指定
     type: select
     proxies:
+      - 🇫🇷 法国 | FRA
+      - 🇫🇷 法国 | FRA 2
+      - 🇫🇷 法国 | FRA 3
       - 🇬🇧 英国 | GBR
-      - 🇮🇷 伊朗 | IRN
+      - 🇭🇰 香港 | HKG
       - 🇰🇷 韩国 | KOR
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -103,7 +109,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -117,7 +123,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -139,20 +145,21 @@ proxy-groups:
     tolerance: 300
     proxies:
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 30
     tolerance: 100
     proxies:
+      - 🇫🇷 法国 | FRA
+      - 🇫🇷 法国 | FRA 2
+      - 🇫🇷 法国 | FRA 3
       - 🇬🇧 英国 | GBR
-      - 🇮🇷 伊朗 | IRN
       - 🇰🇷 韩国 | KOR
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
@@ -160,7 +167,7 @@ proxy-groups:
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
@@ -173,12 +180,13 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
+      - 🇫🇷 法国 | FRA
+      - 🇫🇷 法国 | FRA 2
+      - 🇫🇷 法国 | FRA 3
       - 🇬🇧 英国 | GBR
-      - 🇮🇷 伊朗 | IRN
       - 🇰🇷 韩国 | KOR
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
