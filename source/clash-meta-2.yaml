@@ -7,7 +7,10 @@ external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🇬🇧 英国 | GBR, server: 82.38.31.35, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
   - {name: 🇭🇰 香港 | HKG, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v6.hdacd.com, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: 39.107.252.182, port: 443, type: vless, uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832, tls: true, servername: nbhhh.mrcool.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=Telegram-WangCai2🇨🇳, headers: {Host: nbhhh.mrcool.kdns.fr}}, udp: true}
+  - {name: 🇰🇷 韩国 | KOR, server: 217.142.138.61, port: 80, type: vmess, uuid: ac1b933d-afff-4487-93ef-f57130a55dff, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: 3.17.162.229, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 美国 | USA 2, server: 39.107.252.182, port: 443, type: vless, uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832, tls: true, servername: nbhhh.mrcool.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=Telegram-WangCai2🇨🇳, headers: {Host: nbhhh.mrcool.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 3, server: tinkered-pennies-puppies.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hbGrpfvNrJsUmKmPbR3iY2, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -38,13 +41,19 @@ proxy-groups:
     proxies:
       - 🇬🇧 英国 | GBR
       - 🇭🇰 香港 | HKG
+      - 🇰🇷 韩国 | KOR
       - 🇺🇸 美国 | USA
+      - 🇺🇸 美国 | USA 2
+      - 🇺🇸 美国 | USA 3
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - 🇬🇧 英国 | GBR
       - 🇭🇰 香港 | HKG
+      - 🇰🇷 韩国 | KOR
       - 🇺🇸 美国 | USA
+      - 🇺🇸 美国 | USA 2
+      - 🇺🇸 美国 | USA 3
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -133,6 +142,8 @@ proxy-groups:
     tolerance: 300
     proxies:
       - 🇺🇸 美国 | USA
+      - 🇺🇸 美国 | USA 2
+      - 🇺🇸 美国 | USA 3
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -140,6 +151,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇬🇧 英国 | GBR
+      - 🇰🇷 韩国 | KOR
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -164,10 +176,13 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 美国 | USA
+      - 🇺🇸 美国 | USA 2
+      - 🇺🇸 美国 | USA 3
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
       - 🇬🇧 英国 | GBR
+      - 🇰🇷 韩国 | KOR
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
