@@ -5,8 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇫🇮 芬兰 | FIN, server: 109.107.182.229, port: 51544, type: ss, cipher: chacha20-ietf-poly1305, password: x3ZJXCnqxaoaAIrrkfoaNB, udp: true}
-  - {name: 🇫🇮 芬兰 | FIN 2, server: 109.107.182.229, port: 51544, type: ss, cipher: chacha20-ietf-poly1305, password: 72FligLnSYd0rNQ4WE1y7x, udp: true}
+  - {name: 🇫🇮 芬兰 | FIN, server: 109.107.182.229, port: 51544, type: ss, cipher: chacha20-ietf-poly1305, password: 72FligLnSYd0rNQ4WE1y7x, udp: true}
   - {name: 🇫🇷 法国 | FRA, server: 188.114.96.3, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
   - {name: 🇰🇷 韩国 | KOR, server: 217.142.138.61, port: 80, type: vmess, uuid: ac1b933d-afff-4487-93ef-f57130a55dff, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 🇺🇸 美国 | USA, server: tinkered-pennies-puppies.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hbGrpfvNrJsUmKmPbR3iY2, udp: true}
@@ -39,7 +38,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇫🇮 芬兰 | FIN
-      - 🇫🇮 芬兰 | FIN 2
       - 🇫🇷 法国 | FRA
       - 🇰🇷 韩国 | KOR
       - 🇺🇸 美国 | USA
@@ -47,7 +45,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇫🇮 芬兰 | FIN
-      - 🇫🇮 芬兰 | FIN 2
       - 🇫🇷 法国 | FRA
       - 🇰🇷 韩国 | KOR
       - 🇺🇸 美国 | USA
@@ -146,7 +143,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇫🇮 芬兰 | FIN
-      - 🇫🇮 芬兰 | FIN 2
       - 🇫🇷 法国 | FRA
       - 🇰🇷 韩国 | KOR
   - name: 👆🏻🇭🇰 ‍香港
@@ -177,7 +173,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇫🇮 芬兰 | FIN
-      - 🇫🇮 芬兰 | FIN 2
       - 🇫🇷 法国 | FRA
       - 🇰🇷 韩国 | KOR
 rules:
