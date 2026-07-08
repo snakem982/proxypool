@@ -5,9 +5,11 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇨🇭 瑞士 | CHE, server: jpbgp.netvigor.cc, port: 19128, type: trojan, password: OccIqeORGQwiNkwS, sni: yazhou10.dynu.net, udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: 3.66.180.209, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 | FRA, server: 13.39.139.191, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 韩国 | KOR, server: 217.142.138.61, port: 80, type: vmess, uuid: ac1b933d-afff-4487-93ef-f57130a55dff, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 🇺🇸 美国 | USA, server: tinkered-pennies-puppies.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hbGrpfvNrJsUmKmPbR3iY2, udp: true}
+  - {name: 🇺🇸 美国 | USA 2, server: 3.147.78.9, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -36,15 +38,19 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇨🇭 瑞士 | CHE
+      - 🇩🇪 德国 | DEU
+      - 🇫🇷 法国 | FRA
       - 🇰🇷 韩国 | KOR
       - 🇺🇸 美国 | USA
+      - 🇺🇸 美国 | USA 2
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇨🇭 瑞士 | CHE
+      - 🇩🇪 德国 | DEU
+      - 🇫🇷 法国 | FRA
       - 🇰🇷 韩国 | KOR
       - 🇺🇸 美国 | USA
+      - 🇺🇸 美国 | USA 2
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -133,13 +139,15 @@ proxy-groups:
     tolerance: 300
     proxies:
       - 🇺🇸 美国 | USA
+      - 🇺🇸 美国 | USA 2
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 30
     tolerance: 100
     proxies:
-      - 🇨🇭 瑞士 | CHE
+      - 🇩🇪 德国 | DEU
+      - 🇫🇷 法国 | FRA
       - 🇰🇷 韩国 | KOR
   - name: 👆🏻🇭🇰 ‍香港
     type: select
@@ -165,10 +173,12 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 美国 | USA
+      - 🇺🇸 美国 | USA 2
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - 🇨🇭 瑞士 | CHE
+      - 🇩🇪 德国 | DEU
+      - 🇫🇷 法国 | FRA
       - 🇰🇷 韩国 | KOR
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
