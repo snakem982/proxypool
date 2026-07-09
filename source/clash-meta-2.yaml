@@ -5,17 +5,21 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇦🇹 奥地利 | AUT, server: 212.183.88.136, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
   - {name: 🇩🇪 德国 | DEU, server: jason.ilovezhenjiu.top, port: 42670, type: vless, uuid: 4dbb4d3f-2b9a-45b6-b741-e839c570ffd8, tls: true, flow: xtls-rprx-vision, servername: jason.ilovezhenjiu.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD, server: classic-duckling.rooster465.autos, port: 443, type: trojan, password: XG59623478, skip-cert-verify: true, udp: true}
-  - {name: 🇵🇱 波兰 | POL, server: panel.karmatel.ir, port: 443, type: vless, uuid: 4b310d54-6938-4b89-9414-dfc7c6fdae06, tls: true, alpn: ["h2,http/1.1"], servername: dl4.karmatel.ir, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: dl4.karmatel.ir}}, udp: true}
-  - {name: 🇵🇱 波兰 | POL 2, server: panel.karmatel.ir, port: 8880, type: vless, uuid: 4b310d54-6938-4b89-9414-dfc7c6fdae06, tls: true, alpn: ["h2,http/1.1"], client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: panel.karmatel.ir}}, udp: true}
-  - {name: 🇵🇱 波兰 | POL 3, server: included-hedgehog.rooster465.autos, port: 443, type: trojan, password: XG59623478, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇮 芬兰 | FIN, server: it.fifapes.monster, port: 29148, type: vless, uuid: eab915bc-d2df-73d1-47d0-6eb240497055, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [it.fifapes.monster]}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: 16.163.129.5, port: 29443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 2, server: 18.162.148.64, port: 24370, type: trojan, password: d6788cf74e6844c45538204efd24b00f, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 3, server: 95.40.22.244, port: 34638, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 4, server: 16.163.41.98, port: 49277, type: trojan, password: d6788cf74e6844c45538204efd24b00f, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 5, server: 95.40.124.185, port: 49277, type: trojan, password: d6788cf74e6844c45538204efd24b00f, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 | HKG 6, server: 16.162.122.182, port: 45744, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇷 伊朗 | IRN, server: n2.cover20.ir, port: 13641, type: ss, cipher: chacha20-ietf-poly1305, password: 6OAqkHU/0Ad0OIzyjY1h2G+DNjoi7WEw3ZWuxpuMpFs=, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: shazira.app, port: 443, type: trojan, password: 257d8622-6701-4c98-a432-67a9696f58ae, sni: shazira.app, network: ws, ws-opts: {path: /Novan-ID9, headers: {Host: shazira.app}}, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP, server: 167.150.100.133, port: 450, type: trojan, password: 0_Oms89nH82l_Ki813_Nxmw81_Rbt_Jq190Kl_m, sni: grape-power-sg.roxa.org, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 2, server: www.ipget.net, port: 8880, type: vless, uuid: 90f0ae37-5a8f-4649-98ad-ac5323840f93, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.SG.CMLiussss.net, headers: {Host: silent-king-06b6.297-842.workers.dev}}, udp: true}
   - {name: 🇹🇷 土耳其 | TUR, server: turki.gelqino.ir, port: 17830, type: vless, uuid: e1c7f7ce-5bf8-41a8-87d5-896d2659f08a, tls: false, network: ws, ws-opts: {path: /vless, headers: {Host: turki.gelqino.ir}}, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: x4g-production-6e53.up.railway.app, port: 443, type: vless, uuid: 43dd521f-39b4-0a5d-0e67-6146c3fe5fdb, tls: true, alpn: [http/1.1], servername: x4g-production-6e53.up.railway.app, client-fingerprint: ios, network: ws, ws-opts: {path: /ws/43dd521f-39b4-0a5d-0e67-6146c3fe5fdb, headers: {Host: x4g-production-6e53.up.railway.app}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: x4g-production-5110.up.railway.app, port: 443, type: vless, uuid: 7726f5f8-eded-a25f-d5c4-55e48ae096ea, tls: true, alpn: [http/1.1], servername: x4g-production-5110.up.railway.app, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws/7726f5f8-eded-a25f-d5c4-55e48ae096ea, headers: {Host: x4g-production-5110.up.railway.app}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: novel-bat.rooster465.autos, port: 443, type: trojan, password: XG59623478, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 4, server: frank-piranha.rooster465.autos, port: 443, type: trojan, password: XG59623478, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇦 乌克兰 | UKR, server: 194.54.80.37, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: gelwvU9mUR0orEFS5D6u7A, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: tinkered-pennies-puppies.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hbGrpfvNrJsUmKmPbR3iY2, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -44,31 +48,39 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
+      - 🇫🇮 芬兰 | FIN
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇮🇷 伊朗 | IRN
       - 🇳🇱 荷兰 | NLD
-      - 🇵🇱 波兰 | POL
-      - 🇵🇱 波兰 | POL 2
-      - 🇵🇱 波兰 | POL 3
+      - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
       - 🇹🇷 土耳其 | TUR
+      - 🇺🇦 乌克兰 | UKR
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🇺🇸 美国 | USA 3
-      - 🇺🇸 美国 | USA 4
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
+      - 🇫🇮 芬兰 | FIN
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇮🇷 伊朗 | IRN
       - 🇳🇱 荷兰 | NLD
-      - 🇵🇱 波兰 | POL
-      - 🇵🇱 波兰 | POL 2
-      - 🇵🇱 波兰 | POL 3
+      - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
       - 🇹🇷 土耳其 | TUR
+      - 🇺🇦 乌克兰 | UKR
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🇺🇸 美国 | USA 3
-      - 🇺🇸 美国 | USA 4
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -121,7 +133,12 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -135,14 +152,20 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
   - name: 🇯🇵 ‍日本
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -157,26 +180,27 @@ proxy-groups:
     tolerance: 300
     proxies:
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🇺🇸 美国 | USA 3
-      - 🇺🇸 美国 | USA 4
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 30
     tolerance: 100
     proxies:
-      - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
+      - 🇫🇮 芬兰 | FIN
+      - 🇮🇷 伊朗 | IRN
       - 🇳🇱 荷兰 | NLD
-      - 🇵🇱 波兰 | POL
-      - 🇵🇱 波兰 | POL 2
-      - 🇵🇱 波兰 | POL 3
       - 🇹🇷 土耳其 | TUR
+      - 🇺🇦 乌克兰 | UKR
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
@@ -184,11 +208,17 @@ proxy-groups:
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港 | HKG
+      - 🇭🇰 香港 | HKG 2
+      - 🇭🇰 香港 | HKG 3
+      - 🇭🇰 香港 | HKG 4
+      - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
@@ -197,19 +227,15 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA 2
-      - 🇺🇸 美国 | USA 3
-      - 🇺🇸 美国 | USA 4
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
+      - 🇫🇮 芬兰 | FIN
+      - 🇮🇷 伊朗 | IRN
       - 🇳🇱 荷兰 | NLD
-      - 🇵🇱 波兰 | POL
-      - 🇵🇱 波兰 | POL 2
-      - 🇵🇱 波兰 | POL 3
       - 🇹🇷 土耳其 | TUR
+      - 🇺🇦 乌克兰 | UKR
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
