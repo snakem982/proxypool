@@ -32,7 +32,6 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 
 ### clash.meta/mihomo
 
-https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
 
 ### v2ray
