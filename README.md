@@ -3,9 +3,10 @@
 ![Static Badge](https://img.shields.io/badge/ss|ssr|vmess|vless|trojan-free-orange)
 ![Static Badge](https://img.shields.io/badge/tuic|hysteria|hysteria2-free-orange)
 
-Mihomo 节点池.
-<br/>
+
 每天 8点/12点/18点/22点 15分 更新节点信息
+<br>
+节点协议类型：ss,vless,hysteria2,anytls,mieru,hystertia,vmess,trojan
 
 ## 温馨提示
 
