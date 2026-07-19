@@ -25,7 +25,19 @@ The following is a self-built node cost-effective cloud server recommendation:<b
 
 **更多vps挑选**
 
-<a href="https://my.racknerd.com/aff.php?aff=8613"><img src="https://racknerd.com/banners/320x50.gif" alt="RackNerd Mobile Leaderboard Banner" width="320" height="50"></a>
+<a href="https://my.racknerd.com/aff.php?aff=8613"><img src="https://racknerd.com/banners/320x50.gif" alt="RackNerd Mobile Leaderboard Banner" width="320" height="50"></a>  
+<br>
+<a href="https://cloud.colocrossing.com/aff.php?aff=821">
+  <img src="https://www.colocrossing.com/wp-content/uploads/2017/07/colo-website-logo.svg"
+       alt="ColoCrossing"
+       height="50"
+       style="width:auto;">
+</a>
+<br>
+<br>
+<a href="https://app.cloudcone.com/?ref=11078">
+<img src="https://www.cloudcone.com/wp-content/uploads/2021/03/Banner_2-468-x-60.png" width="320" height="50">
+</a>
 
 
 ## <br>订阅地址如下<br>The subscription address is as follows
