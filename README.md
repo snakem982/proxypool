@@ -6,7 +6,7 @@
 
 每天 8点/12点/18点/22点 15分 更新节点信息
 <br>
-节点协议类型：ss,vless,hysteria2,anytls,mieru,hystertia,vmess,trojan
+节点协议类型：ss,vless,hysteria2,anytls,mieru,hystertia,vmess,trojan,tuic
 
 ## 温馨提示
 
