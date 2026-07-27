@@ -48,6 +48,15 @@ https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.y
 
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt
 
+### sing-box
+
+https://raw.githubusercontent.com/snakem982/proxypool/main/source/sing-box-2.json
+
+### quantumult x
+
+https://raw.githubusercontent.com/snakem982/proxypool/main/source/quan-x-2.conf
+
+
 ## <br>免责声明 <br/>
 
 该项目仅供个人和教育用途。
