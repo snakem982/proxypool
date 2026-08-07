@@ -38,19 +38,21 @@ https://saily.com  &emsp;优惠推荐码：GESHUO4139
 
 ### mihomo
 
-https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
+源地址 `https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml`
+
+短地址·有缓存 `https://orp.ryzn.pro/clash-meta-2.yaml`
 
 ### v2ray
 
-https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt
+源地址 `https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt`
+
+短地址·有缓存 `https://orp.ryzn.pro/v2ray-2.txt`
 
 ### sing-box
 
-https://raw.githubusercontent.com/snakem982/proxypool/main/source/sing-box-2.json
+源地址 `https://raw.githubusercontent.com/snakem982/proxypool/main/source/sing-box-2.json`
 
-### quantumult x
-
-https://raw.githubusercontent.com/snakem982/proxypool/main/source/quan-x-2.conf
+短地址·有缓存 `https://orp.ryzn.pro/sing-box-2.json`
 
 
 ## <br>免责声明 <br/>
