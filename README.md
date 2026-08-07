@@ -43,7 +43,12 @@ https://saily.com  &emsp;优惠推荐码：GESHUO4139
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
 ```
 
-短地址·有缓存 
+短地址·稳定
+``` 
+https://kui.sryze.cc/clash-meta-2.yaml 
+```
+
+短地址·备用
 ``` 
 https://orp.ryzn.pro/clash-meta-2.yaml 
 ```
@@ -55,7 +60,12 @@ https://orp.ryzn.pro/clash-meta-2.yaml
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt
 ```
 
-短地址·有缓存 
+短地址·稳定 
+```
+https://kui.sryze.cc/v2ray-2.txt
+```
+
+短地址·备用 
 ```
 https://orp.ryzn.pro/v2ray-2.txt
 ```
@@ -67,7 +77,12 @@ https://orp.ryzn.pro/v2ray-2.txt
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/sing-box-2.json
 ```
 
-短地址·有缓存 
+短地址·稳定 
+```
+https://kui.sryze.cc/sing-box-2.json
+```
+
+短地址·备用 
 ```
 https://orp.ryzn.pro/sing-box-2.json
 ```
