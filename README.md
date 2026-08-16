@@ -1,40 +1,47 @@
-# ProxyPool
+# ProxyPool 
+![Static Badge](https://img.shields.io/badge/ss|ssr|vmess|vless|trojan-free-orange) ![Static Badge](https://img.shields.io/badge/tuic|hysteria|hysteria2-free-orange)
 
-![Static Badge](https://img.shields.io/badge/ss|ssr|vmess|vless|trojan-free-orange)
-![Static Badge](https://img.shields.io/badge/tuic|hysteria|hysteria2-free-orange)
-
-
-每天 **8点 / 12点 / 18点 / 22点** 15分 自动更新节点信息
-
+每天 **8点 / 12点 / 18点 / 22点** 15分 自动更新节点信息  
 **支持协议**: `ss` · `vless` · `hysteria2` · `anytls` · `mieru` · `hysteria` · `vmess` · `trojan` · `tuic`
 
-## <br>温馨提示
-> ⚠️ 节点均来自公开在互联网上的信息，不保证财产信息安全和网络稳定性
-
-若要持续、稳定、安全、高速的节点，建议 **自建 VPS 节点**
-
-下面是免实名免备案的高性价比 **美国** 云服务器 VPS 推荐：<br/>
 
 
-| 序号 | 流量/月  |  网速   | CPU核数 | 运行内存  |  硬盘   |  美元/年  |                                查看详情                                |
-|:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|:------------------------------------------------------------------:|
-| 1  | 1000G | 1Gbps |   1   |  768 M  | 10 GB | $10.18 |   [链接](https://billing.dedirock.com/aff.php?aff=870&pid=90 "点击查看")   |
-| 2  | 1000G | 1Gbps |   1   |  1 G  | 10 GB | $10.88 |   [链接](https://billing.dedirock.com/aff.php?aff=870&pid=125 "点击查看")   |
-| 3  | 750G | 1Gbps |   1   |  1 G  | 20 GB | $13.88 |   [链接](https://billing.dedirock.com/aff.php?aff=870&pid=112 "点击查看")   |
-| 4  | 4000G | 1Gbps |   1   |  1 G  | 25 GB | $18.28 |   [链接](https://app.cloudcone.com/vps/522/create?token=bday26-vps-1&ref=11078 "点击查看")   |
-| 5  | 3000G | 1Gbps |   1   |  1 G  | 20 GB | $21.99 |   [链接](https://my.racknerd.com/aff.php?aff=8613&pid=952 "点击查看")   |
+## 进阶推荐：自建独享节点
 
-**更多vps挑选** 
-> 🌐 推广链接可能产生少量收益以维持本项目的运营与节点更新
-<br>
+> ⚠️ **温馨提示**：公开节点由程序自动抓取，**不保证网络稳定性和财产安全**。  
 
-|  品牌 | 简介  |
-|:--:|:-----:|
-| <a href="https://my.racknerd.com/aff.php?aff=8613"><img src="https://racknerd.com/banners/320x50.gif" alt="RackNerd Mobile Leaderboard Banner" width="320" height="50"></a>   | 后台服务优化好，地区选择多，可适配各种网络运营商 |
-| <a href="https://cloud.colocrossing.com/aff.php?aff=821"><img src="https://www.colocrossing.com/wp-content/uploads/2017/07/colo-website-logo.svg" alt="ColoCrossing" height="50" style="width:auto;"></a>   | 源物理机房提供商，流量充足 |
-| <a href="https://app.cloudcone.com/?ref=11078"><img src="https://www.cloudcone.com/wp-content/uploads/2021/03/Banner_2-468-x-60.png" width="320" height="50"></a>  | 国内线路优化好，自带免费ipv6地址 |
+如果你需要 **稳定不卡顿、IP 干净、低延迟** 的长期体验，
 
-## <br>订阅地址
+强烈建议 **自建专属 VPS 节点**（免实名/免备案/支持支付宝&PayPal）：
+
+### 🔥 高性价比 VPS 精选（美国机房）
+
+| 序号 | 月流量 | 带宽 | 配置 | 价格 | 推荐说明与选购 |
+| :---: | :---: | :---: | :---: | :---: | :--- |
+| **1** | 1000G | 1Gbps | 1核 / 768M / 10G SSD | **$10.18/年** | [👉 抢购低价入门款](https://billing.dedirock.com/aff.php?aff=870&pid=90 "点击抢购") *(小白试水首选)* |
+| **2** | 1000G | 1Gbps | 1核 / 1G / 10G SSD | **$10.88/年** | [👉 抢购 1G 内存款](https://billing.dedirock.com/aff.php?aff=870&pid=125 "点击抢购") *(性能更稳定)* |
+| **3** | 750G | 1Gbps | 1核 / 1G / 20G SSD | **$13.88/年** | [👉 抢购 20G 大硬盘款](https://billing.dedirock.com/aff.php?aff=870&pid=112 "点击抢购") *(性价比之王)* |
+| **4** | 4000G | 1Gbps | 1核 / 1G / 25G SSD | **$18.28/年** | [👉 抢购 CloudCone 限量版](https://app.cloudcone.com/vps/522/create?token=bday26-vps-1&ref=11078 "点击抢购") *(大流量首选)* |
+| **5** | 3000G | 1Gbps | 1核 / 1G / 20G SSD | **$21.99/年** | [👉 抢购 RackNerd 爆款](https://my.racknerd.com/aff.php?aff=8613&pid=952 "点击抢购") *(老牌厂商，稳定)* |
+
+
+
+### 🌐 优质 VPS 服务商直达
+
+| 品牌 | 主打优势 / 特色 | 直达链接 |
+| :--- | :--- | :---: |
+| **RackNerd** | 价格极低、后台优化好、机房选择多，国内适配优秀 | [前往选购 👉](https://my.racknerd.com/aff.php?aff=8613) |
+| **CloudCone** | 线路优化佳、按小时计费、免费自带 IPv6 地址 | [前往选购 👉](https://app.cloudcone.com/?ref=11078) |
+| **ColoCrossing**| 源头物理机房服务商、大带宽、流量充足保证 | [前往选购 👉](https://cloud.colocrossing.com/aff.php?aff=821) |
+
+
+> 📢 *说明：通过上述推广链接购买可能产生少量收益，用于维持本节点的日常自动化检测与服务器续费维护。*
+
+
+
+## 订阅地址
+
+> 💡 **提示**：公网免费节点随时可能被封锁，建议配合上方 VPS 自建备用节点。
 
 ### mihomo
 
