@@ -5,68 +5,70 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇧🇪 比利时 | BEL, server: 45.12.30.40, port: 8880, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vms.lifetime28.workers.dev}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU, server: 45.144.54.2, port: 443, type: vless, uuid: 729425fa-585b-458e-841a-ea30872d4ac2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118, short-id: "940dbf5b" }, servername: www.uva.nl, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 | DEU 2, server: 65.109.193.102, port: 9090, type: vless, uuid: 5e03bdbb-cb39-4c6e-8ee5-eb549b5e7a70, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [play-apps-features.googleusercontent.com]}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 3, server: 31.76.111.192, port: 443, type: vless, uuid: 24b84bd3-baa3-4192-9625-23c9690ae6f6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bPrWBtA93mdiJHxFvwR0JqCaJ-Kv1AGs6LP6elikcXQ, short-id: "ff3fc136afdec400" }, servername: ge1.gleb.space, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 | DEU 4, server: 64.226.95.244, port: 2096, type: vless, uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b, tls: true, servername: cf3.schzyc.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=ProxyIP.CMLiussss.net, headers: {Host: cf3.schzyc.cc.cd}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 5, server: 63.180.252.123, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇩🇪 德国 | DEU 6, server: k2.cloud--vpn.site, port: 443, type: vless, uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9, tls: true, alpn: [h2], servername: ssl.fastly.com, client-fingerprint: firefox, network: ws, ws-opts: {path: /, headers: {Host: c12.com}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 7, server: 142.93.102.145, port: 440, type: vless, uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [store.steampowered.com]}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 8, server: a2.arshia-nova.ir, port: 443, type: vless, uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9, tls: true, alpn: [h2], servername: ssl.fastly.com, client-fingerprint: firefox, network: ws, ws-opts: {path: /, headers: {Host: c12.com}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 9, server: 172.67.79.160, port: 2087, type: vless, uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23, tls: true, servername: cvhpyn.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /fp=chrome, headers: {Host: cvhpyn.pages.dev}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 10, server: 212.16.92.111, port: 443, type: vless, uuid: 32721515-985b-4773-9e70-5d2e1b88a060, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc}, servername: jobinvest.ru, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 | DEU 11, server: 138.124.80.245, port: 443, type: vless, uuid: eb0e3aec-f67f-4fa2-8577-b0bff0484e77, tls: true, reality-opts: {public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg, short-id: "f79448a30d" }, servername: sstats.vk-portal.net, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /assets/v2/pkg, host: sstats.vk-portal.net}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 12, server: 130.61.114.207, port: 59924, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: UcnlHOpHlHUejLfgqFfISWebKoZl4ngC58AQM/e/So0=, udp: true}
-  - {name: 🇪🇪 爱沙尼亚 | EST, server: 94.183.170.147, port: 8443, type: vless, uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1, tls: true, reality-opts: {public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg, short-id: "72ccd4a7563c2953" }, servername: www.cloudflare.com, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: 9d30d49278}, udp: true}
-  - {name: 🇫🇷 法国 | FRA, server: 104.18.152.179, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 2, server: 104.18.152.207, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 3, server: 104.18.152.244, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 4, server: 104.16.174.71, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 5, server: 104.18.152.108, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 6, server: 104.18.152.155, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 7, server: 104.20.6.134, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 8, server: 104.18.152.161, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 9, server: 104.16.174.22, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 10, server: 172.67.74.2, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 11, server: 104.17.111.8, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 12, server: 104.18.152.204, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 13, server: 104.16.174.34, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 14, server: fr.masterpgd.com, port: 6010, type: vless, uuid: d2bf8658-06dc-4462-80d4-39c5c3bb0dd8, tls: false, encryption: mlkem768x25519plus.random.0rtt.4ZiK3Dv6QqgU4hTboAe80H0CPJ6KV_GUdsjOCLY3UlA, network: xhttp, xhttp-opts: {path: /assets, host: myket.ir, mode: stream-up}, udp: true}
-  - {name: 🇫🇷 法国 | FRA 15, server: 104.18.152.233, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇬🇧 英国 | GBR, server: 134.65.58.241, port: 61312, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: tvpBo/Hcvix3GwQ1duILnBX2njevG6/K/mhs9ow4vuI=, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD, server: 92.5.225.140, port: 45819, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: SPNWAgF2AWO6KZhUhtr+KvkeClPO9K5Ys/vI45HtYEw=}
-  - {name: 🇳🇱 荷兰 | NLD 2, server: 158.101.193.0, port: 45819, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: NhI8UUsxcCRH8PLCcp5/hOdrU5cJNByixTd0HsB15LE=}
-  - {name: 🇳🇱 荷兰 | NLD 3, server: www.5h.com, port: 443, type: vless, uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805, tls: true, servername: youxuanku.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: youxuanku.kdns.fr}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 4, server: 141.148.241.198, port: 62145, type: vless, uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a, tls: false, network: tcp}
-  - {name: 🇳🇱 荷兰 | NLD 5, server: 188.72.103.4, port: 443, type: vless, uuid: 49610261-05c0-4bbd-a59f-9045fbb79595, tls: true, alpn: [h2, http/1.1], servername: x1.astrav2.online, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /static/js/app-8d2f/, host: x1.astrav2.online, mode: packet-up, seq-key: part_index, seq-placement: cookie, session-key: token, session-placement: header, uplink-data-placement: body, uplink-http-method: GET, x-padding-bytes: 96-1040, x-padding-header: X-Media-Token, x-padding-key: _t, x-padding-method: tokenish, x-padding-obfs-mode: true, x-padding-placement: queryInHeader}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 6, server: 172.67.183.52, port: 80, type: vless, uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856, tls: false, network: ws, ws-opts: {path: "/vl/2INL39K32mKsOBKt?ed=2560", headers: {Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 7, server: 188.72.103.4, port: 443, type: vless, uuid: eb7805c0-b0c2-4f66-9f0e-2796fd38fe51, tls: true, alpn: [h2, http/1.1], servername: x1.astrav2.online, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /static/js/app-8d2f/, host: x1.astrav2.online, mode: packet-up, seq-key: part_index, seq-placement: cookie, session-key: token, session-placement: header, uplink-data-placement: body, uplink-http-method: GET, x-padding-bytes: 96-1040, x-padding-header: X-Media-Token, x-padding-key: _t, x-padding-method: tokenish, x-padding-obfs-mode: true, x-padding-placement: queryInHeader}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 8, server: 104.21.56.90, port: 80, type: vless, uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856, tls: false, network: ws, ws-opts: {path: "/vl/2INL39K32mKsOBKt?ed=2560", headers: {Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 9, server: 188.72.103.4, port: 443, type: vless, uuid: c6972e3b-2140-4368-8c0f-19a7afa201ce, tls: true, alpn: [h2, http/1.1], servername: x1.astrav2.online, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /static/js/app-8d2f/, host: x1.astrav2.online, mode: packet-up, seq-key: part_index, seq-placement: cookie, session-key: token, session-placement: header, uplink-data-placement: body, uplink-http-method: GET, x-padding-bytes: 96-1040, x-padding-header: X-Media-Token, x-padding-key: _t, x-padding-method: tokenish, x-padding-obfs-mode: true, x-padding-placement: queryInHeader}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 10, server: 104.21.44.253, port: 8080, type: vless, uuid: c6ba83a7-c4b5-481f-8f71-0f17deff0bf2, tls: false, network: ws, ws-opts: {path: /eyJqdW5rIjoiOUhPbnRlV0xaekI1cjciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=, headers: {Host: billowing-sunset-e340.qaraatayi.workers.dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 11, server: 188.114.97.2, port: 2086, type: vless, uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856, tls: false, network: ws, ws-opts: {path: "/vl/ikccafxfZ8tDV11MQjtVmuGhgJbO8?ed=2560", headers: {Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 12, server: 172.67.203.138, port: 8080, type: vless, uuid: 015fada5-2c95-4251-9c58-39fa3abf1e24, tls: false, servername: 172.67.203.138, network: ws, ws-opts: {path: "/eyJqdW5rIjoidzY2QTdySkdOeiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560", headers: {Host: server17.peekconfig1.workers.dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 13, server: 188.72.103.4, port: 443, type: vless, uuid: 7b8b188e-b587-47d4-8131-c15461511e3b, tls: true, alpn: [h2, http/1.1], servername: x1.astrav2.online, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /static/js/app-8d2f/, host: x1.astrav2.online, mode: packet-up, seq-key: part_index, seq-placement: cookie, session-key: token, session-placement: header, uplink-data-placement: body, uplink-http-method: GET, x-padding-bytes: 96-1040, x-padding-header: X-Media-Token, x-padding-key: _t, x-padding-method: tokenish, x-padding-obfs-mode: true, x-padding-placement: queryInHeader}, udp: true}
-  - {name: 🇷🇴 罗马尼亚 | ROU, server: 146.70.124.85, port: 443, type: vless, uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE, short-id: "fe24f8a0a560056e" }, servername: www.datadoghq.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP, server: 172.64.146.211, port: 2096, type: vless, uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2, tls: true, servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc}}, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: 104.18.152.219, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: 188.114.97.7, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: 104.16.174.36, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 4, server: starlink-ft.251313.xyz, port: 443, type: hysteria2, password: https://xship.2fa.cat, auth: https://xship.2fa.cat, sni: xship.top, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 5, server: 141.101.120.231, port: 443, type: vless, uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e, tls: true, servername: nahan-fog-af01.dfghttr2012.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /sync, headers: {Host: nahan-fog-af01.dfghttr2012.workers.dev}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 6, server: vpn-us-006.fastervpn.world, port: 443, type: hysteria2, password: H7mP2xY9kJ4nQ8wR5tF6vB3z, auth: H7mP2xY9kJ4nQ8wR5tF6vB3z, sni: vpn-us-006.fastervpn.world, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 | USA 7, server: www.speedtest.net, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 8, server: 139.64.235.77, port: 443, type: vless, uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79, tls: true, servername: nb.lovecf.ggff.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=us.xiabibi.cf, headers: {Host: nb.lovecf.ggff.net}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 9, server: 3.144.113.215, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 美国 | USA 10, server: 172.64.146.211, port: 2083, type: vless, uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2, tls: true, servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 11, server: 141.101.90.101, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 12, server: 104.21.16.74, port: 443, type: vless, uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38, tls: true, servername: 0-m13.378Bb7Ff-11cf-4daD-b89E-72538aC75e29.Kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /ED3ZQPu7lqyeDGD58KabZ, headers: {Host: 0-m13.378Bb7ff-11CF-4dAD-B89E-72538AC75e29.KDNS.Fr}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 13, server: 172.64.146.228, port: 443, type: vless, uuid: 91d28760-ecf1-450b-9170-d310111a0e6d, tls: true, alpn: [http/1.1], servername: edfc774f.69lover.site, client-fingerprint: chrome, network: ws, ws-opts: {path: /api/v2/63e9687fa53e441c/stream, headers: {Host: edfc774f.69lover.site}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 14, server: 104.18.152.210, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 15, server: 176.109.104.195, port: 9873, type: vless, uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef, tls: true, reality-opts: {public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU, short-id: "aabb" }, servername: dl.google.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-tunnel}, udp: true}
-  - {name: 🇺🇸 美国 | USA 16, server: 104.16.174.101, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 17, server: 18.191.174.144, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇩🇪 德国 | DEU, server: 212.16.92.122, port: 443, type: vless, uuid: 32721515-985b-4773-9e70-5d2e1b88a060, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc}, servername: jobinvest.ru, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: 130.61.146.13, port: 59924, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: oB5H6Y/UUhmW9lutHBne3Cwf6ZBPaKa1vKBj+FHQsYo=}
+  - {name: 🇩🇪 德国 | DEU 3, server: 212.16.92.111, port: 443, type: vless, uuid: 32721515-985b-4773-9e70-5d2e1b88a060, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc}, servername: jobinvest.ru, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU 4, server: fxe3.sorixset.ir, port: 443, type: vless, uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78, tls: true, servername: global.fastly.com, client-fingerprint: firefox, network: ws, ws-opts: {path: /, headers: {Host: kayko.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 5, server: 130.61.233.195, port: 59924, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: 206p+8yXIkZTh4Sz62OJgcjrqeEAYasCvyOudfq+pMI=}
+  - {name: 🇩🇪 德国 | DEU 6, server: 138.124.80.245, port: 443, type: vless, uuid: eb0e3aec-f67f-4fa2-8577-b0bff0484e77, tls: true, reality-opts: {public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg, short-id: "f79448a30d" }, servername: sstats.vk-portal.net, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /assets/v2/pkg, host: sstats.vk-portal.net}, udp: true}
+  - {name: 🇩🇰 丹麦 | DNK, server: se.xiaoliyu.cyou, port: 4433, type: hysteria2, password: 19f72087-4591-4d72-930b-2697078ec2be, auth: 19f72087-4591-4d72-930b-2697078ec2be, skip-cert-verify: true}
+  - {name: 🇫🇷 法国 | FRA, server: 104.18.152.152, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇫🇷 法国 | FRA 2, server: 62.109.5.156, port: 443, type: vless, uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f, tls: true, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc}, servername: id.vk.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: vless-grpc-reality}, udp: true}
+  - {name: 🇫🇷 法国 | FRA 3, server: 104.16.7.70, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇫🇷 法国 | FRA 4, server: 104.18.152.77, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇫🇷 法国 | FRA 5, server: 104.21.8.107, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, alpn: [h3, h2, http/1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇬🇧 英国 | GBR, server: 129.151.64.102, port: 61312, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: bZtYdV6c3t+mqgvUvrzHYYjN01dNa77xEXsSCg+IlNs=, udp: true}
+  - {name: 🇯🇵 日本 | JPN, server: freev2.cloudflare.182682.xyz, port: 443, type: vless, uuid: afc4e46d-9720-4355-93aa-ba7f892c857e, tls: true, servername: jp-osa.xhs152.shop, client-fingerprint: random, network: ws, ws-opts: {path: "/announcement?ed=2048", headers: {Host: jp-osa.xhs152.shop}}, udp: true}
+  - {name: 🇯🇵 日本 | JPN 2, server: 172.64.52.27, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇯🇵 日本 | JPN 3, server: 172.64.52.127, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇰🇷 韩国 | KOR, server: 47.80.62.71, port: 443, type: hysteria2, password: 63e0cc6aa9222d81c2ed49f5e34e8c09, auth: 63e0cc6aa9222d81c2ed49f5e34e8c09, sni: 47.80.62.71, skip-cert-verify: true, obfs: salamander, obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 2, server: 47.80.62.71, port: 443, type: vless, uuid: 0d4cb711-c030-4f13-adf5-6a72dab4121c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: AT4sr3XkuNa7QewDoScx7NnPTCa-Z6o_7ccPgivVDSQ, short-id: "0b674631d5fc6b93" }, servername: www.nvidia.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 3, server: 47.80.62.188, port: 443, type: vless, uuid: e85ca8bc-21a5-418d-a639-00236f0c3d81, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: an8lRnGRbCvX-GW3zuc5woB6hrTxEhfyrGCv-7_QyVo, short-id: "b229991df62826cc" }, servername: www.nvidia.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: 188.72.103.4, port: 443, type: vless, uuid: 7189510e-bcc1-4153-bc46-ee5406415fdc, tls: true, alpn: [h2, http/1.1], servername: x1.astrav2.online, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /static/js/app-8d2f/, host: x1.astrav2.online, mode: packet-up, seq-key: part_index, seq-placement: cookie, session-key: token, session-placement: header, uplink-data-placement: body, uplink-http-method: GET, x-padding-bytes: 96-1040, x-padding-header: X-Media-Token, x-padding-key: _t, x-padding-method: tokenish, x-padding-obfs-mode: true, x-padding-placement: queryInHeader}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 2, server: 188.72.103.4, port: 443, type: vless, uuid: c6972e3b-2140-4368-8c0f-19a7afa201ce, tls: true, alpn: [h2, http/1.1], servername: x1.astrav2.online, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /static/js/app-8d2f/, host: x1.astrav2.online, mode: packet-up, seq-key: part_index, seq-placement: cookie, session-key: token, session-placement: header, uplink-data-placement: body, uplink-http-method: GET, x-padding-bytes: 96-1040, x-padding-header: X-Media-Token, x-padding-key: _t, x-padding-method: tokenish, x-padding-obfs-mode: true, x-padding-placement: queryInHeader}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 3, server: 143.246.183.54, port: 443, type: vless, uuid: 2188aab7-2881-4255-bd66-b592b5e072d5, tls: true, reality-opts: {public-key: sKECKPfQ7ZxLbK30OlF0BcJVD3FQn1AaDvhHlLl6bD4, short-id: "98b0f731bc50febd" }, servername: help.steampowered.com, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /cfa95b9b55a25dd513840e29, host: help.steampowered.com}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 4, server: 188.114.97.3, port: 2096, type: vless, uuid: 50414e45-4c5f-5a45-5553-6f51879c0594, tls: true, servername: levikoconfig.levikogjgfdd.ir, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: levikoconfig.levikogjgfdd.ir}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 5, server: 153.76.122.115, port: 443, type: vless, uuid: 2188aab7-2881-4255-bd66-b592b5e072d5, tls: true, reality-opts: {public-key: ZE537vq2nRxiX6jCFAVdtYU9oCXuwWopKQgrEYiedxM, short-id: "71ae51b99213e31b" }, servername: help.steampowered.com, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /d9e08ee78aa43e3b8f05b68e, host: help.steampowered.com}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 6, server: 158.101.198.141, port: 45819, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: i1xl02ZVZV9rkWL9MlO0Gk4LoSKnPVCELZudq6DMhP4=, udp: true}
+  - {name: 🇷🇸 塞尔维亚 | SRB, server: 188.255.156.202, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS, server: ru.xiaoliyu.cyou, port: 4433, type: hysteria2, password: 19f72087-4591-4d72-930b-2697078ec2be, auth: 19f72087-4591-4d72-930b-2697078ec2be, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡 | SGP, server: 129.150.52.139, port: 56927, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: cAUXme9Y9EAWi28SXTU+es4KTr42+2hpNvFd7VohRO8=}
+  - {name: 🇸🇬 新加坡 | SGP 2, server: 172.64.48.226, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP 3, server: cf3.danfeng.eu.org, port: 8443, type: vless, uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63, tls: true, servername: vip.868068.xyz, client-fingerprint: random, network: ws, ws-opts: {path: /proxyip=us.xiabibi.cf, headers: {Host: vip.868068.xyz}}}
+  - {name: 🇸🇬 新加坡 | SGP 4, server: ct.877774.xyz, port: 443, type: vless, uuid: afc4e46d-9720-4355-93aa-ba7f892c857e, tls: true, servername: ap-south.xhs152.shop, client-fingerprint: random, network: ws, ws-opts: {path: "/announcement?ed=2048", headers: {Host: ap-south.xhs152.shop}}, udp: true}
+  - {name: 🇹🇷 土耳其 | TUR, server: 104.21.51.132, port: 8080, type: vless, uuid: 466e1cca-4892-4723-be2e-98e2e1c4fbfa, tls: false, encryption: mlkem768x25519plus.native.0rtt.kb4hYiGUKg5WzaQoI-0tORczqrfOJRdLGdeU8JAX2U4, network: ws, ws-opts: {path: /play, headers: {Host: tr-ht21.th3store.ir}, v2ray-http-upgrade: true}, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: anytls2.864106.xyz, port: 19000, type: anytls, password: github.com/Alvin9999-newpac/fanqiang, udp: true, sni: anytls2.864106.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 | USA 2, server: 104.16.65.1, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 3, server: utfdsaeu965-production.up.railway.app, port: 443, type: vless, uuid: 9bd0b8d4-f126-e6fc-58ee-48a90fac2287, tls: true, alpn: [h2], servername: utfdsaeu965-production.up.railway.app, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws/9bd0b8d4-f126-e6fc-58ee-48a90fac2287, headers: {Host: utfdsaeu965-production.up.railway.app}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 4, server: 104.18.22.63, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 5, server: 172.64.144.66, port: 8443, type: vless, uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2, tls: true, servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 6, server: 104.18.242.3, port: 443, type: vless, uuid: 44eae030-290b-4083-8102-6f8bab05701b, tls: true, servername: cfvvv-ev1.pages.dev, client-fingerprint: unsafe, network: ws, ws-opts: {path: /, headers: {Host: cfvvv-ev1.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 7, server: 104.16.73.213, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 8, server: 129.146.61.109, port: 50356, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: 7o6yLRjghychuBmpkqI4TIDe5EDz7s0lp4EPU31FcwE=, udp: true}
+  - {name: 🇺🇸 美国 | USA 9, server: 104.18.34.245, port: 8880, type: vless, uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.KR.CMLiussss.net, headers: {Host: dawn-waterfall-6052.360-001.workers.dev}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 10, server: 129.146.126.143, port: 50356, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: v4eJ0V/39Gc9d/tSDT8Z5MMSWtDpckxKTiDIKPUD0uU=, udp: true}
+  - {name: 🇺🇸 美国 | USA 11, server: 104.16.174.101, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 12, server: 104.16.174.44, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 13, server: 172.64.153.3, port: 443, type: vless, uuid: e85ca8bc-21a5-418d-a639-00236f0c3d81, tls: true, alpn: [http/1.1], servername: d9a9ecdf.69lover.site, client-fingerprint: chrome, network: ws, ws-opts: {path: /api/v2/c17245904dc7e388/stream, headers: {Host: d9a9ecdf.69lover.site}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 14, server: 141.101.90.101, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 15, server: 104.17.53.183, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 16, server: 104.17.104.173, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 17, server: 104.20.28.74, port: 8880, type: vless, uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.KR.CMLiussss.net, headers: {Host: shiny-waterfall-fa51.300-c6f.workers.dev}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 18, server: adheres-scruple.quick-cdn.net, port: 443, type: vless, uuid: fadcfc37-376a-42e6-a5cd-cb65988663d3, tls: true, alpn: [http/1.1], servername: adheres-scruple.quick-cdn.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: adheres-scruple.quick-cdn.net}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 19, server: 104.17.120.249, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 20, server: codecanyon.net, port: 8880, type: vless, uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.KR.CMLiussss.net, headers: {Host: dawn-waterfall-6052.360-001.workers.dev}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 21, server: 104.17.111.8, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 22, server: 172.67.165.32, port: 443, type: vless, uuid: 31b6c552-ca2e-4f73-bce9-c7ba72737a74, tls: true, alpn: [http/1.1], servername: 8.CS2-2-1.KDnS.fR, client-fingerprint: chrome, network: ws, ws-opts: {path: /bxlbR8OSatc0IBpW1S65K, headers: {Host: 8.CS2-2-1.kDnS.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 23, server: 3.149.6.228, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 美国 | USA 24, server: starlink-ft.251313.xyz, port: 443, type: hysteria2, password: https://xship.top, auth: https://xship.top, sni: xship.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 | USA 25, server: 104.18.152.50, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 26, server: 104.18.223.253, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 27, server: 104.16.132.141, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 28, server: 104.16.23.253, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 29, server: 104.18.189.153, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 30, server: r2.dev, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 31, server: 38.55.108.5, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 32, server: cmcc.877774.xyz, port: 443, type: vless, uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e, tls: true, servername: nnzgx.s5vb.rpm.hh.vavava.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nnzgx.s5vb.rpm.hh.vavava.kdns.fr}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -95,51 +97,38 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇩🇪 德国 | DEU 8
-      - 🇩🇪 德国 | DEU 9
-      - 🇩🇪 德国 | DEU 10
-      - 🇩🇪 德国 | DEU 11
-      - 🇩🇪 德国 | DEU 12
-      - 🇪🇪 爱沙尼亚 | EST
+      - 🇩🇰 丹麦 | DNK
       - 🇫🇷 法国 | FRA
       - 🇫🇷 法国 | FRA 2
       - 🇫🇷 法国 | FRA 3
       - 🇫🇷 法国 | FRA 4
       - 🇫🇷 法国 | FRA 5
-      - 🇫🇷 法国 | FRA 6
-      - 🇫🇷 法国 | FRA 7
-      - 🇫🇷 法国 | FRA 8
-      - 🇫🇷 法国 | FRA 9
-      - 🇫🇷 法国 | FRA 10
-      - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
-      - 🇫🇷 法国 | FRA 13
-      - 🇫🇷 法国 | FRA 14
-      - 🇫🇷 法国 | FRA 15
       - 🇬🇧 英国 | GBR
+      - 🇯🇵 日本 | JPN
+      - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR 2
+      - 🇰🇷 韩国 | KOR 3
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
       - 🇳🇱 荷兰 | NLD 3
       - 🇳🇱 荷兰 | NLD 4
       - 🇳🇱 荷兰 | NLD 5
       - 🇳🇱 荷兰 | NLD 6
-      - 🇳🇱 荷兰 | NLD 7
-      - 🇳🇱 荷兰 | NLD 8
-      - 🇳🇱 荷兰 | NLD 9
-      - 🇳🇱 荷兰 | NLD 10
-      - 🇳🇱 荷兰 | NLD 11
-      - 🇳🇱 荷兰 | NLD 12
-      - 🇳🇱 荷兰 | NLD 13
-      - 🇷🇴 罗马尼亚 | ROU
+      - 🇷🇸 塞尔维亚 | SRB
+      - 🇷🇺 俄罗斯 | RUS
       - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
+      - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇹🇷 土耳其 | TUR
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -157,54 +146,56 @@ proxy-groups:
       - 🇺🇸 美国 | USA 15
       - 🇺🇸 美国 | USA 16
       - 🇺🇸 美国 | USA 17
+      - 🇺🇸 美国 | USA 18
+      - 🇺🇸 美国 | USA 19
+      - 🇺🇸 美国 | USA 20
+      - 🇺🇸 美国 | USA 21
+      - 🇺🇸 美国 | USA 22
+      - 🇺🇸 美国 | USA 23
+      - 🇺🇸 美国 | USA 24
+      - 🇺🇸 美国 | USA 25
+      - 🇺🇸 美国 | USA 26
+      - 🇺🇸 美国 | USA 27
+      - 🇺🇸 美国 | USA 28
+      - 🇺🇸 美国 | USA 29
+      - 🇺🇸 美国 | USA 30
+      - 🇺🇸 美国 | USA 31
+      - 🇺🇸 美国 | USA 32
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇩🇪 德国 | DEU 8
-      - 🇩🇪 德国 | DEU 9
-      - 🇩🇪 德国 | DEU 10
-      - 🇩🇪 德国 | DEU 11
-      - 🇩🇪 德国 | DEU 12
-      - 🇪🇪 爱沙尼亚 | EST
+      - 🇩🇰 丹麦 | DNK
       - 🇫🇷 法国 | FRA
       - 🇫🇷 法国 | FRA 2
       - 🇫🇷 法国 | FRA 3
       - 🇫🇷 法国 | FRA 4
       - 🇫🇷 法国 | FRA 5
-      - 🇫🇷 法国 | FRA 6
-      - 🇫🇷 法国 | FRA 7
-      - 🇫🇷 法国 | FRA 8
-      - 🇫🇷 法国 | FRA 9
-      - 🇫🇷 法国 | FRA 10
-      - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
-      - 🇫🇷 法国 | FRA 13
-      - 🇫🇷 法国 | FRA 14
-      - 🇫🇷 法国 | FRA 15
       - 🇬🇧 英国 | GBR
+      - 🇯🇵 日本 | JPN
+      - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR 2
+      - 🇰🇷 韩国 | KOR 3
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
       - 🇳🇱 荷兰 | NLD 3
       - 🇳🇱 荷兰 | NLD 4
       - 🇳🇱 荷兰 | NLD 5
       - 🇳🇱 荷兰 | NLD 6
-      - 🇳🇱 荷兰 | NLD 7
-      - 🇳🇱 荷兰 | NLD 8
-      - 🇳🇱 荷兰 | NLD 9
-      - 🇳🇱 荷兰 | NLD 10
-      - 🇳🇱 荷兰 | NLD 11
-      - 🇳🇱 荷兰 | NLD 12
-      - 🇳🇱 荷兰 | NLD 13
-      - 🇷🇴 罗马尼亚 | ROU
+      - 🇷🇸 塞尔维亚 | SRB
+      - 🇷🇺 俄罗斯 | RUS
       - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
+      - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
+      - 🇹🇷 土耳其 | TUR
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -222,6 +213,21 @@ proxy-groups:
       - 🇺🇸 美国 | USA 15
       - 🇺🇸 美国 | USA 16
       - 🇺🇸 美国 | USA 17
+      - 🇺🇸 美国 | USA 18
+      - 🇺🇸 美国 | USA 19
+      - 🇺🇸 美国 | USA 20
+      - 🇺🇸 美国 | USA 21
+      - 🇺🇸 美国 | USA 22
+      - 🇺🇸 美国 | USA 23
+      - 🇺🇸 美国 | USA 24
+      - 🇺🇸 美国 | USA 25
+      - 🇺🇸 美国 | USA 26
+      - 🇺🇸 美国 | USA 27
+      - 🇺🇸 美国 | USA 28
+      - 🇺🇸 美国 | USA 29
+      - 🇺🇸 美国 | USA 30
+      - 🇺🇸 美国 | USA 31
+      - 🇺🇸 美国 | USA 32
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -296,13 +302,18 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
+      - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
   - name: 🇯🇵 ‍日本
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
+      - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
   - name: 🇺🇸 ‍美国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -326,56 +337,52 @@ proxy-groups:
       - 🇺🇸 美国 | USA 15
       - 🇺🇸 美国 | USA 16
       - 🇺🇸 美国 | USA 17
+      - 🇺🇸 美国 | USA 18
+      - 🇺🇸 美国 | USA 19
+      - 🇺🇸 美国 | USA 20
+      - 🇺🇸 美国 | USA 21
+      - 🇺🇸 美国 | USA 22
+      - 🇺🇸 美国 | USA 23
+      - 🇺🇸 美国 | USA 24
+      - 🇺🇸 美国 | USA 25
+      - 🇺🇸 美国 | USA 26
+      - 🇺🇸 美国 | USA 27
+      - 🇺🇸 美国 | USA 28
+      - 🇺🇸 美国 | USA 29
+      - 🇺🇸 美国 | USA 30
+      - 🇺🇸 美国 | USA 31
+      - 🇺🇸 美国 | USA 32
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 30
     tolerance: 100
     proxies:
-      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇩🇪 德国 | DEU 8
-      - 🇩🇪 德国 | DEU 9
-      - 🇩🇪 德国 | DEU 10
-      - 🇩🇪 德国 | DEU 11
-      - 🇩🇪 德国 | DEU 12
-      - 🇪🇪 爱沙尼亚 | EST
+      - 🇩🇰 丹麦 | DNK
       - 🇫🇷 法国 | FRA
       - 🇫🇷 法国 | FRA 2
       - 🇫🇷 法国 | FRA 3
       - 🇫🇷 法国 | FRA 4
       - 🇫🇷 法国 | FRA 5
-      - 🇫🇷 法国 | FRA 6
-      - 🇫🇷 法国 | FRA 7
-      - 🇫🇷 法国 | FRA 8
-      - 🇫🇷 法国 | FRA 9
-      - 🇫🇷 法国 | FRA 10
-      - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
-      - 🇫🇷 法国 | FRA 13
-      - 🇫🇷 法国 | FRA 14
-      - 🇫🇷 法国 | FRA 15
       - 🇬🇧 英国 | GBR
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR 2
+      - 🇰🇷 韩国 | KOR 3
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
       - 🇳🇱 荷兰 | NLD 3
       - 🇳🇱 荷兰 | NLD 4
       - 🇳🇱 荷兰 | NLD 5
       - 🇳🇱 荷兰 | NLD 6
-      - 🇳🇱 荷兰 | NLD 7
-      - 🇳🇱 荷兰 | NLD 8
-      - 🇳🇱 荷兰 | NLD 9
-      - 🇳🇱 荷兰 | NLD 10
-      - 🇳🇱 荷兰 | NLD 11
-      - 🇳🇱 荷兰 | NLD 12
-      - 🇳🇱 荷兰 | NLD 13
-      - 🇷🇴 罗马尼亚 | ROU
+      - 🇷🇸 塞尔维亚 | SRB
+      - 🇷🇺 俄罗斯 | RUS
+      - 🇹🇷 土耳其 | TUR
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -392,10 +399,15 @@ proxy-groups:
     type: select
     proxies:
       - 🇸🇬 新加坡 | SGP
+      - 🇸🇬 新加坡 | SGP 2
+      - 🇸🇬 新加坡 | SGP 3
+      - 🇸🇬 新加坡 | SGP 4
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 日本 | JPN
+      - 🇯🇵 日本 | JPN 2
+      - 🇯🇵 日本 | JPN 3
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
@@ -416,53 +428,49 @@ proxy-groups:
       - 🇺🇸 美国 | USA 15
       - 🇺🇸 美国 | USA 16
       - 🇺🇸 美国 | USA 17
+      - 🇺🇸 美国 | USA 18
+      - 🇺🇸 美国 | USA 19
+      - 🇺🇸 美国 | USA 20
+      - 🇺🇸 美国 | USA 21
+      - 🇺🇸 美国 | USA 22
+      - 🇺🇸 美国 | USA 23
+      - 🇺🇸 美国 | USA 24
+      - 🇺🇸 美国 | USA 25
+      - 🇺🇸 美国 | USA 26
+      - 🇺🇸 美国 | USA 27
+      - 🇺🇸 美国 | USA 28
+      - 🇺🇸 美国 | USA 29
+      - 🇺🇸 美国 | USA 30
+      - 🇺🇸 美国 | USA 31
+      - 🇺🇸 美国 | USA 32
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇩🇪 德国 | DEU 8
-      - 🇩🇪 德国 | DEU 9
-      - 🇩🇪 德国 | DEU 10
-      - 🇩🇪 德国 | DEU 11
-      - 🇩🇪 德国 | DEU 12
-      - 🇪🇪 爱沙尼亚 | EST
+      - 🇩🇰 丹麦 | DNK
       - 🇫🇷 法国 | FRA
       - 🇫🇷 法国 | FRA 2
       - 🇫🇷 法国 | FRA 3
       - 🇫🇷 法国 | FRA 4
       - 🇫🇷 法国 | FRA 5
-      - 🇫🇷 法国 | FRA 6
-      - 🇫🇷 法国 | FRA 7
-      - 🇫🇷 法国 | FRA 8
-      - 🇫🇷 法国 | FRA 9
-      - 🇫🇷 法国 | FRA 10
-      - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
-      - 🇫🇷 法国 | FRA 13
-      - 🇫🇷 法国 | FRA 14
-      - 🇫🇷 法国 | FRA 15
       - 🇬🇧 英国 | GBR
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR 2
+      - 🇰🇷 韩国 | KOR 3
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
       - 🇳🇱 荷兰 | NLD 3
       - 🇳🇱 荷兰 | NLD 4
       - 🇳🇱 荷兰 | NLD 5
       - 🇳🇱 荷兰 | NLD 6
-      - 🇳🇱 荷兰 | NLD 7
-      - 🇳🇱 荷兰 | NLD 8
-      - 🇳🇱 荷兰 | NLD 9
-      - 🇳🇱 荷兰 | NLD 10
-      - 🇳🇱 荷兰 | NLD 11
-      - 🇳🇱 荷兰 | NLD 12
-      - 🇳🇱 荷兰 | NLD 13
-      - 🇷🇴 罗马尼亚 | ROU
+      - 🇷🇸 塞尔维亚 | SRB
+      - 🇷🇺 俄罗斯 | RUS
+      - 🇹🇷 土耳其 | TUR
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
