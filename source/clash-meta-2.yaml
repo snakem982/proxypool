@@ -5,69 +5,66 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇦🇹 奥地利 | AUT, server: tau1.freerunet.online, port: 443, type: vless, uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg, short-id: "4a7b1c8d" }, servername: tau1.freerunet.online, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇦🇹 奥地利 | AUT 2, server: 178.236.245.59, port: 443, type: vless, uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg, short-id: "4a7b1c8d" }, servername: tau1.freerunet.online, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇦🇹 奥地利 | AUT 3, server: 178.72.185.235, port: 40445, type: vless, uuid: 572b3d30-3ced-4b88-9e06-4241f124cc88, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I, short-id: "c3d4e5f607182939" }, servername: www.booking.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇨🇭 瑞士 | CHE, server: 5.181.158.193, port: 8461, type: vless, uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Yc75IKp6PRsGSw82GhGepMrRpJweW7WXUp9azkGuMAk, short-id: "735f09fb3fedb191" }, servername: svoboda.bystriynet.online, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 | DEU, server: 185.44.64.166, port: 59397, type: vless, uuid: ac36b6f8-d03d-46cb-808f-e655183fb76d, tls: true, flow: xtls-rprx-vision, encryption: mlkem768x25519plus.native.0rtt.sphudmOm4wKYnBGDTU6kl6-KH7fdQ1VzXp58hEAn3zU, reality-opts: {public-key: 7w6m1Z7wZk1KX7bBlCi50t_8T-HdC8aMizOcIyqcaS4, short-id: "1430" }, servername: la.blogs.nvidia.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 | DEU 2, server: de01.dw.sh-cloudflare.sbs, port: 11105, type: anytls, password: c86efa7e-f7fb-47d6-b832-6b44cf5e8b71, udp: true, sni: de01.shanhai.me, skip-cert-verify: true}
+  - {name: 🇩🇪 德国 | DEU, server: 138.68.104.9, port: 30161, type: vless, uuid: 9c6bc1b2-910a-4321-9793-c8276e065aa1, tls: true, alpn: [http/1.1], servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: yan10.aliboba.shop, port: 443, type: vless, uuid: bdebb0d0-1ac7-4d3a-8f18-99171d74affd, tls: true, alpn: [h2, http/1.1], servername: yan10.aliboba.shop, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /api/api_v2/mediaupload_process, host: yan10.aliboba.shop, mode: packet-up, seq-key: segment, seq-placement: query, session-key: media_session, session-placement: query, uplink-data-key: data, uplink-data-placement: header, uplink-http-method: GET, x-padding-bytes: 64-320, x-padding-header: Referer, x-padding-key: cacheVersion, x-padding-method: tokenish, x-padding-obfs-mode: true, x-padding-placement: queryInHeader}, udp: true}
   - {name: 🇩🇪 德国 | DEU 3, server: 199.232.239.239, port: 443, type: vless, uuid: 40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2, tls: true, alpn: [h2], servername: firefox.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056", headers: {Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇩🇪 德国 | DEU 4, server: 140.225.208.140, port: 2083, type: vless, uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67, tls: true, servername: speedtestmark.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /vless-ws, headers: {Host: speedtestmark.com}}, udp: true}
-  - {name: 🇪🇪 爱沙尼亚 | EST, server: 31.77.68.36, port: 443, type: vless, uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Daj7jHuHFEC_LV-Fv1fBSaTSQRM9vfgf_DtjMn9svl0, short-id: "64e4efa1" }, servername: addons.mozilla.org, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇪🇸 西班牙 | ESP, server: 185.18.250.252, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 4, server: 185.44.64.166, port: 59397, type: vless, uuid: ac36b6f8-d03d-46cb-808f-e655183fb76d, tls: true, flow: xtls-rprx-vision, encryption: mlkem768x25519plus.native.0rtt.sphudmOm4wKYnBGDTU6kl6-KH7fdQ1VzXp58hEAn3zU, reality-opts: {public-key: 7w6m1Z7wZk1KX7bBlCi50t_8T-HdC8aMizOcIyqcaS4, short-id: "1430" }, servername: la.blogs.nvidia.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU 5, server: s12.bsh-net.ru, port: 443, type: vless, uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk, short-id: "51079f144d661484" }, servername: s12.bsh-net.ru, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU 6, server: 167.82.76.31, port: 443, type: vless, uuid: fd65fd49-beaf-4dbf-b689-bcc53595bd89, tls: true, servername: cdn.akamai.steamstatic.com, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /setare, host: kiitalboard.global.ssl.fastly.net, mode: auto, x-padding-bytes: 100-1000}, udp: true}
   - {name: 🇫🇷 法国 | FRA, server: 5.181.158.100, port: 8470, type: vless, uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: VaMT-IAVkmjdrf4OS0Mnqg0YhQc35O9wZo2TW2LrmjU, short-id: "21e829b360d15daf" }, servername: svoboda14.bystriynet.online, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇬🇧 英国 | GBR, server: 5.181.158.100, port: 8481, type: vless, uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: -Ri2C7Y1tPrP8hQkgXOqVyR1Sqv5MdLZxAAu9M5kfn0, short-id: "44add17dbecb11ba" }, servername: svoboda16.bystriynet.online, client-fingerprint: firefox, network: tcp}
-  - {name: 🇭🇰 香港 | HKG, server: euu1yalfmcqvljex.v.3dns.vip, port: 443, type: vmess, uuid: d237ab38-1974-4b36-94a3-0665ce8587b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: euu1yalfmcqvljex.v.3dns.vip, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: euu1yalfmcqvljex.v.3dns.vip}}, udp: true}
-  - {name: 🇭🇰 香港 | HKG 2, server: api.meituan88.com, port: 27561, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocolparam: 218522:0hfCJk, obfsparam: 6f5218522.douyin.com}
-  - {name: 🇭🇰 香港 | HKG 3, server: hk02.dw.sh-cloudflare.sbs, port: 21101, type: anytls, password: c86efa7e-f7fb-47d6-b832-6b44cf5e8b71, udp: true, sni: hk02.shanhai.me, skip-cert-verify: true}
-  - {name: 🇭🇰 香港 | HKG 4, server: 47.76.57.83, port: 443, type: vmess, uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: vah4urdzl3jdx5r2.v.3dns.vip}}, udp: true}
-  - {name: 🇭🇰 香港 | HKG 5, server: 8.217.13.103, port: 443, type: vmess, uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: qtkdr8jxe3wefxjm.v.3dns.vip, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: qtkdr8jxe3wefxjm.v.3dns.vip}}, udp: true}
-  - {name: 🇮🇪 爱尔兰 | IRL, server: 45.132.176.61, port: 443, type: vless, uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ, short-id: "a9dc98a7dc87a7dc" }, servername: sopelka.yandex-api.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇮🇳 印度 | IND, server: hydra.yokkastars.com, port: 2443, type: vless, uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8, tls: true, reality-opts: {public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg, short-id: "92c32de179e5d908" }, servername: deepl.com, client-fingerprint: qq, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: rex-eb0bf76b710ce763}, udp: true}
-  - {name: 🇰🇿 哈萨克斯坦 | KAZ, server: 95.56.251.12, port: 47443, type: vless, uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU, short-id: "ae97223a8f799877" }, servername: kz1.waspnest.space, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD, server: 179.255.157.247, port: 8443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 2, server: 85.235.64.69, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 3, server: 104.27.55.4, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 4, server: 168.144.41.69, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 5, server: 5.181.158.96, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 6, server: 178.72.185.235, port: 40443, type: vless, uuid: 572b3d30-3ced-4b88-9e06-4241f124cc88, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I, short-id: "b2c3d4e5f6071829" }, servername: www.booking.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 7, server: 104.26.3.162, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 8, server: 104.18.42.190, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 9, server: 72.56.38.83, port: 443, type: vless, uuid: Fluffy_VPN-zKZUa4Ie, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8}, servername: absolute-disaster.org, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 10, server: 38.180.225.247, port: 2053, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 11, server: 83.147.254.59, port: 2053, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 12, server: 172.64.229.7, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 13, server: 146.75.35.210, port: 443, type: vless, uuid: d657d272-50ae-47bc-87a4-3106676f1e90, tls: true, alpn: [h3], servername: mail.fastly.com, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /, host: Fassfastly.global.ssl.fastly.net, mode: auto}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 14, server: 209.97.165.213, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 15, server: 172.64.153.224, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 16, server: 207.57.132.189, port: 8443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 17, server: 165.22.102.89, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: 95.182.95.144, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG 2, server: i2psm3knof5qjjix.v.3dns.vip, port: 443, type: vmess, uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: i2psm3knof5qjjix.v.3dns.vip}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG 3, server: 47.244.120.197, port: 23026, type: vmess, uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /arki, headers: {Host: 47.244.120.197}}, udp: true}
+  - {name: 🇭🇰 香港 | HKG 4, server: euu1yalfmcqvljex.v.3dns.vip, port: 443, type: vmess, uuid: d237ab38-1974-4b36-94a3-0665ce8587b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: euu1yalfmcqvljex.v.3dns.vip, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: euu1yalfmcqvljex.v.3dns.vip}}, udp: true}
+  - {name: 🇮🇹 意大利 | ITA, server: www.visa.com.hk, port: 443, type: vless, uuid: 4f735420-0179-45d7-ba4e-ed66d1bf3a89, tls: true, servername: it-mil.862400.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/announcement?ed=2048", headers: {Host: it-mil.862400.xyz}}, udp: true}
+  - {name: 🇮🇹 意大利 | ITA 2, server: 202.50.253.90, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
+  - {name: 🇰🇷 韩国 | KOR, server: 3.36.61.213, port: 443, type: hysteria2, password: 7e68e32f-8015-4f37-9082-70e8b0b58043, auth: 7e68e32f-8015-4f37-9082-70e8b0b58043, fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69, sni: www.bing.com, skip-cert-verify: true}
+  - {name: 🇰🇿 哈萨克斯坦 | KAZ, server: 185.234.114.165, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: 162.159.58.65, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 2, server: in-nl2.bystriynet.online, port: 8469, type: vless, uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: jXnHLdfNcX2fwTFY-d2boAYcfC9EnnhqYS0hfR6WwFo, short-id: "55d42bdd79605658" }, servername: svoboda12.bystriynet.online, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 3, server: 185.146.234.242, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 4, server: 202.61.198.53, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 5, server: 109.248.170.245, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 6, server: 130.78.185.4, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 7, server: 172.237.0.160, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 8, server: 38.180.225.247, port: 2053, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 9, server: 172.67.89.103, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 10, server: 88.218.92.205, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 11, server: 38.180.100.80, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 12, server: 199.119.137.32, port: 8443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 13, server: 104.18.39.55, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 14, server: 83.228.199.3, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 15, server: 77.221.139.114, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 16, server: 93.85.236.9, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 17, server: 168.143.108.38, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
   - {name: 🇳🇱 荷兰 | NLD 18, server: 213.238.182.13, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 19, server: 45.8.115.202, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 20, server: 46.174.142.238, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 21, server: 104.17.191.193, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 22, server: 172.64.154.144, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 23, server: 141.133.174.88, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 24, server: 185.82.218.224, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇵🇱 波兰 | POL, server: 79.182.39.37, port: 27591, type: vless, uuid: 056405e8-de9f-4d0d-8145-956f13cc34da, tls: true, reality-opts: {public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM, short-id: "6c5c7900406a1ae7" }, servername: www.samsung.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇷🇺 俄罗斯 | RUS, server: business.lesotorg-kirov.ru, port: 443, type: vless, uuid: 8f763a7f-4cda-4db1-90e3-9aeae0860dc0, tls: true, servername: business.lesotorg-kirov.ru, client-fingerprint: android, network: ws, ws-opts: {path: /chws, headers: {Host: business.lesotorg-kirov.ru}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 | RUS 2, server: 46.254.19.164, port: 443, type: vless, uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa, tls: true, reality-opts: {public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM, short-id: "8937c9ed2d470352" }, servername: wtb.tems.bet, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇸🇪 瑞典 | SWE, server: se-2.pythonsetupbib.online, port: 61374, type: vless, uuid: f8d52ece-fad4-478d-875d-df6eed3befa7, tls: true, reality-opts: {public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI}, servername: se-2.pythonsetupbib.online, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /, host: se-2.pythonsetupbib.online, mode: packet-up, x-padding-bytes: 100-500}, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: 172.66.0.172, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: cf.090227.xyz, port: 443, type: vless, uuid: d342d11e-d224-4463-b982-532309285094, tls: true, servername: ccc.010304.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: ccc.010304.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: 104.18.189.153, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 4, server: 146.75.59.186, port: 443, type: vless, uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7, tls: true, servername: firefox.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 5, server: 141.193.154.234, port: 443, type: vless, uuid: 80fdddb8-3eb8-41ad-9916-fbb42c442e6e, tls: true, reality-opts: {public-key: dN2EhTLZsQ1RsO4rCdoIBIi7mFtmqsC2iekPft3MPnY, short-id: "1835" }, servername: cloudflare.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 6, server: wwww.qarvian.ir, port: 443, type: vless, uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7, tls: true, servername: cdn.akamai.steamstatic.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 7, server: 172.67.74.90, port: 443, type: vless, uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23, tls: true, servername: cvhpyn.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /fp=chrome, headers: {Host: cvhpyn.pages.dev}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 8, server: 104.19.43.102, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 9, server: 104.16.244.188, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 10, server: 79.182.39.57, port: 443, type: vless, uuid: 056405e8-de9f-4d0d-8145-956f13cc34da, tls: true, reality-opts: {public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E, short-id: "257420d9d430152a" }, servername: a0688bt.us4.h1clayd.click, client-fingerprint: firefox, network: tcp}
-  - {name: 🇺🇸 美国 | USA 11, server: 104.16.65.1, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 12, server: 146.75.57.238, port: 443, type: vless, uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7, tls: true, servername: cdn.akamai.steamstatic.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 13, server: 104.27.0.1, port: 443, type: vmess, uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vmess.lbw666.dpdns.org, network: ws, ws-opts: {path: /ws, headers: {Host: vmess.lbw666.dpdns.org}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 14, server: 104.18.49.85, port: 443, type: vless, uuid: d342d11e-d224-4463-b982-532309285094, tls: true, servername: ccc.010304.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: ccc.010304.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 15, server: 104.17.145.43, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 19, server: 104.18.46.59, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 20, server: 31.76.0.15, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 21, server: 103.219.195.65, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 22, server: 91.250.248.151, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 23, server: 172.104.185.40, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 24, server: 87.76.190.244, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 25, server: 3.112.41.210, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 26, server: 172.64.151.20, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 27, server: 103.218.173.218, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 28, server: 143.198.106.68, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 29, server: 207.57.123.112, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS, server: 5.129.249.65, port: 443, type: vless, uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa, tls: true, reality-opts: {public-key: iT-HgkPRUHl7Tm-LUWAGD-zoNoZSkVc-M9sscIIomHY, short-id: "a62228a1c8b3378f" }, servername: rue.tems.bet, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇸🇪 瑞典 | SWE, server: 13.143.180.104, port: 443, type: vless, uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk, short-id: "51079f144d661484" }, servername: s12.bsh-net.ru, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡 | SGP, server: ct.877774.xyz, port: 443, type: vless, uuid: 4f735420-0179-45d7-ba4e-ed66d1bf3a89, tls: true, servername: ap-south.862400.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/announcement?ed=2048", headers: {Host: ap-south.862400.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 | USA, server: 104.18.35.86, port: 8080, type: vless, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, tls: false, servername: hhlfy.twiladaphne.ndjp.net, network: ws, ws-opts: {path: /sg-melbi, headers: {Host: hhlfy.twiladaphne.ndjp.net}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 2, server: 162.159.128.253, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 3, server: 104.17.159.71, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 4, server: 104.17.28.254, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 5, server: 104.16.65.1, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 6, server: 104.20.61.103, port: 443, type: vless, uuid: d342d11e-d224-4463-b982-532309285094, tls: true, servername: ccc.010304.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: ccc.010304.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 7, server: 104.17.17.238, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 8, server: 104.17.145.43, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 9, server: wwww.qarvian.ir, port: 443, type: vless, uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7, tls: true, servername: cdn.akamai.steamstatic.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 10, server: 104.16.251.219, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 11, server: 104.16.144.215, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 12, server: 104.26.3.162, port: 443, type: trojan, password: humanity, sni: www.cordweave.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.cordweave.com}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 13, server: 104.19.229.21, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -96,25 +93,20 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇦🇹 奥地利 | AUT
-      - 🇦🇹 奥地利 | AUT 2
-      - 🇦🇹 奥地利 | AUT 3
-      - 🇨🇭 瑞士 | CHE
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
-      - 🇪🇪 爱沙尼亚 | EST
-      - 🇪🇸 西班牙 | ESP
+      - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
       - 🇫🇷 法国 | FRA
-      - 🇬🇧 英国 | GBR
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
-      - 🇮🇪 爱尔兰 | IRL
-      - 🇮🇳 印度 | IND
+      - 🇮🇹 意大利 | ITA
+      - 🇮🇹 意大利 | ITA 2
+      - 🇰🇷 韩国 | KOR
       - 🇰🇿 哈萨克斯坦 | KAZ
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
@@ -140,10 +132,14 @@ proxy-groups:
       - 🇳🇱 荷兰 | NLD 22
       - 🇳🇱 荷兰 | NLD 23
       - 🇳🇱 荷兰 | NLD 24
-      - 🇵🇱 波兰 | POL
+      - 🇳🇱 荷兰 | NLD 25
+      - 🇳🇱 荷兰 | NLD 26
+      - 🇳🇱 荷兰 | NLD 27
+      - 🇳🇱 荷兰 | NLD 28
+      - 🇳🇱 荷兰 | NLD 29
       - 🇷🇺 俄罗斯 | RUS
-      - 🇷🇺 俄罗斯 | RUS 2
       - 🇸🇪 瑞典 | SWE
+      - 🇸🇬 新加坡 | SGP
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -157,30 +153,23 @@ proxy-groups:
       - 🇺🇸 美国 | USA 11
       - 🇺🇸 美国 | USA 12
       - 🇺🇸 美国 | USA 13
-      - 🇺🇸 美国 | USA 14
-      - 🇺🇸 美国 | USA 15
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇦🇹 奥地利 | AUT
-      - 🇦🇹 奥地利 | AUT 2
-      - 🇦🇹 奥地利 | AUT 3
-      - 🇨🇭 瑞士 | CHE
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
-      - 🇪🇪 爱沙尼亚 | EST
-      - 🇪🇸 西班牙 | ESP
+      - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
       - 🇫🇷 法国 | FRA
-      - 🇬🇧 英国 | GBR
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
-      - 🇮🇪 爱尔兰 | IRL
-      - 🇮🇳 印度 | IND
+      - 🇮🇹 意大利 | ITA
+      - 🇮🇹 意大利 | ITA 2
+      - 🇰🇷 韩国 | KOR
       - 🇰🇿 哈萨克斯坦 | KAZ
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
@@ -206,10 +195,14 @@ proxy-groups:
       - 🇳🇱 荷兰 | NLD 22
       - 🇳🇱 荷兰 | NLD 23
       - 🇳🇱 荷兰 | NLD 24
-      - 🇵🇱 波兰 | POL
+      - 🇳🇱 荷兰 | NLD 25
+      - 🇳🇱 荷兰 | NLD 26
+      - 🇳🇱 荷兰 | NLD 27
+      - 🇳🇱 荷兰 | NLD 28
+      - 🇳🇱 荷兰 | NLD 29
       - 🇷🇺 俄罗斯 | RUS
-      - 🇷🇺 俄罗斯 | RUS 2
       - 🇸🇪 瑞典 | SWE
+      - 🇸🇬 新加坡 | SGP
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -223,8 +216,6 @@ proxy-groups:
       - 🇺🇸 美国 | USA 11
       - 🇺🇸 美国 | USA 12
       - 🇺🇸 美国 | USA 13
-      - 🇺🇸 美国 | USA 14
-      - 🇺🇸 美国 | USA 15
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -281,7 +272,6 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -299,14 +289,13 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 15
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡 | SGP
   - name: 🇯🇵 ‍日本
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -333,28 +322,22 @@ proxy-groups:
       - 🇺🇸 美国 | USA 11
       - 🇺🇸 美国 | USA 12
       - 🇺🇸 美国 | USA 13
-      - 🇺🇸 美国 | USA 14
-      - 🇺🇸 美国 | USA 15
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 30
     tolerance: 100
     proxies:
-      - 🇦🇹 奥地利 | AUT
-      - 🇦🇹 奥地利 | AUT 2
-      - 🇦🇹 奥地利 | AUT 3
-      - 🇨🇭 瑞士 | CHE
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
-      - 🇪🇪 爱沙尼亚 | EST
-      - 🇪🇸 西班牙 | ESP
+      - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
       - 🇫🇷 法国 | FRA
-      - 🇬🇧 英国 | GBR
-      - 🇮🇪 爱尔兰 | IRL
-      - 🇮🇳 印度 | IND
+      - 🇮🇹 意大利 | ITA
+      - 🇮🇹 意大利 | ITA 2
+      - 🇰🇷 韩国 | KOR
       - 🇰🇿 哈萨克斯坦 | KAZ
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
@@ -380,9 +363,12 @@ proxy-groups:
       - 🇳🇱 荷兰 | NLD 22
       - 🇳🇱 荷兰 | NLD 23
       - 🇳🇱 荷兰 | NLD 24
-      - 🇵🇱 波兰 | POL
+      - 🇳🇱 荷兰 | NLD 25
+      - 🇳🇱 荷兰 | NLD 26
+      - 🇳🇱 荷兰 | NLD 27
+      - 🇳🇱 荷兰 | NLD 28
+      - 🇳🇱 荷兰 | NLD 29
       - 🇷🇺 俄罗斯 | RUS
-      - 🇷🇺 俄罗斯 | RUS 2
       - 🇸🇪 瑞典 | SWE
   - name: 👆🏻🇭🇰 ‍香港
     type: select
@@ -391,7 +377,6 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
@@ -403,11 +388,10 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡 | SGP
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
@@ -428,25 +412,19 @@ proxy-groups:
       - 🇺🇸 美国 | USA 11
       - 🇺🇸 美国 | USA 12
       - 🇺🇸 美国 | USA 13
-      - 🇺🇸 美国 | USA 14
-      - 🇺🇸 美国 | USA 15
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - 🇦🇹 奥地利 | AUT
-      - 🇦🇹 奥地利 | AUT 2
-      - 🇦🇹 奥地利 | AUT 3
-      - 🇨🇭 瑞士 | CHE
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
-      - 🇪🇪 爱沙尼亚 | EST
-      - 🇪🇸 西班牙 | ESP
+      - 🇩🇪 德国 | DEU 5
+      - 🇩🇪 德国 | DEU 6
       - 🇫🇷 法国 | FRA
-      - 🇬🇧 英国 | GBR
-      - 🇮🇪 爱尔兰 | IRL
-      - 🇮🇳 印度 | IND
+      - 🇮🇹 意大利 | ITA
+      - 🇮🇹 意大利 | ITA 2
+      - 🇰🇷 韩国 | KOR
       - 🇰🇿 哈萨克斯坦 | KAZ
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
@@ -472,9 +450,12 @@ proxy-groups:
       - 🇳🇱 荷兰 | NLD 22
       - 🇳🇱 荷兰 | NLD 23
       - 🇳🇱 荷兰 | NLD 24
-      - 🇵🇱 波兰 | POL
+      - 🇳🇱 荷兰 | NLD 25
+      - 🇳🇱 荷兰 | NLD 26
+      - 🇳🇱 荷兰 | NLD 27
+      - 🇳🇱 荷兰 | NLD 28
+      - 🇳🇱 荷兰 | NLD 29
       - 🇷🇺 俄罗斯 | RUS
-      - 🇷🇺 俄罗斯 | RUS 2
       - 🇸🇪 瑞典 | SWE
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
