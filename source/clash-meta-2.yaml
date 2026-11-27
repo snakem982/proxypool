@@ -5,69 +5,48 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇦🇪 阿联酋 | ARE, server: 147.78.0.186, port: 8443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇧🇪 比利时 | BEL, server: belgium.astroapps.io, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: c40d60d1c847e63098058c7524680f349c9042f932d8e79c, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: belgium.astroapps.io, path: /7a0f74508333399db96164d7, tls: true, mux: false}, udp: true}
-  - {name: 🇩🇪 德国 | DEU, server: mail1.besttotaldns.com, port: 443, type: vless, uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b, tls: true, alpn: [h2, http/1.1], flow: xtls-rprx-vision, servername: mail1.besttotaldns.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 | DEU 2, server: 91.107.185.86, port: 16893, type: vless, uuid: 80256d6f-7cd3-4a3a-8df6-2981e52551dc, tls: true, reality-opts: {public-key: dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I, short-id: "849711f2b99d1176" }, servername: play.google.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 | DEU 3, server: 77.90.63.17, port: 443, type: vless, uuid: bf14dc50-e9f2-49fd-8642-620446edeafb, tls: true, servername: v4-77j.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: v4-77j.pages.dev}}, udp: true}
-  - {name: 🇪🇸 西班牙 | ESP, server: 196.196.149.80, port: 443, type: vless, uuid: 4201786b-d99b-4147-a5f0-20d47acddb81, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE, short-id: "42426c882c5fcd41" }, servername: 7aa271t.es1.h1clayd.click, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇪🇸 西班牙 | ESP 2, server: api.ferrin.uk, port: 443, type: vless, uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e, tls: true, alpn: [h2], servername: 7d1a74fd.ferrin.uk, client-fingerprint: safari, network: xhttp, xhttp-opts: {path: /es, host: api.ferrin.uk, mode: stream-one}, udp: true}
+  - {name: 🇩🇪 德国 | DEU, server: 5.42.104.42, port: 443, type: vless, uuid: f4b08bf1-d9bd-4755-aa88-ba922282c608, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: nPYLh9nRxKK0OQVQrboJyKN4Y3DViI412cbN9Tbz9AQ, short-id: "53668ac88eefee81" }, servername: rugermicro2.gangplatform.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 | DEU 2, server: sunfield.moltex.click, port: 443, type: vless, uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1, tls: true, alpn: [h2, http/1.1], servername: fennel.moltex.click, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /api/de1/sync, host: sunfield.moltex.click, mode: auto}, udp: true}
+  - {name: 🇩🇪 德国 | DEU 3, server: ns2.irts.lol, port: 443, type: vless, uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0, tls: true, servername: ns2.irts.lol, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇪 爱沙尼亚 | EST, server: 196.198.111.179, port: 8443, type: vless, uuid: 0173d52e-8e1b-4681-831e-11529677b72f, tls: true, flow: xtls-rprx-vision, servername: api-6b04608f.adhil.uk, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇫🇷 法国 | FRA, server: 13.141.36.43, port: 443, type: vless, uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM, short-id: "92aee92130b46fe2" }, servername: 6bf329t.nl18.h1clayd.click, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 法国 | FRA 2, server: ipfast.kingmna.com, port: 443, type: vless, uuid: c6b0a7f0-4a4e-47aa-975a-35988278ab85, tls: true, servername: cdn.akamai.steamstatic.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: fraboijji.global.ssl.fastly.net.}}, udp: true}
   - {name: 🇬🇧 英国 | GBR, server: uk-tube-01.stre4m.net, port: 13337, type: hysteria2, password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe, auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe, sni: mother-earth.fyi, skip-cert-verify: true, alpn: [h3]}
-  - {name: 🇬🇧 英国 | GBR 2, server: 136.148.83.71, port: 443, type: vless, uuid: 00000000-0000-0001-0000-000000000000, tls: true, servername: wccfu-ru-79dc.my-fade.cloud, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇬🇧 英国 | GBR 3, server: 136.148.83.70, port: 443, type: vless, uuid: 00000000-0000-0001-0000-000000000000, tls: true, servername: aszbk-ru-78dc.my-fade.cloud, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG, server: 5641sdds.df6h451rh.xin, port: 443, type: anytls, password: 0324fbc29561, sni: images.ctfassets.net, skip-cert-verify: true}
-  - {name: 🇭🇰 香港 | HKG 2, server: e.node001.download, port: 49514, type: ss, cipher: chacha20-ietf-poly1305, password: aqfNMqGyxRTHwXOy, udp: true}
-  - {name: 🇭🇰 香港 | HKG 3, server: ibsdsf.df6h451rh.xin, port: 443, type: anytls, password: 2902c46c8493, udp: true, sni: docs.microsoft.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港 | HKG 4, server: e.node001.download, port: 33878, type: ss, cipher: chacha20-ietf-poly1305, password: aqfNMqGyxRTHwXOy}
-  - {name: 🇭🇰 香港 | HKG 5, server: e.node001.download, port: 26899, type: ss, cipher: chacha20-ietf-poly1305, password: aqfNMqGyxRTHwXOy, udp: true}
-  - {name: 🇮🇹 意大利 | ITA, server: 202.50.253.18, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇮🇹 意大利 | ITA 2, server: 202.50.253.90, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇮🇹 意大利 | ITA 3, server: 202.50.253.81, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇮🇹 意大利 | ITA 4, server: 202.50.253.54, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇮🇹 意大利 | ITA 5, server: 202.50.253.27, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇮🇹 意大利 | ITA 6, server: 202.50.253.36, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇮🇹 意大利 | ITA 7, server: 202.50.253.99, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇮🇹 意大利 | ITA 8, server: 202.50.253.45, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇮🇹 意大利 | ITA 9, server: 202.50.253.72, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇯🇵 日本 | JPN, server: 13.140.139.31, port: 8443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 2, server: 50.7.159.242, port: 443, type: vless, uuid: 8840fac2-5361-4cb6-b887-cd1b95092394, tls: true, servername: jp.reddotcorp.org, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇯🇵 日本 | JPN 3, server: 109.120.138.102, port: 443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 4, server: 194.87.196.133, port: 2053, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 5, server: 172.237.81.42, port: 443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 6, server: 5yh45.cf.877774.xyz, port: 443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 7, server: 172.66.0.172, port: 443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 8, server: 46.101.110.88, port: 443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 9, server: 68.64.180.218, port: 443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 10, server: 85.206.161.198, port: 443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇯🇵 日本 | JPN 11, server: 104.26.14.111, port: 443, type: trojan, password: c2cc86b4-4481-4807-ac9e-24e2d7041248, sni: eofino.bpjp2027.top, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: eofino.bpjp2027.top}}, udp: true}
-  - {name: 🇰🇷 韩国 | KOR, server: 3.35.175.163, port: 443, type: hysteria2, password: 7e68e32f-8015-4f37-9082-70e8b0b58043, auth: 7e68e32f-8015-4f37-9082-70e8b0b58043, fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国 | KOR 2, server: e.node001.download, port: 35334, type: ss, cipher: chacha20-ietf-poly1305, password: aqfNMqGyxRTHwXOy, udp: true}
-  - {name: 🇰🇷 韩国 | KOR 3, server: 130.94.30.242, port: 443, type: vless, uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16, tls: true, packet-encoding: xudp, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp}
-  - {name: 🇰🇷 韩国 | KOR 4, server: 3.35.175.163, port: 8443, type: ss, cipher: chacha20-ietf-poly1305, password: 7e68e32f-8015-4f37-9082-70e8b0b58043, udp: true}
-  - {name: 🇱🇮 LI_03, server: nemazu.grandserver8.ir, port: 8445, type: hysteria2, password: AIbXqmbagi8c_pPQF8UkyQRgAlGbk5aT, auth: AIbXqmbagi8c_pPQF8UkyQRgAlGbk5aT, sni: donige.grandserver8.ir, skip-cert-verify: true, alpn: [h3], obfs: salamander, obfs-password: 5wnhum8v8a5f8m9z}
-  - {name: 🇱🇹 立陶宛 | LTU, server: 5.199.173.195, port: 443, type: vless, uuid: bf14dc50-e9f2-49fd-8642-620446edeafb, tls: true, servername: v4-77j.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: v4-77j.pages.dev}}, udp: true}
-  - {name: 🇲🇾 马来西亚 | MYS, server: api.frnhk.xyz, port: 443, type: anytls, password: 487be461-690d-480a-a59d-f46b10524e11, udp: true, sni: api.frnhk.xyz, skip-cert-verify: true}
-  - {name: 🇳🇱 荷兰 | NLD, server: 185.16.110.62, port: 2052, type: vless, uuid: 85432578-96fd-4613-a255-e235a81cc94b, tls: false, network: ws, ws-opts: {path: "/?ed=2052", headers: {Host: cd90.u8o.lol}}, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 2, server: 196.240.125.11, port: 8443, type: vless, uuid: 0173d52e-8e1b-4681-831e-11529677b72f, tls: true, flow: xtls-rprx-vision, servername: api-v1-6b07048f.vmagnum.win, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD 3, server: 98.98.132.110, port: 443, type: vless, uuid: e2f43a75-e683-4d09-96e8-3ad1f2e57100, tls: true, alpn: [h2], servername: a1116.afl7t8f.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: 2e7d5cf6a7e50c564bfddf62c87e02e1}, udp: true}
-  - {name: 🇷🇴 罗马尼亚 | ROU, server: 193.168.140.228, port: 443, type: vless, uuid: 89f361ea-a370-4cbe-b2b3-d3e9c0b7c4c1, tls: true, reality-opts: {public-key: UGeXXP0IS2_P7AWPDbbk_w7BzZLoPPrk3ha7OgI_0D4}, servername: www.vodafone.ro, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /, host: www.vodafone.ro, mode: auto, x-padding-bytes: 100-1000}, udp: true}
-  - {name: 🇷🇺 俄罗斯 | RUS, server: vps3.nemnogogo.com, port: 443, type: vless, uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e, tls: true, alpn: [h2], servername: vps3.nemnogogo.com, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: mobile.api.Event}, udp: true}
-  - {name: 🇷🇺 俄罗斯 | RUS 2, server: 201.24.116.192, port: 443, type: vless, uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e, tls: true, servername: vps3.nemnogogo.com, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: mobile.api.Event}, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP, server: 13.229.56.229, port: 443, type: vless, uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: x8aCD8cJtkDvAjcRrcMG05MNiwh11LaKg70KIRvfN0g, short-id: "819a87bf1651bf44" }, servername: fleetguard-filtrum.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 2, server: 13.229.56.229, port: 443, type: hysteria2, password: 7e68e32f-8015-4f37-9082-70e8b0b58043, auth: 7e68e32f-8015-4f37-9082-70e8b0b58043, fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡 | SGP 3, server: e.node001.download, port: 49899, type: ss, cipher: chacha20-ietf-poly1305, password: aqfNMqGyxRTHwXOy, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP 4, server: 13.229.56.229, port: 8443, type: ss, cipher: chacha20-ietf-poly1305, password: 7e68e32f-8015-4f37-9082-70e8b0b58043, udp: true}
-  - {name: 🇹🇷 土耳其 | TUR, server: v1.nimbaha13.ir, port: 8880, type: vless, uuid: 1c942ed7-fef9-45c6-9873-91f93075185d, tls: false, network: ws, ws-opts: {path: /dcfrtt, headers: {Host: v1.nimbaha13.ir}}, udp: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN, server: rtifgjdr.df6h451rh.xin, port: 443, type: anytls, password: 2902c46c8493, udp: true, sni: docs.microsoft.com, skip-cert-verify: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN 2, server: turn.gosthk.site, port: 57180, type: anytls, password: 487be461-690d-480a-a59d-f46b10524e11, udp: true, sni: turn.gosthk.site, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 | USA, server: ssr2.762988.xyz, port: 33336, type: ssr, cipher: chacha20-ietf, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: "", obfsparam: "", udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: 23.237.202.252, port: 443, type: vless, uuid: 0173d52e-8e1b-4681-831e-11529677b72f, tls: true, alpn: [h2], servername: id-0173d52e.vmagnum.win, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /, mode: auto}, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: wryly-messiest.video-streams.org, port: 443, type: vless, uuid: 0ca80064-0265-44ec-aaec-a8f7d799f293, tls: true, servername: wryly-messiest.video-streams.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: wryly-messiest.video-streams.org}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 4, server: e.node001.download, port: 28172, type: ss, cipher: chacha20-ietf-poly1305, password: aqfNMqGyxRTHwXOy, udp: true}
-  - {name: 🇺🇸 美国 | USA 5, server: 162.35.101.177, port: 443, type: vless, uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839, tls: true, reality-opts: {public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk, short-id: "bd8f712209a9c283" }, servername: 0592efg.us8.h1clayd.click, client-fingerprint: edge, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: 99f2107b03f8}}
-  - {name: 🇺🇸 美国 | USA 6, server: 3.219.184.102, port: 443, type: vless, uuid: a5b1d16b-719b-4bd6-9d7b-fe6d84607da9, tls: true, alpn: [h2], servername: fortuna.masynbazar.ru, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国 | USA 7, server: cos-cdn-g.alicdn.win, port: 443, type: vless, uuid: 3bb77d95-fc42-4fa5-9865-1a42dd4d9ff6, tls: true, servername: mms-statlc-ig7dmg-e.oppocc.men, client-fingerprint: safari, network: ws, ws-opts: {path: /newlogin/login.do, headers: {Host: mms-static-origin-e.oppocc.men}}, udp: true}
-  - {name: 🇻🇳 越南 | VNM, server: e.node001.download, port: 42824, type: ss, cipher: chacha20-ietf-poly1305, password: aqfNMqGyxRTHwXOy, udp: true}
+  - {name: 🇬🇧 英国 | GBR 2, server: 136.148.83.70, port: 443, type: vless, uuid: 00000000-0000-0001-0000-000000000000, tls: true, servername: aszbk-ru-78dc.my-fade.cloud, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 | HKG, server: turn.gosthk.site, port: 57180, type: anytls, password: 487be461-690d-480a-a59d-f46b10524e11, udp: true, sni: turn.gosthk.site, skip-cert-verify: true}
+  - {name: 🇭🇰 香港 | HKG 2, server: ibsdsf.df6h451rh.xin, port: 443, type: anytls, password: 2902c46c8493, udp: true, sni: docs.microsoft.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港 | HKG 3, server: 5641sdds.df6h451rh.xin, port: 443, type: anytls, password: 0324fbc29561, sni: images.ctfassets.net, skip-cert-verify: true}
+  - {name: 🇮🇳 印度 | IND, server: india.astroapps.io, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 806a291d6fa98489025802ae1285df63811ed499011dcf35, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: india.astroapps.io, path: /d282ea66de9394f68a3e792e, tls: true, mux: false}, udp: true}
+  - {name: 🇮🇳 印度 | IND 2, server: 147.93.171.8, port: 8443, type: vless, uuid: 591e7de6-f2dd-4ff9-ae21-8e00d5affa2a, tls: true, alpn: [http/1.1], servername: 147-93-171-8.sslip.io, client-fingerprint: firefox, network: ws, ws-opts: {path: /vpn-live, headers: {Host: 147-93-171-8.sslip.io}}, udp: true}
+  - {name: 🇮🇹 意大利 | ITA, server: www.visa.com.hk, port: 443, type: vless, uuid: 937bc631-4022-41d2-ae15-d8247ba5e32d, tls: true, servername: it-mil.862400.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/announcement?ed=2048", headers: {Host: it-mil.862400.xyz}}, udp: true}
+  - {name: 🇯🇵 日本 | JPN, server: lkqf7pi-g05.jp02-e3-vm0.entry.fr0528.art, port: 11777, type: vmess, uuid: 8ba17b4b-600f-34d1-b082-548a7bc05d1e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 2, server: liqzf4z-g05.jp05-h6-vm0.entry.fr0528.art, port: 46486, type: vmess, uuid: 8ba17b4b-600f-34d1-b082-548a7bc05d1e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 3, server: 2kgw7p9-g05.jp03-j7-vm0.entry.fr0528.art, port: 21585, type: vmess, uuid: 8ba17b4b-600f-34d1-b082-548a7bc05d1e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 4, server: l32fw4z-g05.jp04-1d-vm0.entry.fr0528.art, port: 448, type: vmess, uuid: 8ba17b4b-600f-34d1-b082-548a7bc05d1e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 5, server: 2k2ff4t-g05.jp07-sh-vm0.entry.fr0528.art, port: 28787, type: vmess, uuid: 8ba17b4b-600f-34d1-b082-548a7bc05d1e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 6, server: 932zfpi-g05.jp01-nn-vm0.entry.fr0528.art, port: 21585, type: vmess, uuid: 8ba17b4b-600f-34d1-b082-548a7bc05d1e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 | JPN 7, server: l3gzwx9-g05.jp06-jz-vm0.entry.fr0528.art, port: 28787, type: vmess, uuid: 8ba17b4b-600f-34d1-b082-548a7bc05d1e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 | KOR, server: 3.35.174.64, port: 443, type: hysteria2, password: 7e68e32f-8015-4f37-9082-70e8b0b58043, auth: 7e68e32f-8015-4f37-9082-70e8b0b58043, fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69, sni: www.bing.com, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国 | KOR 2, server: 3.35.174.64, port: 8443, type: ss, cipher: chacha20-ietf-poly1305, password: 7e68e32f-8015-4f37-9082-70e8b0b58043, udp: true}
+  - {name: 🇰🇷 韩国 | KOR 3, server: 3.35.174.64, port: 443, type: vless, uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE, short-id: "e04a526b0b09c765" }, servername: 3-35-175-152.nip.io, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇿 哈萨克斯坦 | KAZ, server: 196.198.111.130, port: 443, type: vless, uuid: 0173d52e-8e1b-4681-831e-11529677b72f, tls: true, servername: cab-6b07048f.ferrin.uk, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /, mode: auto}, udp: true}
+  - {name: 🇱🇻 拉脱维亚 | LVA, server: 109.248.148.141, port: 11471, type: ss, cipher: aes-128-gcm, password: EE2VWeKohIwTx6HGOo1X2p1jjNAUfRWS, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD, server: 196.240.125.244, port: 8443, type: vless, uuid: 0173d52e-8e1b-4681-831e-11529677b72f, tls: true, flow: xtls-rprx-vision, servername: api-v1-6b07048f.vmagnum.win, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 2, server: 201.34.142.108, port: 443, type: vless, uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c, tls: true, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /assets/nlrelay01/, mode: auto}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 3, server: 79.182.39.135, port: 443, type: vless, uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839, tls: true, reality-opts: {public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE, short-id: "50a749f0eccb628c" }, servername: 15b171g.nl7.h1clayd.click, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: 5b79e8a94241}, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 4, server: free-server.techsonic.dev, port: 443, type: vless, uuid: 90711def-edd4-42da-ba1d-b2046b86b50a, tls: true, servername: tech-sonic.webex.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 荷兰 | NLD 5, server: free-server.techsonic.dev, port: 443, type: vless, uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294, tls: true, servername: aka.ms, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS, server: 201.51.12.98, port: 443, type: vless, uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e, tls: true, servername: vps3.nemnogogo.com, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: mobile.api.Event}, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS 2, server: 85.8.201.186, port: 443, type: vless, uuid: 7aa77858-f235-000c-9434-7ab060848b17, tls: true, flow: xtls-rprx-vision, servername: cdn.mornismp.ru, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 | RUS 3, server: vps3.nemnogogo.com, port: 443, type: vless, uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e, tls: true, alpn: [h2], servername: vps3.nemnogogo.com, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: mobile.api.Event}, udp: true}
+  - {name: 🇹🇼 🇨🇳 台湾 | TWN, server: mfjh645drfj1dr6j5.df6h451rh.xin, port: 443, type: anytls, password: 0324fbc29561, udp: true, sni: px.ads.linkedin.com, skip-cert-verify: true}
+  - {name: 🇹🇼 🇨🇳 台湾 | TWN 2, server: rtifgjdr.df6h451rh.xin, port: 443, type: anytls, password: 2902c46c8493, udp: true, sni: docs.microsoft.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 | USA, server: 188.114.98.0, port: 443, type: vless, uuid: eee8ae65-bc48-438f-a606-a96f10bfb3b8, tls: true, alpn: [http/1.1], servername: x.m-90.xyz, client-fingerprint: unsafe, network: ws, ws-opts: {path: t.me/TEAMNETGRATISCOL, headers: {Host: x.m-90.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 | USA 2, server: 196.198.111.146, port: 443, type: vless, uuid: 0173d52e-8e1b-4681-831e-11529677b72f, tls: true, servername: cab-6b07048f.ferrin.uk, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /, mode: auto}, udp: true}
+  - {name: 🇺🇸 美国 | USA 3, server: 23.237.202.252, port: 443, type: vless, uuid: 0173d52e-8e1b-4681-831e-11529677b72f, tls: true, alpn: [h2], servername: id-0173d52e.vmagnum.win, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /, mode: auto}, udp: true}
+  - {name: 🇺🇸 美国 | USA 4, server: 87.120.106.95, port: 443, type: vless, uuid: da9fa513-d8a6-48a0-b266-d31062375070, tls: true, reality-opts: {public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM}, servername: samoanews.com, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /, host: samoanews.com}, udp: true}
+  - {name: 🇺🇸 美国 | USA 5, server: 87.120.106.95, port: 443, type: vless, uuid: fc2c3252-08cc-4b7c-ae27-cf85f2af3270, tls: true, reality-opts: {public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM}, servername: www.gr-cdn.com, client-fingerprint: firefox, network: xhttp, xhttp-opts: {path: /, host: www.gr-cdn.com}, udp: true}
+  - {name: 🇺🇸 美国 | USA 6, server: nl.alpheratzz.org, port: 8443, type: vless, uuid: 0173d52e-8e1b-4681-831e-11529677b72f, tls: true, alpn: [h2], flow: xtls-rprx-vision, servername: api-v2-6b07048f.vmagnum.win, client-fingerprint: safari, network: tcp, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -96,30 +75,20 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - 🇦🇪 阿联酋 | ARE
-      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
-      - 🇪🇸 西班牙 | ESP
-      - 🇪🇸 西班牙 | ESP 2
+      - 🇪🇪 爱沙尼亚 | EST
+      - 🇫🇷 法国 | FRA
+      - 🇫🇷 法国 | FRA 2
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
-      - 🇬🇧 英国 | GBR 3
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
+      - 🇮🇳 印度 | IND
+      - 🇮🇳 印度 | IND 2
       - 🇮🇹 意大利 | ITA
-      - 🇮🇹 意大利 | ITA 2
-      - 🇮🇹 意大利 | ITA 3
-      - 🇮🇹 意大利 | ITA 4
-      - 🇮🇹 意大利 | ITA 5
-      - 🇮🇹 意大利 | ITA 6
-      - 🇮🇹 意大利 | ITA 7
-      - 🇮🇹 意大利 | ITA 8
-      - 🇮🇹 意大利 | ITA 9
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
       - 🇯🇵 日本 | JPN 3
@@ -127,28 +96,19 @@ proxy-groups:
       - 🇯🇵 日本 | JPN 5
       - 🇯🇵 日本 | JPN 6
       - 🇯🇵 日本 | JPN 7
-      - 🇯🇵 日本 | JPN 8
-      - 🇯🇵 日本 | JPN 9
-      - 🇯🇵 日本 | JPN 10
-      - 🇯🇵 日本 | JPN 11
       - 🇰🇷 韩国 | KOR
       - 🇰🇷 韩国 | KOR 2
       - 🇰🇷 韩国 | KOR 3
-      - 🇰🇷 韩国 | KOR 4
-      - 🇱🇮 LI_03
-      - 🇱🇹 立陶宛 | LTU
-      - 🇲🇾 马来西亚 | MYS
+      - 🇰🇿 哈萨克斯坦 | KAZ
+      - 🇱🇻 拉脱维亚 | LVA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
       - 🇳🇱 荷兰 | NLD 3
-      - 🇷🇴 罗马尼亚 | ROU
+      - 🇳🇱 荷兰 | NLD 4
+      - 🇳🇱 荷兰 | NLD 5
       - 🇷🇺 俄罗斯 | RUS
       - 🇷🇺 俄罗斯 | RUS 2
-      - 🇸🇬 新加坡 | SGP
-      - 🇸🇬 新加坡 | SGP 2
-      - 🇸🇬 新加坡 | SGP 3
-      - 🇸🇬 新加坡 | SGP 4
-      - 🇹🇷 土耳其 | TUR
+      - 🇷🇺 俄罗斯 | RUS 3
       - 🇹🇼 🇨🇳 台湾 | TWN
       - 🇹🇼 🇨🇳 台湾 | TWN 2
       - 🇺🇸 美国 | USA
@@ -157,35 +117,23 @@ proxy-groups:
       - 🇺🇸 美国 | USA 4
       - 🇺🇸 美国 | USA 5
       - 🇺🇸 美国 | USA 6
-      - 🇺🇸 美国 | USA 7
-      - 🇻🇳 越南 | VNM
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - 🇦🇪 阿联酋 | ARE
-      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
-      - 🇪🇸 西班牙 | ESP
-      - 🇪🇸 西班牙 | ESP 2
+      - 🇪🇪 爱沙尼亚 | EST
+      - 🇫🇷 法国 | FRA
+      - 🇫🇷 法国 | FRA 2
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
-      - 🇬🇧 英国 | GBR 3
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
+      - 🇮🇳 印度 | IND
+      - 🇮🇳 印度 | IND 2
       - 🇮🇹 意大利 | ITA
-      - 🇮🇹 意大利 | ITA 2
-      - 🇮🇹 意大利 | ITA 3
-      - 🇮🇹 意大利 | ITA 4
-      - 🇮🇹 意大利 | ITA 5
-      - 🇮🇹 意大利 | ITA 6
-      - 🇮🇹 意大利 | ITA 7
-      - 🇮🇹 意大利 | ITA 8
-      - 🇮🇹 意大利 | ITA 9
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
       - 🇯🇵 日本 | JPN 3
@@ -193,28 +141,19 @@ proxy-groups:
       - 🇯🇵 日本 | JPN 5
       - 🇯🇵 日本 | JPN 6
       - 🇯🇵 日本 | JPN 7
-      - 🇯🇵 日本 | JPN 8
-      - 🇯🇵 日本 | JPN 9
-      - 🇯🇵 日本 | JPN 10
-      - 🇯🇵 日本 | JPN 11
       - 🇰🇷 韩国 | KOR
       - 🇰🇷 韩国 | KOR 2
       - 🇰🇷 韩国 | KOR 3
-      - 🇰🇷 韩国 | KOR 4
-      - 🇱🇮 LI_03
-      - 🇱🇹 立陶宛 | LTU
-      - 🇲🇾 马来西亚 | MYS
+      - 🇰🇿 哈萨克斯坦 | KAZ
+      - 🇱🇻 拉脱维亚 | LVA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
       - 🇳🇱 荷兰 | NLD 3
-      - 🇷🇴 罗马尼亚 | ROU
+      - 🇳🇱 荷兰 | NLD 4
+      - 🇳🇱 荷兰 | NLD 5
       - 🇷🇺 俄罗斯 | RUS
       - 🇷🇺 俄罗斯 | RUS 2
-      - 🇸🇬 新加坡 | SGP
-      - 🇸🇬 新加坡 | SGP 2
-      - 🇸🇬 新加坡 | SGP 3
-      - 🇸🇬 新加坡 | SGP 4
-      - 🇹🇷 土耳其 | TUR
+      - 🇷🇺 俄罗斯 | RUS 3
       - 🇹🇼 🇨🇳 台湾 | TWN
       - 🇹🇼 🇨🇳 台湾 | TWN 2
       - 🇺🇸 美国 | USA
@@ -223,8 +162,6 @@ proxy-groups:
       - 🇺🇸 美国 | USA 4
       - 🇺🇸 美国 | USA 5
       - 🇺🇸 美国 | USA 6
-      - 🇺🇸 美国 | USA 7
-      - 🇻🇳 越南 | VNM
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -280,8 +217,6 @@ proxy-groups:
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -299,8 +234,6 @@ proxy-groups:
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
       - 🇹🇼 🇨🇳 台湾 | TWN
       - 🇹🇼 🇨🇳 台湾 | TWN 2
   - name: 🇸🇬 ‍新加坡
@@ -309,10 +242,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - 🇸🇬 新加坡 | SGP
-      - 🇸🇬 新加坡 | SGP 2
-      - 🇸🇬 新加坡 | SGP 3
-      - 🇸🇬 新加坡 | SGP 4
+      - DIRECT
   - name: 🇯🇵 ‍日本
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -326,10 +256,6 @@ proxy-groups:
       - 🇯🇵 日本 | JPN 5
       - 🇯🇵 日本 | JPN 6
       - 🇯🇵 日本 | JPN 7
-      - 🇯🇵 日本 | JPN 8
-      - 🇯🇵 日本 | JPN 9
-      - 🇯🇵 日本 | JPN 10
-      - 🇯🇵 日本 | JPN 11
   - name: 🇺🇸 ‍美国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -342,55 +268,42 @@ proxy-groups:
       - 🇺🇸 美国 | USA 4
       - 🇺🇸 美国 | USA 5
       - 🇺🇸 美国 | USA 6
-      - 🇺🇸 美国 | USA 7
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 30
     tolerance: 100
     proxies:
-      - 🇦🇪 阿联酋 | ARE
-      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
-      - 🇪🇸 西班牙 | ESP
-      - 🇪🇸 西班牙 | ESP 2
+      - 🇪🇪 爱沙尼亚 | EST
+      - 🇫🇷 法国 | FRA
+      - 🇫🇷 法国 | FRA 2
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
-      - 🇬🇧 英国 | GBR 3
+      - 🇮🇳 印度 | IND
+      - 🇮🇳 印度 | IND 2
       - 🇮🇹 意大利 | ITA
-      - 🇮🇹 意大利 | ITA 2
-      - 🇮🇹 意大利 | ITA 3
-      - 🇮🇹 意大利 | ITA 4
-      - 🇮🇹 意大利 | ITA 5
-      - 🇮🇹 意大利 | ITA 6
-      - 🇮🇹 意大利 | ITA 7
-      - 🇮🇹 意大利 | ITA 8
-      - 🇮🇹 意大利 | ITA 9
       - 🇰🇷 韩国 | KOR
       - 🇰🇷 韩国 | KOR 2
       - 🇰🇷 韩国 | KOR 3
-      - 🇰🇷 韩国 | KOR 4
-      - 🇱🇮 LI_03
-      - 🇱🇹 立陶宛 | LTU
-      - 🇲🇾 马来西亚 | MYS
+      - 🇰🇿 哈萨克斯坦 | KAZ
+      - 🇱🇻 拉脱维亚 | LVA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
       - 🇳🇱 荷兰 | NLD 3
-      - 🇷🇴 罗马尼亚 | ROU
+      - 🇳🇱 荷兰 | NLD 4
+      - 🇳🇱 荷兰 | NLD 5
       - 🇷🇺 俄罗斯 | RUS
       - 🇷🇺 俄罗斯 | RUS 2
-      - 🇹🇷 土耳其 | TUR
-      - 🇻🇳 越南 | VNM
+      - 🇷🇺 俄罗斯 | RUS 3
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
@@ -402,17 +315,12 @@ proxy-groups:
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
       - 🇹🇼 🇨🇳 台湾 | TWN
       - 🇹🇼 🇨🇳 台湾 | TWN 2
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
-      - 🇸🇬 新加坡 | SGP
-      - 🇸🇬 新加坡 | SGP 2
-      - 🇸🇬 新加坡 | SGP 3
-      - 🇸🇬 新加坡 | SGP 4
+      - DIRECT
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
@@ -423,10 +331,6 @@ proxy-groups:
       - 🇯🇵 日本 | JPN 5
       - 🇯🇵 日本 | JPN 6
       - 🇯🇵 日本 | JPN 7
-      - 🇯🇵 日本 | JPN 8
-      - 🇯🇵 日本 | JPN 9
-      - 🇯🇵 日本 | JPN 10
-      - 🇯🇵 日本 | JPN 11
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
@@ -436,44 +340,33 @@ proxy-groups:
       - 🇺🇸 美国 | USA 4
       - 🇺🇸 美国 | USA 5
       - 🇺🇸 美国 | USA 6
-      - 🇺🇸 美国 | USA 7
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
-      - 🇦🇪 阿联酋 | ARE
-      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
-      - 🇪🇸 西班牙 | ESP
-      - 🇪🇸 西班牙 | ESP 2
+      - 🇪🇪 爱沙尼亚 | EST
+      - 🇫🇷 法国 | FRA
+      - 🇫🇷 法国 | FRA 2
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
-      - 🇬🇧 英国 | GBR 3
+      - 🇮🇳 印度 | IND
+      - 🇮🇳 印度 | IND 2
       - 🇮🇹 意大利 | ITA
-      - 🇮🇹 意大利 | ITA 2
-      - 🇮🇹 意大利 | ITA 3
-      - 🇮🇹 意大利 | ITA 4
-      - 🇮🇹 意大利 | ITA 5
-      - 🇮🇹 意大利 | ITA 6
-      - 🇮🇹 意大利 | ITA 7
-      - 🇮🇹 意大利 | ITA 8
-      - 🇮🇹 意大利 | ITA 9
       - 🇰🇷 韩国 | KOR
       - 🇰🇷 韩国 | KOR 2
       - 🇰🇷 韩国 | KOR 3
-      - 🇰🇷 韩国 | KOR 4
-      - 🇱🇮 LI_03
-      - 🇱🇹 立陶宛 | LTU
-      - 🇲🇾 马来西亚 | MYS
+      - 🇰🇿 哈萨克斯坦 | KAZ
+      - 🇱🇻 拉脱维亚 | LVA
       - 🇳🇱 荷兰 | NLD
       - 🇳🇱 荷兰 | NLD 2
       - 🇳🇱 荷兰 | NLD 3
-      - 🇷🇴 罗马尼亚 | ROU
+      - 🇳🇱 荷兰 | NLD 4
+      - 🇳🇱 荷兰 | NLD 5
       - 🇷🇺 俄罗斯 | RUS
       - 🇷🇺 俄罗斯 | RUS 2
-      - 🇹🇷 土耳其 | TUR
-      - 🇻🇳 越南 | VNM
+      - 🇷🇺 俄罗斯 | RUS 3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
