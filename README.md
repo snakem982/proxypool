@@ -18,21 +18,18 @@
 
 | 序号 | 月流量 | 带宽 | 配置 | 价格 | 推荐说明与选购 |
 | :---: | :---: | :---: | :---: | :---: | :--- |
-| **1** | 1000G | 1Gbps | 1核 / 768M / 10G SSD | **$10.18/年** | [👉 抢购低价入门款](https://billing.dedirock.com/aff.php?aff=870&pid=90 "点击抢购") *(小白试水首选)* |
-| **2** | 1000G | 1Gbps | 1核 / 1G / 10G SSD | **$10.88/年** | [👉 抢购 1G 内存款](https://billing.dedirock.com/aff.php?aff=870&pid=125 "点击抢购") *(性能更稳定)* |
-| **3** | 750G | 1Gbps | 1核 / 1G / 20G SSD | **$13.88/年** | [👉 抢购 20G 大硬盘款](https://billing.dedirock.com/aff.php?aff=870&pid=112 "点击抢购") *(性价比之王)* |
-| **4** | 4000G | 1Gbps | 1核 / 1G / 25G SSD | **$18.28/年** | [👉 抢购 CloudCone 限量版](https://app.cloudcone.com/vps/522/create?token=bday26-vps-1&ref=11078 "点击抢购") *(大流量首选)* |
-| **5** | 3000G | 1Gbps | 1核 / 1G / 20G SSD | **$21.99/年** | [👉 抢购 RackNerd 爆款](https://my.racknerd.com/aff.php?aff=8613&pid=952 "点击抢购") *(老牌厂商，稳定)* |
-
+| **1** | 1000G | 1Gbps | 1核 / 768M / 10G SSD | **$10.18/年** | [👉 低价入门款](https://billing.dedirock.com/aff.php?aff=870&pid=90 "点击查看") *(小白试水首选)* |
+| **2** | 750G | 1Gbps | 1核 / 1G / 20G SSD | **$13.88/年** | [👉 20G 大硬盘款](https://billing.dedirock.com/aff.php?aff=870&pid=112 "点击查看") *(性价比之王)* |
+| **3** | 20T | 1Gbps | 1核 / 1G / 20G SSD | **$14.22/年** | [👉 ColoCrossing 限量版](https://cloud.colocrossing.com/aff.php?aff=821&pid=205 "点击查看") *(大流量首选)* |
+| **4** | 3000G | 1Gbps | 1核 / 1G / 20G SSD | **$15.98/年** | [👉 RackNerd 爆款](https://my.racknerd.com/aff.php?aff=8613&pid=968 "点击查看") *(老牌厂商，稳定)* |
 
 
 ### 🌐 优质 VPS 服务商直达
 
 | 品牌 | 主打优势 / 特色 | 直达链接 |
 | :--- | :--- | :---: |
-| **RackNerd** | 价格极低、后台优化好、机房选择多，国内适配优秀 | [前往选购 👉](https://my.racknerd.com/aff.php?aff=8613) |
-| **CloudCone** | 线路优化佳、按小时计费、免费自带 IPv6 地址 | [前往选购 👉](https://app.cloudcone.com/?ref=11078) |
-| **ColoCrossing**| 源头物理机房服务商、大带宽、流量充足保证 | [前往选购 👉](https://cloud.colocrossing.com/aff.php?aff=821) |
+| **RackNerd** | 价格极低、后台优化好、机房选择多，国内适配优秀 | [前往查看 👉](https://my.racknerd.com/aff.php?aff=8613) |
+| **ColoCrossing**| 源头物理机房服务商、大带宽、流量充足保证 | [前往查看 👉](https://cloud.colocrossing.com/aff.php?aff=821) |
 
 
 > 📢 *说明：通过上述推广链接购买可能产生少量收益，用于维持本节点的日常自动化检测与服务器续费维护。*
